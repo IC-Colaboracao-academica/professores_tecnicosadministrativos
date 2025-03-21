@@ -1,0 +1,409 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Resumos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+16],
+[2017,
+16],
+[2018,
+24],
+[2019,
+18],
+[2020,
+8],
+[2021,
+11],
+[2022,
+18],
+[2023,
+4],
+[2024,
+4]]}]});
+        });
+        </script>
+        
+                <h3>Resumos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 122<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>COSTA, A. F. ; SANTOS, J. G.. <b>LITERATURA, CIÊNCIA E PODER: A RELAÇÃO COM O EPISTEMICÍDIO NEGRO</b>. Em: IV Novembro Negro | I Congresso de Gestão e Promoção da Política de Igualdade Racial do Estado do Paraná, 2024, Curitiba. Anais do IV Novembro Negro da PUCPR, 2024. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; VASCONCELOS, M. L. M. C.. <b>Paulo Freire e a literatura: por uma educação literária para a comunicação</b>. Em: VII Jornada Mackenzie de Estudos Freireanos, 2024, São Paulo. VII Jornada Mackenzie de Estudos Freireanos, v. 1, p. 42-42, 2024. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PARDO, F. S. <b>A AUTOETNOGRAFIA EM PESQUISAS EM LINGUÍSTICA APLICADA: REFLEXÕES DO SUJEITO PESQUISADOR/PESQUISADO</b>. Em: II CONGRESSO NACIONAL DE LINGUÍSTICA APLICADA (CONALA), 2024, São Luis-MA. CADERNO DE RESUMOS DO II CONGRESSO NACIONAL DE LINGUÍSTICA APLICADA. São Luis- MA: EDUFMA, v. 4, p. 252-252, 2024. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANTOS, J. G.; COSTA, A. F. ; PEREIRA, M. T. ; OLIVEIRA, L. V. ; LOPES JUNIOR, A. A.. <b>DISQUE DIREITOS HUMANOS NO COMBATE À VIOLÊNCIA CONTRA PESSOAS LGBTQIAPN+</b>. Em: Congresso Internacional de Movimentos Docentes - Pacto pela Formação e Valorização Docente, 2024, Campinas. Caderno de Resumos CMD 2024. Santo André - SP: V&V Editora, v. II, p. 438-438, 2024. <a href="http://dx.doi.org/10.47247/EV/6063.062.8" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; RITA, I. J.. <b>Estudos de gênero e literatura: O debate feminista de Margaret Atwood e Ursula Le Guin na sala de aula</b>. Em: IV SELIV - Seminário de Estudos Linguísticos do Vale do Paraíba, 2023, Campos do Jordão. Caderno de Resumos do IV SELIV - Seminário de Estudos Linguísticos do Vale do Paraíba, 2023. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>OLIVEIRA, L. V. ; SANTOS, J. G. ; ABRANTES, T. A.. <b>ESTUDANTES COM TEA NO ENSINO SUPERIOR: O QUE DIZEM AS PESQUISAS PRESENTES NA BIBLIOTECA DIGITAL DE TESES E DISSERTAÇÕES?</b>. Em: IV Simpósio Internacional - Inovação em Educação Superior, 2023, Campinas. Desafios e Perspectivas na Educação Superior - IV SIIES & IX SIC, 2023. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>REYES, F. A. ; TILEMANN, R. ; BROZE, T. S.. <b>A GESTÃO DE CUSTOS EM ORGANIZAÇÕES DE SAÚDE ? UMA REVISÃO DA LITERATURA</b>. Em: IV Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, 2023, Diamantina. Anais do Congresso Brasileiro Interdisciplinar em Ciência e Tecnologia, 2023. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANTOS, F. C. T. G. ; FEITOSA, W. R.. <b>A experiência do cliente no pós venda</b>. Em: Conpog - Congresso de Pós Graduação do IFSP, 2023, Bragança Paulista. Conpog, 2023. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, U. L. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE ; SILVA, F. I. A.. <b>Aprendizados docentes no contexto de prática docente e residência pedagógica</b>. Em: V Semana da Educação Matemática, 2022. Anais da V Semana da Educação Matemática, 2022. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTONIO, M. P. ; FEITOSA, W. R.. <b>Desenvolvimento de um sistema de controle de acesso e monitoramento IOT para o IFSP Câmpus Pirituba</b>. Em: Conpog - congresso de Pós Graduação do IFSP, 2022, Sertãozinho. Conpog - congresso de Pós Graduação do IFSP, 2022. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BOAS, M. A. V ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Aprendizados do PIBID e da RP na formação de uma futura professora</b>. Em: V Semana da Educação Matemática, 2022. Anais da V Semana da Educação Matemática, 2022. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CARVALHO, I. L. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Observações do centro de mídias da educação de São Paulo e do desenvolvimento de uma tarefa com o GeoGebra no ensino remoto</b>. Em: V Semana da Educação Matemática, 2022. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CHINELLATO, T. G. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>O desenvolvimento do programa tendo como cenário a pandemia do COVID-19</b>. Em: Seminário Institucional do PIBID IFSP - Licenciaturas em Matemática, 2022. Seminário Institucional do PIBID IFSP - Licenciaturas em Matemática, 2022. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FREITAS, G. B. ; BENATI, D. M.. <b>A Inserção das Mulheres na Logística: o caso da Empresa DHL</b>. Em: 20ª Feira Brasileira de Ciências e Engenharia (FEBRACE), 2022, São Paulo. ANAIS 2022 da 21ª Feira Brasileira de Ciências e Engenharia (FEBRACE), v. 1, p. 428-428, 2022. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Distopia revisitada: figurações da pandemia no romance e na série Estação Onze</b>. Em: 24º Congresso de Estudos Literários ? A Literatura na Pandemia ? Programa de Pós-graduação em Letras ? Universidade Federal do Espírito Santo, 2022, Vitória. Caderno de Resumos do 24º Congresso de Estudos Literários ? A Literatura na Pandemia ? Programa de Pós-graduação em Letras ? Universidade Federal do Espírito Santo, p. 24-24, 2022. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>HOMEM, Thiago Pedro Donadon. <b>Transfer Learning Through Qualitate Spatial Reasoning</b>. Em: Representing and Solving Spatial Problems (Dagstuhl Seminar 21492), 2022, Saarbrücken. Dagstuhl Report - Representing and Solving Spatial Problems (Dagstuhl Seminar 21492). Dagstuhl: Schloss Dagstuhl -- Leibniz-Zentrum für Informatik, v. 11, p. 26-27, 2022. <a href="http://dx.doi.org/10.4230/DagRep.11.11.1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>JARDIM, J. O. ; MARTINHO, G. M. ; FRANCA, L. E. M. ; FRACAROLE, M. S. ; FERRUZZI, A. J.. <b>Plataforma de divulgação sobre cuidados com animais domésticos e de pesquisa de clínicas veterinárias</b>. Em: 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022, São Paulo. CONICT - Congresso de Inovação, Ciência e Tecnologia 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>LIMA, J. P. ; ALMEIDA, M. S. ; FEITOSA, W. R.. <b>GOVERNANÇA DIGITAL E TRANSPARÊNCIA EM LICITAÇÕES E CONTRATOS: UM ESTUDO DE CASO NA DISPENSA DE LICITAÇÕES NA CIDADE DE SÃO PAULO DURANTE A PANDEMIA DE COVID19</b>. Em: Conict, 2022, São Paulo. CONICT, 2022. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARQUES, V. G. ; FERRAZ, R. G. ; SOUZA, A. B. S. E. ; FERREIRA, R. S. ; FERRUZZI, A. J.. <b>Desenvolvimento de uma aplicação web para divulgação de conteúdos e ferramentas acerca da cibersegurança</b>. Em: 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022, São Paulo. CONICT - Congresso de Inovação, Ciência e Tecnologia 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MELO, G. T ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>.Uma Parceria Universidade-Escola na Produção de uma Tarefa Investigativa sobre Área e Perímetro com o GeoGebra</b>. Em: V Semana da Educação Matemática, 2022. Anais da V Semana da Educação Matemática, 2022. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Módolo, L. P.; CARVALHO, S. R. ; DIAS, T. M.. <b>A ?SAÚDE MÓVEL? E A AUTOMAÇÃO ALGORÍTMICA DO SABER-PODER DA MEDICINA</b>. Em: 13º Congresso Brasileiro de Saúde Coletiva, 2022, Salvador. Anais do 13º Congresso Brasileiro de Saúde Coletiva. Salvador: Galoá, v. 13, 2022. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>OLIVEIRA, C. F. ; BANDINI, M. ; LUCCA, S. R. ; CINTRA, M. ; Módolo, L. P.. <b>?SOFRIMENTO MENTAL E MORTE ENTRE TRABALHADORES E TRABALHADORAS ? TRANSTORNOS MENTAIS E SUICÍDIOS RELACIONADOS AO TRABALHO?</b>. Em: 13º Congresso Brasileiro de Saúde Coletiva, 2022, Salvador. Anais do 13º Congresso Brasileiro de Saúde Coletiva. Salvador: Galoá, v. 13, 2022. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>PROCOPIO, J. V. J. ; FEITOSA, W. R.. <b>GEOANALYTICS APLICADO AO CONCEITO DE CIDADES INTELIGENTES</b>. Em: CONICT, 2022, São Paulo. CONICT, 2022. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SANTOS, J. G.; OLIVEIRA, L. V.. <b>'DISQUE 100': INSTRUMENTO IMPORTANTE NO ACOLHIMENTO DE DENÚNCIA DA VIOLÊNCIA DOMÉSTICA CONTRA CRIANÇAS E ADOLESCENTES COM DEFICIÊNCIA</b>. Em: IX SETEC - Seminário de Estudos Técnicos e Tecnológicos, X IFTECH - Feira de Inovação Tecnológica do IFPR, 2022, Umuarama/PR. ANAIS EVENTOS CIENTÍFICOS DO INSTITUTO FEDERAL DO PARANÁ (IFPR) CAMPUS UMUARAMA - 2022, 2022, p. 82-83, 2022. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SANTOS, J. G.; OLIVEIRA, L. V.. <b>Denúncia da Violência Doméstica contra Crianças e Adolescentes com Deficiência por meio do 'Disque 100'</b>. Em: Congresso Internacional Movimentos Docentes, 2022, São Paulo. Caderno de Resumos do Congresso Internacional Movimentos Docentes e Colóquio FORPIBID RP - 2022. Diadema - SP: V&V Editora, v. 1, p. 555-555, 2022. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SANTOS, M. A. M. ; FERREIRA, R. S. ; BASILE, F. R. M. ; ZADI, I. C.. <b>Análise comparativa de técnicas de aprendizagem de máquina para classificação de materiais descartáveis</b>. Em: 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022, São Paulo. CONFERÊNCIAS DO IFSP, 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AGUIAR, J. L. A. ; IMAFUKU, R. S. ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>Explorando o papel dos parâmetros no gráfico de funções trigonométricas com o auxílio do Geogebra</b>. Em: I SEMINÁRIO TIC E EDUCAÇÃO, 2021, Capivari - SP. ANAIS DO I SEMINÁRIO TIC E EDUCAÇÃO, v. 1, p. 26-26, 2021. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; GARCIA, V. C. ; MELO, G. T ; SALGADO, M. A. J. ; ANDRADE, C. R.. <b>O (re)inventar do Lesson Study Híbrido da formação inicial: uma experiência de planejar colaborativamente e os desdobramentos na escola</b>. Em: VIII Seminário de Histórias e Investigações de/em aulas de matemática, 2022. https://www.even3.com.br/anais/viiishiam/400231-o-(re)inventar-do-lesson-study-hibrido-na-formacao-inicial--uma-experiencia-de-planejar-colaborativamente-e-os-de/, 2021. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CARVALHO, I. L. ; NASCIMENTO, A. E. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE ; SILVA, A. L. R. ; CHINELLATO, T. G.. <b>Aprendizagens Docentes em uma Experiência com o GeoGebra: Interlocução Universidade-Escola</b>. Em: VIII Semana Nacional de Ciências e Tecnologia & Mostra de Arte e Cultura do IFSP ? Câmpus Hortolândia, 2021. Anais do Seminário de Histórias e Investigações de/em aulas de matemática, 2021. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CHINELLATO, T. G. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE ; SILVA, K. C. P. ; SILVA, A. L. R. ; SAMPAIO, K. S.. <b>O (re)inventar do PIBID na licenciatura em matemática do IFSP Hortolândia na pandemia: práticas e reflexões</b>. Em: VIII Seminário de Histórias e Investigações de/em aulas de matemática, 2022. Anais do Seminário de Histórias e Investigações de/em aulas de matemática, 2021. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>COSTA, L. B. ; IMAFUKU, R. S. ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>O papel dos parâmetros no gráfico de funções trigonométricas com auxílio do Geogebra</b>. Em: I SEMINÁRIO TIC E EDUCAÇÃO, 2021, Capivari - SP. ANAIS DO I SEMINÁRIO TIC E EDUCAÇÃO, v. 1, p. 28-28, 2021. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>GARCIA, V. C. ; MELO, G. T ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Um olhar para uma experiência no programa de residência pedagógica no âmbito da disciplina de prática docente</b>. Em: VIII Seminário de Histórias e Investigações de/em aulas de matemática, 2022. Anais do Seminário de Histórias e Investigações de/em aulas de matemática, 2021. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>LUZ, A. M. ; SAURIN, J. M. ; SILVA, A. L. R. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE ; CHINELLATO, T. G.. <b>O processo de planejar atividades inclusivas: uma experiência no contexto universidade-escola</b>. Em: VIII Seminário de Histórias e Investigações de/em aulas de matemática, 2022. Anais do Seminário de Histórias e Investigações de/em aulas de matemática, 2021. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MELO, A. M.; SA, R. M.. <b>Sistemas conectados: atividade complexa interligando LIBRAS, Língua Portuguesa e Língua Inglesa</b>. Em: 3º Seminário de Estudos Linguísticos do Vale do Paraíba, 2021, Campos do Jordão. Múltiplas leituras: entrelaçamentos em Linguagens, Literatura e Educação. Campos do Jordão: Anais Eletrônicos, v. I, p. 154-154, 2021. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SANTOS, A. C. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>A produção de uma tarefa com produção de vídeos pelos estudantes no contexto da pandemia</b>. Em: VIII Seminário de Histórias e Investigações de/em aulas de matemática, 2022. Anais do Seminário de Histórias e Investigações de/em aulas de matemática, 2021. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SANTOS, E. V. N. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>Uso do celular inteligente (smartphone) nos processos de ensino e de aprendizagem de geometria espacial: avaliando possibilidades e limitações</b>. Em: I SEMINÁRIO TIC E EDUCAÇÃO, 2021, Capivari - SP. ANAIS DO I SEMINÁRIO TIC E EDUCAÇÃO, v. 1, p. 25-25, 2021. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SANTOS, I. M. C. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Apropriação das tecnologias digitais: reflexões sobre práticas de professores que se (re)inventaram na pandemia</b>. Em: VIII Seminário de Histórias e Investigações de/em aulas de matemática, 2022. Anais do Seminário de Histórias e Investigações de/em aulas de matemática, 2021. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; FERRASSO, T. O.. <b>Desdobramentos de uma experiência de lesson study híbrido em um curso de formação inicial</b>. Em: Seminário Internacional de Lesson Study no Ensino de Matemática, 2020. Seminário Internacional de Lesson Study no Ensino de Matemática, 2020. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FEITOSA, W. R. <b>PROJETO CATANDO HISTÓRIAS ? INTEGRANDO O CONHECIMENTO SOBRE LOGÍSTICA REVERSA COM A HISTÓRIA DA CIDADE DE SÃO PAULO</b>. Em: Engema, 2020, São Paulo. XXII Engema, 2020. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FEITOSA, W. R.; SILVA, S. C. E. ; SANTOS, S. R. ; PATROCINIO, F. O.. <b>PROPOSAL FOR A CHATBOT PROTOTYPE IN THE PLANT HEALTH DEPARTMENT OF BRAZILIAN MINISTRY OF AGRICULTURE</b>. Em: IEEE / ITU International Conference on Artificial Intelligence for Good, 2020. 2020 IEEE / ITU International Conference on Artificial Intelligence for Good, 2020. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Lis no peito e Todos contra D@nte: com a palavra os leitores juvenis</b>. Em: VI CELLIJ, 2020, Presidente Prudente. Caderno de Resumos VI CELLIJ. Tradição, (r)evolução e (re)invenção: a literatura do século XXI. Presidente Prudente: UNESP, v. 1, p. 375-375, 2020. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Gentili Santos, Geovana ; FERREIRA DA SILVA, V. R.. <b>A velhota cambalhota, de Sylvia Orthof: um novo olhar sobre velhice</b>. Em: VI CELLIJ, 2020, Presidente Prudente. Caderno de Resumos VI CELLIJ. Tradição, (r)evolução e (re)invenção: a literatura do século XXI. Presidente Prudente: UNESP, v. 1, p. 461, 2020. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LOURENÇO, C. E. ; FEITOSA, W. R. ; SILVA, S. C. E. ; REZENDE, L. H.. <b>An experimental approach to analyzing gender, sex appeal and idealized bodies in advertising</b>. Em: EMAC, 2020, Zagreb. EMAC Regional Conference, 2020. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>QUEIROGA, J. C. S. ; SILVA, S. C. E. ; FEITOSA, W. R.. <b>Desenvolvimento de uma nova plataforma para venda de lanches saudáveis para escolas via E-Commerce em Portugal</b>. Em: CLAV 2020, 2020, São Paulo. CLAV 2020, 2020. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ROMAGNOLI, A. J.; CASAGRANDE, N. M.. <b>Contribuição da Teoria dos Campos de Bourdieu para o processo de análise de políticas públicas com foco no estágio pré-decisional</b>. Em: Encontro Internacional de Sociologia, Política, Direito e História intelectual, 2020, São Paulo - SP. Anais de Resumos do Encontro Internacional de Sociologia, Política, Direito e História Intelectual 2020. São Paulo: Sociologia, Política e Cidadania, v. 1, p. 261-262, 2020. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARBOSA NETO, A. ; BLANCO, B. ; GUERRA, L. D. S.. <b>Políticas Nacionais de Saúde Bucal e Alimentação: atuação interprofissional</b>. Em: 15º CONGRESSO INTERNACIONAL DE ODONTOLOGIA DA ANHANGUERA SANTANA e I EASA Encontro das Áreas de Saúde da Anhanguera, 2019, São Paulo. PAINEL I EASA, 2019. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARROS, A. P. R. M.; SOUZA, M. F.. <b>Apropriações e uso de vídeos do YouTube em aulas de Matemática</b>. Em: VIII Semana Nacional de Ciências e Tecnologia & Mostra de Arte e Cultura do IFSP ? Câmpus Hortolândia, 2019, Hortolândia. VIII Semana Nacional de Ciências e Tecnologia & Mostra de Arte e Cultura do IFSP ? Câmpus Hortolândia, 2019. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Práticas culturais de planejar e avaliar: um olhar a partir da complexidade da sala de aula</b>. Em: VII Seminário de Histórias e Investigações de/em aulas de matemática, 2019, Campinas. A necessidade de uma mudança de foco na Formação de Professores e o papel do Conhecimento Especializado do professor e dos contextos formativos: caderno de resumos, 2019. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BLANCO, B.; CROMACK, L.. <b>IMPLANTAÇÃO DO PROGRAMA NACIONAL DE ALIMENTAÇÃO ESCOLAR (PNAE) NO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE SÃO PAULO (IFSP)</b>. Em: VIII Congresso Paulista de Nutrição e VIII Encontro de Nutricionistas, 2019, São Paulo. VIII Congresso Paulista de Nutrição e VIII Encontro de Nutricionistas, 2019. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FEITOSA, W. R.; BARDALOTTE, L. F.. <b>ANÁLISE COMPARATIVA DO USO DE REDES SOCIAIS PARA RELACIONAMENTO COM O CIDADÃO EM INSTITUIÇÕES PÚBLICAS</b>. Em: VII Congresso de Iniciação Científica do IFSP Itapetininga, 2019, Itapetininga. VII Congresso de Iniciação Científica do IFSP Itapetininga, 2019. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Lis no peito e Todos contra D@ante: com a palavra os leitores juvenis</b>. Em: 8º Seminário de Literatura Infantil e Juvenil - (R)esistências literárias na contemporaneidade, 2019, Florianópolis. Seminário de Literatura Infantil e Juvenil (8. : 2019 : Florianópolis, SC). VIII Seminário de Literatura Infantil e Juvenil (VIII SLIJ) e IV Seminário Internacional de Literatura Infantil e Juvenil e Práticas de Mediação Literária (IV SELIPRAM) : (R)es(x), v. 1, p. 232-233, 2019. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; Gentili Santos, Geovana ; OLIVEIRA, K.. <b>A literatura galega para infância e juventude e a configuração de um sistema</b>. Em: 8º Seminário de Literatura Infantil e Juvenil - (R)esistências Literárias na contemporaneidade, 2019, Florianópolis (SC). Seminário de Literatura Infantil e Juvenil (8. : 2019 : Florianópolis, SC). VIII Seminário de Literatura Infantil e Juvenil (VIII SLIJ) e IV Seminário Internacional de Literatura Infantil e Juvenil e Práticas de Mediação Literária (IV SELIPRAM) : (R)es(x), v. 1, p. 65-66, 2019. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GUIMARAES, R. C. C. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>Uso do celular inteligente (smartphone) na elaboração de conjecturas e provas em geometria: avaliando possibilidades e limitações</b>. Em: VII CONGRESSO DE INICIAÇÃO CIENTÍFICA DO IFSP ITAPETININGA, 2019, Itapetininga-SP. Anais do VII CONGRESSO DE INICIAÇÃO CIENTÍFICA DO IFSP ITAPETININGA, 2019. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Apontamentos sobre os rumos do Romance Histórico hoje: o debate entre Fredric Jameson e Perry Anderson</b>. Em: III EPLIN - Encontro de Professores de Línguas 2019, 2019, Caraguatatuba. Caderno de Resumos do III EPLIN - Encontro de Professores de Línguas 2019, p. 19-20, 2019. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; MARTINS, T. H. B.. <b>Reflexões sobre a adaptação de recursos didáticos do curso de inglês do Programa E-tec Idiomas sem Fronteiras a cursos semipresenciais</b>. Em: II SELIV ? Seminário de Estudos Linguísticos do Vale do Paraíba ? ?Língua, Literatura e Ensino: diálogos acadêmico-pedagógicos?, 2019, Campos do Jordão. ?Língua, Literatura e Ensino: diálogos acadêmico-pedagógicos?, v. I, p. 54-54, 2019. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>LOPES, INGRID ANELISE. <b>Trajetória escolar de estudantes com deficiência intelectual em escola municipal paulistana</b>. Em: 2nd International Conference on Research in Education, 2019, Porto. 2nd International Conference on Research in Education, p. 1-1, 2019. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARTINS, T. H. B.; BARROS, L. B.. <b>ANÁLISE DE LIVROS DIDÁTICOS PARA O ENSINO/APRENDIZAGEM DA LÍNGUA INGLESA: FOCO NA ORALIDADE</b>. Em: 10º Congresso de Inovação, Ciência e Tecnologia do IFSP, 2019, Sorocaba/SP. Anais do 10º Congresso de Inovação, Ciência e Tecnologia do IFSP, 2019. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Munhoz, Igor Polezi; AMANCIO, T. O. ; AKKARI, A. C. S. ; SANTOS, N. M. B. F. ; Nunes, Danilo. <b>Strategy for the application of sustainability concepts in universities: the case of the green roof in PUC-SP</b>. Em: 5th Symposium on Ethics and Social Responsibility Research, 2019, Lisboa. Linking Ethics, Social Responsibility and Sustainability: Challenges for Science and Practice, v. 1, 2019. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>A POLÍTICA HABITACIONAL NO BRASIL (1988-2009) ATRAVÉS DA TEORIA DO EQUILÍBRIO PONTUADO: O PROJETO MORADIA</b>. Em: XVIII Semana de Pós-Graduação em Ciências Sociais: Culturas, Democracias e Autoritarismos, 2019, Araraquara. Anais de trabalhos completos da XVIII Semana de Pós-graduação em Ciências Sociais - UNESP/FCLAR, p. 1072-1086, 2019. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ROSSETI, W.; BENEDITO-SILVA, A. A.. <b>Geometric and estimated duration of the day: a comparative study with applications in chronobiology</b>. Em: XV Latin American Symposium on Chronobiology, 2019, Colonia del Sacramento. XV Latin American Symposium on Chronobiology - Report of Contributions, 2019. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SANTOS, N. M. B. F. ; JUER, M. ; Munhoz, Igor Polezi ; AKKARI, A. C. S. ; MOTTA, R. G. ; MIYASHIRO, M. K.. <b>Mentoring Process: An Assessment of Career, Psychosocial Functions and Mentor Role Model</b>. Em: Brazilian Technology Symposium - BTSym'19, 2019, Campinas. Emerging Trends and Challenges in Technology, p. 1-2, 2019. <a href="http://dx.doi.org/10.13140/RG.2.2.17682.20163" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SGORLON, A. B. ; DUPIM, I. S. ; BRUNO, R. D.. <b>Measure of indoor Radon-222 concentrations in Cajati, São Paulo - Brazil</b>. Em: 2019 International Nuclear Atlantic Conference - INAC 2019, 2019, Santos, SP. Proceedings of the INAC 2019: international nuclear atlantic conference. Nuclear new horizons: fueling our future. Viena: ABEN, v. 50, 2019. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SOUZA, L. R. ; SANTOS, T. R. ; NAKAMICHI, A. ; PEREIRA, E. F. M.. <b>Frações: uma experiência de ensino com réguas</b>. Em: MOCCIF19 - 4ª Edição da Mostra Científica e Cultural do IFSP Suzano, 2019, Suzano. MOCCIF19 - 4ª Edição da Mostra Científica e Cultural do IFSP Suzano. Suzano, 2019. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. Amico ; F. Scazza ; P. E. S. Tavares ; G. Valtolina ; G. Del Pace ; W. Kwon ; M. Inguscio ; M. Zaccanti ; G. Roati. <b>Time resolved study of competing instabilities on a Fermi gas quenched to strong repulsion</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 590, 2018. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>A. D.Garcia-Orozco ; A. R. Fritsch ; A. N. Novikov ; P. E. S. Tavares ; G. Roati ; G. D. Telles ; V. S. Bagnato. <b>Anomalous expansion of turbulent Bose-Einstein condensates</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 599, 2018. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>A. R. Fritsch ; P. E. S. Tavares ; F. A. J. Vivanco ; G. D. Telles ; V. S. Bagnato ; E. A. L. Henn. <b>Thermodynamic measurement of the sound velocity of a Bose gas across the Bose-Einstein condensation</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 600, 2018. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>AMARAL, B. S.; SOUZA, D. H. F. ; CASS, Q. B.. <b>A direct assay for measuring the activity of phosphoenolpyruvate carboxykinase (PEPCK) by liquid chromatography-tandem mass spectrometry</b>. Em: 41ª Reunião Anual da Sociedade Brasileira de Química, 2018, Foz do Iguaçu. Livro de resumos - 41ª RASBQ, p. 272-272, 2018. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>AMARAL, B. S.; SOUZA, D. H. F. ; CASS, Q. B.. <b>A direct assay for measuring the activity of phosphoenolpyruvate carboxykinase (PEPCK) and screening of ligands by LC-MS</b>. Em: 1st Brazilian Symposium on Sustainable Chemistry - BSSC, 2018, São Pedro. Abstract Book, 2018. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>E. M. Gutierrez ; P. E. S. Tavares ; H. V. Duque ; P. L. Mazo ; G. A. Neto ; J. A. Scarpin ; K. M. Farias ; V. S. Bagnato. <b>Vortex Lattice Formation in a Stirred Bose-Einstein Condensate</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 582, 2018. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>F. J. Vivanco ; A. R. Fritsch ; A. N. Novikov ; P. E. S. Tavares ; A. D.Garcia-Orozco ; G. D. Telles ; V. S. Bagnato. <b>Turbulent cascades in out-of-equilibrium Bose gas</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 351, 2018. <a href="http://dx.doi.org/10.1007/978-3-642-37569-9_14" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A literatura para jovem no Brasil e na Galícia: considerações sobre a constituição do subsistema literário</b>. Em: V CIELLI ? Colóquio Internacional de Estudos Linguísticos e Literários, 2018, Maringá. V CIELLI- Caderno de resumos - Simpósios - Estudos Literários, p. 121-121, 2018. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; Gentili Santos, Geovana ; OLIVEIRA, K.. <b>Literatura infantil e juvenil: histórias, análises e estudos comparados</b>. Em: V CIELLI ? Colóquio Internacional de Estudos linguísticos e literários, 2018, Maringá. Caderno de Resumos dos Simpósios ? Estudos Linguísticos, v. 1, p. 17-18, 2018. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; MARTINS, T. H. B.. <b>O curso de Língua Inglesa do Programa E-tec Idiomas sem Fronteiras oferecido como Formação Inicial e Continuada no campus São Paulo-Pirituba do IFSP: percursos, adaptações e rumos possíveis</b>. Em: IX JEALAV Jornada sobre Ensino-Aprendizagem de Línguas em Ambientes Virtuais - Metodologias Ativas e Ensino de Línguas, 2018, São Paulo. Caderno de Resumos do IX JEALAV - FFLCH-USP, p. 35-35, 2018. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILACO, F. L.. <b>Questões sobre o ensino de Literaturas em Língua Inglesa nas licenciaturas em Letras da UFMS e do IFSP (campus São Paulo-Pirituba): a experiência da construção das ementas</b>. Em: VII EIEL - Encontro Internacional de Estudos Literários, 2018, Brasília. Caderno de Resumo do VII EIEL - Encontro Internacional de Estudos Literários, p. 19-19, 2018. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILACO, F. L.. <b>A Experiência Contemporânea e a Literatura no Ensino Superior</b>. Em: XVI Seminário de Estudos Literários - Literatura para quê?, 2018, Assis. Anais do XIV SEL - SEMINÁRIO DE ESTUDOS LITERÁRIOS, 2018. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>JOAO, M. C. A. ; KRIEGLER, N. ; PIMENTA, C. E. R. ; SANTOS, L. C. M. ; PINHEIRO, M. A.A.. <b>Efeito da heteroquelia em análises de crescimento relativo: o caso do caranguejo Ucides cordatus (Linnaeus, 1763)</b>. Em: X Congresso Brasileiro sobre Crustáceos (X CBC), 2018, Recife. X Congresso Brasileiro sobre Crustáceos (X CBC), 2018. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Kilvia M. Farias ; Emmanuel D. M. Gutierrez ; Patricia C. M. Castilho ; Pedro E. S. Tavares ; Humberto V. Duque ; Giacomo Roati ; Vanderlei S. Bagnato. <b>Studying Quantum Turbulence in Two Species Superfluid: The State of the Art of NaK System</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 597, 2018. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>KRIEGLER, N. ; PAULA, C.A. ; MASUNARI, S. ; SANTOS, L.C.M. ; PINHEIRO, M.A.A.. <b>COMPOSIÇÃO DA ASSEMBLEIA DE CARANGUEJOS CHAMA-MARÉS (OCYPODIDAE: GELASIMINAE) EM DUAS FEIÇÕES DE MANGUEZAL COM DIFERENTES NÍVEIS DE INUNDAÇÃO</b>. Em: X Congresso Brasileiro sobre Crustáceos, p. 053, 2018. <a href="http://dx.doi.org/10.21826/2178-7581X2018053" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>KRIEGLER, N. ; SANTOS, L.C.M. ; PINHEIRO, M.A.A.. <b>TAMANHO IDEAL DO QUADRADO DE AMOSTRAGEM PARA CARANGUEJOS CHAMA-MARÉS (OCYPODIDAE: GELASIMINAE), EM DIFERENTES FITOFISIONOMIAS DE MANGUEZAL</b>. Em: X Congresso Brasileiro sobre Crustáceos, p. 052, 2018. <a href="http://dx.doi.org/10.21826/2178-7581X2018052" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LOURENÇO, C. E. ; FEITOSA, W. R. ; REZENDE, L. H.. <b>A imagem da mulher nas propagandas de cerveja e a atitude em relação à marca, à propaganda e na intenção de compra do produto ? Um experimento comparando o efeito da idealização</b>. Em: CLAV, 2018, São Paulo. CLAV, 2018. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MENDONCA, F. C. <b>A logística reversa e suas aplicações</b>. Em: XXXI Fórum de Pós-graduação do Centro Universitário Hermínio Ometto - FHO/UniAraras, 2018, Araras/SP. XXXI Fórum de Pós-graduação do Centro Universitário Hermínio Ometto, 2018. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>OLIVEIRA, C. A. S.; MARIOTO, R. R.. <b>O PROEJA NO IFSP E UMA PERSPECTIVA PARA O CÂMPUS SÃO PAULO PIRITUBA</b>. Em: III Encontro de Iniciação Científica e Pós-Graduação IFSP ? Campus São Paulo, 2018, São Paulo. O PROEJA NO IFSP E UMA PERSPECTIVA PARA O CÂMPUS SÃO PAULO PIRITUBA, 2018. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>P. E. S. Tavares; A. R. Fritsch ; G. D. Telles ; M. S. Hussein ; F. Impens ; R. Kaiser ; V. S. Bagnato. <b>Matter wave speckle observed in an out-of-equilibrium quantum fluid</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 591, 2018. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>P. E. S. Tavares; E. M. Gutierrez ; H. V. Duque ; P. L. Mazo ; G. A. Neto ; J. A. Scarpin ; K. M. Farias ; V. S. Bagnato. <b>A two species superfluid system to study quantum phases transitions in an atomic vortex lattice</b>. Em: 26th International Conference on Atomic Physics, 2018, Barcelona. Book of abstracts, p. 592, 2018. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>ROSSETI, W.; PEDRAZZOLI NETO, M. ; BENEDITO-SILVA, A. A.. <b>ESTIMATIVA DA DURAÇÃO EFETIVA DO DIA E A SUA IMPORTÂNCIA PARA A CRONOBIOLOGIA</b>. Em: Simpósio Brasileiro de Cronobiologia, 2018, Tijucas do Sul. SBCrono 2018, 2018. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SANTOS, L. C. M.; PINHEIRO, M. A.A. ; NOVAES, M. C. L. C. E.. <b>?PERFIL SOCIOECONÔMICO DOS PESCADORES DO CARANGUEJO-UÇÁ, UCIDES CORDATUS (LINNAEUS, 1763), NA CIDADE DE CANANÉIA, LITORAL SUL DO ESTADO DE SÃO PAULO.?</b>. Em: XVI Congresso da Sociedade Internacional de Etnobiologia, XII Simpósio Brasileiro de Etnobiologia e Etnoecologia,, 2018. Anais XVI Congresso da Sociedade Internacional de Etnobiologia, 2018. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>TOREZIN, Flávia Roberta. O conceito de interesse na formação de professores do Ensino Secundário Brasileiro nas décadas de 1950 ? 1960. <b>In: Congresso Iberoamericano de Historia de La Educacion Latinoamericana, 2018, Montevideo. Actas do CIHELA</b>. v. 1, 2018. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMARAL, B. S.; SIMOES, B. R. L. ; SOUZA, D. H. F. ; CASS, Q. B.. <b>Phosphoenolpyruvate carboxykinase immobilized on to magnetic beads for prospecting ligands</b>. Em: 46th World Chemistry Congress, 2017, São Paulo. Anais - IUPAC 2017, 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMICO, A. ; SCAZZA, F. ; VALTOLINA, G. ; TAVARES, P. E. S. ; BURCHIANTI, A. ; FORT, C. ; INGUSCIO, M. ; ZACCANTI, M. ; ROATI, G.. <b>Spin response and metastability of a strongly repulsive Fermi gas of ultracold atoms</b>. Em: Conference on Lasers and Electro-Optics Europe & European Quantum Electronics Conference (CLEO/EQEC), 2017, Munich. Book of abstracts, p. 135, 2017. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AMICO, A. ; TAVARES, P. E. S. ; VALTOLINA, G. ; SCAZZA, F. ; BURCHIANTI, A. ; FORT, C. ; INGUSCIO, M. ; ZACCANTI, M. ; ROATI, G.. <b>Spin dynamics and collective excitations in ultracold repulsive Fermi gases</b>. Em: INO annual symposium 2017: shedding light on the quatum world, 2017, Trento. Book of abstracts, 2017. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Audrey A Bertolini ; BLANCO, B. ; Larissa V. Tonacio ; PESSOA, L. S.. <b>Perfil alimentar dos alunos integrados do Instituto Federal de Barretos</b>. Em: III Congresso de Educação Profissional e Tecnológica ? CONEPT, 2017, Cubat]ao, SP. III Congresso de Educação Profissional e Tecnológica ? CONEPT, 2017. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FAGUNDES, T. S. F. ; MACEDO, A. L. ; DUTRA, K. D. B. ; RIGATO, D. B. ; JIMENEZ, P. C. ; COSTA-LOTUFO, L. V. ; SOARES, A. R. ; AMARAL, B. S. ; CASS, Q. B. ; VASCONCELOS, T. R. A. ; EPIFANIO, R. A. ; VALVERDE, A. L.. <b>Chemical prospection and cytotoxic activity of the octocoral Phyllogorgia dilatata</b>. Em: 10th European Conference on Marine Natural Products, 2017, Creta. 10th European Conference on Marine Natural Products, 2017. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A representação cultural na literatura juvenil no Brasil e na Galícia: diferenças e semelhanças</b>. Em: II Encontro de Professores de Línguas do Litoral Norte - EPLIN, 2017. Caderno de Resumos - II EPLIN, v. 1, p. 13-14, 2017. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>INTERVENÇÕES LITERÁRIAS: A HORA E A VEZ DO LEITOR</b>. Em: 8ª Semana de Ciência e Tecnologia Câmpus Campos do Jordão, 2017, Campos do Jordão. Anais 8ª Semana de Ciência e Tecnologia Câmpus Campos do Jordão, v. 1, p. 30-30, 2017. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>OS ESCRITORES DO IFSP DE CAMPOS DO JORDÃO: VISÕES DA LITERATURA</b>. Em: 8ª Semana de Ciência e Tecnologia Câmpus Campos do Jordão, 2017, Campos do Jordão. Anais 8ª Semana de Ciência e Tecnologia Câmpus Campos do Jordão, v. 1, p. 82-82, 2017. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; Gentili Santos, Geovana. <b>As Literaturas Infantis e Juvenis na Espanha - um caso particular</b>. Em: II Encontro de Professores de Línguas do Litoral Norte - EPLIN, 2017, Caraguatatuba. Caderno de Resumos - II EPLIN 2017, v. 1, p. 6-6, 2017. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>HOMEM, THIAGO P.D.; PERICO, DANILO H. ; Santos, Paulo E. ; BIANCHI, R. A. C. ; de Mantaras, Ramon L.. <b>Qualitative Case-Based Reasoning for Humanoid Robot Soccer</b>. Em: Twenty-Fifth International Conference on Case-Based Reasoning (ICCBR 2017), 2017, Trondheim, Norway. Proceedings of the 24th International Conference on Case-Based Reasoning. Trondheim, Norway, v. 2028, p. 290-290, 2017. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>LOPES, INGRID ANELISE; PRIETO, R. G.. <b>Garantia de acesso, permanência e aprendizagem por alunos com deficiência intelectual nas classes comuns segundo produções acadêmicas</b>. Em: III Seminário internacional (cooperação Brasil- Quebec) diversidade e educação inclusiva: perspectivas interdisciplinares e interepistêmicas, 2017, Porto Seguro/BA. Anais do III Seminário internacional (cooperação Brasil- Quebec) diversidade e educação inclusiva: perspectivas interdisciplinares e interepistêmicas, p. 27-27, 2017. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LOPES, INGRID ANELISE; PRIETO, R. G.. <b>Acesso, permanência e aprendizagem escolar por alunos com deficiência intelectual</b>. Em: XII Encuentro Iberoamericano de Educación, 2017, Alcalá de Henares. Actas del XII Encuentro Iberoamericano de Educación. Alcalá de Henares/Guadalajara, p. 56-57, 2017. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MUNHOZ, I. P.; SEVEGNANI, F. ; AMANCIO, T. O.. <b>Telhado verde: um estudo de implantação na Faculdade de Ciências Exatas e Tecnologia da PUC-SP</b>. Em: 26º Encontro de Iniciação Científica da PUC-SP, 2017, São Paulo. Anais do 26º Encontro de Iniciação Científica da PUC-SP, 2017. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Módolo, L. P. <b>A BIOPOLÍTICA SOB O REGIME DE ACUMULAÇÃO FLEXÍVEL</b>. Em: XVI Semana de Pós-Graduação em Ciências Sociais FCLAr/UNESP, 2017, Araraquara. Democracia : Caderno de resumos da XVI Semana de Pós-Graduação em Ciências Sociais ; Araraquara, 2017 (Brasil), p. 260-260, 2017. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Módolo, L. P. <b>A biopolítica de Antonio Negri: um caso de bios sem zoé</b>. Em: XXXI Congreso ALAS 2017, 2017, Montevideo. Las encrucijadas abiertas de América Latina. La sociología en tiempos de cambio. Montevideo: Asociación LatinoAmericana de Sociología, p. 2081-2081, 2017. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>'Formação de líderes: a importância da liderança para os resultados de uma organização pública'</b>. Em: III CONGRESSO DE GESTÃO E POLÍTICAS PÚBLICAS, 2017, Osasco. III CONGRESSO DE GESTÃO E POLÍTICAS PÚBLICAS, 2017. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BAGÉ, I. B.; LIMA, M. A. G.. <b>A Trigonometria nas Marés: Uma proposta de trabalho com funções cosseno e seno utilizando as tecnologias digitais</b>. Em: XIX Conferência GPIMEM: Pesquisa e Formação, 2016, Rio Claro. Anais da XIX Conferência do GPIMEM. Rio Claro, v. 1, p. 1-1, 2016. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BATISTA, R. A. W. ; SANTOS, L. C. M. ; DAMASIO NETO, J. B. ; PINHEIRO, M. A.A.. <b>Estrutura populacional e potencial extrativo do caranguejo-uçá Ucides cordatus em manguezais sobre influência antrópica (Cananéia ? SP)</b>. Em: XXVIII Congresso de Iniciação Científica da UNESP, 2016, Registro. Anais XXVIII Congresso de Iniciação Científica da UNESP, 2016. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BLANCO, B.; SOUZA, M. C. ; SANTOS, P. A. ; COSTA, R. S. S.. <b>Grupo de Atendimento as Gestantes e projeto de implementação e acompanhamento da Rede Cegonha ? Importância da Reunião Técnica e relato de experiência da equipe técnica da UBS Novo Horizonte no Município de Carapicuíba</b>. Em: VIII Fórum de Promoção de Saúde e V Encontro de experiências bem sucedidas em promoção da alimentação saudável, 2016, São Paulo. VIII Fórum de Promoção de Saúde e V Encontro de experiências bem sucedidas em promoção da alimentação saudável, 2016. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>DAMASIO NETO, J. B. ; BATISTA, R. A. W. ; PINHEIRO, M. A.A. ; SANTOS, L. C. M.. <b>Análise temporal (2003-2015) da produção pesqueira do caranguejo-uçá Ucides cordatus em Cananéia, litoral sul de São Paulo</b>. Em: XXVIII Congresso de Iniciação Científica da UNESP, 2016, Registro. Anais XXVIII Congresso de Iniciação Científica da UNESP, 2016. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FEITOSA, W. R.; MAXIMIANO, C. R.. <b>Um estudo de caso sobre a gestão de portfólio de projetos por meio de um escritório de projetos ? o caso da TECBAN</b>. Em: 13° CONTECSI, 2016, São Paulo. 13° CONTECSI, v. 13, 2016. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Jovens em conflitos - uma análise comparativa entre a narrativa juvenil brasileira e galega</b>. Em: Congresso Internacional 'Guerras e conflitos sociais de ontem e hoje (Literatura e Arte)', 2016, Santiago de Compostela. Guerras e Conflitos sociais de ontem e hoje (Literatura e Arte) - Resumos e CV, v. 1, p. 35-35, 2016. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A Leitura e a Literatura para jovens no COTUCA - reflexões iniciais</b>. Em: 7º Seminário de Literatura Infantil e Juvenil. II Seminário Internacional de Literatura Infantil e Juvenil e Práticas de Mediação Literária, 2016, Florianóplis. Caderno de Resumos. 7º Seminário de Literatura Infantil e Juvenil. II Seminário Internacional de Literatura Infantil e Juvenil e Práticas de Mediação Literária. Florianópolis: UFSC, UNICSUL, v. 1, p. 193-194, 2016. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A Literatura para jovens - uma produção em destaque</b>. Em: 7º Seminário de Literatura Infantil e Juvenil. II Seminário Internacional de Literatura Infantil e Juvenil e Práticas de Mediação Literária, 2016, Florianópolis. Cadernos de Resumos. 7º Seminário de Literatura Infantil e Juvenil. II Seminário Internacional de Literatura Infantil e Juvenil e Práticas de Mediação Literária. Florianópolis: UFSC; UNICSUL, v. 1, p. 289-289, 2016. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FRITSCH, A. R. ; TAVARES, P. E. S. ; VIVANCO, F. A. J. ; Telles, G. D. ; BAGNATO, V. S. ; HENN, E. A. L.. <b>Global thermodynamic variables: Determination of the first and second sound velocity of a Bose gas</b>. Em: 25th International Conference on Atomic Physics (ICAP), 2016, Seoul. Book of abstracts, 2016. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARTINS, T. H. B.; SILVA, V. L. T. ; CONSOLO, D. A.. <b>EPPLE and teachers' language domain: Challenges, development and the implementation of a language proficiency examination</b>. Em: Georgetown University Round Table (GURT), 2016, Washington - Estados Unidos. Useful Assessment and Evaluation in Language Education, v. 1, p. 52-52, 2016. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MATSUNAGA, A. M. F. ; PINHEIRO, M. A.A. ; MASUNARII, S. ; SANTOS, L. C. M. ; SOUZA, C. A. ; PIMENTA, C. E. R. ; RIO, J. P. P. ; ANGELONI, M. T. ; MELO, M. S. ; JOAO, M. C. A. ; ADAM, C. L. ; LEITE, R. D. ; MAROCHI, M. Z.. <b>Produção pesqueira do caranguejo-uçá, Ucides cordatus (Linnaeus, 1763) (Brachyura: Ucididae): Variação espacial do potencial extrativo em manguezais da ESEC Juréia (SP) e PARNA do Superagui (PR)</b>. Em: IX Congresso Brasileiro sobre Crustáceos, 2016, Crato. IX Congresso Brasileiro sobre Crustáceos, 2016. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MENDONCA, F. C.; LOPES, V. H. ; COELHO, W. D. P.. <b>A utilização de um simulador como ferramenta didática em um curso de Engenharia de Produção em uma universidade no interior de São Paulo</b>. Em: XLIV CONGRESSO BRASILEIRO DE EDUCAÇÃO EM ENGENHARIA, 2016, Natal. XLIV CONGRESSO BRASILEIRO DE EDUCAÇÃO EM ENGENHARIA, 2016. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PEDROSO, M. H. ; MORAES, D. T. ; GIANOCARIO, G. F. ; FEITOSA, W. R.. <b>A construção do posicionamento de mercado de localidades turísticas com base nas redes sociais: o uso do Instagram e o caso da cidade de Guararema</b>. Em: Mostra Cultural e Científica do IFSP, 2016, Suzano. Mostra Cultural e Científica do IFSP, 2016. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>PINHEIRO, M. A.A. ; MATSUNAGA, A. M. F. ; MASUNARII, S. ; SANTOS, L. C. M. ; SOUZA, C. A. ; PIMENTA, C. E. R. ; RIO, J. P. P. ; ANGELONI, M. T. ; JOAO, M. C. A. ; ADAM, C. L. ; LEITE, R. D. ; MELO, M. S. ; MAROCHI, M. Z.. <b>Densidade populacional do caranguejo-uçá, Ucides cordatus (Linnaeus, 1763), e seu potencial uso como parâmetro indicador de mudanças climáticas em manguezais do Atlântico Ocidental</b>. Em: IX Congresso Brasileiro sobre Crustáceos, 2016, Crato. IX Congresso Brasileiro sobre Crustáceos, 2016. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>TAVARES, P. E. S.; FRITSCH, A. R. ; VIVANCO, F. A. J. ; OROZCO, A. D. G. ; Telles, G. D. ; IMPENS, F. ; KAISER, R. ; HENN, E. A. L. ; BAGNATO, V. S.. <b>From quantum turbulence to statistical atom optics: new perspectives in speckle matter waves</b>. Em: 25th International Conference on Atomic Physics (ICAP), 2016, Seoul. Book of abstracts, 2016. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Telles, G. D. ; TAVARES, P. E. S. ; CIDRIM, ANDRÉ ; FRITSCH, A. R. ; VIVANCO, F. A. J. ; ALLEN, A. J. ; WHITE, A. C. ; BARENGHI, CARLO F. ; BAGNATO, V. S.. <b>Twisted decay of quadruply quantized vortices in a Bose-Einstein condensate</b>. Em: 25th International Conference on Atomic Physics (ICAP),, 2016, Seoul. Book of abstracts, 2016. </td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>OLIVEIRA, C. A. S. <b>Gerenciamento de Projetos. 2017. (Curso de curta duração ministrado/Extensão)</b>. 0. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>OLIVEIRA, C. A. S. <b>Gerenciamento de Projetos. 2016. (Curso de curta duração ministrado/Extensão)</b>. 0. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>OLIVEIRA, C. A. S. <b>Liderança e Desenvolvimento Pessoal. 2016. (Curso de curta duração ministrado/Extensão)</b>. 0. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

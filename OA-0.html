@@ -1,0 +1,315 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de orientações em andamento'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+1],
+[2017,
+3],
+[2018,
+1],
+[2019,
+7],
+[2020,
+2],
+[2021,
+5],
+[2022,
+31],
+[2023,
+19],
+[2024,
+6]]}]});
+        });
+        </script>
+        
+                <h3>Total de orientações em andamento</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 75<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriana Yui Nohara. <b>Um estudo sobre a língua Uchinaaguchi falada em São Paulo</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alberto F. A. Filho.; Gabriel E. G. Silva; Vinicius S. Silva. <b>Análise da aplicação e controle de indicadores de desempenho na melhoria de processos: Uma perspectiva nos setores nos operacional, logístico e de gestão de estoque</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Fernanda Sena. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Louise Arruda. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Mariana Wingter. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Samuel Luiz Alkimim Nonato. <b>O CRJ como agência de transletramentos em Belo Horizonte/MG</b>. Iniciação científica (Graduando em Letras - Português) - Universidade Federal de Minas Gerais, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amanda Carolina Pereira Rebouças dos Santos. <b>Revitalização do Centro de São Paulo e a Contribuição Governamental</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5682377023513576">Hamilton Carvalho da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Arthur L. R., Henrique F. C., João P. M. Pedro L. A. P. <b>Detecção de Ataques DDoS Através de Aprendizado de Máquina</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruno Vieira Nascimento Cerveira. <b>Parceria Público-privada como Instrumento Facilitador ao Acesso à Saúde</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5682377023513576">Hamilton Carvalho da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Danielle Nascimento Dos Santos De Souza Lira. <b>Relação Clima e Homem: Impactos e consequências na saúde</b>. Iniciação científica (Graduando em Técnico Integrado em Logística) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3428238105973322">Whisner Fraga Mamede</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Eduardo Oliveira Speglis. <b>OS IMPACTOS QUE A ADMINISTRAÇÃO PÚBLICA ATUAL TEM ENFRENTADO FRENTE AO DEBAT POPULAR SOBRE OS DIREITOS E GARANTIAS FUNDAMENTAIS</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5682377023513576">Hamilton Carvalho da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Eliane Cristina Basseto. <b>ESTRUTURAÇÃO DO PROCESSO NA GESTÃO DE COMPRAS DA VITÓRIA AGRO-ATACADO</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Agronegócio) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Geovanna de Sousa Nascimento. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Jaqueline de Carvalho; Maria E. S. Machado; Matheus Rufino. <b>Análise do uso da tecnologia RFID na gestão de estoques: Estudo de caso (título provisório)</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>JONATHAN WILLIAN PEREIRA DA SILVA. <b>Estágio Supervisionado (TELEFONICA BRASIL S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>João Paulo Amaral Lopes. <b>Análise de Viabilidade Técnica e Financeira para o Envase de Biogás Produzido no Campus Pirituba</b>. Iniciação científica (Graduando em Engenharia de Produção) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1645025560656843">Francisco Manoel Filho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>JULIO HENRIQUE CARVALHO DE SOUZA. <b>Estágio Supervisionado (XCELIS CONSULTORIA DE GESTÃO EMPRESARIAL LTDA.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Júlio H. C. Souza; Roberto Felipe Cola. <b>O papel do Engenheiro de Produção em uma empresa de consultoria em gestão da cadeia de suprimentos</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>KATHLEEN JULLY DA SILVA RODRIGUES. <b>Compreensões da Geometria em uma coleção de Livro Didático do Novo Ensino Médio</b>. Iniciação científica (Graduando em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Kedemilson Bezerra de Carvalho. <b>Pessoa Jurídica e ONGs no Desenvolvimento de Produtos Sociais: Um Comparativo sob a Lente da Carga Tributária e de Parcerias no Ordenamento Jurídico Brasileiro</b>. Trabalho de Conclusão de Curso (Graduação em Gestão Pública) - Instituto Federal de Educação Ciência e Tecnologia de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Mayara Amaral dos Santos. <b>Orientação de estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NICOLAS MOREIRA GARCIA. Estágio Supervisionado (BANCO J. <b>SAFRA S.A)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Raphael A. G. Souza; Tamires M. Lopes. <b>A adoção de práticas de Produção mais Limpa em empresas da região de Pirituba (título provisório)</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>TIAGO GRAVINA SENECHEN. <b>Estágio Supervisionado (ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Victor Gomor de Oliveira Eloy. <b>Sistema de monitoramento de biodigestores anaeróbicos por meio de plataformas embarcadas.</b>. Iniciação científica (Graduando em Técnico em Redes de Computadores Integrado) - Instituto Federal de São Paulo - Pirituba, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALANA EDUARDA ROSA DOS REIS SILVA. <b>Estágio Supervisionado (SCHNEIDER ELECTRIC BRASIL LTDA)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alicia de Magalhães Campos. <b>Educação em Engenharia de Produção (Título Provisório)</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANA MARIA DE ALMEIDA CARRARA. <b>Estágio Supervisionado (BANCO PAN S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bianca Leite Pires. <b>Implicações do ensino crítico de inglês em um curso livre de extensão</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruna Michele Fernandes. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Caio Kinio Vintencinque Sugawara; Maíra Silva Conde Fernande. <b>Análise das dificuldades e desafios da implantação de um projeto de Logística Reversa de uma grande empresa de calçados</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CAMILA DOS SANTOS ALMEIDA. <b>Estágio Supervisionado (TORO INVESTIMENTOS S/A)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Camille Gonçalves dos Santos. <b>Ensino de Matemática através de jogos</b>. Iniciação científica (Graduando em Engenharia de Produção) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Eder Everson Soares. <b>Orientação de Estágio Curricular Supervisionado</b>. Orientação de outra natureza. IFSP - Câmpus São Paulo Pirituba, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FELIPE PUCCI XAVIER. <b>Estágio Supervisionado (SIEMENS HEALTHCARE DIAGNÓSTICOS LTDA.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Fernanda Santos Sena. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GABRIEL EDUARDO GARCIA DA SILVA. <b>Estágio Supervisionado (GEOFIX ENGENHARIA E FUNDAÇÕES LTDA.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gabriela Grimaldi Cometti. <b>Plataforma de gerenciamento veterinário de saúde animal para pets</b>. Trabalho de Conclusão de Curso (Graduação em Tecnólogo em Análise e desenvolvimento de sistemas) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GABRIELLE GONCALVES DIAS. <b>Estágio Supervisionado (CONSORCIO CONDOMINIO TAMBORE)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Isabela Jobstraibizer Rita. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Julia de Sena Marques. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Juliana Aparecida Martins. <b>Diálogos entre "letramento" e "alfabetização" em estudos nacionais</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>LARISSA SILVA DOS SANTOS. <b>Estágio Supervisionado (BAYER S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>LARISSA SILVA DOS SANTOS. <b>Estágio Supervisionado (BAYER S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>LARISSA SILVA DOS SANTOS. <b>Estágio Supervisionado (BAYER S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Leonardo Rodrigues de Castro. <b>AMAAI: APLICATIVO MOBILE DE ASSISTÊNCIA ÀS ATIVIDADES DIÁRIAS DO IDOSO</b>. Trabalho de Conclusão de Curso (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Maria Amanda Costa. <b>Redes sociais e ensino de língua inglesa: qual é a língua das redes?</b>. Iniciação científica (Graduando em Licenciatura em Letras Português/Inglês) - IFSP - CÃ¢mpus Pirituba, Instituto Federal de educação, ciência e tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1399854218544805">Ariane Macedo Melo Ferraz</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Maria Amanda Costa. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>MARIA EDUARDA DOS SANTOS MACHADO. <b>Estágio Supervisionado (Livelo S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Michel Conz Fukuda Pereira Alves dos Santos Autogestão. <b>Autogestão nas ocupações estudantis de 2015: uma análise do manual ?Como ocupar um colégio?? do coletivo O Mal Educado à luz das discussões de Paul Singer</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9285380887754398">Maysa Ciarlariello Cunha Rodrigues</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Moacir Silva de Castro. <b>Formação docente, permanência e Êxito de estudantes do IFSP ? uma análise do trancamento e cancelamento de matrículas de estudantes beneficiários de programas de Ações Afirmativa do Câmpus São Paulo Pirituba.</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Rafael Tenório da Silva. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>RAPHAEL AQUINO GONÇALVES DE SOUZA. <b>Estágio Supervisionado (SIEMENS LTDA)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Sarah Carvalho Gonçalves da Silva. <b>Caracterização da paisagem no distrito de Pirituba-Jaraguá: áreas verdes, mudanças e conservação</b>. Iniciação científica (Graduando em Engenharia de Produção) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Shayenne Cristine Alves de Souza. <b>Estágio Supervisionado (Thomson Reuters Brasil Conteúdo e Tecnologia Ltda)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Valdeir Alves da Silva. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LAMANA, Leonardo. <b>Impactos da agenda neoliberal na elaboração e implementação das políticas públicas no Brasil</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0085760610917679">Ricardo Normanha Ribeiro de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Letícia Prado de Andrade. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Lucas Felipe de Souza. <b>O Tabuleiro de Galton: uso de uma simulação para ensino de probabilidade e física moderna no ensino superior</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Instituto Federal de São Paulo, . In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2393092066131485">Caroline Inês Lisevski</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Maria Cristina Alves da Silva. <b>Práticas inovativas no espaço escolar: um relato de experiência no microuniverso do IFSP Pirituba</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Vinícius dos Santos Oliveira Almeida. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Rosana Ramos Cotrim. <b>O Papel dos Atore na Formulação de Regras para as Aquisições Públicas: dinâmicas, conflitos e interesses na definição da nova lei de licitações</b>. Dissertação (Mestrado em Administração) - Universidade Paulista, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. In&iacute;cio: 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9116416315540378">Rosana Ramos Cotrim</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>WILIANA FERREIRA. <b>A PRÁTICA DO EAD NO ENSINO PRESENCIAL</b>. . In&iacute;cio: 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3190403221290930">José Geraldo Basante</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Heloisa Dourado; Isabella Gomes; Camila Bezerra da Silva. <b>The Space Between Us: o silenciamento do subalterno em detrimento à hegemonia de poder no estupro</b>. Trabalho de Conclusão de Curso (Graduação em Letras - Português e Inglês) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Débora Freitas; Juliana de Almeida, Luis Marques;Júlia Felip. <b>Literatura inglesa no ensino médio: uma abordagem crítica dos elementos gótico, narcisista e fáustico da obra "O Retrato de Dorian Gray", de Oscar WIlde</b>. Trabalho de Conclusão de Curso (Graduação em Letras - Português e Inglês) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Eder Everson Soares Júnior. <b>ANÁLISE DO USO DA ORALIDADE E A VISÃO DE LÍNGUA/LINGUAGEM NOS LIVROS DIDÁTICOS PARA O ENSINO/APRENDIZAGEM DA LÍNGUA INGLESA</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Luana Peixoto de Souza Vicakas. <b>Vlogger: lugar de fala e o paradigma no cyberespaço</b>. Iniciação científica (Graduando em Letras - Português e Inglês) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Marina Armani e Milenny Bizarria. <b>Levantamento e análise das colocações da língua geral inglesa e das colocações especializadas na área de investigações criminais: uma contribuição para o ensino de língua inglesa</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Vicente de Paula Fernandes. <b>O belo na literatura gótica</b>. Iniciação científica (Graduando em Letras) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Érico França. <b>Análise da competência intercultural em materiais didáticos de língua inglesa ? proposta de produção de material comunicativo em outras epistemologias</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td><a href="http://lattes.cnpq.br/4636031966719429">Alequexandre Galvez de Andrade</a>. <b>INOVAÇÃO SOCIAL: A SAÍDA PARA UM NOVO CONTRATO SOCIAL</b>. Tese (Doutorado em Administração) - Universidad Columbia del Paraguay, . In&iacute;cio: 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>João Pedro da Silva Bravo. <b>Anatomia do drama</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Murilo Pedreira Souza. <b>Canonização e escolarização da literatura - a influência dos vestibulares</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Stefani Rocha Faleiros. <b>Canonização e escolarização da literatura - a influência dos vestibulares</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Emanuelle Comim. <b>Canonização e escolarização da literatura - a influência do ENEM</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

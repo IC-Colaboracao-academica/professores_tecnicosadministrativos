@@ -1,0 +1,317 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Resumos expandidos publicados em anais de congressos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+9],
+[2017,
+9],
+[2018,
+4],
+[2019,
+7],
+[2020,
+8],
+[2021,
+17],
+[2022,
+6],
+[2023,
+11],
+[2024,
+5]]}]});
+        });
+        </script>
+        
+                <h3>Resumos expandidos publicados em anais de congressos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 76<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G.. <b>Pesquisa & Desenvolvimento de produtos educacionais</b>. Em: XXVII Encontro de Pesquisa Educacional do Nordeste ? Reunião Científica Regional ? ANPEd Nordeste (2024), 2024, São Cristóvão. Anais do XXVII Encontro de Pesquisa Educacional do Nordeste ? Reunião Científica Regional ? ANPEd Nordeste (2024). Rio de Janeiro: ANPEd, v. 1, p. 1-11, 2024. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CORREIA, M. E. M. A. ; FREITAS-DIAS, C. A.. <b>CARACTERÍSTICAS DA CARREIRA DOCENTE EM ADMINISTRAÇÃO: UMA REVISÃO DE LITERATURA</b>. Em: Congresso de Inovação, Ciência e Tecnologia (CONICT), 2024, Barretos-SP. 15º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP - 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Módolo, L. P. <b>Inteligência artificial prestadora de serviços de saúde: sinais do actante suposto saber</b>. Em: 16º Congresso Internacional da Rede Unida, 2024, Santa Maria. Anais do 16º Congresso Internacional da Rede Unida. Porto Alegre: Editora Rede Unida, v. 10, 2024. <a href="http://dx.doi.org/10.18310/2446-4813.2024v10nsup2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PEREIRA, O. H. ; FREITAS-DIAS, C. A.. <b>LEARNING ANALYTICS: UMA REVISÃO INTEGRATIVA DA LITERATURA</b>. Em: Congresso de Inovação, Ciência e Tecnologia (CONICT), 2024, Barretos-SP. 15º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP - 2024, 2024. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SIQUEIRA, L. F. S. ; FREITAS-DIAS, C. A.. <b>CARACTERÍSTICAS DO EMPREENDEDORISMO FEMININO: UMA REVISÃO DE LITERATURA</b>. Em: Congresso de Inovação, Ciência e Tecnologia (CONICT), 2024, Barretos-SP. 15º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2024, 2024. </td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMADEU, M. A. A. ; MOREIRA, H. G. R. ; PAZINATTO,F.A.C.. <b>DESENVOLVIMENTO DE PROTÓTIPO DE SISTEMA PARA AGENDAMENTO DE ALMOÇO PARA O INSTITUTO FEDERAL DE SÃO PAULO CAMPUS BOITUVA</b>. Em: 14º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2023, CAPIVARI-SP. 14º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2023. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ELOY, V. G. O. ; FERREIRA, R. S. ; BASILE, F. R. M.. <b>Sistema de monitoramento de biodigestores anaeróbicos por meio de plataformas embarcadas</b>. Em: 14º CONICT, 2023, Capivari. 14º CONICT, 2023. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FREITAS, L. E. S. ; WORFEL, S. ; TOTOLI, M. F. M. ; CORTONEZI, M. A. H. ; SANTOS, J. G. ; OLIVEIRA, L. V. ; OLIVEIRA, E. T.. <b>PROJETO DE ENSINO DE LIBRAS COM PRODUÇÃO DE MATERIAL DIDÁTICO</b>. Em: X Seminário de Estudos Técnicos e Científicos do Instituto Federal do Paraná - Campus Umuarama - SETEC 2023, 2023, Umuarama. X Seminário de Estudos Técnicos e Científicos do Instituto Federal do Paraná - Campus Umuarama - SETEC 2023, v. 1, p. 246-252, 2023. <a href="http://dx.doi.org/10.5281/zenodo.10050512" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GAMBOA, Y. C. ; DIAS, N. S. ; SOUZA, C. B. ; OLIVEIRA, V. S. A. ; FERREIRA, R. S. ; FERRUZZI, A. J.. <b>Mineração de dados de feedbacks de clientes por meio da apresentação de nuvem de palavras</b>. Em: CONICT - Congresso de Inovação, Ciência e Tecnologia, 2023, Capivari. CONICT - Congresso de Inovação, Ciência e Tecnologia 14º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, v. 14, 2023. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>LIRA, D. N. S. S. ; ROSSETI, W.. <b>ANÁLISE DA OFERTA DE ALIMENTOS MINIMAMENTE PROCESSADOS E ULTRAPROCESSADOS NA REGIÃO DA VILA PIRITUBA</b>. Em: Conict - Congresso de Inovação, Ciência e Tecnologia, 2023, Capivari. Conict - Congresso de Inovação, Ciência e Tecnologia, 2023. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LOPES, L. <b>A EXPERIÊNCIA INTERNACIONAL NA PRODUÇÃO DE TECNOLOGIAS DUAIS PARA USO CIVIL E MILITAR E SEUS DESAFIOS</b>. Em: II Seminário de Pesquisa Marítima, 2023, Rio de Janeiro. II Seminário de Pesquisa Marítima, v. 1, 2023. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARINHO, E. L. ; ALMEIDA, D. L. ; VIEIRA, V. M. ; FERRUZZI, A. J. ; HOMEM, T. P. D.. <b>Análise Preditiva de Mensagens Falsas em Redes Sociais Relacionados à Vacina de Covid-19</b>. Em: CONICT - Congresso de Inovação, Ciência e Tecnologia, 2023, Capivari. CONICT - Congresso de Inovação, Ciência e Tecnologia 14º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2023. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>RODRIGUES, A. L. ; CASAGRANDE, H. F. ; GOMES, J. P. M. ; PASSOS, P. L. A. ; FERREIRA, R. S. ; FERRUZZI, A. J.. <b>Detecção de Ataques DDoS por Meio de Aprendizado de Máquina</b>. Em: Conict - Congresso de Inovação, Ciência e Tecnologia, 2023, Capivari. CONICT - Congresso de Inovação, Ciência e Tecnologia 14º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, v. 14º·, 2023. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ROSSETI, W.; LUZ, D. S. ; OLIVEIRA, J. C. ; ASSUNCAO, S. G. ; COSTA, T. F.. <b>A RELAÇÃO ENTRE O CONSUMO DE ALIMENTOS NOS ESTADOS BRASILEIROS COM A FORMAÇÃO ANTROPOMÉTRICA NO BRASIL</b>. Em: Conict - Congresso de Inovação, Ciência e Tecnologia, 2023, Capivari. Conict - Congresso de Inovação, Ciência e Tecnologia, 2023. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SILVA, J. ; GOMES, G. ; ANDRADE, L. S. ; SILVA, B. T. ; SILVA, V. ; TEIXEIRA, F. O. ; FERREIRA, R. S.. <b>ANÁLISE DE DADOS ABERTOS SOBRE EVASÃO ESCOLAR NOS INSTITUTOS FEDERAIS DE SÃO PAULO</b>. Em: 14º CONICT, 2023, Capivari. 14º CONICT, 2023. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>TOLOTTO, JAQUELINE CRISTINA ; FREITAS-DIAS, C. A.. <b>Avaliação de resultados em educação corporativa: um estudo com organizações que atuam no Brasil</b>. Em: 14º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2023, 2023, Capivari. CONICT - Congresso de Inovação, Ciência e Tecnologia 14º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2023. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BASILE, F. R. M.; CASTRO, L. R. ; NASCIMENTO JUNIOR, L. A. ; FERREIRA, T. S.. <b>AMAAI: Aplicativo Mobile de Assistência às atividades diárias do Idoso</b>. Em: 13º CONICT Congresso de Inovação Ciência e Tecnologia, 2022, São Paulo. AMAAI: APLICATIVO MOBILE DE ASSISTÊNCIA ÀS ATIVIDADES DIÁRIAS DO IDOSO, 2022. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FREITAG, B. B.; FRANCA, A. C. L.. <b>Mulheres Brasileiras 60+: desafios no trabalho e impactos da pandemia da COVID-19</b>. Em: Congresso Brasileiro de Psicologia Organizacional e do Trabalho, 2022, São João Del Rei - MG. X Congresso Brasileiro de Psicologia Organizacional e do Trabalho, 2022. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; SOUZA, J. C.. <b>O tempo tinha sido confinado. O presente era arquivo. A história estava suspensa...?: a pandemia e o eterno presente no romance O Último Gozo do Mundo</b>. Em: VII EICPOG ? Encontro de Iniciação Científica e Pós-Graduação IFSP ? Campus São Paulo, 2022, São Paulo. VII EICPOG ? Encontro de Iniciação Científica e Pós-Graduação IFSP ? Campus São Paulo, 2022. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Marques, V. G. ; Ferraz, R.G ; Souza, A. B. S. ; Ferruzzi, A. J. ; FERREIRA, R. S.. <b>DESENVOLVIMENTO DE UMA APLICAÇÃO WEB PARA DIVULGAÇÃO DE CONTEÚDOS E FERRAMENTAS ACERCA DA CIBERSEGURANÇA</b>. Em: CONFERÊNCIAS DO IFSP, 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022, São Paulo. 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, v. 13, 2022. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, T. H. B.; MATOS, J. P.. <b>Processo de Construção do Currículo de Referência em uma Instituição de Ensino</b>. Em: EduComp 2022, 2022. ANAIS DO SIMPÓSIO BRASILEIRO DE EDUCAÇÃO EM COMPUTAÇÃO (EDUCOMP), v. 1, p. i-282, 2022. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Santos M. A. M. ; FERREIRA, R. S. ; BASILE, F. R. M. ; ZADI, I. C.. <b>Análise comparativa de técnicas de aprendizagem de máquina para classificação de materiais descartáveis</b>. Em: CONFERÊNCIAS DO IFSP, 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2022, São Paulo. 13º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP. São Paulo: CONICT, v. 13, 2022. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AGUIAR, J. L. A. ; IMAFUKU, R. S. ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>UMA ANÁLISE DO USO DO GEOGEBRA NO ESTUDO DO GRÁFICO DA FUNÇÃO g(x) = c + cos(x)</b>. Em: CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021, Cubatão. Anais do CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, J. F. S.; CORTESE, T. T. P. ; YIGITCANLAR, T.. <b>Assessing community vulnerability with disaster risk mapping: the case of São Paulo, Brazil</b>. Em: Knowledge Cities World Summit 2021 - Knowledge Cities for the Anthropocene, 2021, Caxias do Sul, RS. Anais do KCWS, 2021. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BASILE, F. R. M.; Dos Santos, G.M ; MONTANHER, R. C.. <b>Desenvolvimento de arquitetura de plataforma virtual para apoio ao exame de Monitorização Ambulatorial de Pressão Arterial</b>. Em: 12º CONICT Congresso de Inovação Ciência e Tecnologia, 2021, Cubatão. 12º CONICT - Congresso de Inovação, Ciência e Tecnologia EDIÇÃO VIRTUAL, 2021. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BISCAINO, L. G. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>DIFICULDADES APRESENTADAS POR INGRESSANTES NO ENSINO MÉDIO SOBRE NÚMEROS RACIONAIS</b>. Em: 12º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2021, 2021, Cubatão - SP. Anais do CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CARVALHO, M. H. B. R. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>DIFICULDADES APRESENTADAS POR INGRESSANTES NO ENSINO MÉDIO SOBRE A SOMA DOS ÂNGULOS INTERNOS DE UM TRIÂNGULO</b>. Em: 12º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2021, 2021, Cubatão - SP. Anais do CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>COSTA, L. B. ; IMAFUKU, R. S. ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>UMA ANÁLISE DO USO DO GEOGEBRA NO ESTUDO DO GRÁFICO DA FUNÇÃO 𝒈(𝒙) = 𝒃 ⋅ 𝒄𝒐𝒔 (𝒙)</b>. Em: 12º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2021, 2021, Cubatão - SP. Anais do CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GUIMARÃES, R. C. C. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>Uso do smartphone na construção de definições de quadrado</b>. Em: VII ESCOLA DE INVERNO DE EDUCAÇÃO MATEMÁTICA - VII EIEMAT, 2021, Santa Maria - RS. VII Escola de Inverno de Educação Matemática - I Escola de Inverno de Ensino de Física, v. 5, p. 1043-1052, 2021. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>LEITE, I. G. ; VIEIRA, K. S. ; SILVA, S. C. ; SANTOS, L. C. M. ; TEIXEIRA, F. O.. <b>A Modelagem Computacional Como Recurso Educacional Para o Estudo do Câncer</b>. Em: 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021, São Paulo. 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Módolo, L. P.; CARVALHO, S. R.. <b>A GESTÃO DO CUIDADO EM TEMPOS DE COVID-19: A SAÚDE MÓVEL E A BIOPOLÍTICA ALGORÍTMICA</b>. Em: 4º Congresso Brasileiro de Política, Planejamento e Gestão da Saúde, 2021, Virtual. O SUS e o projeto civilizatório: cenário, alternativas e propostas, 2021. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>PAIXAO, B. ; GREGORATO, K. ; TEIXEIRA, F. O.. <b>Inteligência Artificial para a Farmacovigilância em postagens no Twitter relacionadas a Antidepressivos</b>. Em: XVIII Congresso Brasileiro de Informática em Saúde (CBIS 2021), 2021, São Paulo. XVIII Congresso Brasileiro de Informática em Saúde (CBIS 2021), 2021. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>PAIXAO, B. ; GREGORATO, K. ; TEIXEIRA, F. O.. <b>Uso de técnicas da inteligência artificial para reconhecer menções de RAMs em postagens no Twitter</b>. Em: 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021, São Paulo. 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>PEREIRA, L. L. ; SOUZA, S. A. ; PAZINATTO,F.A.C.. <b>Jogos de computadores como arte digital e a expressão sentimental do artista. Um estudo de caso a respeito do jogo ?Sky: Children of the Light?</b>. Em: 12º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2021, 2021, SÃO PAULO. 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SANTOS, E. V. N. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>O USO DO GEOGEBRA 3D NO ESTUDO DE POLIEDROS E SUAS PROPRIEDADES: UMA INVESTIGAÇÃO COM PROFESSORES DE MATEMÁTICA EM FORMAÇÃO INICIAL</b>. Em: 12º Congresso de Inovação, Ciência e Tecnologia do IFSP - 202, 2021, Cubatão - SP. Anais do CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SANTOS, V. M. ; ARAUJO, I. V. ; AUGUSTO, V. ; TEIXEIRA, F. O.. <b>Identificação de manifestações de Clientes de instituições bancárias em redes sociais utilizando inteligência artificial</b>. Em: 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021, São Paulo. 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SILVA, A. O. B. ; ARAUJO, E. S. ; SANTOS, L. C. M. ; TEIXEIRA, F. O.. <b>A Propagação de Informações Sobre o Câncer em Escolas</b>. Em: 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021, São Paulo. 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA, A. P. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>DIFICULDADES DE INGRESSANTES NO ENSINO MÉDIO NA ANÁLISE DE GRÁFICOS DE FUNÇÕES</b>. Em: 12º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2021, 2021, Cubatão - SP. Anais do CONICT - Congresso de Inovação, Ciência e Tecnologia 12º CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2021. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SILVA, E. P.; CAETANO, T. K. F.. <b>12o conict</b>. Em: 12o Congresso de Inovação, Ciência e Tecnologia IFSP 2021, 2021, Cubatão. Carolina em quadrinhos: A Moreninha, Joaquim Manuel de Macedo, 2021. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAMPOS, A. M. ; BERNARDO, Júlio Samuel Sávio ; FERNANDES, M. S. C. ; SANTOS, Luciana Cavalcanti Maia. <b>ANÁLISE DOS BENEFÍCIOS SOCIOECONÔMICOS PROPORCIONADOS PELO CAMPUS SÃO PAULO PIRITUBA DO INSTITUTO FEDERAL DE SÃO PAULO (IFSP): A VISÃO DE ALUNOS</b>. Em: 11º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2020, 2020, Presidente Epitácio-SP. ANAIS 11º CONICT, 2020. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CARVALHO, J. ; SANTOS, L. C. M. ; BERNARDO, Júlio Samuel Sávio. <b>ANÁLISE ESPACIAL E CONSERVAÇÃO DE ÁREAS VERDES NA REGIÃO NOROESTE CIDADE DE SÃO PAULO: UMA CONTRIBUIÇÃO PARA CIDADES MAIS SUSTENTÁVEIS EM TEMPOS DE MUDANÇAS CLIMÁTICAS</b>. Em: 11º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2020, 2020, Presidente Epitácio-SP. ANAIS 11º CONICT, 2020. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FREIRE, G. ; OLIVEIRA, KARINA FERNANDES DE ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>A Patent Study Of Emerging Pharmaceutical Markets: The Case Of Brics Countries</b>. Em: Brazilian Tecnology Symposium, 2020, Campinas. Proceedings BTSym'19, 2020. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GUIMARAES, R. C. C. ; PEREIRA, E. F. M. ; IMAFUKU, R. S. ; VIEIRA, W.. <b>Ensinando frações com o auxílio do Tangram</b>. Em: Congresso Online Nacional de Ensino de Química, Física, Biologia e Matemática, 2020, Recife. Anais CONE-QFBM, 2020. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, T. H. B.; MONTEIRO, M. A. ; BIZARRIA, M.. <b>Levantamento e análise de recursos linguísticos utilizados na área de investigações criminais</b>. Em: 11º Congresso de Inovação, Ciência e Tecnologia do IFSP, 2020, Presidente Epitácio - SP. Anais do 11º Congresso de Inovação, Ciência e Tecnologia do IFSP, 2020. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>NEVES, J. P. C. ; SANTOS, N. M. B. F. ; MUNHOZ, I. P. ; AKKARI, A. C. S. ; Nunes, Danilo ; FERREIRA, M. A.. <b>Human aging and ageism: a study with Brazilian individuals over 40 years old</b>. Em: Brazilian Tecnology Symposium 2019, 2020, Campinas. Proceedings BTSym'19, 2020. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PEREIRA JUNIOR, A. ; TEIXEIRA, F. O. ; Homem, Thiago P. D.. <b>Aplicação de visão computacional para o monitoramento do uso de máscaras de proteção</b>. Em: 11º Congresso de Inovação, Ciência e Tecnologia - CONICT, 2020, Presidente Epitácio. Anais do 11º Congresso de Inovação, Ciência e Tecnologia - CONICT, 2020. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SILVA, L. C. R. ; Homem, Thiago P. D.. <b>Uma aplicação do método Q-learning na navegação de robôs móveis</b>. Em: 11º Congresso de Inovação, Ciência e Tecnologia - CONICT, 2020, Presidente Epitácio. Anais do 11º Congresso de Inovação, Ciência e Tecnologia - CONICT, 2020. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAMPOS, A. M. ; BERNARDO, Júlio Samuel Sávio ; FERNANDES, M. S. C. ; SANTOS, L. C. M.. <b>ELABORAÇÃO DE UM PROTOCOLO METODOLÓGICO PARA ANÁLISE DOS BENEFÍCIOS SOCIOECONÔMICOS PROPORCIONADOS PELO CAMPUS SÃO PAULO PIRITUBA DO IFSP</b>. Em: 10º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2019, 2019, Sorocaba-SP. ANAIS 10º CONICT, 2019. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FABRE, J. M. S. ; CARVALHO, J. ; SANTOS, Luciana Cavalcanti Maia ; BERNARDO, Júlio Samuel Sávio. <b>CARACTERIZAÇÃO DAS ÁREAS VERDES NO ENTORNO DO IFSP CÂMPUS SÃO PAULO PIRITUBA UTILIZANDO GEOTECNOLOGIAS</b>. Em: 10º Congresso de Inovação, Ciência e Tecnologia do IFSP - 2019, 2019, Sorocaba-SP. ANAIS 10º CONICT, 2019. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FEITOSA, W. R. <b>How Social Media Can Contribute to Wellbeing Amongst Autists and Their Families ? A Study based on Virtual Communities Content</b>. Em: Frontiers in services, 2019, Singapore. Frontiers in Services, 2019. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>KRIZEK, J. P. O. ; SANTOS, L. C. M.. <b>CARACTERIZAÇÃO ESPACIAL DE MANGUEZAIS NA REGIÃO DE CANANÉIA, LITORAL SUL DE SÃO PAULO, UTILIZANDO GEOTECNOLOGIAS</b>. Em: XIV Congresso de Ecologia, 2019, São Lourenço. Anais XIV Congresso de Ecologia, 2019. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, T. H. B.; SILVA, E. P.. <b>A trajetória da pesquisa e a produção do conhecimento no IFSP campus Pirituba</b>. Em: 4º Congresso de Pós-Graduação do IFSP, 2019, Sorocaba/SP. Anais do 4º Congresso de Pós-Graduação do IFSP, 2019. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS, L. C. M.; KRIZEK, J. P. O. ; ALVES, S. L. ; MAGALHAES, C. A.. <b>ESTADO DA ARTE DA UTILIZAÇÃO DE GEOTECNOLOGIAS NO ENSINO DE CIÊNCIAS: UMA ANÁLISE QUALIQUANTITATIVA</b>. Em: XIV Congresso de Ecologia, 2019, São Loureço. Anais do XIV Congresso de Ecologia, 2019. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>VIEIRA, W. ; GUIMARAES, R. C. C. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>Uso do GeoGebra na construção de definições de quadriláteros</b>. Em: EIEM 2019 Encontro de Investigação em Educação Matemática, 2019, Alte, Loulé, Portugal. Sociedade Portuguesa de Investigação em Educação Matemática (SPIEM), p. 345, 2019. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FEITOSA, W. R.; GOZETTO, A.. <b>Advocacy and Online Petitions: A Discussion Based on the Renca Case</b>. Em: EMAC Conference, 2018, Glasgow. EMAC Conference, 2018. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FEITOSA, W. R.; SILVA, S. C. E.. <b>Using the Honeycomb model to analyse engagement on social media ? a case study of a Portuguese company</b>. Em: CLAV, 2018, São Paulo. CLAV, 2018. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Módolo, L. P. <b>Para além do antropocentrismo biopolítico, para além de Antonio Negri!</b>. Em: IX Colóquio Internacional Marx e Engels, 2018, Campinas. Anais IX Colóquio Internacional Marx Engels, 2018. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANTOS, V. C. ; SANTOS, K. D. A. ; SANTOS, L. C. M. ; DO AMARAL, B. S.. <b>A coleta seletiva no IFSP Câmpus São Paulo Pirituba: diagnóstico, implementação e educação ambiental</b>. Em: V Congresso de Extensão e V Mostra de Arte e Cultura, 2018, Barretos. Anais do V Congresso de Extensão e V Mostra de Arte e Cultura, 2018. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FEITOSA, W. R.; AMARANTE, M.. <b>The role of salespeople motivation on omnichannel context - A case study in a shoes store</b>. Em: 14º Contecsi, 2017, São Paulo. 14º Contecsi, v. 14, 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FEITOSA, W. R.; BOTELHO, D.. <b>Online brand content sharing on social networks ? an experiment assessing the role of emotions on news and advertising online sharing</b>. Em: ACR Conference, 2017, Cali, Colombia. Advances in Consumer Research, v. 4, 2017. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MUNHOZ, I. P.; AKKARI, A. C. S. ; SANTOS, N. M. B. F. ; BORELLI, E.. <b>Sustainability in the Energy Sector: Scientific and Technological Mapping of Magnesium Batteries</b>. Em: 4th Responsible Management Education Research Conference, 2017, Curitiba. Proceedings 4th Responsible Management Education Research Conference, p. 1-5, 2017. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MUNHOZ, I. P.; AMANCIO, T. O. ; AKKARI, A. C. S. ; SANTOS, N. M. B. F. ; BONELLI, V. V.. <b>Green Roof: Implantation Study at the Pontifical Catholic University of Sao Paulo</b>. Em: 4th Responsible Management Education Research Conference, 2017, Curitiba. Proceedings of 4th Responsible Management Education Research Conference, p. 1-5, 2017. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Módolo, L. P.; PINTO JR, L. A. B.. <b>A NOVA ESPOLIAÇÃO: BIG DATA E O CONTROLE DOS DADOS</b>. Em: VII Seminário Internacional - Teoria Política do Socialismo - Revolução Russa: 100 anos que abalaram, 2017, Marília. VII Seminário Internacional - Teoria Política do Socialismo - Revolução Russa: 100 anos que abalaram, 2017. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PAZINATTO,F.A.C.; ALMEIDA, F.A.F. ; FIDELIS, F. ; SANTOS, G. K. G.. <b>Aplicativo para o projeto social Saco Verde</b>. Em: 8º CONGRESSO DE INICIAÇÃO CIENTÍFICA E TECNOLÓGICA DO IFSP, 2017, Cubatão-SP. 8º CONGRESSO DE INICIAÇÃO CIENTÍFICA E TECNOLÓGICA DO IFSP, 2017. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SANTOS, L. C. M.; ALVES, S. L. ; KRIEGLER, N. ; PINHEIRO, M. A.A.. <b>Geotecnologias Aplicadas à caracterização especial das Fitofisionomias de manguezal: Um estudo de caso na Barra do Uma (Peruíbe, São Paulo, Brasil)</b>. Em: Congresso Latino Americano de Ciências do Mar, 2017. Congresso Latino Americano de Ciências do Mar, 2017. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SANTOS, L. C. M.; PINHEIRO, M. A.A. ; KRIEGLER, N. ; BITENCOURT, MARISA DANTAS. <b>Spatial distribution of the mangrove crab Ucides cordatus along a estuarine gradient: an analysis at the landscape contex</b>. Em: Congresso Latino Americano de Ciências do Mar, 2017. Congresso Latino Americano de Ciências do Mar, 2017. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SILVA, L. G. D. ; SANTOS, N. M. B. F. ; OLIVEIRA, A. B. S. ; MUNHOZ, I. P.. <b>THE IMPACT OF THE BRAZILIAN MONETARY POLICY ON THE EBITDA OF THE COMPANIES AND THEIR CONSEQUENT INFLUENCE ON THE INVESTMENT OF THESE COMPANIES TO IMPLY SUSTAINABLE DEVELOPMENT GOALS</b>. Em: 4th Responsible Management Education Research Conference, 2017, Curitiba. Proceedings 4th Responsible Management Education Research Conference, 2017. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AKKARI, A. C. S. ; MUNHOZ, I. P. ; SANTOS, N. M. B. F. ; MAMMANA, S. S.. <b>Relação entre o uso de proteção patentária e os níveis econômicos, educacional e tecnológico de um país: O estudo do caso norte-americano</b>. Em: V SINGEP - Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade, 2016, São Paulo. V SINGEP - Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade, 2016. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMANCIO, T. O. ; MUNHOZ, I. P. ; AKKARI, A. C. S. ; SANTOS, N. M. B. F.. <b>Padronização de informações e viabilidade de implantação do ecotelhado na Pontifícia Universidade Católica de São Paulo</b>. Em: V SINGEP - Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade, 2016, São Paulo. V SINGEP - Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade, 2016. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AMARANTE, M. ; FEITOSA, W. R.. <b>O PAPEL DOS VENDEDORES E MUDANÇAS NO VAREJO NO CONTEXTO OMNICHANNEL</b>. Em: CONICT, 2016, Matão. CONICT, 2016. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BARROS, G. ; FEITOSA, W. R.. <b>RADAR DE MUSEUS ? PROMOVENDO ACESSO A CULTURA E COMPREENDENDO A QUALIDADE DE SERVIÇOS</b>. Em: Conict, 2016, Matão. Conict, 2016. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>NOGUEIRA, P. A. ; HERNANDES, C. L. ; SOUZA, M. C. E. ; FERREIRA, F. M.. <b>As analogias no debate parl amentar: o caso da oposição ao PL 122/06</b>. Em: II Simpósio Internacional sobre Linguagem e Cognição, 2017, São Paulo. Anais do II Simpósio Internacional sobre Linguagem e Cognição, v. 1, p. 124-126, 2016. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>RODRIGUES, C. V. ; SANTANA, K. O. ; De OLIVEIRA, J. E. ; MAINTINGUER, S. I.. <b>Geração de biohidrogênio a partir de glicerol bruto utilizando consórcios de bactérias anaeróbias fermentativas e cultura pura Enterobacter sp</b>. Em: Congresso de Iniciação Científica e Tecnológica do IFSP, 2016, Matão. Congresso de Iniciação Científica e Tecnológica do IFSP, 2016. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; CASTELBLANCO, M. N. ; MAINTINGUER, S. I.. <b>Culturas mistas de bactérias anaeróbias geradoras de H2 aplicadas no consumo de glicerol bruto gerado em usinas de biodiesel a partir de óleos residuais domésticos</b>. Em: Congresso de Inovação, Ciência e Tecnologia do IFSP, 2016, Matão. CONGRESSO DE INOVAÇÃO, CIÊNCIA E TECNOLOGIA DO IFSP, 2016. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; PIRES, L. O. ; MAINTINGUER, S. I.. <b>Caracterização de glicerol bruto gerado a partir de óleo reciclado para geração de 1,3- propanodiol</b>. Em: Congresso de Iniciação Científica e Tecnológica do IFSP, 2016, Matão. Congresso de Inovação, Ciência e Tecnologia do IFSP, 2016. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>STEPHANIE, Y. ; FEITOSA, W. R.. <b>EMOÇÕES NA RELAÇÃO ENTRE VENDEDORES E CONSUMIDORES NA PRESTAÇÃO DE SERVIÇOS</b>. Em: Conict, 2016, Matão. Conict, 2016. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

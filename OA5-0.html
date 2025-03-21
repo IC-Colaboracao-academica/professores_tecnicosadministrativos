@@ -1,0 +1,205 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Iniciação científica'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+1],
+[2017,
+3],
+[2019,
+5],
+[2020,
+1],
+[2022,
+6],
+[2023,
+4],
+[2024,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Iniciação científica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 22<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriana Yui Nohara. <b>Um estudo sobre a língua Uchinaaguchi falada em São Paulo</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Samuel Luiz Alkimim Nonato. <b>O CRJ como agência de transletramentos em Belo Horizonte/MG</b>. Iniciação científica (Graduando em Letras - Português) - Universidade Federal de Minas Gerais, Fundação de Amparo à Pesquisa do Estado de Minas Gerais. In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Danielle Nascimento Dos Santos De Souza Lira. <b>Relação Clima e Homem: Impactos e consequências na saúde</b>. Iniciação científica (Graduando em Técnico Integrado em Logística) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3428238105973322">Whisner Fraga Mamede</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>João Paulo Amaral Lopes. <b>Análise de Viabilidade Técnica e Financeira para o Envase de Biogás Produzido no Campus Pirituba</b>. Iniciação científica (Graduando em Engenharia de Produção) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1645025560656843">Francisco Manoel Filho</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>KATHLEEN JULLY DA SILVA RODRIGUES. <b>Compreensões da Geometria em uma coleção de Livro Didático do Novo Ensino Médio</b>. Iniciação científica (Graduando em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Victor Gomor de Oliveira Eloy. <b>Sistema de monitoramento de biodigestores anaeróbicos por meio de plataformas embarcadas.</b>. Iniciação científica (Graduando em Técnico em Redes de Computadores Integrado) - Instituto Federal de São Paulo - Pirituba, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bianca Leite Pires. <b>Implicações do ensino crítico de inglês em um curso livre de extensão</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Camille Gonçalves dos Santos. <b>Ensino de Matemática através de jogos</b>. Iniciação científica (Graduando em Engenharia de Produção) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Juliana Aparecida Martins. <b>Diálogos entre "letramento" e "alfabetização" em estudos nacionais</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Maria Amanda Costa. <b>Redes sociais e ensino de língua inglesa: qual é a língua das redes?</b>. Iniciação científica (Graduando em Licenciatura em Letras Português/Inglês) - IFSP - CÃ¢mpus Pirituba, Instituto Federal de educação, ciência e tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1399854218544805">Ariane Macedo Melo Ferraz</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Moacir Silva de Castro. <b>Formação docente, permanência e Êxito de estudantes do IFSP ? uma análise do trancamento e cancelamento de matrículas de estudantes beneficiários de programas de Ações Afirmativa do Câmpus São Paulo Pirituba.</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Sarah Carvalho Gonçalves da Silva. <b>Caracterização da paisagem no distrito de Pirituba-Jaraguá: áreas verdes, mudanças e conservação</b>. Iniciação científica (Graduando em Engenharia de Produção) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>WILIANA FERREIRA. <b>A PRÁTICA DO EAD NO ENSINO PRESENCIAL</b>. . In&iacute;cio: 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3190403221290930">José Geraldo Basante</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Eder Everson Soares Júnior. <b>ANÁLISE DO USO DA ORALIDADE E A VISÃO DE LÍNGUA/LINGUAGEM NOS LIVROS DIDÁTICOS PARA O ENSINO/APRENDIZAGEM DA LÍNGUA INGLESA</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Luana Peixoto de Souza Vicakas. <b>Vlogger: lugar de fala e o paradigma no cyberespaço</b>. Iniciação científica (Graduando em Letras - Português e Inglês) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Marina Armani e Milenny Bizarria. <b>Levantamento e análise das colocações da língua geral inglesa e das colocações especializadas na área de investigações criminais: uma contribuição para o ensino de língua inglesa</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Vicente de Paula Fernandes. <b>O belo na literatura gótica</b>. Iniciação científica (Graduando em Letras) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Érico França. <b>Análise da competência intercultural em materiais didáticos de língua inglesa ? proposta de produção de material comunicativo em outras epistemologias</b>. Iniciação científica (Graduando em Letras) - Instituto Federal de São Paulo, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>João Pedro da Silva Bravo. <b>Anatomia do drama</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Murilo Pedreira Souza. <b>Canonização e escolarização da literatura - a influência dos vestibulares</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Stefani Rocha Faleiros. <b>Canonização e escolarização da literatura - a influência dos vestibulares</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Emanuelle Comim. <b>Canonização e escolarização da literatura - a influência do ENEM</b>. Iniciação científica (Graduando em Ensino Médio Integrado) - Instituto Federal de São Paulo, . In&iacute;cio: 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9355036294559603">Patricia Horta</a>.</font></i></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

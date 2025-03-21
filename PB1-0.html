@@ -1,0 +1,273 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Livros publicados/organizados ou edições'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+6],
+[2017,
+6],
+[2018,
+6],
+[2019,
+4],
+[2020,
+8],
+[2021,
+8],
+[2022,
+5],
+[2023,
+3],
+[2024,
+6],
+[2025,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Livros publicados/organizados ou edições</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 53<br>
+                    
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Sobrinho, L:V (Org.) ; Módolo, L. P. (Org.) ; SANTANA, M. A. (Org.) ; MORENO, G. M. M. (Org.) ; BORGES, F. T. (Org.) ; SANTOS, W. P. (Org.). <b>Artificial Intelligence and Bioethics: Perspectives</b>. 1 ed. boca Raton: CRC Press - Taylor & Francis Group, 2025. p. 188. </td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DOS REIS, NELIO FERNANDO. <b>Inclusão em ação: promovendo a diversidade e a igualdade 3</b>. 3 ed. Curitiba: Atena, 2024. .</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MENEZES, P. C. S. ; NORMANHA, Ricardo ; SANCHES, D. ; LEPORACE, C.. <b>Guia sobre IA na educação</b>. 1 ed. São Paulo: Ed. dos Autores, 2024. .</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PARDO, F. S.; MARINS, L. C. (Org.). <b>Literatura, tradução, adaptação e intermidialidade: experimentações teórico-analíticas</b>. 1 ed. São Paulo: EDIFSP, 2024. v. 1, p. 175. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PUGLIESE, Renato. <b>O neto caçula da minha avó paterna</b>. 1 ed. Cotia: Urutau, 2024. v. 1, p. 144. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. <b>O Clube de Leitura como potencialidade educadora à formação de leitores</b>. 1 ed. São Paulo: Setare, 2024. p. 104. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SILVA, E. A. <b>Manuela e Odie</b>. 1 ed. SÃO PAULO - SP: Labrador, 2024. v. 01, p. 34. </td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARROS, Ana Paula Rodrigues Magalhães; FIORENTINI, D. ; HONORATO, A. H. A.. <b>Aventuras e desafios em tempo de pandemia: (re)inventar a prática docente</b>. 1 ed. Cachoeirinha: Fi, 2023. p. 309. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FAVARETO, A. L.; BONACIN, R. (Org.) ; ROSA, F. F. (Org.) ; TEXEIRA JR., L. A. (Org.). <b>Lecture Notes in Computer Science</b>. 1 ed. Cham: Springer Nature Switzerland, 2023. v. 14050, p. 666. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>Autismo no Mercado de Trabalho</b>. 1 ed. Curitiba-PR: UICLAP, 2023. v. 1, p. 258. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DINIZ, BEATRIZ FERRAZ; GOLDSTEIN, T. S.. <b>Clinica e (A)normalidade: interpelações pandêmicas</b>. 1 ed. São Paulo: Blucher, 2022. .</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FERNANDES, S. H. A. A. ; FLEIRA, R. C. ; PEREIRA, L. F. P. ; DANTAS, D. M.. <b>Novas trajetórias de formação - Matemática e suas tecnologias</b>. 1 ed. São Paulo: FTD, 2022. p. 196. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FERRAZ, Daniel (Org.) ; COTRIM SILVA, A. (Org.) ; MIZAN, S. (Org.) ; SILVA, A. A. C. (Org.). <b> Letramentos Visuais/ Visual Literacies</b>. 1 ed. São Paulo: PPGELLI - USP, 2022. v. 1, p. 261. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>OLIVEIRA, P. C. <b>Passo a passo dos estudos tradutórios de Libras e Português Metodologias para tradução e interpretação interlingue</b>. 1 ed. São Paulo: Sunny, 2022. v. 1, p. 97. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PUGLIESE, Renato. <b>Verdes quase cinzas</b>. 1 ed. Cotia - SP: Urutau, 2022. v. 1, p. 144. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. <b>As bases da aprendizagem baseada em jogos: elementos essenciais sobre os jogos na educação</b>. 1 ed. Fortaleza: Instituto Nexos, 2021. v. 1, p. 88. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GOBBI, M. A. (Org.) ; LEITE, M. C. S. (Org.) ; ANJOS, Cleriston Izidro dos (Org.). <b>Crianças, educação e o direito à cidade: pesquisas e práticas</b>. 1 ed. São Paulo: Cortez Editora, 2021. .</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>LARA, C. R. (Org.) ; DOMINGUES, G. C. V. (Org.) ; SILVA DE CASTRO (Org.). <b>Educação na contemporaneidade: Teorias e Práticas Pedagógicas</b>. 1 ed. Jundiaí: Paco Editorial, 2021. v. 1, p. 268. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MACIEL, ALDA MARIA COIMBRA AGUILAR (Org.) ; MARTINS NETO, I. A. (Org.) ; SQUINCA, J. P. (Org.) ; LEAL, M. A. (Org.) ; MARQUES, O. M. (Org.). <b>Takeaway experiences: projetos de Língua Inglesa para a Educação Profissional e Tecnológica</b>. 1 ed. Porto Alegre: Pragmatha, 2021. v. 1, p. 136. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MARTINS, T. H. B.; SILVA, E. P. (Org.) ; TOPAN, J. S. (Org.). <b>Educação, literatura e linguagem em debate</b>. 1 ed. São Paulo: Gênio Criador, 2021. v. 1, p. 148. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>Cenários Prospectivos para a Inovação Social</b>. 1 ed. Curitiba-PR: BRAZIL PUBLISHING, 2021. v. 1, p. 244. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SILVA DE CASTRO; LARA, C. R. (Org.) ; DOMINGUES, G. C. V. (Org.). <b>Educação na contemporaneidade: Teorias e Práticas Pedagógicas</b>. 1 ed. Jundiaí: Paco Editorial, 2021. v. 1, p. 268. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SILVA, E. P.; BUSCATO, T. ; TOPAN, J.. <b>Educação, Literatura e Linguagem em Diálogo</b>. 1 ed. 2021. .</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BLANCO, B.; GALVAO, K. M.. <b>Macro e micronutrientes na nutrição clínica</b>. 1 ed. São Paulo: Manole, 2020. v. 1, p. 682. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>INÁCIO, P. A. L. <b>(RE)EXISTENCIA</b>. 1 ed. SÃO PAULO: CARTOLA EDITORA, 2020. v. 1000, p. 143. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PAULO, R. M. (Org.) ; PAVANELO, E. (Org.) ; BAGÉ, I. B. (Org.). <b>Tecnologias Digitais da Informação e Comunicação na Educação</b>. 1 ed. São Paulo: Cultura Acadêmica, 2020. v. 3, p. 115. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PUGLIESE, Renato. <b>Meu devido canto: Sonetos</b>. 1 ed. São Paulo: Factível, 2020. v. 1, p. 50. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>RIVERA, E. A.; SILVA, E. A.. <b>Manuela e seu cachorro: o mais amado do mundo</b>. 1 ed. sao paulo: Labrador, 2020. p. 24. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>RIVERA, E. A.; SILVA, E. A. (Org.). <b>Estudos do Imaginário: reflexões contemporâneas</b>. 1 ed. São Paulo: , 2020. .</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SILVA, E. A.; HEINE, P.. <b>Oito Histórias que vão dar o que falar</b>. 1 ed. Salvador: Elas Na LIJ, 2020. p. 36. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>SILVA, R. T. (Org.) ; Andrade, Alequexandre Galvez de (Org.) ; IZEPPE, F. R. (Org.) ; ROLIM, V. C. (Org.) ; DOS REIS, N.F (Org.). <b>Metodologias ágeis para gestão de pequenas empresas: resultado da implementação de fluxo de caixa</b>. 1 ed. Rio Branco - Acre: Stricto Sensu Editora - SSEditora, 2020. v. 1, p. 56. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PUGLIESE, Renato; REGINA, Vanessa. <b>Lá pelos 35 - Diários</b>. 1 ed. São Paulo: Factível, 2019. v. 1, p. 100. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>PUGLIESE, Renato. <b>Crônicas do ensino básico</b>. 1 ed. Curitiba: EDITORA CRV, 2019. v. 1, p. 168. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Silva, Lincoln Teixeira da ; ANDRADE, A. G. ; REIS, N. F.. <b>Marketing no setor público [recurso eletrônico] : um estudo sobre a qualidade dos serviços no cartório eleitoral de São Roque</b>. 1 ed. Ponta Grossa - PR: Atenas, 2019. v. 1, p. 57. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>TRINDADE, L. H. <b>Os sentidos do trabalho para o jovem da nova classe média</b>. 1 ed. Curitiba: AE Editora, 2019. v. 1, p. 132. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Práticas Inovadoras em Educação</b>. 1 ed. Juazeiro do Norte: Universidade Federal do Cariri, 2018. v. 1, p. 488. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MARANDINO, M. ; LEITE, MARIA STELLO ; MILAN, B. ; ROCHA, P. D.. <b>Espaços de educação e divulgação da ciência na Universidade de São Paulo: guia para visitas escolares</b>. 1 ed. São Paulo: FEUSP, 2018. v. 1, p. 60. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MOREIRA FILHO, A. ; ABILIO, C. ; NETTO, C. A. A. ; NASCIMBENI, F. ; Mendes, J. M ; HANANIA, L. R. ; LAGO, L. ; GIRARD, L. T. M. ; MAGALHAES, M. E. S. ; FERREIRA, M. ; PATRICIO, N. S. ; MAIA, R. F. ; PITTERI, S. ; COUTINHO, S. M. V. ; QUEIROZ, V. C. ; KERR, V. K. S.. <b>Tecnologia e Sociedade um olhar multidiciplinar</b>. 1 ed. 2018. .</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MUNHOZ, I. P.; AOKI, R. M.. <b>Pesquisa Operacional: Programação Matemática</b>. 1 ed. Londrina: Editora e Distribuidora Educacional S.A., 2018. v. 1, p. 216. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>POLEZI MUNHOZ, IGOR; AKKARI, A. C. S.. <b>Pesquisa Operacional</b>. 1 ed. Londrina: Editora e Distribuidora Educacional S.A., 2018. v. 1, p. 216. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>TRINDADE, L. H. <b>Rumo ao RH das Organizações do Futuro? Um estudo sobre mudanças na gestão de pessoas de empresas estabelecidas no Brasil</b>. 1 ed. Beau Bassin: Novas Edições Acadêmicas, 2018. v. 1, p. 181. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DINIZ, BEATRIZ FERRAZ. <b>Assistência Social e Psicologia (Des)encontros possíveis</b>. s ed. São Paulo: Blucher, 2017. p. 200. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FERREIRA, F. M.; MODOLO, A. D. R. (Org.) ; Sousa, D. R. (Org.) ; COAN, G. I. (Org.) ; COSTA, L. F. B. (Org.) ; GONÇALVES SEGUNDO, P. R. (Org.). <b>Texto, discurso e multimodalidade: perspectivas atuais</b>. 1 ed. São Paulo: Paulistana, 2017. v. 1, p. 382. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>História e forma em Ragtime, The Book of Daniel e Homer & Langley, de E. L. Doctorow</b>. 1 ed. São Paulo: FFLCH/ USP, 2017. p. 224. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MAMEDE, W. F. <b>Análise modal vibro-acústica em baixas frequências</b>. 1 ed. Mannheim: Verlag, Novas Edições Acadêmicas, 2017. v. 1, .</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>MUNHOZ, I. P. <b>Robótica</b>. 1 ed. Londrina: Editora e Distribuidora Educacional S.A., 2017. v. 1, p. 200. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>TOPAN, J. S. <b>Nem asas pelos ares</b>. 1 ed. Bragança Paulista: Editora Urutau, 2017. v. 150, p. 78. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARBOSA, I. A.; BARROCA NETO, A. ; JACOME, S. S. B.. <b>Transformadas de Fourier</b>. 1 ed. Suzano - São Paulo: Edição do Autor, 2016. v. 1, p. 120. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H.. <b>TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS</b>. 1 ed. Saarbrücken, Germany: NEA - Novas Edições Acadêmicas, 2016. v. 1, p. 52. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FERREIRA, F. M.; MAREGA, L. M. P. (Org.) ; GONÇALVES SEGUNDO, P. R. (Org.) ; CAVALCANTE FILHO, U. (Org.) ; MODOLO, A. D. R. (Org.) ; MUNHOZ, R. F. (Org.). <b>Discurso e Linguística: diálogos possíveis</b>. 1 ed. São Paulo: Paulistana, 2016. v. 1, p. 357. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PINHEIRO, M. A.A. (Org.) ; SANTANA, W. R. A. (Org.) ; RODRIGUES, E. S. (Org.) ; IVO, C. T. (Org.) ; SANTOS, L. C. M. (Org.) ; TORRES, R. A. (Org.) ; BOOS, H. (Org.) ; Dias-Neto, J. (Org.) (Org.). <b>Livro Vermelho dos Crustáceos do Brasil: Avaliação 2010-2014</b>. 1 ed. Porto Alegre: Sociedade Brasileira de Carcinologia (SBC), 2016. p. 360. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>REIS, N. F. <b>Tópicos de Sistemas Inteligentes Baseados em Lógicas Não-Clássicas</b>. 1 ed. São Paulo: Instituto de Estudos Avançados - USP, 2016. v. 1, p. 189. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>A trama das ideias: intelectuais, ensaios e construção de identidades na América Latina (1898-1914)</b>. 1 ed. São Paulo: Intermeios, 2016. v. 1, p. 304. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

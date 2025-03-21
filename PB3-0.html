@@ -1,0 +1,355 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Textos em jornais de notícias/revistas'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+1],
+[2017,
+5],
+[2018,
+6],
+[2019,
+3],
+[2020,
+18],
+[2021,
+16],
+[2022,
+3],
+[2023,
+6],
+[2024,
+6]]}]});
+        });
+        </script>
+        
+                <h3>Textos em jornais de notícias/revistas</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 95<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FREITAG, B.B. <b>Trabalhadores Brasileiros 60+: características, motivações e desafios profissionais</b>. Nexo Políticas Públicas, 04 jul. 2024. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LIMONGI-FRANCA, A. C. ; FRANCE, A. C. ; FREITAG, B. B. ; MARTINS, E. M. ; LOPES, L. F. ; ALMEIDA, M. A. ; GRUBER, P. B. M. A. T.. <b>THE CONNECTIONS AMONG POVERTY, EDUCATION, WORK AND THE CLIMATE AGENDA</b>. Occupational Medicine, Oxford University Press, p. 0-1, 03 jul. 2024. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Módolo, L. P. <b>Cooperativismo de plataforma para fortalecer o bem comum</b>. Outra Saúde, 12 jun. 2024. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Privatização das escolas públicas em São Paulo</b>. Blog da Boitempo, 08 jul. 2024. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Educação: O ?novo? fascismo com velhas táticas</b>. Outras Palavras, 01 jul. 2024. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Privatização das escolas públicas em São Paulo</b>. A Terra é Redonda, 29 jun. 2024. </td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FEITOSA, W. R. ; CECCATO, G. A. ; SIMOES, R. B. P. ; SILVA, H. C.. <b>O Pregão Eletrênico sob a Perspectiva da Lei 14.133/2021</b>. QUALIF Revista Acadêmica - Ensino de Ciências e Tecnologias, IFSP - Campus Pirituba, p. 1-10, 01 dez. 2023. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MARTINS, T. H. B.; AREAO, A.. <b>Editorial - Revista RECeT</b>. RECeT - REvista de Educação, Ciência e Tecnologia, IFSP - campus Presidente Epitá, p. 1-2, 14 mar. 2023. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Módolo, L. P. <b>Para construir uma teoria crítica da Saúde Digital</b>. Centro de Estudos Estratégicos da Fiocruz, 02 out. 2023. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>RODRIGUES, A. L. ; CASAGRANDE, H. F. ; GOMES, J. P. M. ; PASSOS, P. L. A. ; FERRUZZI, A. J. ; FERREIRA, R. S.. <b>DETECÇÃO DE ATAQUES DDOS POR MEIO DE APRENDIZADO DE MÁQUINA</b>. Revista Acadêmica Ensino de Ciências e Tecnologias, Cubatão, p. 211-231, 07 dez. 2023. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SANTOS, N. P. <b>As emoções afetam nossa relação com o dinheiro?</b>. Gazeta Penhense, São Paulo, Brasil, p. 6-6, 10 jun. 2023. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS, N. P. <b>Como aprendemos a lidar com o dinheiro?</b>. Gazeta Penhense, São Paulo, Brasil, p. 5-5, 06 maio 2023. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO, M. S. <b>Sobre o ano letivo de 2022 - Entrevistas</b>. Revista Valoriza, Vargem Grande Paulista, p. 41-41, 09 fev. 2022. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Ferraz, R.G ; Marques, V. G. ; Souza, A. B. S. ; Ferruzzi, A. J. ; FERREIRA, R. S.. <b>Cyber Security Information: aplicação web para a democratização do acesso aos conteúdos relacionados à cibersegurança</b>. Revista Acadêmica Ensino de Ciências e Tecnologias, QUALIF, p. 37-56, 01 ago. 2022. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Módolo, L. P.; Sobrinho, L:V. <b>Um breve ensaio sobre a medicina em devir</b>. OUTRA SAÙDE, https://outraspalavras.net/out, 25 out. 2022. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO, M. S. <b>Perspectivas para a Educação em 2022</b>. Revista Valoriza, Vargem Grande Paulista, p. 41-42, 10 dez. 2021. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, M. S. <b>Educação para a convivência</b>. Revista Valoriza, Vargem Grande Paulista, p. 31-31, 10 nov. 2021. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO, M. S. <b>Sobre a origem do Dia do Professor</b>. Revista Valoriza, Vargem Grande Paulista, p. 41-41, 11 out. 2021. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO, M. S. <b>Educação financeira e o papel da Escola</b>. Revista Valoriza, Vargem Grande Paulista, p. 33-34, 10 set. 2021. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CASTRO, M. S. <b>Sobre o retorno das aulas presenciais</b>. Revista Valoriza, Vargem Grande Paulista, p. 31-32, 10 ago. 2021. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CASTRO, M. S. <b>A Família e a Educação na Fé</b>. Revista Valoriza, Vargem Grande Paulista, p. 41-41, 12 jul. 2021. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CASTRO, M. S. <b>Sobre a busca de uma melhor forma de estudar</b>. Revista Valoriza, Vargem Grande Paulista, p. 31-32, 10 jun. 2021. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CASTRO, M. S. <b>Educação em tempos de pandemia na visão de docentes da Educação Básica</b>. Revista Valoriza, Vargem Grande Paulista, 10 maio 2021. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CASTRO, M. S.; SILVA DE CASTRO. <b>Educação para o cuidado e o dia do Enfermo</b>. Revista Valoriza, Vargem Grande Paulista, 10 fev. 2021. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CASTRO, M. S.; SILVA DE CASTRO. <b>Sobre o novo ano</b>. Revista Valoriza, Vargem Grande Paulista, 13 jan. 2021. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>REIS, N. F. <b>FAÇA 'FUMAÇA' E NÃO REVELE SUA INTENÇÃO</b>. Novo Dia Jundiaí, https://novodia.digital/2021/1, 22 nov. 2021. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>REIS, N. F. <b>NÃO CONTRATE UM AMIGO</b>. Novo Dia Jundiaí, https://novodia.digital/2021/1, 17 nov. 2021. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>REIS, N. F. <b>NÃO OFUSQUE O ?SOL?</b>. Novo Dia Jundiaí, https://novodia.digital/2021/1, 10 nov. 2021. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SILVA DE CASTRO. <b>Pesquisa: Educação em tempos de pandemia na visão de Docentes da Educação Básica</b>. Revista Valoriza, Vargem Grande Paulista, 23 abr. 2021. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SILVA DE CASTRO. <b>Educação e Vacina: nossas armas na prevenção da COVID-19</b>. Revista Valoriza, Vargem Grande Paulista, 10 abr. 2021. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA DE CASTRO. <b>Volta às Aulas: não há resposta definitiva ou plano perfeito</b>. Revista Valoriza, Vargem Grande Paulista, 10 mar. 2021. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO, M. S.; SILVA DE CASTRO. <b>Celebrar os Professores em tempos de pandemia</b>. Revista Valoriza, Vargem Grande Paulista, 10 nov. 2020. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, M. S.; SILVA DE CASTRO. <b>Evasão escolar e a pandemia da COVID-19</b>. Revista Valoriza, Vargem Grande Paulista, 10 ago. 2020. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO, MOACIR SILVA. <b>Educação e o combate ao racismo</b>. Revista Valoriza, Vargem Grande Paulista, 10 dez. 2020. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO, MOACIR SILVA. <b>Desafios do novo Ministro da Educação</b>. Revista Valoriza, Vargem Grande Paulista, p. 40-41, 10 jul. 2020. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CASTRO, MOACIR SILVA. <b>As crianças, a tecnologia e a quarentena</b>. Revista Valoriza, p. 41-42, 08 jun. 2020. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CASTRO, MOACIR SILVA. <b>Interrupção das aulas presenciais impõe novos desafios à educação</b>. Revista Valoriza, Vargem Grande Paulista, p. 41-41, 11 maio 2020. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Educação: uma poderosa arma contra a COVID -19</b>. Revista Valoriza, Vargem Grande Paulista, p. 40-41, 10 abr. 2020. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>COSTA, G. M.; SILVA, V. R. ; SILVA, M. H. L. ; QUEIROZ, I. C.. <b>Elaboração e caracterização físico-química de farinha de bagaço de malte</b>. Alimentos: Ciência, Tecnologia e Meio Ambiente, Rio de Janeiro, p. 11-15, 10 jan. 2020. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DEMATTE, A. ; TERUZZI, A. E.. <b>Con Paulo Freire la ricerca di un insegnamento della matematica non violento</b>. L'insegnamento della matematica e delle scienze integrate, Paderno del Grappa, Treviso, p. 449-474, 15 out. 2020. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>NORMANHA, Ricardo. <b>O sonho de Tiago</b>. Revista Clio Operária, 22 dez. 2020. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>NORMANHA, Ricardo. <b>A vitória de Boulos</b>. Revista Clio Operária, 05 dez. 2020. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>NORMANHA, Ricardo. <b>O ouro azul de Toritama: trabalho e carnaval na era ultraliberal</b>. Revista Clio Operária, 31 out. 2020. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Reformar o Estado: o mito da modernização</b>. Revista Clio Operária, 10 out. 2020. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>NORMANHA, Ricardo. <b>As várias mortes de João Victor</b>. Revista Clio Operária, 29 ago. 2020. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Pedro, descalço, plantado na beira do Araguaia</b>. Revista Clio Operária, 15 ago. 2020. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Trabalho, flexibilidade e desproteção nas Indústrias Culturais</b>. Revista Clio Operária, 01 ago. 2020. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Trabalhadores da educação sob ataque</b>. Revista Clio Operária, 18 jul. 2020. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>NORMANHA, Ricardo. <b>A epidemia da precarização: quarentena, EaD e trabalho docente</b>. Blog da Revista Direito, Estado e Sociedade, Rio de Janeiro, 21 abr. 2020. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>A importância do hábito de leitura</b>. Revista Valoriza, Vargem Grande Paulista, p. 40-41, 12 nov. 2019. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>A educação pelo exemplo</b>. Revista Valoriza, Vargem Grande Paulista, , v. 21, p. 40-41, 07 out. 2019. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SILVA DE CASTRO. <b>Escolhendo escola para os filhos</b>. Revista Valoriza, Vargem Grande Paulista, p. 40-41, 10 dez. 2019. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DIAS, F. A. S. ; BUSQUINI, J. A. ; BAGÉ, I. B.. <b>Formação em EaD: Possíveis contribuições para a Prática de Docentes em Matemática</b>. Revista de Ensino, Educação e Ciências Humanas, Paraná, p. 386-391, 01 nov. 2018. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Módolo, L. P. <b>Uma lição que a execução de Marielle Franco nos força recordar: a verdade na política está na razão entre a vida e a morte</b>. Blog da Boitempo Editorial, 19 mar. 2018. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>NORMANHA, R. <b>Os impactos da Reforma Trabalhista nas Convenções Coletivas de Trabalho</b>. A Coluna, 16 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>NORMANHA, R. <b>López Obrador e o dilema entre a transformação e a conciliação</b>. A Coluna, 06 jul. 2018. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>NORMANHA, Ricardo. <b>A ofensiva neoliberal e os impactos para a organização da classe trabalhadora</b>. A Coluna, 06 jun. 2018. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>PARDO, F. S. <b>O (des)concerto. Fuxico - Dept</b>. de Educação/ UEFS, Feira de Santana - Bahia, p. 9-10, 01 set. 2018. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CARNEIRO, A. S. <b>O Guesa esmiuçado (resenha do livro 30 ANOS COM SOUSÂNDRADE)</b>. Revista USP, São Paulo-SP, p. 171-175, 01 ago. 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Martha Marandino ; Luna Bocchi ; LEITE, M. C. S. ; Arcenira Targino ; Barbara Milan. <b>?Brincar ou ensinar?? no Museu da Educação e do Brinquedo da FEUSP</b>. Pensar a Educação, Faculdade de Educação UFMG, 14 jul. 2017. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Módolo, L. P. <b>Kollontai em Lisboa: evocações para uma subjetividade comunista desejante</b>. Portal Diário Liberdade, Portal Diário Liberdade, 22 jan. 2017. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Módolo, L. P.; PINTO JR, L. A. B.. <b>Big Data e a espoliação algorítmica dos dados: novos meios para uma velha dominação</b>. Blog da Boitempo Editorial, 11 out. 2017. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>Quando o (vice) diretor faz toda a diferença</b>. Crônicas do Ensino Básico, São Paulo, p. 19-21, 28 dez. 2017. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>Michael Jackson</b>. Revista Crônicas do Ensino Básico, São Paulo, p. 31-32, 14 jun. 2016. </td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AURICCHIO MT ; Coelho, T.O.N. ; YANO, H. ; SANTOS, A. P.. <b>Usos etnofarmacológicos da espécie ornamental Coleus blumei Benth</b>. Boletim do Instituto Adolfo Lutz, .</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, MOACIR SILVA. <b>Planejando a recepção dos alunos na volta às aulas</b>. Revista Valoriza, .</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>COTRIM, Andréa; SEIDENBERG, A.. <b>A propaganda é a alma do negócio</b>. Língua Inglesa, .</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>KRIZEK, J. P. O. ; SANTOS, L.C.M.. <b>O pequeno Darwin</b>. Ciência Hoje das Crianças, .</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Módolo, L. P. <b>Por uma construção comunitária das IAs de saúde</b>. Outra Saúde, .</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Módolo, L. P. <b>Por uma IA nas mãos dos cidadãos</b>. Outra Saúde, .</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Módolo, L. P. <b>Saúde digital: ?eu prefiro a IA pois ela me entende?</b>. Outra Saúde, .</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Módolo, L. P. <b>Para construir uma teoria crítica da Saúde Digital</b>. Outra Saúde, .</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>NORMANHA, R. <b>Regulação do trabalho: a pauta esquecida na greve dos caminhoneiros</b>. A Coluna, .</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>NORMANHA, R. <b>A tragédia da especulação</b>. A Coluna, .</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>REIS, N. F. <b>Autismo: desemprego e violência</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>REIS, N. F. <b>Autismo no mercado de trabalho</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>REIS, N. F. <b>Autismo e inovação</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>REIS, N. F. <b>Autismo e o Exército</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>REIS, N. F. <b>Autismo e Plano Municipal</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>REIS, N. F. <b>Autismo e liberdade</b>. Jundiaí-SP, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>REIS, N. F. <b>Autismo e história da ciência</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>REIS, N. F. <b>Autismo e o processo do laudo</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>REIS, N. F. <b>Autismo e o professor de apoio</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>REIS, N. F. <b>Autismo e história do livro</b>. Jornal de Jundiaí, Jundiaí-SP, .</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>Astronomia: uma viagem filosófica e científica</b>. Conhecimento Prático Filosofia, p. 24-33, .</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>O Outro Rei</b>. Conhecimento Prático Filosofia, p. 24-33, .</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>O Pensamento Democratico de Norberto Bobbio</b>. Conhecimento Prático Filosofia, p. 34-37, .</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>A Agenda do Lulismo (Entrevista André Singer). Sociologia (São Paulo</b>. 2006), p. 6-11, .</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>Ideologia e a Política do Real (Entrevista Fábio Wanderley Reis). Sociologia (São Paulo</b>. 2006), .</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>O Marxismo de István Mészáros (Entrevista István Mészáros). Sociologia (São Paulo</b>. 2006), .</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>O Legado de Marx</b>. Karl Marx - Coleção Guias de Filosofia, .</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>O segredo das mercadorias na sociedade capitalista</b>. Karl Marx - Coleção Guias de Filosofia, .</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>Estado em Questão. Sociologia (São Paulo</b>. 2006), p. 26-34, .</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>SILVA DE CASTRO. <b>Mulher e Educação</b>. Revista Valoriza, vargem grande paulista, .</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>TEIXEIRA, F. O. <b>Diebold Procomp - Mais Informações menos custo</b>. Revista Microsoft Business nº 31, .</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

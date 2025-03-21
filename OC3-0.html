@@ -1,0 +1,543 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Monografia de conclusão de curso de aperfeiçoamento/especialização'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+27],
+[2017,
+1],
+[2018,
+1],
+[2019,
+1],
+[2020,
+7],
+[2021,
+49],
+[2022,
+54],
+[2023,
+28],
+[2024,
+21]]}]});
+        });
+        </script>
+        
+                <h3>Monografia de conclusão de curso de aperfeiçoamento/especialização</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 189<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alcione Lima Figueiredo Magalhães. <b>Cultura digital e produção dos trabalhos escolares</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aline Paulino Vieira. <b>Mentoria para o mercado de trabalho</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Arthur Dohler Machado Fernandes. <b>Clubes de Interesse em um curso técnico de eletrotécnica: transdisciplinaridade, multiletramentos e p202rotagonismo Juvenil</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Audrey Karla Nogueira Barbosa. <b>Entre gaiolas e asas: o papel das crônicas na formação das juventudes letradas</b>. (Aperfeiçoamento/Especialização em Letras) - Universidade Federal de Minas Gerais, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Carol Cristina Santos Martins. <b>A carta no século XXI: investigação, letramentos e TDICs</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Catia Alves de Senne. <b>A ascensão da extrema direita e os impactos na educação de gênero no Brasil</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Davi Dumont Farace. <b>Inteligência Artificial para Aprendizagem: chat GPT</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Fernanda Carvalhaes Moreira. <b>A importância da argumentação nos textos de opinião</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Fernanda Henriques Gruninger. <b>O uso do aplicativo Duolingo para a aprendizagem de idiomas estrangeiros no Ensino Médio</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gabriel Henrique Pereira da Silva. <b>Além dos códigos binários: uma proposta pedagógica para a implementação de soluções neutras de linguagem em ambientes corporativos via Telegram</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Gabriela Sabino Pereira. <b>O canto orfeônico e a construção de uma identidade nacional brasileira: uma análise histórico-cultural</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades: Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2512569735401048">Valdir Donizete dos Santos Junior</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Isabella Lembi Viana. <b>Argumentação eficaz e ética</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Jonathan Willian Pereira da Silva. <b>Gamificação na gestão de projetos: engajamento de stakeholders em métodos ágeis</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Leticia Mayara Wenceslau Ossain. <b>O nacionalismo paulista no primeiro centenário da independência</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Marina Borges Barroso. <b>Quando ser mulher não basta: análise pragmática de um ditado popular e seus desdobramentos sociais</b>. (Aperfeiçoamento/Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Patrícia Ferraz de Camargo. <b>Pós-graduação para quem? Desafios e possibilidades para a mulher negra.</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Paulo Alexandre Mello. <b>Os enredos das escolas de samba paulistanas como fontes históricas em sala de aula</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Rafael Duarte. <b>Literatura e subjetividade: uma leitura da BNCC no componente de Língua Portuguesa</b>. (Aperfeiçoamento/Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Renan de Lima Turci. <b>ATUALIDADE DA CRÍTICA SOBRE A INDÚSTRIA CULTURAL: Uma leitura adorniana do filme Barbie</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades ? Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Taciane Nascimento Felix. <b>Sujeitos leitores: práticas de leitura e o papel da escola na formação literária de crianças do ensino básico</b>. (Aperfeiçoamento/Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>THIAGO LOPES DE AMORIM. <b>Início e Ressureição: relações materiais e de dependência nos primeiros romances de Machado de Assis</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades ? Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALISSON LEONIDIA CAMPOS. <b>INOVAÇÃO NO PLANEJAMENTO ESTRATÉGICO COM APLICAÇÃO DE DESIGN THINKING - Desenvolvendo Soluções Orientadas</b>. (Aperfeiçoamento/Especialização em ESPECIALIZAÇÃO EM DOCÊNCIA PARA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.) - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMANDA JENIFFER DA SILVA E SILVA. <b>O USO DOS RECURSOS HÍDRICOS E A PRODUÇÃO DE ALIMENTOS</b>. (Aperfeiçoamento/Especialização em ESPECIALIZAÇÃO EM DOCÊNCIA PARA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.) - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANA CAROLINA VIEIRA ARAUJO. <b>PROPOSTA DE INTERVENÇÃO PARA INCLUSÃO DE PESSOAS COM DEFICIÊNCIA NA PROFISSÃO DE TÉCNICO EM ANÁLISES CLÍN</b>. (Aperfeiçoamento/Especialização em ESPECIALIZAÇÃO EM DOCÊNCIA PARA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.) - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ana Cristina Pinto Bezerra. <b>Por uma história que não seja única: construindo sentidos no diálogo com a narrativa literária na sala de aula</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>André Santana Amâncio. <b>Medidas socioeducativas em meio aberto: entre a garantia de direitos e a inutilização de corpos jovens</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Angélica Cristina Maziero Moretti. <b>HABILIDADES TÉCNICAS NECESSÁRIAS PARA GERENTES DE PROJETOS NO PERÍODO PÓS-PANDEMIA: CONTRIBUIÇÕES DA COVID-19 NA MUDANÇA DO PERFIL PROFISSIONAL</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de Ciência e Tecnologia de São Paulo - Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Antonio Alves Silva Júnior. <b>A conjuntura chilena e o governo Allende: uma perspectiva gramsciana</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Beatriz Weise Cavanha de Andrade. <b>O Autoritarismo Brasileiro: do Estado Novo ao Brasil contemporâneo</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Bruno Rocha de Brito. <b>Gestão de Projetos e organização de eventos: o impacto do ensino formal na atuação de profissionais da área de eventos.</b>. (Aperfeiçoamento/Especialização em Curso de Pósgraduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9192838264879703">Fernando Cesar Mendonca</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Camila Caccia Gouveia Godoi. <b>A Gestão da Mudança como Fator Determinante para o Sucesso da Implementação de um Sistema ERP em uma Organização de Grande Porte</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Claudia de Oliveira Carvalho Figueiredo. <b>Quais são e como usamos os números racionais no nosso dia a dia?</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Fernando Barros da Silva. <b>Melhoria no processo de embalagem de medicamentos em uma indústria farmacêutica</b>. (Aperfeiçoamento/Especialização em Especialização em gestão de projetos) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1404004205953061">Eudes Müller D'Oliveira Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>JADEILSON SERAFIM DE ANDRADE. <b>GAMIFICAÇÃO NO ENSINO E APRENDIZAGEM DE PROJEÇÕES ORTOGONAIS EM DESENHO TÉCNICO</b>. (Aperfeiçoamento/Especialização em ESPECIALIZAÇÃO EM DOCÊNCIA PARA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.) - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Jerusa Campelo de Freitas. <b>Caiu na rede é peixe? Práticas de letramento crítico em meios digitais para estudantes de 9o ano do Ensino Fundamental</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>JORGE HENRIQUE SERRA DA SILVA. <b>A IMPORTÂNCIA DA INTERAÇÃO INTERCULTURAL PARA OS PROCESSOS DE ENSINO APRENDIZAGEM</b>. (Aperfeiçoamento/Especialização em ESPECIALIZAÇÃO EM DOCÊNCIA PARA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA.) - Instituto Federal de Educação, Ciência e Tecnologia do Sul de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0255523082900191">Idalise Bernardo Bagé</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Laís Felipe de Castro. <b>Entre feminismos: o que o o pensamento feminista decolonial tem a nos oferecer?</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Leandro Mendes Filho. <b>Gestão de Projetos: ressignificação de sua criação até a contemporaneidade</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Letícia Christmann. <b>Eugenia nos trópicos ? uma análise do discurso da paulistanidade no início do século XX a partir da obra de Alfredo Ellis Jr.</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Lucas Eduardo Leardini. <b>Avaliação da Efetividade dos Processos de Softwares Educacionais por meio de KPIs de Aprendizagem Digital</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão da Tecnologia da Informação) - Instituto Federal de São Paulo - campus Boitiuva, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Luiz Fernando da Costa. <b>"Aplicação do Kaizen para redução do Lead time do ensaio de verificação de resistência do concreto"</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Moacir Silva de Castro. <b>?Revisão do Projeto Político Pedagógico: perspectivas de uma educação escolar quilombola?,</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades -- Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5270206173699887">Pamella Araujo Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Natália Maria Salla. <b>Escrevendo a história no século XXI ? tendências e perspectivas historiográficas da contemporaneidade</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Paulo Henrique de Oliveira Lemos. <b>Digitalização da rede bancária no Brasil: importância da Gestão de Projetos</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Pedro Ribeiro de Souza. <b>O controle social e a participação social no âmbito das políticas públicas: de suas contribuições para a democracia e de seus desafios no Brasil</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Rita de Cássia Capraro da Silva. <b>Das ruas para a escola: análise do SLAM interescolar nas escolas públicas da zona leste paulistana</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Tereza Cristina Sousa de Lima. <b>TRABALHO INFANTIL: UMA ANÁLISE DA PRODUÇÃO TEÓRICA EM PERIÓDICOS DO CAMPO DE SERVIÇO SOCIAL BRASILEIRO</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9285380887754398">Maysa Ciarlariello Cunha Rodrigues</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Veridiana Cabrini Pompone. <b>O Ciclo PDCA aplicado como método de melhoria contínua em uma empresa de engenharia e construção.</b>. (Aperfeiçoamento/Especialização em CURSO ESPECIALIZAÇÃO EM GESTÃO DE PROJETOS) - Instituto Federal de São Paulo - Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Viviane Oliveira da Silva. <b>PMBOK e suas prá5cas na gestão de projetos como ferramenta de mediação sob a evasão escolar de nível fundamental e médio</b>. (Aperfeiçoamento/Especialização em Curso de Pósgraduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9192838264879703">Fernando Cesar Mendonca</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriana Araujo Medeiros Santos. <b>ENSINO E O GEODESIGN: CONCEPÇÕES PARA ELABORAÇÃO DE PROJETOS INSTITUCIONAIS</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Angélica Cristina Maziero Moretti. <b>Key Competences of Project Managers in Post Pandemic Period: COVID 19 Contributions in Changing Professional Profile</b>. (Aperfeiçoamento/Especialização em Pós Graduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carmen Lucia da Silva Pinel. <b>CURSO EAD LIBRAS PARA PROFISSIONAIS EDUCAÇÃO: Inclusão de alunos surdos através da capacitação de professores</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Cristiane Bibiano Silva. <b>A política da EPT na era do PT à luz da histórica desvalorização do trabalho manual no Brasil</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Debora Colla Marque. <b>DOE SANGUE, DOE VIDA: UM PLANO DE COMUNICAÇÃO PARA DESMISTIFICAR A DOAÇÃO DE SANGUE E PROMOVER O ENGAJAMENTO ENTRE OS JOVENS</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>DEMISON DOS SANTOS MERCES. <b>CONSELHO DE CAMPUS (CONCAM): Uma análise da prática da gestão democrática no Concam do ifsp-ptb</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Diana Pereira Targino. <b>EMPREENDEDORISMO SUSTENTÁVEL: UM ESTUDO DE CASO COM CURSO TÉCNICO DE ADMINISTRAÇÃO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Edenilson de Magalhaes Santos. <b>ESTUDO DEMONSTRATIVO DO PROOCESSO DE RECICLAGEM PLÁSTICA COMO MODELO MINIMIZADOR DA PROBLEMÁTICA ESPACIAL E DE POLUIÇÃO ATMOSFÉRICA NO ÂMBITO DO CURSO TÉCNICO EM PLÁSTICO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Elizangela Costa. <b>PROPOSTA DE INTERVENÇÃO PEDAGÓGICA NO CONTEXTO DA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA (EPT) E NO CURSO TÉCNICO EM ADMINISTRAÇÃO POR MEIO DE VISITAS TÉCNICAS</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Emerson Moreira de Lima. <b>Inclusão e Diversidade nas Organizações: atividade pedagógica sobre a importância dos Direitos Humanos no mundo do trabalho</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Emilio Fidelis Barbosa. <b>Movimentos sociais e população em situação de rua: um breve histórico da luta pela cidadania em São Paulo</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Felipe Carniero de Proença. <b>Psicoterapia nas plataformas digitais: os impasses entre a flexibilização do trabalho, profissão, ética e prática clínica de psicoterapeutas em atendimento a distância no Brasil</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Flavia de Faria Mantovani. <b>Unidade odontológica móvel: um estudo de caso</b>. (Aperfeiçoamento/Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1263876459804827">William Rosseti</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Francisca Tarciclê Pontes Rodrigues. <b>A argumentação nas práticas socioculturais de atuação na vida pública</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Francisco Cleiton Limeira de Sousa. <b>A IMPORTÂNCIA DA COMUNICAÇÃO NÃO-VIOLENTA NA ABORDAGEM DO ALUNO-PACIENTE BOLIVIANO PELO AGENTE COMUNITÁRIO DE SAÚDE NO BAIRRO DO BELENZINHO - SÃO PAULO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Francisco Rodrigues Chaves. <b>ANÁLISE DE AMOSTRAS DE ÁGUA DE TORNEIRA NO MUNICÍPIO DE SÃO PAULO: UMA PROPOSTA DE INTERVENÇÃO NO CURSO TÉCNICO EM QUÍMICA</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Gabriel Almeida Machado. <b>"Implantação do sistema MES e seus bene8cios para um melhor gerenciamento da produção</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Giselle Azevedo Silva de Santana. <b>MODELO DE APRENDIZAGEM BASEADO EM PROBLEMAS APLICADO NO ENSINO DA TÉCNICA DE APLICAÇÃO DE AGENTES EXTINTORES PARA O TÉCNICO EM BOMBEIRO AERONÁUTICO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Gustavo Henrique Moreira Gonçalves. <b>PROJETO DE QUALIFICAÇÃO EM ROBOTICA PARA ALUNOS DO ENSINO MÉDIO: PREPARANDO PROFISSIONAIS PARA O ENSINO PROFISSIONAL, TÉCNICO, SUPERIOR E MERCADO DE TRABALHO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Izabella Cristhina Jantorpe. <b>A Influência da Cultura Organizacional na Gestão de Projetos Sustentáveis</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Jacques Moura de Souza. <b>ESTUDO DEMONSTRATIVO DO PROOCESSO DE RECICLAGEM PLÁSTICA COMO MODELO MINIMIZADOR DA PROBLEMÁTICA ESPACIAL E DE POLUIÇÃO ATMOSFÉRICA NO ÂMBITO DO CURSO TÉCNICO EM PLÁSTICO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Jancileidi Hubner. <b>(RE)ACT!: um projeto sobre consumo, meio ambiente e sociedade</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Jessika Ramos Pereira Rocha. <b>FERRAMENTAS DA QUALIDADE NO PROCESSO ENSINOAPRENDIZAGEM POR MEIO DE UMA VISÃO MULTIDISCIPLINAR</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Juliana Leite Schiavoni. <b>Linn da Quebrada: o preço queer se paga</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Juliana Tavares. <b>COMO A GESTAO EFICIENTE DE DOCUMENTOS PODE TORNAR EFICAZ O FUNCIONAMENTO DA SECRETARIA EM UMA UNIDADE ESCOLAR</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Kênia Telles. <b>Conte a sua história: currículo em vídeo com o uso do smartphone</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Leandro Lopes Meneses. <b>Educação e ambiente: uma análise das obras sobre espaços escolares de 2017 a 2020</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades: Educação, Política e Sociedade) - Instituto de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6721329327099220">Flávia Roberta Torezin</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Lidiane Carmo de Oliveira Rojas. <b>FERRAMENTAS DA QUALIDADE NO PROCESSO ENSINOAPRENDIZAGEM POR MEIO DE UMA VISÃO MULTIDISCIPLINAR</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Lizarda Luciano do Carmo. <b>METODOLOGIAS ATIVAS: CONTRIBUIÇÕES PARA A PRÁTICA PEDAGÓGICA</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Lucas Tadeu Portela. <b>ANÁLISE DE AMOSTRAS DE ÁGUA DE TORNEIRA NO MUNICÍPIO DE SÃO PAULO: UMA PROPOSTA DE INTERVENÇÃO NO CURSO TÉCNICO EM QUÍMICA.</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Marcio José Padovan de Antônio. <b>Aplicações de IOT</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Marcos Rafael Alves. <b>PROJETO DE QUALIFICAÇÃO EM ROBOTICA PARA ALUNOS DO ENSINO MÉDIO: PREPARANDO PROFISSIONAIS PARA O ENSINO PROFISSIONAL, TÉCNICO, SUPERIOR E MERCADO DE TRABALHO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Mariana Lubarino Vilas Boas. <b>ANÁLISE DE AMOSTRAS DE ÁGUA DE TORNEIRA NO MUNICÍPIO DE SÃO PAULO: UMA PROPOSTA DE INTERVENÇÃO NO CURSO TÉCNICO EM QUÍMICA</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Milena Dias de Oliveira. <b>MODELO DE APRENDIZAGEM BASEADO EM PROBLEMAS APLICADO NO ENSINO DA TÉCNICA DE APLICAÇÃO DE AGENTES EXTINTORES PARA O TÉCNICO EM BOMBEIRO AERONÁUTICO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Mário Cabral de Almeida. <b>O processo de transformação da música caipira para música sertaneja: tradição e modernização</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Otávio Cristiano Vilas Boas. <b>PROMOVENDO A RECICLAGEM RESPONSÁVEL ATRAVÉS DO DESCARTE ADEQUADO DE EQUIPAMENTOS ELETRÔNICOS, PILHAS E BATERIAS.</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Pamela Oliveira Ferreira. <b>O governo federal e o combate à ?ideologia de gênero?: a diminuição de investimento em políticas públicas com enfoque em gênero no Brasil em 2016-2020</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Patricia Cardoso Dias. <b>PROPOSTA EDUCATIVA DE REDAÇÃO TÉCNICA PARA UM CURSO TÉCNICO EM MECATRÔNICA</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Paula Cristina de Carvalho. <b>PROPOSTA EDUCATIVA DE REDAÇÃO TÉCNICA PARA UM CURSO TÉCNICO EM MECATRÔNICA</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Paulo Cezar Guerra Alves. <b>Serviços para a população em situação de rua no município de São Paulo: uma perspectiva da gestão das políticas públicas</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>Priscila Aline Borges Alves. <b>Transformação do espaço urbano na cidade de São Paulo (1886-1945)</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>Rafael Vieira Machado. <b>COMO A GESTAO EFICIENTE DE DOCUMENTOS PODE TORNAR EFICAZ O FUNCIONAMENTO DA SECRETARIA E UMA UNIDADE ESCOLAR</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>Regiane Rodrigues de Souza. <b>Desafios à efetivação dos direitos de pessoas trans e travestis na perspectiva do Serviço Social brasileiro</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>Robson Tadeu Borges Ribeiro. <b>A IMPORTÂNCIA DA COMUNICAÇÃO NÃO-VIOLENTA NA ABORDAGEM DO ALUNO-PACIENTE BOLIVIANO PELO AGENTE COMUNITÁRIO DE SAÚDE NO BAIRRO DO BELENZINHO - SÃO PAULO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>Rogel Moreira da Silva. <b>MODELO DE APRENDIZAGEM BASEADO EM PROBLEMAS APLICADO NO ENSINO DA TÉCNICA DE APLICAÇÃO DE AGENTES EXTINTORES PARA O TÉCNICO EM BOMBEIRO AERONÁUTICO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>Romero Marcilio Barros Matias de Oliveira. <b>COMO A GESTAO EFICIENTE DE DOCUMENTOS PODE TORNAR EFICAZ O FUNCIONAMENTO DA SECRETARIA E UMA UNIDADE ESCOLAR</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>Ronaldo Santos Lages. <b>Catecismos: o caráter de resistência dos quadrinhos de Carlos Zéfiro</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades ? Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>Sefani Silva de Souza. <b>EMPREENDEDORISMO SUSTENTÁVEL: UM ESTUDO DE CASO COM CURSO TÉCNICO DE ADMINISTRAÇÃO</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>Sheila Bruna Souza da Silva. <b>Os estilos de liderança e sua influência nos resultados positivos nas empresas</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>Suélen Mendonca Nogueira Sousa de Lima. <b>Gestão para Egressos e Alunos da Fábrica da Comunidade do Município de Cubatão: uma proposta de intervenção</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>Thamara Gloria de Almeida Borges. LIVRES, PERO NO MUCHO. <b>UMA ANÁLISE DA SITUAÇÃO DE MULHERES NEGRAS BRASILEIRAS ENTRE 1995 E 2015</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>Vicente Camilo de Lima. <b>ENSINO E O GEODESIGN: CONCEPÇÕES PARA ELABORAÇÃO DE PROJETOS INSTITUCIONAIS</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>Wander Pessoa. <b>CHÃO DE FÁBRICA?: UM PROJETO DE INTERVENÇÃO PEDAGÓGICA NA EDUCAÇÃO PROFISSIONAL</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>WELLINGTON IDALINO DA SILVA. <b>GESTÃO DE RISCOS EM PROJETOS: ​ estudo de caso de aplicabilidade em uma obra de facilities​</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Câmpus Pi. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alejandro Moliterno Vanerio. <b>Manual didático para pandemia</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amanda Tiago de Sousa. <b>Uma proposta pedagógica explorando textos autênticos sobre problemas mundiais no corpus na aula de língua inglesa</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Cláudia Alves Xavier. <b>Os filtros da beleza: desconstruindo padrões estéticos</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ana Paula Bonadio Santos Ribeiro. <b>Desenvolvimento Educacional e Social: da redação ao Documentário</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Anderson Pereira Santana. <b>Os impactos da implementação da cultura lean no setor da construção civil</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Angelissa Burato da Costa. <b>Brincando e aprendendo através do lúdico</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Aurea Lara. <b>ANÁLISE DO DESENVOLVIMENTO DE VACINAS PARA COVID-19 COM ENFASE NA CORONAVAC E DO PLANO DE VACINAÇÃO NO BRASIL BASEADA NO ESTUDO DA COMPLEXIDADE DE PROJETOS?</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BEATRIZ TORRES LARANGEIRA. <b>A IMPORTÂNCIA DA REPRESENTATIVIDADE LÉSBICA NO TEATRO: DESCONSTRUINDO ESTEREÓTIPOS E ROMPENDO COM O APAGAMENTO HISTÓRICO</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Bianca Oliveira Coelho. <b>O mistério da criança pensante: uma análise literária da escrita clariceana para o público infantojuvenil</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades ― Educação, Política e Sociedade) - Instituto Federal de São Paulo câmpus Pirituba. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Bianca Pereira Machado. <b>- PROEJA: empodere os alunos com uso das tecnologias</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Bárbara Amaral da Silva. <b>Divulgação científica em podcasts: uma proposta a partir da pedagogia de projetos</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Camila Nere Mazini. <b>Recursos naturais: a Feira Internacional de Tecnologia Agrícola em Ação</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Carla Alves da Costa. <b>Briquedos lúdicos e a intervenção tecnológica</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Carla Antonieta Piani de Oliveira. <b>A redação do ENEM no 3o ano do Ensino Médio: debates sobre a Competência 1</b>. (Aperfeiçoamento/Especialização em Gramática da Língua Portuguesa: reflexão e ensino) - Universidade Federal de Minas Gerais, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Cibelih Hespanhol Torres. <b>A GRAMÁTICA DE CLARICE: propostas éticas para a revisão de textos literários a partir do estudo da pontuação de ?Perto do Coração Selvagem?</b>. (Aperfeiçoamento/Especialização em Gramática da Língua Portuguesa: reflexão e ensino) - Universidade Federal de Minas Gerais, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Cássia Maciel Nogueira. <b>Eixo de Segurança: Prevenção de acidentes no âmbito corporativo e doméstico.</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Daniel Rossado Oliveira. <b>DECOLONIZANDO OS SABERES: A INSERÇÃO DA HISTÓRIA E CULTURA AFRICANAS E AFRO-BRASILEIRAS NOS LIVROS DIDÁTICOS DE QUÍMICA</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>DANIEL ROSSADO OLIVEIRA. <b>Decolonizando os saberes: a inserção da história e cultura africanas e afro-brasileiras nos livros didáticos de química</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Daniela Maria Rodrigues. <b>Propostas Educativas e Tecnologia utilizando Fabricação de Iogurte</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>David Nogueira Silva Marzzoni. <b>Produção Alimentícia: perspectivas educativas e tecnologia</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>DEMISON DOS SANTOS MERCES. <b>GESTÃO DEMOCRÁTICA DA EDUCAÇÃO: Um estudo sobre os subsídios legais da Gestão Democrática dos Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP)</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Edilson Jose Davoglio Candido. <b>Informação e Comunicação: A Elaboração de um protótipo de aplicativo para Web</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Everton Silva dos Santos. <b>Os africanos em diáspora e a construção do território brasileiro: um percurso sobre o Atlântico Sul Preto</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Gabriela de Godoy Cravo Arduino. <b>Conhecimento, sensibilização e prevenção de doenças transmissíveis pelo uso do lúdico: uma proposta de intervenção na Educação em Saúde</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Geza Thais Rangel e Souza. <b>Desenvolvimento Educacional e Social - Inglês se aprende brincando</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Glenia Chrisostomo Balieiro. <b>Eixo tecnológico e os recursos naturais</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Jaqueline Miguel Afonso. <b>Ambiente e Saúde: uma sequência didática, através do desenvolvimento de atividades distintas que se complementem e colaborem para aprendizagem dos estudantes do curso Técnico em Controle ambiental</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Jessica Tiemi Ito Silva. <b>O rap de Djonga: a utilização de ambiguidades lexicais como ferramenta de denúncia social</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - IFSP - Campus São Paulo Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>João Paixão dos Santos Neto. <b>Proposta pedagógica para o ensino médio integrado: Enzimas presentes na cozinha e no laboratório</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>João Vitor Bortoleto. <b>A classe média fardada: uma análise histórica das motivações do tenentismo</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Júlia Zanardo Sousa. <b>GESTÃO DE DOCUMENTOS E A SUA IMPORTÂNCIA NO GERENCIAMENTO DE PROJETOS</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/9174738474958622">Fernando Luis Rossi</a>, <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Larissa Vaz de Oliveira. <b>Podfólio: a criação de um portfólio colaborativo de podcasts sobre habilidades e competências do século XXI</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Leandro da Silva Ferreira. <b>O Sigma e a Cruz: um estudo sobre a relação do integralismo com a Igreja Católica</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3270989786290783">Vagner Luís da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Leandro Lopes Meneses. <b>Influência do espaço escolar na ação pedagógica</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6721329327099220">Flávia Roberta Torezin</a>.</font></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Marcos Antonio Pereira. <b>Segregação e urbanização precária: o Distrito Anhanguera e a reprodução urbana da classe trabalhadora na metrópole</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2191580229628759">Danilo Marcondes de Alcantara</a>.</font></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Michele Pereira Sousa. <b>MOVIMENTOS DE MULHERES E DITADURA: APROXIMAÇÕES E DISTANCIAMENTOS ENTRE O MFPA E O MOVIMENTO FEMINISTA</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Nathane Gabriele M. de Carvalho. <b>Punição e encarceramento: breve revisão histórica e apontamentos contemporâneos</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Nelson Alexandre Fernandes Toledo. <b>Can I help you?</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Plinio Alexandre dos Santos Caetano. <b>Cadeias agroindustriais curtas e segurança alimentar</b>. (Aperfeiçoamento/Especialização em Especialização em Docência do Ensino Profissional e Tecnológico) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Rafael Lino Maenza de Sousa. <b>Gestão Ambiental e a nova revolução industrial: A gestão de projetos como catalisadora de programas de sustentabilidade na indústria 4.0</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Gestão de Projetos) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>Rafaela Teruel Sanchez. <b>Ferramentas de marketing digital como estratégia para o segmento bancário brasileiro - Um estudo sobre o C6 Bank</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão de Projetos) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>ROGÉRIO CARNIATO. <b>O ESTÍMULO À CRIATIVIDADE NA EDUCAÇÃO COMO FORMA DE DESENVOLVIMENTO SOCIAL</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>Rubens de Oliveira Costa. <b>O tema da liberdade pelo prisma do criticismo kantiano</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>Sidinéia Alves Ferreira. <b>PRÁTICAS DE TI VERDE ALINHADAS À GESTÃO DE TI EM UMA PEQUENA EMPRESA</b>. (Aperfeiçoamento/Especialização em Especialização em Gestão da Tecnologia da Informação) - Instituto Federal de São Paulo - campus Boitiuva, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>Sidney dos Santos. <b>Mobilidade urbana e segregação socioespacial: análise da distribuição e do acesso aos transportes públicos na cidade de São Paulo</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2191580229628759">Danilo Marcondes de Alcantara</a>.</font></td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>Sueli Bossi da Silva. <b>O mercado editorial e a influência midiática sobre o público infantojuvenil: desafios para a formação de leitores críticos e humanizados</b>. (Aperfeiçoamento/Especialização em Pós-Graduação em Humanidades) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>Vagner José Santana. <b>Cyber Berimbau, Digital Capoeira, Rod@ para aprender Português Língua Estrangeira</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>Valdiene Aparecida Gomes. <b>Projeto de vida no primeiro ano do Ensino Médio: quem sou?</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>Yanê Pinheiro Nogueira de Souza Silva. <b>O feminismo, enquanto perspectiva epistemológica, no combate à desigualdade de gênero no ambiente escolar</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades- Educação, Cultura e Sociedade) - Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3933160719185792">Ana Carolina Vila Ramos dos Santos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruno Pereira Pontes. <b>As relações entre universidade e saberes não hegemônicos no distrito da Brasilândia</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2191580229628759">Danilo Marcondes de Alcantara</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Cristiane Bibiano da Silva. <b>O DUALISMO DA EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA NO BRASIL NO PERÍODO DE 2003 A 2016</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Daniela Rodrigues de Sousa Fernandes. <b>Letramento literário em interface com a multimodalidade: rios que desaguam em outros (dis)cursos</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Dolores Calvó Sala. <b>Educação freireana, estudo de caso em Pirituba ? teoria do conhecimento, essa desconhecida</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades - Educação, Política e Sociedade) - Instituto Federal São Paulo - Câmpus São Paulo Pirituba. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Fernanda Riggio. <b>Podcontos: as TDICs e a Literatura</b>. (Aperfeiçoamento/Especialização em Linguagem, Tecnologia e Ensino) - Universidade Federal de Minas Gerais. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Izabella Cristhina Jantorpe. <b>RESPONSABILIDADE SOCIOAMBIENTAL EM UMA PEQUENA EMPRESA DE COSMÉTICOS: UM ESTUDO DE CASO NO MUNICÍPIO DE SÃO PAULO</b>. (Aperfeiçoamento/Especialização em ESPECIALIZAÇÃO EM HUMANIDADES: EDUCAÇÃO, POLÍTICA E SOCIEDADE.) - Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Rafael Marcon Pugliese. A influência da WEB 2.0 na forma do romance. <b>Do ambiente virtual ao texto na obra de Daniel Galera</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades ― Educação, Política e Sociedade) - Instituto Federal de São Paulo câmpus Pirituba. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriana Souza Lima Rodrigues. <b>A arte de narrar na contemporaneidade e as oficinas de contação de histórias</b>. (Aperfeiçoamento/Especialização em Especialização em Humanidades ― Educação, Política e Sociedade) - Instituto Federal de São Paulo câmpus Pirituba. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Augusto César Monteiro da Silva. <b>Prática Docente: a importância do professor no processo ensino-aprendizagem de alunos com TDAH.</b>. (Aperfeiçoamento/Especialização em Instituto Federal do Pará (IFPA)) - Instituto Federal do Pará, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9670600127969592">Maria Reinize Semblano Gonçalves</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>sueli colona. <b>A CASE ANALYSIS ABOUT THE ASSESSMENT OF QUALITY OF SERVICES IN A LOGISTICS COMPANY IN THE LIGHT OF THE SERVQUAL MODEL</b>. (Aperfeiçoamento/Especialização em Especialização em Logística e Operações) - Instituto Federal de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ADONAI MEIRELES BEZERRA JUNIOR. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANNIELLE MENDES BRITO DA SILVA. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTONIO CARLOS MOREIRA. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ARTHUR ALBERTO CORREA TREUHERZ. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruno Afonso Guirado. <b>Extração de Tweets e Análise (Olimpíadas)</b>. (Aperfeiçoamento/Especialização em Pós-graduação em Business Intelligence com Big data) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BRUNO MATTEI. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CAMILA FERNANDES DA SILVA CARVALHO. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Carolina Meirelles de Azevedo Bello. <b>O trabalho com o tema migrações na perspectiva da alfabetização geográfica</b>. (Aperfeiçoamento/Especialização em Ensino de Geografia) - Pontifícia Universidade Católica de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9637385188417163">Danilo Amorim de Souza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Cássia Aparecida Guimarães. <b>Gênero e etnia: análise iconográfica do livro "Projeto Araribá História" PNLD 2014</b>. (Aperfeiçoamento/Especialização em Gênero e Diversidade na Escola) - Universidade Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3002035461254197">Maria Cristina Stello Leite</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Eliana Mello Juvenal. <b>À quem interessa o livro didático? Representação dos negros em três obras didáticas</b>. (Aperfeiçoamento/Especialização em Gênero e Diversidade na Escola) - Universidade Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3002035461254197">Maria Cristina Stello Leite</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Fernando Marchi Nunes. <b>Base de dados semântica para a política brasileira</b>. (Aperfeiçoamento/Especialização em Pós-graduação em Business Intelligence com Big data) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>FILIPI LUIZ MEIRELLES GOMES DE SA. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>JOSÉ ALEX ALVES DOS SANTOS. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>JÚLIO ANTÔNIO MARÇAL SILVA. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>KARLA CORONA GUERZE KARLA CORONA GUERZE. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>LIN HUNG HUA. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Luiz Augusto Alves Azevedo. <b>Extração de Tweets e Análise (Olimpíadas)</b>. (Aperfeiçoamento/Especialização em Pós-graduação em Business Intelligence com Big data) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MARCELO JOSÉ SANCHES. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MARIA AMELIA BELLISARIO DOS SANTOS. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Mayra Oliveira Lourenço. <b>A representação das mulheres negras nos livros didáticos de história (FTD)- Interseccionalidade de raça e gênero no livro didático material do ensino médio</b>. (Aperfeiçoamento/Especialização em Gênero e Diversidade na Escola) - Universidade Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3002035461254197">Maria Cristina Stello Leite</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Rafael de Castilho Cezzaretti. <b>A fragmentação do discurso geográfico: geografia do Brasil em livros didáticos do ensino fundamental</b>. (Aperfeiçoamento/Especialização em Ensino de Geografia) - Pontifícia Universidade Católica de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9637385188417163">Danilo Amorim de Souza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>RAFAEL MEIJON PALHARES. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>RAUL ANTÔNIO MORAIS MELO. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>RENATO MATIAS DANTAS. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SERGIO BASSALO PALUDETO. <b>Em construção</b>. (Aperfeiçoamento/Especialização em Informática em Saúde) - Universidade Aberta do Brasil - UNIFESP, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Silvia Cristina Isabel. <b>Re-conhecendo a questão agrária/agrícola no livro didático de geografia</b>. (Aperfeiçoamento/Especialização em Ensino de Geografia) - Pontifícia Universidade Católica de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9637385188417163">Danilo Amorim de Souza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Veronica Monachini de Carvalho. <b>O ensino de culturas indígenas na primeira infância: curiosidade, diferenciação e aproximação cultural</b>. (Aperfeiçoamento/Especialização em Gênero e Diversidade na Escola) - Universidade Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3002035461254197">Maria Cristina Stello Leite</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

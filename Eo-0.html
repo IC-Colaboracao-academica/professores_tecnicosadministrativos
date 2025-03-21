@@ -1,0 +1,1143 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de organização de eventos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+28],
+[2017,
+18],
+[2018,
+13],
+[2019,
+20],
+[2020,
+10],
+[2021,
+26],
+[2022,
+19],
+[2023,
+21],
+[2024,
+11]]}]});
+        });
+        </script>
+        
+                <h3>Total de organização de eventos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 489<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, J. F. S.; FIRES, A. C.. <b>XX Olimpíada de Brasileira de Biologia. 2024</b>. 2024. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, M. S.; BARBOSA, E.. <b>Frustração: compreendendo e superando</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO, M. S.; KOMANDO, I. ; ANYANGU, C.. <b>Brasil e África: aproximações e distanciamentos nas questões ambientais</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CORTESE, T.T.P. ; Sotto, D. ; Kniess, C. T. ; ALMEIDA, J. F. S. ; Nery, M. ; Falcetta, F. A. M. ; Argentin, P. M.. <b>RUA: Resiliência Urbana em Ação - Ciclo de Encontros Técnicos</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FARIAS, A. M. ; BARROS, Ana Paula Rodrigues Magalhães ; OLIVEIRA, C. E. ; SILVA, F. I. A. ; LUIZ, T. T.. <b>VII Semanda de Educação Matemática: "BNCC, Livros e Materiais Didáticos: implicações e desafios docentes"</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Homem, Thiago P. D.; FERREIRA JR., P. R.. <b>2024 Brazilian Symposium on Robotics (SBR), and 2024 Workshop on Robotics in Education (WRE)</b>. 2024. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>JESUS, F. ; CASTRO, M. S.. <b>A monocultura e a produção do desinteresse pela Escola</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MAGALHAES, C. A. ; RODRIGUES, G. B. ; ALMEIDA, J. F. S.. <b>Calendário Afirmativo do Campus São Paulo - Educação nas Relações Etnico-Raciais</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARTINS, E. S. ; CASTRO, M. S.. <b>Educação Escolar Indígena</b>. 2024. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MOMETTI, A. L. ; PEREIRA, E. F. M.. <b>II EXPOMAT do curso de Licenciatura em Matemática do IFSP</b>. 2024. Exposição</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SILVA, A. M.; ALCANTARA, D. M. ; RIVERA, E. A. S. ; OLIVEIRA, P. C. ; CARNEIRO, R. S. ; ROSA, A. M. ; RODRIGUES, E. K. ; ALBANO JUNIOR, L. R. ; SOUZA, O. A. ; PINHEIRO, R. A. ; FEITOSA, W. R. ; CRUZ, A. C. F. ; MACHADO, D. O. ; SOUZA, E. L. ; RODRIGUES, H. V. ; SANTOS FILHO, J. ; MAISAMO, M. R. C. ; COSTA, A. B. G. B. ; SILVA, E. B. ; SOUZA, I. G. D. ; SILVA, A.M. ; et.al. <b>21ª Semana Nacional de Ciência e Tecnologia</b>. 2024. Outro</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>FERRUZZI, A. J. ; ZADI, I. C. ; FAVARETO, A. L. ; BASILE, F. R. M. ; ALBANO JUNIOR, L. R. ; FERREIRA, R. S.. <b>Desafio GITESTech no TADS</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; FIORENTINI, D. ; HONORATO, A. H. A. ; SALGADO, M. A. J. ; MENEZES, Sandra ; MAIA, M. G. B.. <b>IX SEMINÁRIO DE HISTÓRIAS E INVESTIGAÇÕES DE/EM AULAS DE MATEMÁTICA</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; SOUZA, M. F. ; OLIVEIRA, C. E. ; LUIZ, T. T. ; FARIAS, A. M. ; LIMA, R. C. R. ; ARAUJO, H. E. ; GONZALEZ, J. A. ; JUNIOR, V. A. S.. <b>VI Semana da Educação Matemática: a educação matemática na articulação IFSP e escolas</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BASILE, F. R. M. ; ZADI, I. C. ; FERREIRA, R. S. ; FERRUZZI, A. J. ; FAVARETO, A. L.. <b>GITES na IC com REDES</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BERNARDINO, M. ; SANTOS, J. G.. <b>I Encontro Estadual de Psis LGBTQIAPN+</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CASTRO, M. S.; HORTA, P.. <b>Aula Magna do Curso de Letras</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Feitosa, W. R. ; LOPES, L.. <b>5o. Encontro de Gestão Pública</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FEITOSA, W. R.; BARBOSA, R. ; LOPES, L. ; PROCOPIO, J. V. J.. <b>5º Encontro de Administração Pública</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FERRARI, M. P. S. ; SANTOS, J. G.. <b>II Seminário de Divulgação Científica do IFPR Campus Umuarama</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FERRUZZI, A. J.; BASILE, F. R. M. ; FERREIRA, R. S. ; ZADI, I. C. ; FAVARETO, A. L.. <b>Visita técnica à empresa CISCO</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>HOMEM, Thiago Pedro Donadon; PAVIOTTI, C. R. ; RAMOS, L. P. ; ESPERANCA, M. N. ; SILVA, P. H. A. ; SOUZA, D. R. ; ELIAS, G. C.. <b>14º Congresso de Inovação, Ciência e Tecnologia - CONICT</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MASCARENHAS, A. P. F. M. ; Homem, T.P.D. ; SIMOES, M. A. C.. <b>20th IEEE Latin American Robotics Symposium - LARS 2023 / 15th Brazilian Symposium on Robotics - SBR 2023</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MENDONCA, H. A. ; PARDO, F. S.. <b>Palestra: Diálogos com o digital na Educação: desafios e perspectivas. Profª Helena Andrade Mendonça</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MIZAN, S. ; PARDO, F. S.. <b>Palestra: Letramento Digital no Sul Global: multimodalidade, multiculturalidade e colonialismo. Profª Drª Suzana Mizan</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>NAKAMOTO, F. Y. ; ALMEIDA, JAIRO FILHO SOUSA DE ; FIRES, A. C. ; FERREIRA, A. L. P. ; COSTA, C. S. ; VECCHI, C. G. ; ESTEVES, D. F. ; SILVA, R. C.. <b>15ª Semana de Ciência, Educação e Tecnologia do Campus São Paulo</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>OLIVEIRA, CATHANA FREITAS DE ; BANDINI, M. ; Módolo, L. P.. <b>Fórum Permanente: ?Sofrimento Mental e Suicídio entre trabalhadores e trabalhadoras: como estamos enfrentando?</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>ROSSETI, W. ; CALIXTO, L. B.. <b>Visita ao Museu da Bolsa do Brasil - MUB3</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SANTOS, L. C. M. ; BAGE, I. B. ; RODRIGUES, Hadassa Viviane ; RIVERA, E. A. S.. <b>20° Semana Nacional de Ciência e Tecnologia</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SANTOS, N. P.; RUIZ, J. S. G. ; SILVA, L. P. ; SANTARSIERE, C. ; OLIVEIRA, G. R. R.. <b>Comemorações dos 40 anos de Graduação e 25 anos da Pós-Graduação em Economia</b>. 2023. Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SILVA, Vagner L. da; SOUZA, D. A.. <b>Organização e mediação de palestra com o Prof. Dr. Rodrigo Pereira Chagas (UFRR): O garimpo em Roraima - de projeto de Estado à crise humanitária</b>. 2023. Outro</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>TERUZZI, A. E.; SANTOS, V. M.. <b>Disciplinas, In(ter)disciplinaridade, formação de professores na escola basica</b>. 2023. Congresso</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BASILE, F. R. M. ; RODRIGUES, E. K. ; ALBANO JUNIOR, L. R. ; SOUSA-FERREIRA, REGIVALDO. <b>CyberGITES - Resultados da Cibereducação no Câmpus São Paulo Pirituba</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARROS, A. P. R. M.; LUZ, A. M. ; SANTOS, A. C. ; MATOS, B. ; OLIVEIRA, C. E. ; SILVA, F. I. A. ; BARROS, F. M. M. ; ORDONIO, H. S. ; CARVALHO, I. L. ; JATOBA, L. J. ; SILVA, L. C. ; SOUZA, M. F. ; MOTA, M. L. ; KUSSUDA, S. R. ; LUIZ, T. T. ; ALMEIDA, U. L. ; GARCIA, V. C.. <b>V Semana da Educação Matemática: a educação matemática na articulação IFSP e escolas</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BIANCHI, R. A. C. ; HOMEM, THIAGO P.D. ; SILVA, B. M. F.. <b>19th IEEE Latin American Robotics Symposium - LARS 2022 / 14th Brazilian Symposium on Robotics - SBR 2022</b>. 2022. Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTIEL, L. D. ; SILVA, R. A. ; Módolo, L. P.. <b>Monitoram-me, logo existo?: entre riscômetros portáteis e saúde pública governada por processadores de dados</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FEITOSA, W. R. ; CAMPANELE, J. R.. <b>4o Encontro de Administração Pública ?EAP, no Instituto Federal de São Paulo ? Câmpus São Paulo Pirituba</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERRARI, M. P. S. ; SANTOS, J. G.. <b>IX SETEC - Seminário de Estudos Técnicos e Tecnológicos, X IFTECH - Feira de Inovação Tecnológica do IFPR, VI Semana Acadêmica de Ciências Biológicas, IV Semana Acadêmica de Arquitetura e Urbanismo, IV Jornada Acadêmica de Tecnologia em Análise e Desenvolvimento de Sistemas, III Semana Acadêmica de Química, IV Semana Acadêmica de Agronegócio, III Seminário de Educação Inclusiva e Semana Acadêmica</b>. 2022. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FERRUZZI, A. J. ; TEIXEIRA, F. O. ; BASILE, F. R. M. ; ZADI, I. C. ; FERREIRA, R. S. ; MONTANHER, R. C.. <b>SNCT IFSP Campus Pirituba: Mesa redonda - Café com GITES - um olhar sobre a iniciação científica</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FERRUZZI, A. J. ; TEIXEIRA, F. O. ; BASILE, F. R. M. ; ZADI, I. C. ; FERREIRA, R. S. ; MONTANHER, R. C.. <b>SNCT IFSP Campus Pirituba: Encontrando valor nos dados</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FESTINO, C. G. ; PARDO, F. S.. <b>Aula magna: ?Além do Cânone Nacional: A Literatura Mundo e o ?Great Unread?? ? Profa. Dra. Cielo Festino</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>LIMA, L. H. M. X. ; PARDO, F. S.. <b>Palestra: Um autista na aula de inglês: educação linguística e ensino de língua</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARTINS, T. H. B.; BELLO, I. M.. <b>A importância dos estudos curriculares para a compreensão da função social da escola na contemporaneidade: algumas reflexões</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Pissardini, Paulo E.; PUGLIESI, R. M. ; BRUNO, R. D. ; SENA, A. K. ; SILVA, C. B. ; XAVIER, J. N. ; SOUZA, G. K. ; SOUZA, L. D. ; SILVA, S. C. G. ; GUERRINI, R. A.. <b>II Encontro da Engenharia de Produção do Instituto Federal de Educação Ciência e Tecnologia de São Paulo</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SANTOS, L. C. M. ; BAGE, I. B. ; RODRIGUES, Hadassa Viviane ; RIVERA, E. A. S.. <b>19º Semana Nacional de Ciência e Tecnologia</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SILVA, R. A. ; Módolo, L. P.. <b>Saúde (Roda Viva) Coletiva: Não vamos ficar gerindo a extinção</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Sobrinho, L:V ; ANDREAZZI, M. F. S. ; Módolo, L. P.. <b>?Saúde digital: isso é para quê(m)??</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Sotto, D. ; PHILIPPI JR., A. ; Leonardo Porto Ferreira ; Marcos Buckeridge ; Ana Letícia Aquino ; Humberto Gracher Riella ; Nicole Figueiredo de Oliveira ; Roberto Pacheco ( ; ALMEIDA, J. F. S.. <b>Urbansus - Emergência Climática e Transição Energética: Desafios de Sustentabilidade para a Região Carbonífera de Santa Catarina</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>TEIXEIRA, F. O. ; BASILE, F. R. M. ; FERREIRA, R. S. ; FERRUZZI, A. J.. <b>SNCT IFSP Campus Pirituba: Mesa redonda - Café com GITES - um olhar sobre a iniciação científica</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>TEIXEIRA, F. O. ; BASILE, F. R. M. ; FERREIRA, R. S. ; FERRUZZI, A. J. ; ZADI, I. C.. <b>SNCT IFSP Campus Pirituba: Como é o dia a dia de um Cientista de Dados em um dos maiores bancos do Brasil?</b>. 2022. Outro</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>ZADI, I. C.; BASILE, F. R. M.. <b>Semana TCC</b>. 2022. Outro</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BRAUER, K. C. N. ; SILVA, V. L. S. ; FERREIRA DA SILVA, V. R.. <b>III SELIV - Seminário de Estudos Linguísticos do Vale do Paraíba. Múltiplas Leituras: entrelaçamentos em Linguagens, Literatura e Educação</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Educação em Direitos Humanos e a Pedagogia</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CASTRO, Moacir Silva de; CAVALCANTI, M. A. N. ; PIRES, V. F. S.. <b>A Educação Inclusiva e a Educação de Jovens e Adultos na Formação em Letras</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO, Moacir Silva de; PRUDENTE, P. A.. <b>I Seminário do Curso de Letras do IFSP Câmpus São Paulo Pirituba</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>CORTESE, T. T. P. ; ALMEIDA, J. F. S.. <b>Urbansus - A cidade como Plataforma Política, de Inovação e de Desenvolvimento Sustentável</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FEITOSA, W. R. ; BARBOSA, R. ; ROSSETI, W. ; LOPES, L. ; PUGLIESE, R. M. ; BAGE, I. B. ; LACERDA, M. B. ; SANTOS, P. A.. <b>Dia do Administrador Público</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FEITOSA, W. R.; BARBOSA, R. ; LOPES, L.. <b>1º ADM Day</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FEITOSA, W. R.; BARBOSA, R. ; LOPES, L.. <b>3º EAP - Encontro de Administração Pública</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>FERRAZ, A. M. M. ; FERREIRA DA SILVA, V. R. ; BARRETO, K. H.. <b>PIBID: Resistência e desafios em tempos pandêmicos</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FERRAZ, A. M. M. ; TOREZIN, F. R. ; FERREIRA DA SILVA, V. R.. <b>A BNCC e o Ensino de Português: críticas e propostas</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FIORENTINI, D. ; HONORATO, A. H. A. ; MAGALHÃES,A. P. R.. <b>VIII SEMINÁRIO DE HISTÓRIAS E INVESTIGAÇÕES DE/EM AULAS DE MATEMÁTICA</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GOUVEIA, E. M. ; JUNIOR , E. C. S. ; GROHMANN, R. N. ; Módolo, L. P.. <b>Digitalização e automação no capitalismo contemporâneo</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MARTINS, T. H. B.; PAIVA, P. T. P.. <b>A importância da redação acadêmica para a internacionalização: algumas ferramentas</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MARTINS, T. H. B.; SCARAMUCCI, M. V. R.. <b>Internacionalização e ensino-aprendizagem de línguas</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ORTIZ, A. J. ; SANTOS, J. G.. <b>Curso de Formação Continuada sobre Metodologias Ativas</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PARDO, F. S.; CASTRO, M. S.. <b>I Seminário do Curso de Letras do IFSP São Paulo Pirituba (SECULE)</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PUGLIESE, R. M.; MEDINA, C. P. ; XAVIER, F. P. ; SILVA, S. C. G. ; GUERRINI, R. A. ; PAULO, O. J. P. ; SANTOS, G. A. F. P. ; NASCIMENTO, J. S. ; PADUA, I. ; SILVA, B. A. ; SANTOS, A. N. ; SANTOS, C. G.. <b>I Encontro da Engenharia de Produção</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; MEDINA, C. P. ; XAVIER, F. P. ; Gonçalves da Silva, S. C. ; GUERRINI, R. A. ; PAULO, O. J. P. ; SANTOS, G. A. F. P. ; NASCIMENTO, J. S. ; PADUA, I. ; SILVA, B. A. ; SANTOS, A. N. ; SANTOS, C. G.. <b>I Encontro da Engenharia de Produção: troca de experiências</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SAMPAIO, J. C. ; SANTOS, L. R.. <b>IX Jornada de Física do campus Lagarto - A física na contemporaneidade: sustentabilidade e eficiência energética</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SANTOS, A. C. V. R. ; SILVA, Vagner L. da. <b>Organização e mediação de palestra com o Prof. Dr. Christian Fernando dos Santos Moura (IFSP-CJO): Ciência, Corpo e Movimento: uma análise da história do Teatro Experimental do Negro (1944-1961)</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SILVA, Andréa Cotrim; SILVA, S. B. ; TAKAKI, N. H.. <b>Coordenação de GT: éticas e partilhas abissais nas lingua(gens)</b>. 2021. Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SILVA, E. P.; CASTRO, M. S.. <b>I Seminário do Curso de Letras - I SECULE</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SILVA, Vagner L. da; MARTINS, T. H. B.. <b>Organização e mediação de palestra com a Profa. Dra. Sueli Soares dos Santos Batista (FATEC-SP): Infância, juventude e os desafios contemporâneos: a experiência de uma jovem mulher imigrante</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SILVA, Vagner L. da; PUGLIESE, R. M.. <b>Organização e mediação de palestra com o Prof. Dr. Vitor Fabrício Machado (UFMA): Cosmopolítica, conhecimento e pesquisa</b>. 2021. Outro</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>SIQUEIRA, L. L. ; SANTOS, J. G.. <b>Processo Seletivo de Ingresso dos Estudantes dos Cursos Técnicos de Nível Médio</b>. 2021. Concurso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>SOUZA, D. A. ; SILVA, Vagner L. da. <b>Organização e mediação de palestra com o Prof. Dr. Fábio Luís Barbosa dos Santos (UNIFESP): O médico e o monstro: o progressismo e seus opostos na América Latina</b>. 2021. Outro</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARBOSA, R.; ANDRUCHACK, MARCOS ; MATOS, LUIS CLAUDIO. <b>COLÓQUIO ARTE: MERCADO E DESIGN</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARRETO, Krícia Helena; CASTRO, M. ; PARDO, F. S. ; SILVA, Eufrida Pereira da ; AQUINO, Patrícia de. <b>I Seminário do Curso de Letras do IFSP São Paulo Pirituba (SECULE)</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARROS, A. P. R. M.; BARROS, F. M. M. ; SILVA, K. C. P. ; CHINELLATO, T. G. ; LUIZ, T. T. ; SILVA, F. I. A.. <b>IV Semana da Educação Matemática</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BEZERRA, G. G. R. ; BARBOSA, R. C. M. ; SILVA, C. S. ; PEREIRA, E. F. M.. <b>Dia Internacional da mulher</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Consolo, Douglas A. ; ALMEIDA, V. ; MARTINS, T. H. B. ; SILVA, V. L. T. ; Lanzoni. Hélcio P.. <b>IV SEMAPLE - Seminário de Avaliação de Proficiência em Língua Estrangeira</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>DUBOC, A. P. ; PARDO, F. S.. <b>Aula Magna: "Atitude Decolonial: por uma educação outra, por uma sociedade outra" ? Profa. Dra. Ana Paula M. Duboc (FEUSP)</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FREIRE, M. M. ; MELO, A. M.. <b>Sete saberes: o futuro no presente</b>. 2020. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PICINATO, P. B. ; FERREIRA, F. M.. <b>Mediação da palestra "Língua, identidade e preconceito linguístico: uma prosa sociolinguística sobre a fala caipira", proferida pela Profa. Dra. Pricila Balan Picinato de Carvalho</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>SILVA, Vagner L. da; TOREZIN, F. R. ; MOREIRA, M. F. N. ; PUGLIESE, R. M. ; BAGE, I. B. ; BRUNO, R. D. ; SILVA, F. H. G.. <b>I Jornada de Educação e Cultura do curso de Especialização em Humanidades, campus Pirituba-IFSP</b>. 2020. Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SILVEIRA, J. E. N. ; PEREIRA, E. F. M.. <b>I Ciclo de Seminários do GEFIL -</b>. 2020. Outro</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMARO, A. B. ; BERNARDO, T. F. S. ; CORRÊA, Priscila Moreira ; CRUZ, A. C. F. ; LOPES, J. S. C. ; SILVA, F. F. ; KISHIGAMI, F. D. ; MOURÃO, T. ; MIRANDA, M. C.. <b>Semana da Consciência Negra e Diversidade do Campus Itaquaquecetuba</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOSA, R.; ANDRUCHACK, MARCOS. <b>MURAL DO INSTITUTO FEDERAL DE SÃO PAULO</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARBOSA, R.; MATOS, LUIS CLAUDIO ; ARAUJO, CASSIANO. <b>PAX PARA O SÉCULO XXI</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BARBOSA, R.; MATOS, LUIS CLAUDIO ; CAMPANHA, JULIO ; RAMOS, MARIO C.. <b>EXPOSIÇÃO: MUNICIPIOS EM FOCO: EMBU DAS ARTES</b>. 2019. Exposição</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BULGARELLI, A. P.; SOUZA, D. A. ; SILVA, V. R. F. ; PUGLIESE, R. M. ; SILVA, V. L. ; SANTOS, A. C. V. R. ; PICOSQUE, T. A. ; MARTINS, T. H. B.. <b>II Ciclo de Debates da Pós-Graduação em Humanidades: "Cidadania e democracia em tempos de crise"</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAMARGO, A. R. O. ; ARAUJO, T. V. ; LEITE, M. C. S.. <b>I Congresso de práticas e pesquisas da educação da Infância: "Professora sim, tia não!"</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>VII Seminário de Pesquisa e Integração do EHPS</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CELADA, M. T. ; OLIVEIRA, A.P.F.. <b>4o Congresso Latino-Americano de Glotopolítica</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CRUZ, A. C. F.; BERNARDO, T. F. S. ; BARBOSA, G. S.. <b>Semana da Consciência Negra e da Diversidade</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>LOPES, INGRID ANELISE; Et. al. ; PRIETO, Rosângela G.. <b>IV Seminário de Políticas Públicas: gênero e raça em interlocução com a área de Educação Especial</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MAIA, J. O.; WINDLE, J. A. ; SOUZA, A. L. S. ; SILVA, D. N. ; CASTRO, S. R. L. ; ZAIDAN, J. M. ; MUNIZ, K.. <b>I Seminário Transperiferias</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARTIN, S. ; FERREIRA DA SILVA, V. R.. <b>II SELIV - Seminário de Estudos Linguísticos do Vale do Paraíba - "Língua, Literatura e Ensino: diálogos acadêmico-pedagógico"</b>. 2019. Congresso</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MOMETTI, A. L. ; RIBEIRO, R. M. ; VIEIRA, W. ; PEREIRA, E. F. M. ; IMAFUKU, R. S.. <b>I Encontro de Residência Pedagógica e PIBID</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>NEUFELD, A. B. ; GUERRERO, A. O. ; SABINO, A. R. ; BARBOSA, R. C. M. ; NEMAN, L. S. ; PEREIRA, E. F. M.. <b>Visita Técnica: UPA - UNICAMP de Portas Abertas</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>PEREIRA, E. F. M.; SILVEIRA, J. E. N.. <b>Visita Técnica a Olimpíada de Filosofia do Estado de São Paulo. 2019</b>. 2019. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA, E. P.; MARTINS, T. H. B.. <b>III Colóquio de Ensino de Língua Inglesa: Desafios e Perspectivas,'</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SILVA, Vagner L. da; SANTOS, A. C. V. R. ; SILVA, V. R. F. ; PUGLIESE, R. M. ; SOUZA, D. A.. <b>Cidadania e democracia em tempos de crise</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>SILVEIRA, J. E. N. ; PEREIRA, E. F. M.. <b>Evento: Ética e política em Aristóteles</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>SILVEIRA, J. E. N. ; PEREIRA, E. F. M.. <b>Visita Técnica: Estudantes do GEFIL participam de aula de filosofia na USP</b>. 2019. Outro</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SOUZA, L. M. T. M. ; MOR, W. M. M. ; PARDO, F. S.. <b>IV Encontro do Projeto Nacional de Letramentos: Linguagem, Cultura, Educação e Tecnologia / Ciclo II - Os Estudos de Letramentos e o Contexto Brasileiro: Expandindo Interpretações</b>. 2019. Outro</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AZEVEDO, M. M. S. ; RODRIGUES, M. C. C.. <b>Palestra "A Nicarágua na Atualidade" (Com Maria Mercedes Salgado de Azevedo)</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BULGARELLI, A. P.; SANTOS, A. C. V. R.. <b>Racismo, Movimentos Negros e Resistência</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BULGARELLI, A. P.; SANTOS, A.C.V.R. ; SOUZA, D. A. ; PUGLIESE, R. ; PICOSQUE, T. A. ; BIANCHINI, T. B.. <b>I Ciclo de Seminários SONAED - Metodologia de Ensino e Didática</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>II Semana de Física</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FLORES, A. P. X. ; PEREIRA, E. F. M. ; AMERICANO, R. C. ; SOUZA, V. F. ; HANDAYA, A. ; IMAFUKU, R. S. ; CALANCA, L. D. ; MASTRIA, L. G. ; MELO, V. A. M.. <b>IX Semana da Matemática e da Educação Matemática do IFSP - Guarulhos</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>LOPES, INGRID ANELISE; et al.. <b>III Seminário de Políticas Públicas: políticas de educação especial</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MAIA, J. O.; OLIVEIRA, E. L.. <b>Cine Debate: Estamira</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MENDES, Enicéia G. ; PRIETO, Rosângela G. ; LOPES, I. A. ; Et. al.. <b>VI Encontro do Observatório Nacional de Educação Especial (EONEESP)</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PEREIRA, E. F. M.; BRANDAO, F. F. F. ; NEUFELD, A. B. ; MAGALHAES, C. P. ; SANTOS, N. P.. <b>I Ciclo de Palestras do Cursinho Popular 2018</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ROMAGNOLI, A. J.; CARNEIRO, L. P. M. ; FREDERICO, P. R. P. ; MAZO, P. H. S. ; NICOLOSI, R. M. ; SILVA, R. R. S. ; SILVA, A. L. M.. <b>IV Semana do Brincar</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROSES, C. F. ; ANDRADE, O. P. ; EMIDIO, D. E. ; SANTOS, C. A. S. ; SANTOS, J. G. ; OLIVEIRA, P. F.. <b>4º Congresso de Educação Profissional e Tecnológica do IFSP-CONEPT e dos Encontros de Formação das áreas de Desenvolvimento Institucional e Administração do IFSP</b>. 2018. Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SILVA, E. P.; CIZAURRE, M.. <b>II Colóquio de Estudos Linguísticos e Literários - Cultura e Desigualdade Social: o Legado de Raymond Williams</b>. 2018. Outro</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>SOUZA, L. M. T. M. ; MOR, W. M. M. ; PARDO, F. S.. <b>III Encontro do Projeto Nacional de Letramentos: Linguagem, Cultura, Educação e Tecnologia ? Ciclo II: Práticas de Letramentos na Formação de Professores de Línguas</b>. 2018. Outro</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Prêmio Rubem Alves</b>. 2017. Concurso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>COSTA, G. M.; COSTA, V. S. ; VIEIRA, G. L. ; AMENDRO, M.F.. <b>I Encontro de Ensino, Pesquisa e Extensão</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FEITOSA, W. R.; brito. <b>Simpósio sobre Advocacy nas redes sociais</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; ARAUJO, K. S. ; VILLAS BOAS, V. L. ; SILVA, K. O. ; VIANA, P. R.. <b>II Semana do Livro e da Biblioteca - Viagem ao país da literatura</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; ARAUJO, T. S. N. ; BARTHO, V. D. O. R. ; SOUZA, A. M. B.. <b>I Seminário de Estudos Linguísticos do Vale Paraíba</b>. 2017. Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>IZARRA, L. P. Z. ; AQUINO, P.. <b>Abertura da Cátedra de Estudos Irlandeses 2017</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>IZARRA, L. P. Z. ; AQUINO, P.. <b>XII Symposium of Irish Studies</b>. 2017. Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>IZARRA, L. P. Z. ; BOLFARINE, M. ; AQUINO, P.. <b>Curso de Cultura e Extensão - Introdução à História da Irlanda</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>LOPES, I. A.; Et. al.. <b>I Seminário de Políticas Públicas - Educação especial no censo escolar: desafios e tensões</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>NASCIMENTO, D. C. ; ANTUNES, Jeferson ; SILVA, A. F. ; SILVA, A. C. B. A. ; MAIA FILHO, A. ; FERREIRA, C. S. ; SILVA, F. M. S. ; FE, M. M. M. ; MACEDO, M. A. ; PEREIRA, P. F. ; BARRETO, P. L. N.. <b>I Simpósio Ciência e Sustentabilidade do Cariri</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>NASCIMENTO, D. C. ; MAIA FILHO, A. ; MACEDO, M. A. ; ANTUNES, Jeferson ; SILVA, A. C. B. A. ; SILVA, A. F. ; SILVA, F. M. S. ; FE, M. M. M. ; BARRETO, P. L. N. ; FERREIRA, C. S. ; PEREIRA, P. F.. <b>Semana do Meio Ambiente - PRODER 2017</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>NEVES, A. A. ; RAMOS, A. G. ; SANTOS, J. G. ; BASANTE, J. G. ; OLIVEIRA, S. ; PAES, A. ; ASSUNCAO, M. A. T. ; ROSA, E. T. ; ROSA, V. H.. <b>I Encontro Diversidade & Inclusão: Conviver para entender... Entender para incluir</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PEREIRA, E. F. M.; FLORES, A. P. X. ; MOMETTI, A. L. ; BEZERRA, G. G. R. ; MOREIRA, H. N. ; AMERICANO, R. C. ; LEAL, S. A. S. ; SOUZA, V. F.. <b>VIII Semana da Matemática e da Educação Matemática do IFSP - Guarulhos</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>ROMAGNOLI, A. J.; CARNEIRO, L. P. M. ; FREDERICO, P. R. P. ; MAZO, P. H. S. ; NICOLOSI, R. M. ; SILVA, R. R. S. ; SILVA, A. L. M.. <b>III Semana do Brincar</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SILVA, A.M.; BANDEIRA, A. L. F. P. ; ARAUJO, L. C. ; OLIVEIRA, E. N. N. ; SOUSA, E. C.. <b>Seminário Meio Ambiente - Consumo, tecnologia e descarte de resíduos</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA, A.M.; BANDEIRA, A. L. F. P. ; SANTOS, G. L. ; LIBA, F. R. T. ; LOPREATO, M. R.. <b>Resolução de conflitos nas relações interpessoais: o que nós, professores, temos a ver com isso?</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SILVA, A.M.; SELKE, A. E. ; BENAR, P. ; OLIVEIRA, I. M. ; JATOBA, L. J. ; CRIVELARO, R. ; LEITE, R. B. ; OLIVEIRA, N. M. ; BARROS, A. P. R. M. ; SOUZA, M. F. ; OLIVEIRA, C. E. ; BATISTA JUNIOR, R. I. ; NEIRA, F. G. ; BARUFFALDI, L. B. ; SILVA, R. D. ; REIS, L. A. ; SILVA, R. G.. <b>VI Semana Nacional de Ciência e Tecnologia</b>. 2017. Outro</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Wolkoff, Gisele ; EUFRASINO, C. M. ; IZARRA, L. P. Z. ; AQUINO, P.. <b>VI Jornada de Estudos Irlandeses</b>. 2017. Congresso</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson; DONELARDY, A. I. C. ; SAMPAIO, A. M. B. ; SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; ALMEIDA NETO, J. L. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M. ; et.al. <b>I Encontro Sustentável 2016: Empreendedorismo Social e suas vertentes para a sustentabilidade</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; DONELARDY, A. I. C. ; SAMPAIO, A. M. B. ; SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; ALMEIDA NETO, J. L. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M. ; et.al. <b>II Encontro Sustentável 2016: As dimensões da Sustentabilidade na Região metropolitana do cariri</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; DONELARDY, A. I. C. ; SAMPAIO, A. M. B. ; SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; ALMEIDA NETO, J. L. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M. ; et.al. <b>Semana do Meio Ambiente PRODER/UFCA</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; LIMA, J. N. ; ROCHA, M. A. ; SANTOS, I. B. R. ; SILVA, A. C. B. A. ; SOUZA, M. E. N. ; SILVA, A. F. ; MARINHO, F. V. N. ; CRUZ, P. H. M. G.. <b>Diálogos Lúdicos-Culturais: O Brincar, a Tradição e os Brincantes do meu Brasil</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson; LIMA, J. N. ; SILVA, A. F. ; CRUZ, P. H. M. G. ; SILVA, A. C. B. A. ; SOUZA, M. E. N. ; MARINHO, F. V. N.. <b>Diálogos Lúdicos-Culturais: Os limites da ciência a partir da cultura japonesa</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ANTUNES, Jeferson; Ribeiro, Vêronica ; MACIEL, S. ; LEITE, M. L. S. ; MARTINS, C. M. S. S.. <b>II Encontro Regional dos Estudantes do Campo de Públicas Nordeste</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ANTUNES, Jeferson; SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M.. <b>O PRODER como agente de desenvolvimento regional sustentável no Cariri</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>I Concurso Previne Araça</b>. 2016. Concurso</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CUNHA, M. Z. ; SILVA, E. A.. <b>II Seminário Fantástico e Imaginário: reflexões contemporâneas</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>EUFRASINO, C. M. ; BOLFARINE, M. ; AQUINO, P.. <b>II Colóquio de Pós-graduandos em Estudos Irlandeses</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FREIRE, M. M. ; MELO, A. M.. <b>VIII Encontro de Pesquisadores sobre a Abordagem Hermenêutico-fenomenológica e Complexidade</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>HELD, C. L. F.; CUTIGI, J. F. ; SALINA, F V ; LEMOS, Fábio Ricardo Mizuno ; OLIVEIRA, L.B.R ; BERTELLI, G.B. ; LARA, S. M. A ; CROCE, J. A. G. ; PEREIRA, Carlos José de Almeida ; IZOLA, D. T. ; SCHIAVON, F. L. ; RAMOS, R. H. ; BRASSOLATTI, T. F. Z. ; SOARES, T.M.Z.. <b>2° WIPEX - Workshop de Inovação, Pesquisa e Extensão</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>HELD, C. L. F.; VILARONGA, C. A. R. ; OLIVEIRA, L.B.R ; TEDESCHI, W ; BRASSOLATTI, T. F. Z. ; CICOGNA, T. R. ; BORDIGNON, T. ; SCHIAVON, F. L. ; OLIVEIRA, A. G. M. ; SILVA, E. L. F. ; FONTES, D. A. ; MELO, E. M. ; NALESSO, A. C. F. ; NEDER, L. C. S.. <b>V Semana Nacional de Ciência e Tecnologia</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>IZARRA, L. P. Z. ; AQUINO, P.. <b>Seminário "Roger Casement e o Centenário de 1916"</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>IZARRA, L. P. Z. ; AQUINO, P.. <b>XI Symposium of Irish Studies</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MANICOBA, A. ; FEITOSA, W. R.. <b>Seleção para o curso de pós graduação Lato sensu em Logística e Operações</b>. 2016. Concurso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MANICOBA, A. ; FEITOSA, W. R.. <b>2º IFLOG - Congresso de Logística do IFSP</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>NASCIMENTO, D. F. ; SANTOS, J. G.. <b>Prevenção à Violência Doméstica contra Crianças e Adolescentes em Diferentes Contextos</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>NICOLOSI, R. M. ; TAVARES, A. M. ; ROMAGNOLI, A. J. ; FREDERICO, P. R. P. ; MAZO, P. H. S. ; CARNEIRO, L. P. M.. <b>II Semana do brincar</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>PUGLIESE, R. M.; SOUZA, D. A.. <b>I Semana Nacional de Educação, Ciência e Tecnologia do IFSP Câmpus Pirituba</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>ROSES, C. F. ; LOPES, R. F. ; MENDONCA, C. A. C. ; ALMEIDA, J. F. S. ; LEAL, S. A. S. ; ALMENDRO, S. M. S. S.. <b>II Semana do Trabalho</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; ANTUNES, Jeferson ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M.. <b>IV Encontro Sustentável 2016: PRODER como agente de desenvolvimento regional sustentável no cariri</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; ANTUNES, Jeferson ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M.. <b>V Encontro Sustentável 2016: A interdisciplinaridade no contexto da educação para a sustentabilidade</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SANTOS, A. G. A. ; MOURA, B. B. ; FERNANDES, D. L. ; LOURENCO, D. F. ; SOUSA, E. R. D. ; LINS, F. K. M. ; SILVA, F. M. S. ; LANDIM, G. H. P. ; VIEIRA, I. S. S. ; ANTUNES, Jeferson ; SOUZA, J. H. A. ; NASCIMENTO, J. B. D. ; MACEDO, L. R. ; CALIXTO, L. S. ; BRITO, M. A. P. ; COSTA, M. F. B. F. ; FIALHO, R. G. M.. <b>VI Encontro Sustentável 2016: Associativismos e Valores Éticos</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Simone C. Gonzales ; SILVA, A. A. C.. <b>Encontro de Letras: Pesquisa e Ação:Letras em Campo</b>. 2016. Outro</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Sousa, D. R. ; GONÇALVES SEGUNDO, P. R. ; MODOLO, A. D. R. ; COAN, G. I. ; COSTA, L. F. B. ; FERREIRA, F. M.. <b>VIII Encontro dos Pós Graduandos em Estudos Discursivos da Universidade de São Paulo</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>BULGARELLI, A. P.; SANTOS, A. C. V. R. ; SOUZA, D. A. ; PUGLIESE, R. M. ; MARTINS, T. H. B.. <b>Semana Nacional de Ciência e Tecnologia - A ciência alimentando o Brasil</b>. 2016. Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>SOUZA, F. L. M. ; CUNHA, E. V. ; SILVA, F. M. S. ; ANTUNES, Jeferson. <b>Jornada Científica PRODER 2016</b>. 2016. Outro</td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALBANO JUNIOR, L. R.. I InterIF - Maratona de Programação do IFSP. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALBANO JUNIOR, L. R.. VI InterIF - Maratona de Programação do IFSP. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALBANO JUNIOR, L. R.. VII InterIF - Maratona de Programação do IFSP. 2024. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ALBANO JUNIOR, L. R.. XIX Olimpíada Brasileira de Informática (OBI2017). 2017. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ALBANO JUNIOR, L. R.. XX Olimpíada Brasileira de Informática (OBI2018). 2018. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; ZADI, I. C. ; MONTANHER, R. C.. <b>XXVI Olimpíada Brasileira de Informática</b>. 0. OBI2024</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; ZADI, I. C. ; MONTANHER, R. C.. <b>25a Olimpíada Brasileira de Informática</b>. 0. OBI2023</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; ZADI, I. C. ; MONTANHER, R. C.. <b>XXV Olimpíada Brasileira de Informática</b>. 0. OBI2023</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; ZADI, I. C. ; MONTANHER, R. C.. <b>XXIV Olimpíada Brasileira de Informática</b>. 0. OBI2022</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ALCANTARA, D. M.. II SIMPÓSIO SOBRE PEQUENAS CIDADES XXVI SEMANA DA GEOGRAFIA. 2010. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ALCANTARA, D. M.. XI Encontro Nacional da Associação Nacional de Pós-Graduação e Pesquisa em Geografia. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ALMEIDA, J. F. S.. XIX Olimpíada Brasileira de Informática. 2017. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ALMEIDA, M. L. G.. Circuito NAPNE: Interface entre a Educação Inclusiva e a Saúde. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>ALMEIDA, M. L. G.. Circuito Napne: Ouvindo a Surdez. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ALMEIDA, M. L. G.. I Encontro de Estudantes de Letras/LIBRAS. 2010. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>AMARAL, B. S.. XI Encontro de Empresas Juniores da UNESP. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>AMARAL, B. S.. XXXVIII Semana da Química. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>ANTUNES, Jeferson. 5° ENCONTRO CIENTÍFICO DO DIA INTERNACIONAL DO BRINCAR. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>ANTUNES, Jeferson. Encontro Guattari Cariri. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>ANTUNES, Jeferson. III Semana de Administração Pública - UFCA. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>ANTUNES, Jeferson. IV Semana de Administração Pública & I Mostra Científica em Administração Pública. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>ANTUNES, Jeferson. V Encontro Nordestino de Incubadoras de Economia Solidária. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>AQUINO, P.. "SEMINÁRIO INTERNACIONAL PANDEMIA E VIDA SOCIAL: REFLEXÕES SOBRE A SOCIEDADE GLOBAL PÓS-COVID-19?. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>AQUINO, P.. Comemoração dos 150 anos de Yeats na abertura da Cátedra de Estudos Irlandeses W.B. Yeats. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>AQUINO, P.. English Teaching and Diversity: Different Perspectives Seminar. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>AQUINO, P.. I Festival de Cultura Internacional. 2023. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>AQUINO, P.. I Seminário do Curso de Letras do Instituto Federal de São Paulo Pirituba. 2021. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>AQUINO, P.. II Festival de Cultura Internacional. 2024. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>AQUINO, P.. III Jornada de Estudos Irlandeses - Literaturas em Diálogo: Fronteiras e cruzamentos Culturais.. 2014. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>AQUINO, P.. IV Jornada de Estudos Irlandeses. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>AQUINO, P.. Nono Simpósio de Estudos Irlandeses da América do Sul - Turn of the Centuries Ireland. 2014. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>AQUINO, P.. Rodada de Negociações Agrotins 2024. 2024. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>AQUINO, P.. SEMANA INTEGRADA 2023/1 UNITINS. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>AQUINO, P.. Sexto Simpósio de Estudos Irlandeses da América do Sul - Striving for Reality in Contemporary Ireland. 2011. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>AQUINO, P.. SÉTIMO SIMPÓSIO DE ESTUDOS IRLANDESES NA AMÉRICA DO SUL - Representações da Mulher na Cultura Irlandesa. 2012. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>AQUINO, P.. V Jornada de Estudos Irlandeses. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>AQUINO, P.. VII Jornada de Estudos Irlandeses - Celebrating Bloomsday at USP. 2018. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>BAGÉ, I. B.. 18ª SNCT - Semana Nacional de Ciência e Tecnologia_2021. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>BAGÉ, I. B.. 19ª SNCT - Semana Nacional de Ciência e Tecnologia_2022. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>BAGÉ, I. B.. 4º Encontro de Administração Pública ?EAP. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>BAGÉ, I. B.. ADM - Day - Encontro de Administradores. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>BAGÉ, I. B.. GITES - DEVELOP na extensão. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>BAGÉ, IDALISE BERNARDO. 1ª Semana da Consciência Negra - IFSP - Pirituba. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>BARBOSA, R.. Semana Nacional de Ciência e Tecnologia. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>BARBOSA, R.. Visita Tecnica Jornal da Cultura. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>BARBOSA, R.. Visita técnica. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>BARROS, A. P. R. M.. 30 anos do PPGEM. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>BARROS, A. P. R. M.. I Simpósio de Grupos Colaborativos e de Aprendizagem do Professor que Ensina Matemática.. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>BARROS, A. P. R. M.. IV Seminário Nacional de Histórias e Investigações de/em aulas de Matemática. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>BARROS, A. P. R. M.. V Seminário Nacional de Histórias e Investigações de/em Aulas de Matemática (SHIAM). 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>BARROS, A. P. R. M.. VIII Semana Nacional de Ciências e Tecnologia. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>BARROS, Ana Paula Rodrigues Magalhães. VI SHIAM Seminário Nacional de Histórias e Investigações de/em Aulas de Matemática. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>BARROS, Ana Paula Rodrigues Magalhães. VII SHIAM Seminário Nacional de Histórias e Investigações de/em Aulas de Matemática. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>BASANTE, J. G.. I CONEPT - CONGRESSO DE EDUCAÇÃO PROFISSIONAL E TECNOLÓGICA DO IFSP. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>BASILE, F. R. M.. Maratona CISCO - Fundamentos de Cybersegurança. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>BLANCO, B.. I Caminhada em Apoio ao Portador de Doenças Raras. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>BLANCO, B.. I Jornada de Nutrição e Psicologia - I PSICONUTRI. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>BLANCO, B.. I Seminário de Distrofia Muscular - GEDR. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>BLANCO, B.. I Seminário de Psicologia - GEDR. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>BLANCO, B.. II Caminhada de Apoio a Pessoa com Doença Rara. 2011. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>CAMPANELE, J. R.. 19ª SNCT - Semana Nacional de Ciência e Tecnologia do Câmpus São Paulo Pirituba. 2022. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>CASTRO, M. S.. I Semana de Consciência Negra do IFSP Câmpus Pirituba. 2023. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>CASTRO, M. S.. Semana de Consciência Negra do IFSP Campus Pirituba. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>CASTRO, Moacir Silva de. Educação em Direitos Humanos frente as Políticas Públicas. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>CASTRO, Moacir Silva de. I CIPPEB - Congresso de Internacional de Práticas Pedagógicas da Educação Básica. 2014. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>CASTRO, Moacir Silva de. I Seminário de Estágio Supervisionado do Curso de Licenciatura em Leras Português e Inglês. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>CASTRO, Moacir Silva de. III Fórum Municipal de Educação de Araçariguama. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>CASTRO, Moacir Silva de. Políticas Públicas para a Educação Inclusiva no Brasil. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>CASTRO, Moacir Silva de. PROEJA no IFSP Câmpus PTB - estrutura, ações e contribuições para a Educação Profissional e de Jovens e Adultos. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>CASTRO, Moacir Silva de. Respeito a Diversidade, preconceito e estereótipos sociais.. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. 2º Congresso Internacional de Educação do Noroeste Paulista - "Alfabetizar e Educar para Avançar". 2013. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. 2º Encontro de Educação Inclusiva do IFSP. 2011. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. 2º Encontro de Formação Continuada do IFSP. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. 4º Encontro da Coordenadoria Sociopedagógica do IFSP. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. Capacitação DEB/DGD - PRE. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. I Colóquio de Estudos Linguísticos e Literários. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. I Congresso de Educação Profissional e Tecnológica do IFSP. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. IV Congresso de Extensão (CONEMAC). 2017. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. Semana de Ciência e Tecnologia do Câmpus Pirituba - IFSP. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. Seminário da Educação Profissional Técnica de Nível Médio: Novas Diretrizes. 2011. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>COTRIM, Andréa. IV- EPOGELLI- Encontro de Pós-graduandos em Estudos Linguísticos e Literários em Inglês. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>FAQUIN, B. S.. Festival interno de dança do departamento de ginástica, recreação e dança do CEFD/UEL. 2005. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>FAQUIN, B. S.. I Semana da Educação Física e do Esporte. 2012. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>84. &nbsp;</td> <td>FAQUIN, B. S.. II Semana da Educação Física e do Esporte. 2013. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>85. &nbsp;</td> <td>FAQUIN, B. S.. III Semana de Educação Física e Esporte. 2014. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>86. &nbsp;</td> <td>FAQUIN, B. S.. Iniciação à programação em Matlab para análise e processamento de sinais biológicos. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>87. &nbsp;</td> <td>FAQUIN, B. S.. V Congresso Brasileiro de Comportamento Motor. 2010. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>88. &nbsp;</td> <td>FEITOSA, W. R.. 10º SEMEAD - Seminários de Administração de Empresas. 2007. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>89. &nbsp;</td> <td>FEITOSA, W. R.. 1º Hackaton IFSP Pirituba. 2019. (Concurso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>90. &nbsp;</td> <td>FEITOSA, W. R.. 4º EAP - Encontro de Administração Pública IFSP. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>91. &nbsp;</td> <td>FEITOSA, W. R.. CONICT. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>92. &nbsp;</td> <td>FEITOSA, W. R.. Curso Intensivo de Produção e Marketing Cultural. 1999. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>93. &nbsp;</td> <td>FEITOSA, W. R.. Feira de embalagens sustentáveis. 2013. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>94. &nbsp;</td> <td>FEITOSA, W. R.. Lançamento Projeto Esplanada Sustentável em São Paulo. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>95. &nbsp;</td> <td>FEITOSA, W. R.. Papai Noel Solidário 2009. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>96. &nbsp;</td> <td>FEITOSA, W. R.. Papai Noel Solidário. 2007. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>97. &nbsp;</td> <td>FEITOSA, W. R.. Papai Noel Solidário. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>98. &nbsp;</td> <td>FEITOSA, W. R.. Primeira Semana de Arte e Cultura da FEA/USP. 1999. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>99. &nbsp;</td> <td>FEITOSA, W. R.. Segunda Semana de Arte e Cultura da FEA/USP. 2000. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>100. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. "I Ciclo de Histórias de Professores: A experiência vivida em sala de aula". 2006. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>101. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. Congreso Internacional ANILIJ - Nuevos temas en la LIJ: Muerte, Naufragios, Guerras, Desastres... en la Tierra y el Mar. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>102. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. II Ciclo de debates da Especialização em Humanidades: Cidadania e Democracia em tempos de crise. 2019. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>103. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. II Jornadas Internacionales de Crítica e Investicación en Literatura Infantil y Juvenil - "La familia en la Literatura Infantil y Juvenil". 2012. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>104. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. Mesa-redonda "Mercado editorial e coleções literárias para a formação do leitor". 2019. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>105. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. Obras imprescindibles para la enseñanza primaria y secundaria sobre conflictos bélicos. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>106. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. Seminario/Workshop Internacional: Clásicos de la Literatura de Transmisión Oral. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>107. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. Seminario/Workshop Internacional: Obras imprescindibles para la enseñanza primaria y secundaria sobre conflictos bélicos. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>108. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.. X Congreso Internacional de Investigación en Literatura Infantil y Juvenil. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>109. &nbsp;</td> <td>FERREIRA, F. M.. Ciclo de Palestras da Associação dos Professores de Língua e Literatura APLL/FFLCH/USP. 2006. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>110. &nbsp;</td> <td>FERREIRA, F. M.. Feira Cultural e Tecnológica do Colégio Santo Antonio de Lisboa. 2012. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>111. &nbsp;</td> <td>FERREIRA, F. M.. I Encontro das Licenciaturas do IFSP - câmpus Salto. 2019. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>112. &nbsp;</td> <td>FERREIRA, F. M.. II Encontro de Formação de Professores do IFSP - câmpus Salto. 2020. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>113. &nbsp;</td> <td>FERREIRA, F. M.. III Encontro de Formação de Professores do IFSP Câmpus Salto. 2021. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>114. &nbsp;</td> <td>FERREIRA, F. M.. VIII Encontro Nacional de Interação em Linguagem Verbal e Não-Verbal/ II Simpósio Internacional de Análise Crítica do Discurso (monitoria). 2007. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>115. &nbsp;</td> <td>FRANCISCO, T. A.. I Expo Logística 2024 - Instituto Federal de São Paulo- Campus Pirituba (IFSP-PTB). 2024. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>116. &nbsp;</td> <td>FREITAG, B. B.. Palestra: Como Entender a Arte de Agora. 2025. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>117. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. I SECULE ? ?Seminário do Curso de Letras? - de 15 a 16 de janeiro de 2021 - Campus São Paulo-Pirituba do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>118. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. II Colóquio de Estudos Linguísticos e Literários - Campus São Paulo-Pirituba - IFSP. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>119. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. III EPLIN - Encontro de Professores de Ensino de Línguas do Litoral Norte. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>120. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. IV SEMAPLE (Seminário de Avaliação de Proficiência em Línguas Estrangeiras). 2020. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>121. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. Semana de Ciência e Tecnologia do Câmpus São Paulo - Pirituba do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>122. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. Semana Nacional de Ciência e Tecnologia 2019 - Bioeconomia: Diversidade e Riqueza para o Desenvolvimento Sustentável. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>123. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. V SEMAPLE ? Seminário de Avaliação de Proficiência em Línguas Estrangeiras. 2024. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>124. &nbsp;</td> <td>HOMEM, Thiago Pedro Donadon. Sala Temática de Informática na II Semana de Ciência e Tecnologia do Campus Boituva. 2013. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>125. &nbsp;</td> <td>HORTA, P.. II Seminário do Curso de Letras: Vozes Dissonantes - expressões de gênero na literatura, na linguagem e na educação. 2023. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>126. &nbsp;</td> <td>INÁCIO, P. A. L.. Semana Nacional de Ciencia e tecnologia. 2021. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>127. &nbsp;</td> <td>LACERDA, Marcelo. 1° Simpósio de Gestão da Produção Industrial. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>128. &nbsp;</td> <td>LACERDA, Marcelo. Tecnólogo em Gestão da Produção em Foco. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>129. &nbsp;</td> <td>LIZARDO, E.O.. I SEMANA DE ESTUDOS DE BIOLOGIA - SEMABIO. 2000. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>130. &nbsp;</td> <td>LIZARDO, E.O.. II SEMANA DE ESTUDOS DE BIOLOGIA - SEMABIO. 2001. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>131. &nbsp;</td> <td>LIZARDO, E.O.. III SEMANA DE ESTUDOS DE BIOLOGIA - SEMABIO. 2002. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>132. &nbsp;</td> <td>LIZARDO, E.O.. PALESTRA "A IMPORTÂNCIA DA BIOLOGIA MOLECULAR NA ENGENHARIA GENÉTICA". 2002. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>133. &nbsp;</td> <td>LIZARDO, E.O.. XX CONGRESSO DA ASSOCIAÇÃO NACIONAL DE PÓS-GRADUANDOS. 2006. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>134. &nbsp;</td> <td>LIZARDO, E.O.. XXI CONGRESSO NACIONAL DA ASSOCIAÇÃO NACIONAL DE PÓS-GRADUANDOS. 2008. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>135. &nbsp;</td> <td>LOPES, I. A.. Coordenadora da Mesa Temática Práticas Pedagógicas do XVII Congresso de Iniciação Científica da UNESP. 2005. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>136. &nbsp;</td> <td>LOPES, I. A.. Membro da Comissão de Apoio da III Jornada do Núcleo de Ensino de Marília: Teoria Histórico-cultural e a produção do conhecimento. 2004. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>137. &nbsp;</td> <td>LOPES, I. A.. Membro da Comissão de Apoio da IV Jornada do Núcleo de Ensino de Marília - Releitura de Marx para a educação atual. 2005. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>138. &nbsp;</td> <td>LOPES, INGRID ANELISE. V Ciclo de Palestras UFABC Debate Surdos e Libras e II Encontro de Educação Especial e Inclusiva. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>139. &nbsp;</td> <td>LOPES, L.. II Seminário de Pesquisa Marítima. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>140. &nbsp;</td> <td>MAIA, J. O.. 14o Congresso Brasileiro de Linguística Aplicada. 2024. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>141. &nbsp;</td> <td>MAIA, J. O.. I Colóquio de Estudos Linguísticos e Literários. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>142. &nbsp;</td> <td>MAIA, J. O.. I Congresso Nordestino de Linguística Aplicada. 2020. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>143. &nbsp;</td> <td>MAIA, J. O.. I Jornada de Ensino de Língua e Tecnologia. 2012. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>144. &nbsp;</td> <td>MAIA, J. O.. II Colóquio de Estudos Linguísticos e Literários. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>145. &nbsp;</td> <td>MAIA, J. O.. II Jornada de Ensino de Língua e Tecnologia. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>146. &nbsp;</td> <td>MAIA, J. O.. II Simpósio de Sustentabilidade e Aquecimento Global. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>147. &nbsp;</td> <td>MAIA, J. O.. III Jornada de Educação, Linguagem e Tecnologias. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>148. &nbsp;</td> <td>MAIA, J. O.. Jornada sobre Redação na Educação Básica: histórias sobre ensino, avaliação e desigualdades. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>149. &nbsp;</td> <td>MAIA, J. O.. Novos desafios para o profissional da área de línguas. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>150. &nbsp;</td> <td>MAIA, J. O.. Periferias de São Paulo: heterogeneidade e novas formas de vida coletiva em São Paulo. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>151. &nbsp;</td> <td>MAIA, J. O.. Sessão do NECLLE. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>152. &nbsp;</td> <td>MAIA, J. O.. Trote da Cidadania pelo Consumo Consciente. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>153. &nbsp;</td> <td>MAIA, J. O.. Trote da Cidadania pelo Consumo Consciente. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>154. &nbsp;</td> <td>MAIA, J. O.. Trote da Cidadania pelo Consumo Consciente. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>155. &nbsp;</td> <td>MAIA, J. O.. V Jornada de Educação, Linguagem e Tecnologia. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>156. &nbsp;</td> <td>MAIA, J. O.. XIX Seminário de Teses em Andamento - SETA. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>157. &nbsp;</td> <td>MAIA, J. O.. XVIII SETA - Seminários de Teses em Andamento. 2012. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>158. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. Semana de Ciência e Tecnologia do câmpus Pirituba do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>159. &nbsp;</td> <td>MANOEL FILHO, F.. 1º MEC3F 2016 - Congresso de Engenharia Mecânica das 3 Fronteiras. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>160. &nbsp;</td> <td>MANOEL FILHO, F.. I Congresso de Educação Profissional e Tecnológica do IFSP. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>161. &nbsp;</td> <td>MARIOTO, R. R.. II Colóquio de Estudos Linguísticos e Literários. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>162. &nbsp;</td> <td>MARIOTO, R. R.. IX Encontro de Pesquisadores sobre a Abordagem Hermenêutico-Fenomenológica e Complexidade. 2017. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>163. &nbsp;</td> <td>MARTINS NETO, I. A.. IV Congresso Internacional de Literatura Infantil e Juvenil. 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>164. &nbsp;</td> <td>MARTINS NETO, IRANDO ALVES. Sarau cultural: educação e transformação social. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>165. &nbsp;</td> <td>MARTINS, T. H. B.. I Seminário do Curso de Letras - IFSP - campus Pirituba. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>166. &nbsp;</td> <td>MARTINS, T. H. B.. I Seminário Internacional da Associação Brasileira de Professores de Língua Inglesa da Rede de Ensino Básico, Técnico e Tecnológico (I SIABRALITEC). 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>167. &nbsp;</td> <td>MARTINS, T. H. B.. II EPLITEC. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>168. &nbsp;</td> <td>MARTINS, T. H. B.. II Semana de Ciências e Tecnologia do Câmpus Pirituba. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>169. &nbsp;</td> <td>MARTINS, T. H. B.. III Colóquio de Letras - Ensino de Língua Inglesa: desafios e perspectivas. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>170. &nbsp;</td> <td>MARTINS, T. H. B.. III Semana Nacional de Ciência e Tecnologia - câmpus Pirituba. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>171. &nbsp;</td> <td>MARTINS, T. H. B.. Roda de Conversa: Como incentivar a leitura na escola,. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>172. &nbsp;</td> <td>MARTINS, T. H. B.. Semana Nacional de Ciência e Tecnologia 2023. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>173. &nbsp;</td> <td>MARTINS, T. H. B.. Seminário de Pesquisa do Laboratório Latino-Americano de Educação Tecnológica. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>174. &nbsp;</td> <td>MELO, A. M.. A BNCC e o Ensino de Português: críticas e propostas. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>175. &nbsp;</td> <td>MELO, A. M.. II Colóquio de Estudos Linguísticos e Literários. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>176. &nbsp;</td> <td>MELO, A. M.. IX Encontro de Pesquisadores sobre a Abordagem Hermenêutico-Fenomenológica e Complexidade. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>177. &nbsp;</td> <td>MELO, A. M.. Seminário PIBID: Resistência e desafios em tempos pandêmicos. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>178. &nbsp;</td> <td>Mendes, J. M. "Cidades Inteligentes? Sociedade e Tecnologia em Debate". 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>179. &nbsp;</td> <td>Mendes, J. M. "Qualidade dos Serviços Públicos e a Lei 13.460". 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>180. &nbsp;</td> <td>MENDES, J. M. - BATTAGLIA J.M.M. I Seminário Tecnologia Blockchain para Políticas Públicas. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>181. &nbsp;</td> <td>Mendes, J. M. A Lei Geral de Proteção de Dados (LGPD): Desafios e Oportunidades da Nova Legislação. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>182. &nbsp;</td> <td>Mendes, J. M. Crowdsourcing - Oportunidades e Desafios_organizadora. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>183. &nbsp;</td> <td>Mendes, J. M. I Feira de Tecnologia em Computação. 2018. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>184. &nbsp;</td> <td>Mendes, J. M. I Seminário Crowdsourcing - Oportunidades e Desafios. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>185. &nbsp;</td> <td>Mendes, J. M. I Seminário Governança da Internet. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>186. &nbsp;</td> <td>Mendes, J. M. II Feira de Tecnologia em Computação. 2019. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>187. &nbsp;</td> <td>Mendes, J. M. II Jornada Meios Eletrônicos para Solução de Conflitos. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>188. &nbsp;</td> <td>Mendes, J. M. III Seminário Propriedade Intelectual na Sociedade da Informação - Direito de Autor e Inteligência Artificial. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>189. &nbsp;</td> <td>Mendes, J. M. Palestra: Cyber Segurança. 2019. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>190. &nbsp;</td> <td>Mendes, J. M. Semana de Tecnologia 2024/2. 2024. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>191. &nbsp;</td> <td>MENDONCA, F. C.. 8a. Jornada Científica e Tecnológica. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>192. &nbsp;</td> <td>MENDONCA, F. C.. 9o. Congresso Científico UniAraras. 2014. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>193. &nbsp;</td> <td>MENDONCA, F. C.. Semana Nacional de Ciencia e Tecnologia. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>194. &nbsp;</td> <td>MENDONCA, F. C.. XVI Jornada de Iniciação Científica e Tecnológia. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>195. &nbsp;</td> <td>MONTANHER, R. C.. SNCT IFSP Campus Pirituba: Encontrando valor nos dados.. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>196. &nbsp;</td> <td>MONTANHER, R. C.. SNCT IFSP Campus Pirituba: Mesa redonda - Café com GITES - um olhar sobre a iniciação científica.. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>197. &nbsp;</td> <td>MUNHOZ, I. P.. Palestra: Ergonomia e Engenharia de Métodos na Engenharia de Produção. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>198. &nbsp;</td> <td>MUNHOZ, I. P.. Visita Técnica Virtual - Usina de Itaipu. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>199. &nbsp;</td> <td>Módolo, L. P.. Ciclo de Mini Cursos: Clássicos da Política. 2008. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>200. &nbsp;</td> <td>Módolo, L. P.. Fera com Ciência. 2008. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>201. &nbsp;</td> <td>Módolo, L. P.. VII Seminário Internacional -Teoria Política do Socialismo. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>202. &nbsp;</td> <td>Módolo, L. P.. XXII - Encontro Regional dos Estudantes de Ciências Sociais. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>203. &nbsp;</td> <td>OLIVEIRA, C. A. S.. Semana Nacional de Ciência e Tecnologia. 2018. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>204. &nbsp;</td> <td>OLIVEIRA, C. A. S.. Visita técnica a empresa LOGA. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>205. &nbsp;</td> <td>OLIVEIRA, C. A. S.. Visita técnica a Empresa Natura SA. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>206. &nbsp;</td> <td>OLIVEIRA, C. A. S.. Visita Técnica ao Porto de Santos. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>207. &nbsp;</td> <td>PARDO, F. S.. I Encontro do Projeto Nacional de Letramentos - Ciclo 2: Linguagem, Educação, Cultura e Tecnologia. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>208. &nbsp;</td> <td>PARDO, F. S.. II Encontro do Projeto Nacional de Letramentos Ciclo II: "Formação de professores de línguas em contextos plurais" Diretório do Grupo de Pesquisas ? CNPq. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>209. &nbsp;</td> <td>PARDO, F. S.. The 5th International Conference on Multicultural Discourses. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>210. &nbsp;</td> <td>PELAES, M. A. L.. Fim de Semana do Meio Ambiente. 2004. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>211. &nbsp;</td> <td>Pereira RA. Simpósio Nacional de Ciência da Informação. 2001. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>212. &nbsp;</td> <td>PEREIRA, E. F. M.. III Olimpíada de Matemática dos Institutos Federais (OMIF 2020) - Coordenação. 2020. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>213. &nbsp;</td> <td>PEREIRA, E. F. M.. Professor Representante da XIV Olimpíada Brasileira de Astronomia e Astronáutica - OBA. 2012. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>214. &nbsp;</td> <td>PEREIRA, E. F. M.. Professor Representante da XIX Olimpíada Brasileira de Astronomia e Astronáutica e da X Mostra Brasileira de Foguetes. 2016. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>215. &nbsp;</td> <td>PEREIRA, E. F. M.. Professor Representante da XVIII Olimpíada Brasileira de Astronomia e Astronáutica - OBA. 2015. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>216. &nbsp;</td> <td>PEREIRA, E. F. M.. Professor responsável pela Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP. 2012. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>217. &nbsp;</td> <td>PEREIRA, E. F. M.. Professor responsável pela Olimpíada Brasileira de Matemática das Escolas Públicas - OBMEP. 2015. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>218. &nbsp;</td> <td>PEREIRA, E. F. M.. Professor responsável pela participação de 5 equipes na 36ª Olimpíada de Matemática da Unicamp (OMU). 2020. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>219. &nbsp;</td> <td>PEREIRA, E. F. M.. Zamgine - Os enigmas usando a Lógica Matemática. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>220. &nbsp;</td> <td>PISSARDINI, P. E.. XLI Encontro Nacional de Engenharia de Produção. 2021. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>221. &nbsp;</td> <td>PRUDENTE, P. A.. X Encontro de Alunos de Graduação de Inglês como Língua Estrangeira - EAGILE. 2008. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>222. &nbsp;</td> <td>REIS, N. F.. IV Semana de Estudos da Administração e I Semana de Estudos da Pós-Graduação. 2008. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>223. &nbsp;</td> <td>REIS, N. F.. Mostra de Iniciação Científica. 2009. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>224. &nbsp;</td> <td>REIS, N. F.. Mostra de Iniciação Científica. 2011. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>225. &nbsp;</td> <td>REIS, N. F.. Mostra de Iniciação Científica. 2012. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>226. &nbsp;</td> <td>REIS, N. F.. Mostra de Iniciação Científica. 2013. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>227. &nbsp;</td> <td>REIS, N. F.. RACISMO ESTRUTURAL. 2020. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>228. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Administração. 2011. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>229. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Administração. 2012. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>230. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Administração. 2013. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>231. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Administração. 2014. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>232. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Engenharia de Produção. 2008. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>233. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Engenharia de Produção. 2009. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>234. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Engenharia de Produção. 2010. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>235. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Engenharia de Produção. 2011. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>236. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Engenharia de Produção. 2012. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>237. &nbsp;</td> <td>REIS, N. F.. Semana de Estudos em Engenharia de Produção. 2013. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>238. &nbsp;</td> <td>REIS, N. F.. Semana de formação pedagógica para professores e coordenadores de curso. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>239. &nbsp;</td> <td>REIS, N. F.. Semana de formação pedagógica para professores e coordenadores de curso. 2010. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>240. &nbsp;</td> <td>REIS, N. F.. Semana de formação pedagógica para professores e coordenadores de curso. 2011. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>241. &nbsp;</td> <td>REIS, N. F.. Semana de formação pedagógica para professores e coordenadores de curso. 2012. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>242. &nbsp;</td> <td>REIS, N. F.. Semana de formação pedagógica para professores e coordenadores de curso. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>243. &nbsp;</td> <td>REIS, N. F.. Semana de formação pedagógica para professores e coordenadores de curso. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>244. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. Flink Sampa - Festa do Conhecimento Literatura e Cultura Negra. 2015. (Concurso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>245. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. Flink Sampa - Festa do Conhecimento Literatura e Cultura Negra. 2016. (Concurso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>246. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. Flink Sampa - Festa do Conhecimento Literatura e Cultura Negra. 2017. (Concurso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>247. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. Flink Sampa - Festa do Conhecimento Literatura e Cultura Negra. 2018. (Concurso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>248. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. Mesa-redonda: A experiência do primeiro livro. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>249. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. Mesa-redonda: Mulheres na/da literatura. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>250. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. SELIBI - Semana do Livro e da Biblioteca. 2015. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>251. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. SELIBI - Semana do Livro e da Biblioteca. 2016. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>252. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. SELIBI - Semana do Livro e da Biblioteca. 2017. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>253. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. SELIBI - Semana do Livro e da Biblioteca. 2018. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>254. &nbsp;</td> <td>ROMAGNOLI, A. J.. XVIII Semana de Pós-Graduação em Ciências Sociais: Culturas, Democracias e Autoritarismos. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>255. &nbsp;</td> <td>ROSSETI, W.. 19 Semana Nacional de Ciência e Tecnologia. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>256. &nbsp;</td> <td>ROSSETI, W.. 20ª SNCT - SESSÃO APRESENTAÇÃO ORAL - EIXO TEMÁTICO: LOGÍSTICA. 2023. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>257. &nbsp;</td> <td>ROSSETI, W.. 20ª SNCT - SESSÃO APRESENTAÇÃO PÔSTER - EIXO TEMÁTICO: CIÊNCIAS BIOLÓGICAS, DA SAÚDE, AGRÁRIAS E AMBIENTAIS. 2023. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>258. &nbsp;</td> <td>ROSSETI, W.. 4º Encontro de Administração Pública. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>259. &nbsp;</td> <td>ROSSETI, W.. Atividade do Museu da Bolsa do Brasil - Parceria Extramuros. 2023. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>260. &nbsp;</td> <td>ROSSETI, W.. Minicurso de FlexSim. 2025. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>261. &nbsp;</td> <td>ROSSETI, W.. Minicurso de QGIS. 2025. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>262. &nbsp;</td> <td>ROSSETI, W.. Visita ao Museu da Bolsa do Brasil - MUB3. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>263. &nbsp;</td> <td>ROSSETI, W.. Visita Técnica - Natura. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>264. &nbsp;</td> <td>SANTANA, K. O.. Semana Nacional de Ciência e tecnologia. 2012. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>265. &nbsp;</td> <td>SANTOS, A. P.. I Encontro de Licenciaturas do IFSP. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>266. &nbsp;</td> <td>SANTOS, A. P.. II CONEPT. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>267. &nbsp;</td> <td>SANTOS, Ana Márcia Lima. I Jornada Pedagógica da FAEEBA. 1994. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>268. &nbsp;</td> <td>SANTOS, Ana Márcia Lima. Seminário Internacional de Pesquisa. 1999. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>269. &nbsp;</td> <td>Santos, Ana Paula. I Congresso de Educação Profissional e Tecnológica do IFSP (I CONEPT). 2015. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>270. &nbsp;</td> <td>SANTOS, J. G.. I Conferência sobre Educação Sexual no Contexto Escola/Familia. 2005. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>271. &nbsp;</td> <td>SANTOS, J. G.. I Encontro Cultural Escola/Comunidade. 2006. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>272. &nbsp;</td> <td>SANTOS, J. G.. Jornada de Diálogos sobre Acessibilidade e Educação Inclusiva. 2015. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>273. &nbsp;</td> <td>SANTOS, J. G.. Palestra: A Importância do CREA na Formação Acadêmica dos Técnicos Industriais. 2013. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>274. &nbsp;</td> <td>SANTOS, J. G.. Projeto Mãos Dadas. 2006. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>275. &nbsp;</td> <td>SANTOS, J. G.. Sensibilize-se. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>276. &nbsp;</td> <td>SANTOS, L. C. M.. Semana Nacional de Ciência e Tecnologia (SNCT) do IFSP Câmpus São Paulo Pirituba. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>277. &nbsp;</td> <td>SANTOS, L.C.M.. Semana Nacional de Ciência e Tecnologia (SNCT) do IFSP Câmpus São Paulo Pirituba. 2020. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>278. &nbsp;</td> <td>SANTOS, L.C.M.. Semana Nacional de Ciência e Tecnologia (SNCT) do IFSP Câmpus São Paulo Pirituba. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>279. &nbsp;</td> <td>SANTOS, L.C.M.. Semana Nacional de Ciência e Tecnologia (SNCT) do IFSP Câmpus São Paulo Pirituba. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>280. &nbsp;</td> <td>SILVA, A. A. C.. 5th International Conference on Multicultural Discourses: Multi ? Inter or Trans ? Cultural Communication: Reflections.. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>281. &nbsp;</td> <td>SILVA, A. A. C.. Ciclo de Profissões - Letras -UNIP. 2011. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>282. &nbsp;</td> <td>SILVA, A. A. C.. Encontro de Letras Unip. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>283. &nbsp;</td> <td>SILVA, A. A. C.. I Encontro do Projeto Nacional de Letramentos- Ciclo 2: Linguagem, Educação, Cultura e Tecnologia. 2016. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>284. &nbsp;</td> <td>SILVA, A. A. C.. III Encontro do Projeto Nacional de Letramentos: Linguagem, Cultura, Educação e tecnologia- Ciclo III: Práticas de Letramentos na formação de professores de Línguas. 2018. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>285. &nbsp;</td> <td>SILVA, A. A. C.. IV Encontro do Projeto Nacional de Letramentos: Linguagem, Cultura, Educação e Tecnologia- Ciclo II: Os estudos de Letramento e o contexto brasileiro: Expandindo interpretações. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>286. &nbsp;</td> <td>SILVA, A. A. C.. Ocupação do espaço urbano e suas múltiplas linguagens. 2018. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>287. &nbsp;</td> <td>SILVA, A.M.. Curso de Ginástica Laboral - Módulo Avançado. 2001. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>288. &nbsp;</td> <td>SILVA, A.M.. Curso de Ginástica Laboral - Módulo Básico. 2000. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>289. &nbsp;</td> <td>SILVA, Andréa Cotrim. Eixo: Literatura e Cultura- I SECULE. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>290. &nbsp;</td> <td>SILVA, Andréa Cotrim. I SECULE- Seminário do Curso de Letras. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>291. &nbsp;</td> <td>SILVA, E. A.. Semana Nacional de Ciência e Tecnologia. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>292. &nbsp;</td> <td>SILVA, E. A.. Semana Nacional de Ciência e Tecnologia. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>293. &nbsp;</td> <td>SILVA, E. A.. Semana Nacional de Ciência e Tecnologia. 2024. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>294. &nbsp;</td> <td>SILVA, E. P.. I Colóquio de Estudos Linguísticos e Literários IFSP. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>295. &nbsp;</td> <td>SILVA, E. P.. II Conept: Congresso de Educação Profissional e Tecnológica do IFSP 2016. 2016. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>296. &nbsp;</td> <td>SILVA, H. C.. 4 EAP - Encontro de Administração Pública. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>297. &nbsp;</td> <td>SILVA, H. C.. ADM DAY. 2021. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>298. &nbsp;</td> <td>SILVA, H. C.. Semana Nacional de Ciência e Tecnologia 2022. 2022. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>299. &nbsp;</td> <td>SILVA, Vagner L. da. Organização e mediação de palestra com a Profa. Dra. Juliana Serzedello Crespim Lopes (IFSP/UFABC): Desconstruindo estereótipos - nomenclatura e tipologia das relações étnico-raciais. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>300. &nbsp;</td> <td>SILVA, Vagner L. da. Organização e mediação de palestra com a Profa. Ma. Juliana Serzedello Crespim Lopes (IFSP-SZN): Refletindo sobre racismo e preconceito na contemporaneidade. 2021. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>301. &nbsp;</td> <td>SILVA, Vagner L. da. Organização e mediação de palestra com o Prof. Dr. Adelino Francisco de Oliveira (IFSP-PRC): O programa de Direitos Humanos e a Educação para as relações étnico-raciais. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>302. &nbsp;</td> <td>SILVA, Vagner L. da. Organização e mediação de palestra com o Prof. Dr. Márcio Rufino Silva (UFRRJ): A produção do espaço e a metrópole: elementos para uma crítica da economia política do espaço. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>303. &nbsp;</td> <td>SILVA, Vagner L. da. Organização e mediação de palestra com o Prof. Me. Danilo Amorim de Souza (IFSP): O Brasil de Darcy Ribeiro. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>304. &nbsp;</td> <td>SILVA, Vagner L. da. Organização e mediação de palestra com o Prof. Me. Danilo Amorim de Souza (IFSP-PTB): Darcy Ribeiro e a Antropologia da Civilização. 2020. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>305. &nbsp;</td> <td>SOUZA, D. A.. Geografia, seus tempos, seus espaços. 2009. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>306. &nbsp;</td> <td>SOUZA, D. A.. Semana de Ciências Sociais - Ciência e Engajamento. 2005. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>307. &nbsp;</td> <td>SOUZA, D. A.. Semana de Ciências Sociais - Ciências Sociais e a crise do mundo contemporâneo. 2004. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>308. &nbsp;</td> <td>TOPAN, J. S.. Colóquio Estudos Linguísticos na Engenharia: intertextualidade e contextualização. 2014. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>309. &nbsp;</td> <td>TOPAN, J. S.. I Colóquio de Estudos Linguísticos e Literários. 2017. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>310. &nbsp;</td> <td>TOPAN, J. S.. II SECULE (Seminário do Curso de Letras). 2023. (Congresso).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>311. &nbsp;</td> <td>TOPAN, J. S.. Seminário: Literatura infantojuvenil: entre escola, arte e mercado. 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>312. &nbsp;</td> <td>TOREZIN, Flávia Roberta. Semana da Matemática. 2019. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>313. &nbsp;</td> <td>TRINDADE, L. H.. III EXPORH. 2010. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>314. &nbsp;</td> <td>TRINDADE, L. H.. VI Exposição de Inovação e Criatividade. 2010. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>315. &nbsp;</td> <td>TRINDADE, L. H.. VIII Exposição de Inovação e Criatividade. 2013. (Exposição).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>316. &nbsp;</td> <td>VASCONCELOS, Tarcísio Oliveira. 1ª SEMANA DE TECNOLOGIA DA FATEC COTIA.. 2023. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>317. &nbsp;</td> <td>VASCONCELOS, Tarcísio Oliveira. 2ª SEMANA DE TECNOLOGIA DA FATEC COTIA. 2024. .. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>318. &nbsp;</td> <td>XAVIER, R. A. C.. Festival Latino-americano de Instalação de Software Livre (FLISoL). 2022. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>319. &nbsp;</td> <td>XAVIER, R. A. C.. Festival Latino-americano de Instalação de Software Livre (FLISoL). 2023. (Festival).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>320. &nbsp;</td> <td>XAVIER, R. A. C.. Semana Nacional de Ciência e Tecnologia (SNCT). 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>321. &nbsp;</td> <td>XAVIER, R. A. C.. Semana Nacional de Ciência e Tecnologia (SNCT). 2023. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>322. &nbsp;</td> <td>ZADI, I. C.. SNCT IFSP Campus Pirituba: Encontrando valor nos dados. 2022. (Outro).. <b></b>. 0. </td></tr>
+            
+            <tr valign="top"><td>323. &nbsp;</td> <td>ZADI, I. C.. SNCT IFSP Campus Pirituba: Mesa redonda - Café com GITES - um olhar sobre a iniciação científica. 2022. (Outro).. <b></b>. 0. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

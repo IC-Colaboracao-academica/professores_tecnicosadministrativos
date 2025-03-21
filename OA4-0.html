@@ -1,0 +1,195 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Trabalho de conclusão de curso de graduação'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2019,
+2],
+[2021,
+3],
+[2022,
+5],
+[2023,
+8],
+[2024,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Trabalho de conclusão de curso de graduação</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 19<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alberto F. A. Filho.; Gabriel E. G. Silva; Vinicius S. Silva. <b>Análise da aplicação e controle de indicadores de desempenho na melhoria de processos: Uma perspectiva nos setores nos operacional, logístico e de gestão de estoque</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amanda Carolina Pereira Rebouças dos Santos. <b>Revitalização do Centro de São Paulo e a Contribuição Governamental</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5682377023513576">Hamilton Carvalho da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruno Vieira Nascimento Cerveira. <b>Parceria Público-privada como Instrumento Facilitador ao Acesso à Saúde</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5682377023513576">Hamilton Carvalho da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Eduardo Oliveira Speglis. <b>OS IMPACTOS QUE A ADMINISTRAÇÃO PÚBLICA ATUAL TEM ENFRENTADO FRENTE AO DEBAT POPULAR SOBRE OS DIREITOS E GARANTIAS FUNDAMENTAIS</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5682377023513576">Hamilton Carvalho da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Eliane Cristina Basseto. <b>ESTRUTURAÇÃO DO PROCESSO NA GESTÃO DE COMPRAS DA VITÓRIA AGRO-ATACADO</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Agronegócio) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Jaqueline de Carvalho; Maria E. S. Machado; Matheus Rufino. <b>Análise do uso da tecnologia RFID na gestão de estoques: Estudo de caso (título provisório)</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Júlio H. C. Souza; Roberto Felipe Cola. <b>O papel do Engenheiro de Produção em uma empresa de consultoria em gestão da cadeia de suprimentos</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Kedemilson Bezerra de Carvalho. <b>Pessoa Jurídica e ONGs no Desenvolvimento de Produtos Sociais: Um Comparativo sob a Lente da Carga Tributária e de Parcerias no Ordenamento Jurídico Brasileiro</b>. Trabalho de Conclusão de Curso (Graduação em Gestão Pública) - Instituto Federal de Educação Ciência e Tecnologia de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Raphael A. G. Souza; Tamires M. Lopes. <b>A adoção de práticas de Produção mais Limpa em empresas da região de Pirituba (título provisório)</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alicia de Magalhães Campos. <b>Educação em Engenharia de Produção (Título Provisório)</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Caio Kinio Vintencinque Sugawara; Maíra Silva Conde Fernande. <b>Análise das dificuldades e desafios da implantação de um projeto de Logística Reversa de uma grande empresa de calçados</b>. Trabalho de Conclusão de Curso (Graduação em Engenharia de Produção) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9331820124409974">Júlio Samuel Sávio Bernardo</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Gabriela Grimaldi Cometti. <b>Plataforma de gerenciamento veterinário de saúde animal para pets</b>. Trabalho de Conclusão de Curso (Graduação em Tecnólogo em Análise e desenvolvimento de sistemas) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Leonardo Rodrigues de Castro. <b>AMAAI: APLICATIVO MOBILE DE ASSISTÊNCIA ÀS ATIVIDADES DIÁRIAS DO IDOSO</b>. Trabalho de Conclusão de Curso (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Michel Conz Fukuda Pereira Alves dos Santos Autogestão. <b>Autogestão nas ocupações estudantis de 2015: uma análise do manual ?Como ocupar um colégio?? do coletivo O Mal Educado à luz das discussões de Paul Singer</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9285380887754398">Maysa Ciarlariello Cunha Rodrigues</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LAMANA, Leonardo. <b>Impactos da agenda neoliberal na elaboração e implementação das políticas públicas no Brasil</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0085760610917679">Ricardo Normanha Ribeiro de Almeida</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Lucas Felipe de Souza. <b>O Tabuleiro de Galton: uso de uma simulação para ensino de probabilidade e física moderna no ensino superior</b>. Trabalho de Conclusão de Curso (Graduação em Física) - Instituto Federal de São Paulo, . In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2393092066131485">Caroline Inês Lisevski</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Maria Cristina Alves da Silva. <b>Práticas inovativas no espaço escolar: um relato de experiência no microuniverso do IFSP Pirituba</b>. Trabalho de Conclusão de Curso (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Heloisa Dourado; Isabella Gomes; Camila Bezerra da Silva. <b>The Space Between Us: o silenciamento do subalterno em detrimento à hegemonia de poder no estupro</b>. Trabalho de Conclusão de Curso (Graduação em Letras - Português e Inglês) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Débora Freitas; Juliana de Almeida, Luis Marques;Júlia Felip. <b>Literatura inglesa no ensino médio: uma abordagem crítica dos elementos gótico, narcisista e fáustico da obra "O Retrato de Dorian Gray", de Oscar WIlde</b>. Trabalho de Conclusão de Curso (Graduação em Letras - Português e Inglês) - Universidade Paulista, . In&iacute;cio: 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></i></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

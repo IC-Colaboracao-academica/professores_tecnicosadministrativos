@@ -1,0 +1,483 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Orientações de outra natureza'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+23],
+[2017,
+11],
+[2018,
+12],
+[2019,
+27],
+[2020,
+9],
+[2021,
+16],
+[2022,
+24],
+[2023,
+8],
+[2024,
+29]]}]});
+        });
+        </script>
+        
+                <h3>Orientações de outra natureza</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 159<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alana Eduarda Rosa dos Reis Silva. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Alberto Figueira de Abreu Filho. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Alexander Teixeira Souza. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Alice Brandão Azevedo Alves. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Aline Dias de Melo Silva Normandia. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Ana Clara Miranda Alves. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Ana Maria de Almeida Carrara. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Ariana Fernanda Nascimento Silva. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Caio Henrique Moura de Almeida. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Clara de Assis Pereira. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Felipe Ferreira de Sousa. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Fernando Marafon dos Santos Affonso. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Gabriel Zaccanini de Araujo. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Isabelly Padua. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Jaqueline de Oliveira Santos. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Jonathan Willian Pereira da Silva. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Larissa Cristina Velloso Dias. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Larissa Silva Santos. <b>Estágio - Engenharia de Produção</b>. (Letras - Português) - Universidade Federal de Minas Gerais, . 2024.<br><i><font size=-1>Orientadores: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>, <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Livia Leite Ribeiro. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Lydia Dilkeia Dias Reis. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Maria Zilda Bibiano Oliveira Souza. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Monique de Souza Melo. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Nayara Silva Espindola. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Pedro Demétrio Morais. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Raquel de Aguiar Guerrini. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Samuel Luiz Alkimim Nonato. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Tamara Ellen Lacerda Figueiredo. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Thalyta Ávila Costa. <b>O SUS e as juventudes</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Vinicius Sales da Silva. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Caroline Medina. <b>Captação de recursos para causas sociais</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Erick Bongiovani Rodrigues Guimarães. <b>Monitoria de ensino - disciplina Engenharia de Métodos</b>. (Engenharia de Produção) - Universidade Federal da Grande Dourados, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6020485492953878">Thiago Silva Broze</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Giovana Ferreira Julião. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Hallisson Gabriel R. Moreira, Maísa Antonella A. Amadeu. <b>Desenvolvimento de protótipo de sistema para agendamento de almoço para o IFSP campus Boituva</b>. (Técnico em Redes de Computadores Integrado ao Ensino Médio) - Instituto Federal de São Paulo - campus Boitiuva, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Isadora de Oliveira Gomes. <b>Estágio - Engenharia de Produção</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Larissa Carvalho Nunes. <b>Monitoria de ensino - disciplina Engenharia de Métodos</b>. (Engenharia de Produção) - Universidade Federal da Grande Dourados, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6020485492953878">Thiago Silva Broze</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Luciana Min So Cho. <b>Orientação de Estágio</b>. (Letras) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Vitor da Silva Leite. <b>Monitoria de ensino - disciplina Sistemas de Operações de Serviços</b>. (Engenharia de Produção) - Universidade Federal da Grande Dourados, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6020485492953878">Thiago Silva Broze</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alan Magalhães Pereira de Lima. <b>Monitoria de Literatura</b>. (Licenciatura em Letras Português e Inglês) - Instituto Federal de São Paulo câmpus Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AMANDA O. LIMA, JOÃO V. O. GRISOSTE, REBECA V. r. PINHEIRo. <b>APLICAÇÃO DO MOTOR GRÁFICO UNITY NO DESENVOLVIMENTO DE EFEITOS GRÁFICOS EM JOGOS</b>. (Técnico em Redes de Computadores Integrado ao Ensino Médio) - Instituto Federal de São Paulo - campus Boitiuva, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANA JÚLIA LEITE ALVES, BRENDA HERRERA RIBEIRO, ISABELLA S. <b>GESTÃO DE ENTREGA DE MERENDAS ESCOLARES Estudo da logística das merendas escolares do campus Pirituba do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</b>. (Curso Técnico em Logística Integrado ao Ensino Médio) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BRUNA MACHADO BRAGA. <b>Estágio Supervisionado (ASSOCIAÇÃO BRASILEIRA DAS ENTIDADES DO MERCADO FINANCEIRO E DE CAPITAIS)</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Bruna Patricia da Silva Quaglio e André Henrique de Jesus. <b>Projeto de Extensão: Vestibulando</b>. Orientação de outra natureza - Instituto Federal de São Paulo câmpus Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Coelho, V.; França, F.; Silva, J.; Sanches, T.; Carvalho, C. <b>Aplicação Web para Divulgação de Formas de Descarte de Resíduos Eletrônicos</b>. (Técnico em redes de computadores integrado ao ensino médio) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Daniela de Proença Mião. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>DANILO TORRES ROSA RAMALHO. <b>Estágio Supervisionado (ZOETIS INDUSTRIA DE PRODUTOS VETERINÁRIOS LTDA)</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Erico França Alves. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Guilherme Jacomo Marques Nunes. <b>Estágio Curricular Supervisionado</b>. (Licenciatura em Letras Português e Inglês) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Isabela D'Ambrosio Seabra de Morais. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Julia do Nascimento. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Kamilly Filho. <b>Logística Reversa e Sustentabilidade: Uma survey que adapta e valida direcionadores teóricos para consumidores de produtos têxtis na região de São Paulo</b>. (Ensino Médio Técnico Integrado Logística) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Larissa Arian Cepas. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Leonardo Yukio Gunji Romão. <b>Estágio Supervisionado (Cetenco Engenharia S.A.)</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MANOELA PIMENTEL BEZERRA. <b>Estágio Supervisionado (Captalys Companhia de Crédito)</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Maria Adriana Silva do Nascimento. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Martinho, G.; Jardim, J.; França, L.; Fracarole, M. <b>Plataforma de divulgação sobre cuidados com animais domésticos e de pesquisa de clínicas veterinárias</b>. (Técnico em redes de computadores integrado ao ensino médio) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Matheus José de Castro Gonçlaves. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Rafaela Araújo do Nascimento. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>TAYLA VENTURA FIORI, MATEUS PAZINATTO. <b>"LIGAÇÕES QUÍMICAS" NA FIXAÇÃO DO CONTEÚDO NO ENSINO MÉDIO</b>. (Técnico em Redes de Computadores Integrado ao Ensino Médio) - Instituto Federal de São Paulo - campus Boitiuva, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Valter Gomes de Souza. <b>Estágio Curricular Supervisionado</b>. (Letras) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Victor G. Marques; Raphaela G. Ferraz; Anna B. S. Santos. <b>Aplicação web para divulgação de conteúdos e ferramentas acerca da cibersegurança</b>. (Técnico em redes de computadores integrado ao ensino médio) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>WILMA PEREIRA DE MENEZES. <b>Estágio Supervisionado (BANK OF AMERICA MERRILL LYNCH BANCO MULTIPLO S.A.)</b>. (Engenharia de Produção) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Beatriz Silva Gomes. <b>Linguagens artísticas e resistência: identidades, movimentos e ocupações no espaço urbano</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Beatriz Ferraz Jesus. <b>Divulgação científica: diálogos entre a ciência e a sociedade</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Daniel Roger Gomes Martins. <b>Divulgação científica: diálogos entre a ciência e a sociedade</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Douglas Alves, Amanda Firmino, Alan Magalhães. <b>Clube Brito Broca de Leitura - Projeto de extensão</b>. (Licenciatura em Letras Português e Inglês) - Instituto Federal de São Paulo câmpus Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Esther Vanessa do Nascimento Santos. <b>Explorando Elementos de Geometria Especial com o GeoGebra 3D</b>. Orientação de outra natureza - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Gabriel Toledo e Peterson Mendes. <b>Cidades Sustentáveis, Sustentáveis e Inclusivas</b>. (Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriela Redigolo. <b>Formação docente e multiletramentos: um relato de experiência do PIBID</b>. (Licenciatura em Letras Português/Inglês) - IFSP - CÃ¢mpus Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1399854218544805">Ariane Macedo Melo Ferraz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GIOVANNA V. BEDÊ, LARISSA C. ERINGER, NICOLE F. GENARO. <b>O USO DO SLOW MOTION COMO FERRAMENTA CRIATIVA E TECNOLÓGICA NA IMERSÃO DO ESPECTADOR NO CINEMA</b>. (Técnico em Redes de Computadores Integrado ao Ensino Médio) - Instituto Federal de São Paulo - campus Boitiuva, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Guilherme Lannes Rodrigues, et al. <b>A Inteligência Artificial - A democratização do acesso às suas informações </b>. (Técnico em redes de computadores integrado ao ensino médio) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Jackson de Sousa Figueiredo. <b>Escritas de si: um projeto de acolhimento e reflexão pessoal.</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Jean Lucas Acelino de Aguiar. <b>O papel dos parâmetros no gráfico de funções trigonométricas com auxílio do GeoGebra</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Jonatha Domingues Barbosa da Silva , eal. <b>Siadest - Sistema para Alertar Deslizamentos de Terra</b>. (Técnico em redes de computadores integrado ao ensino médio) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Júlia Miranda de Oliveira. <b>Escritas de si: um projeto de acolhimento e reflexão pessoal.</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Laura Beatriz de Barros. <b>Monitoria de Redação Acadêmica para alunos da licenciatura em Letras</b>. (Licenciatura em Letras - Português/Inglês) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Lucas de Brito Costa, no planejamento da oficina intitulada. <b>O papel dos parâmetros no gráfico de funções trigonométricas com auxílio do GeoGebra</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Polyanna Marques de Abreu. <b>Linguagens artísticas e resistência: identidades, movimentos e ocupações no espaço urbano</b>. (Letras - Português) - Universidade Federal de Minas Gerais, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Arthur Henrique Leite Amorim, et al. <b>Realidade virtual no tratamento de pessoas claustrofóbicas</b>. (Técnico em redes de computadores integrado ao ensino médio) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Emilly Alves da Silva. <b>Círculos Interdisciplinares ? desvendando as ciências da natureza e suas tecnologias, exatas e suas tecnologias.</b>. (TÉCNICO EM MECATRÔNICA INTEGRADO AO ENSINO MÉDIO) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Erika de Lira Machado. <b>Projeto de Ensino: Conteúdo Matemático Acessível para Deficientes Visuais</b>. Orientação de outra natureza - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Ihsa Paulla Rosa Ferreira. <b>Dia Internacional da Mulher</b>. (Matemática) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Kristhel Masterson de Lima Conceição. <b>Círculos Interdisciplinares ? desvendando as ciências da natureza e suas tecnologias, exatas e suas tecnologias.</b>. (TÉCNICO EM MECATRÔNICA INTEGRADO AO ENSINO MÉDIO) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Laura Beatriz Barros; Douglas Edmilson da Silva Alves. <b>Clube Brito Broca de Leitura (edição on-line)</b>. (Licenciatura em Letras Português e Inglês) - Instituto Federal de São Paulo câmpus Pirituba, Pró Reitoria de Extensão. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>LIRA, A. J.; TRINDADE, C. S.; COSTA, G. N; SANTOS, S. M. <b>A logística aplicada na inclusão social de autistas na educação infantil: o estudo de caso de um C.E.I do município de São Paulo.</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0085760610917679">Ricardo Normanha Ribeiro de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Lucas Bolognesi de Alcantara. <b>Círculos Interdisciplinares ? desvendando as ciências da natureza e suas tecnologias, exatas e suas tecnologias</b>. (TÉCNICO EM MECATRÔNICA INTEGRADO AO ENSINO MÉDIO) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>TALITA MARIA DOS SANTOS OLIVEIRA. <b>Guia de Introdução à Audiodescrição Didática para Docentes.pdf</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Amaury Nakamichi. <b>A Matemática está na Química: Radioatividade: importância e riscos - a unção exponencial</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruna Cappello Martins. A Matemática está na Química. <b>Aprendendo Matemática por meio de reações químicas e estequiometria: a proporcionalidade.</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruna Lopes Santana Pereira. A Matemática está na Química. <b>O logaritmo e o PH</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Caroline de Melo Ferreira. A Matemática está na Química. <b>O logaritmo e o PH</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Eduardo Bezerra Buccioli. A Matemática está na Química. <b>Aprendendo Matemática por meio de reações químicas e estequiometria: a proporcionalidade</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Heloisa Leme, et al. <b>Processo Logístico de desenvolvimento do Projeto Hortência IFSP - Campus Pirituba</b>. (Técnico em Logística) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5090636072821649">Bianca Blanco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Isabella Paula da Silva; Laura Beatriz Gomes; Pedro Henrique. <b>Transhumanismo em IOT: implementação de neuralinks no tratamento de doenças neurodegenerativas</b>. (Curso Técnico Integrado ao Ensino Médio em Redes de Computadores) - Instituto Federal de São Paulo câmpus Pirituba, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Joyce Almeida Lamberte. <b>Estudando as propriedades da Elipse com material manipulável</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Joyce Martins Mendes. <b>Cybber Bulling</b>. (TÉCNICO EM REDES DE COMPUTADORES) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6848594231962298">Joyce Martins Mendes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Joyce Martins Mendes. <b>Anatomia dos malwares - Spyware</b>. (TÉCNICO EM REDES DE COMPUTADORES) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6848594231962298">Joyce Martins Mendes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Larisa Hitomi Kuniyoshi. <b>Monitoria para Matemática: Integrado de Informática.</b>. (Matemática) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Lucas B.Silva,Nicolas D.Silva,Sabrine Ponte,Victoria Varjão. <b>Estudo da coleta e reaproveitamento de resíduos orgânicos via compostagem no campus IFSP Pirituba</b>. (Técnico em Logística) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5090636072821649">Bianca Blanco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Lucas Ribeiro de Souza. <b>Estudando as propriedades da Elipse com material manipulável.</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Lucas Ribeiro de Souza. A Matemática está na Química. <b>Aprendendo Matemática por meio de reações químicas e estequiometria: a proporcionalidade</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Léticia Prado de Andrade. <b>Clube de leitura Biblioteca Brito Broca</b>. (Licenciatura em Letras Português e Inglês) - Instituto Federal de São Paulo câmpus Pirituba, Pró Reitoria de Extensão. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Mathews Carvalho Moreira. <b>A Matemática está na Química: Radioatividade: importância e riscos - a unção exponencial</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Nathalia Fernandes de Oliveira. A Matemática está na Química. <b>O logaritmo e o PH</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Nicolle Anizia Araujo. <b>Estudando as propriedades da Elipse com material manipulável</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Nicolle Anizia Araujo. A Matemática está na Química. <b>Aprendendo Matemática por meio de reações químicas e estequiometria: a proporcionalidade</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Raquel de Aguiar Guerrini. <b>A LOGÍSTICA NA CRIAÇÃO DAS ÁREAS VERDES URBANAS NA REGIÃO NOROESTE DA CIDADE DE SÃO PAULO: Um estudo de caso em Pirituba</b>. (Curso Técnico Integrado em Logística) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Raquel Guerrini, Giovana Chagas, Nicole Araujo, Sarah Silva. <b>Clube de interesses - Clube de Jornalismo</b>. (Curso Técnico em Logística Integrado ao Ensino Médio) - Instituto Federal de São Paulo câmpus Pirituba, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Rita de Cássia da Costa Guimarães. <b>Plantão de dúvidas e orientação de estudos no Programa Matemática em Movimento 2019</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Rodrigo Felicio da Costa. A Matemática está na Química. <b>O logaritmo e o PH</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Seiko Toma. <b>A Matemática está na Química: Radioatividade: importância e riscos - a unção exponencial</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Tamiris Letícia Klering. <b>Implantação da ferramenta 5S em um escritório de contabilidade</b>. (Logística) - Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6020485492953878">Thiago Silva Broze</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Vinicius Elvis Papi. <b>A Matemática está na Química: Radioatividade: importância e riscos - a função exponencial</b>. Orientação de outra natureza - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Vitória Farias. <b>Processos logísticos e a questão ambiental: Um estudo de caso na empresa Uni Soluções</b>. (Curso Técnico Integrado em Logística) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>A. Rodrigues. <b>Contação de histórias na tradição oral africana: uma formação para a cidadania</b>. Orientação de outra natureza - Instituição Federal de Educação de São Paulo Pirituba, Núcleo de Estudos Afro-Brasileiros e Indígenas. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3201089796517075">Eufrida Pereira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Amanda Brito,Carla Silva, Isabelle Ferreira Raphaela Pereira. <b>Infraestrutura e avaliação de serviços em saúde mental - Hospital psiquiátrico em Pirituba</b>. (Técnico em Logística) - Instituto Federal de São Paulo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5090636072821649">Bianca Blanco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Beatriz B, Denilson R, Fernanda M, Gustavo C. <b>A Distribuição De Verba e Alimentos Nas Creches Públicas</b>. (Técnico em Logística) - Instituto Federal de São Paulo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5090636072821649">Bianca Blanco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Felipe Sabino Santana. <b>Sistema de Reconhecimento Facial</b>. (Técnico em Redes de Computadores Integrado ao Ensino Médio) - IFSP - Campus São Paulo Pirituba, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6109272293288485">Thiago Pedro Donadon Homem</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Giovanna Rocha, Manuella G, Rafaella i Raquel M Sofia M. <b>Alimentação Escolar no Campus São Paulo Pirituba do IFSP</b>. (Técnico em Logística) - Instituto Federal de São Paulo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5090636072821649">Bianca Blanco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Larisa Hitomi Kuniyoshi. <b>Monitoria para o Ensino Médio</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Nicole Bersi. <b>Estudo comparativo da coleta seletiva entre os diferentes bairros da região noroeste da cidade de São Paulo</b>. (Curso Técnico Integrado em Logística) - Instituto Federal de São Paulo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Nicolle Anizia Araujo. <b>Monitoria para o Ensino Médio</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Rafael de Souza Santos. <b>Monitoria de Matemática para o Ensino Médio Integrado.</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>SORES, Ana Júlia; SOBRINHO, Caio; SILVA, Giovana e MACEDO, G. <b>Coleta seletiva: Coleta e Descarte do Óleo de Cozinha Usado</b>. (Curso Técnico em Logística Integrado ao Ensino Médio) - Instituto Federal de São Paulo câmpus Pirituba, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Tabata Olim Rocha. <b>Clube de leitura Biblioteca Brito Broca</b>. Orientação de outra natureza - Instituto Federal de São Paulo câmpus Pirituba, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Vitória Farias. <b>Estudo do atendimento e da demanda do SAMU na região de Pirituba</b>. (Curso Técnico Integrado em Logística) - Instituto Federal de São Paulo, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Caio Pinheiro dos Santos e Danielle Godoi de Lima. <b>Intervenções literárias: a hora e a vez do leitor</b>. (Licenciatura em Pedagogia) - IFSP Campos do Jordão, Pró Reitoria de Extensão. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Gabriel Silva Delgado; Lucas Gabriel Nunes de Freitas. <b>Intervenções literárias: a hora e a vez do leitor</b>. (Licenciatura em Matemática) - IFSP Campos do Jordão, Pró Reitoria de Extensão. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1023035189966463">Vanessa Regina Ferreira da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Geovana Amorim dos Santos e Vanessa Bento Silva. <b>Análise do Processo Evolutivo da Tecnologia Utilizando Microchips em Seres Humanos</b>. (Computação) - Instituto Federal da Bahia, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Giovana da Silva Chagas. <b>A experimentação como prática cotidiana do aprender física: das concepções prévias ao desenvolvimento de sequências didáticas.</b>. (Técnico em Logística Integrado ao Ensino Médio) - Instituto Federal de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3962688740320989">Renato Marcon Pugliese</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Guilherme da Cruz Castro. <b>Relatório de Estágio Supervisionado</b>. (Computação) - Instituto Federal da Bahia, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>José Uilliam Maia Freitas. <b>Relatório de Estágio Supervisionado</b>. (Computação) - Instituto Federal da Bahia, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Melissa Souza Murta. <b>Monitoria de Matemática para o Ensino Médio Integrado.</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Nathalia Fernandes de Oliveira. <b>Monitoria de Matemática para o Ensino Médio Integrado.</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Rafaela França Fontes. <b>Estágio Supervisionado</b>. (Computação) - Instituto Federal da Bahia, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Sara Santos Arantes. <b>Monitoria de Matemática para o Ensino Médio Integrado.</b>. (Matemática) - Instituto Federal de São Paulo, Instituto Federal de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Thamara Reis Farias. <b>Monitoria de Matemática para o Ensino Médio Integrado.</b>. (Matemática) - Instituto Federal de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ABIGAYL FERNANDES DA SILVA. <b>Os conceitos de epidemiologia, pandemia e endemia mediados pelos jogos cooperativos na educação para saúde</b>. (Administração Pública) - Universidade Federal do Cariri, Universidade Federal do Cariri. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AYLANI GOMES MAIA. <b>UTILIZAÇÃO DE JOGOS COMO MÉTODO DE SENSIBILIZAÇÃO A ATIVIDADES NÃO-COMPETITIVAS DURANTE A OCUPAÇÃO DO COLÉGIO PRESIDENTE GEISEL EM JUAZEIRO DO NORTE</b>. (Jornalismo) - Universidade Federal do Cariri, Universidade Federal do Cariri. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruno Armond Freire. <b>Física na Prática: Construção e análise do experimento de movimento retilíneo uniformemente variado em turmas do ensino médio</b>. (Engenharia de Controle e Automação) - Instituto Federal Sul-Rio-Grandense, Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2393092066131485">Caroline Inês Lisevski</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Daiane dos Anjos;Vitória Rodrigues; Victória Correa. <b>UMA INVESTIGAÇÃO SOBRE OS FATORES CONSIDERADOS NA ESCOLHA DE COMPRAS EM SUZANO ENTRE SHOPPING CENTER E O COMÉRCIO DE RUA</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>David Silva Souza. <b>Relatório de Estágio</b>. (Computação) - Instituto Federal da Bahia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Deborah Santos Silva. <b>Relatório de Estágio</b>. (Computação) - Instituto Federal da Bahia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriel Miranda Rios Accioly. <b>Relatório de Estágio</b>. (Computação) - Instituto Federal da Bahia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Gabriele Gianocário; Michele Henriques; Daniela Moraes. <b>A CONSTRUÇÃO DO POSICIONAMENTO DE MERCADO DE LOCALIDADES TURÍSTICAS COM BASE NAS REDES SOCIAIS: O USO DO INSTAGRAM E O CASO DA CIDADE DE GUARAREMA</b>. (Administração) - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Gerson Santana Dias. <b>Etnoconhecimento e práticas da captura do caranguejo-uçá (Ucides cordatus) realizadas por pescadores no município de Cananéia, Litoral Sul de São Paulo.</b>. (Engenharia de Pesca) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>GIULIA BARROS. <b>RADAR DE MUSEUS - PROMOVENDO ACESSO A CULTURA E COMPREENDENDO A QUALIDADE DE SERVIÇOS</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ISAAC BRIGÍDO RODRIGUES DOS SANTOS. <b>Atividades não-competitivas, mediadas por jogos, durante a ocupação do Colégio Presidente Geisel - Juazeiro do Norte</b>. (Programa de Pós-Graduação em Desenvolvimento Regional Sustentável) - Universidade Federal do Cariri, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Laiane de Jesus Sampaio. <b>Relatório de Estágio</b>. (Computação) - Instituto Federal da Bahia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Mariana Rios Cerqueira. <b>Relatório de Estágio Supervisionado</b>. (Computação) - Instituto Federal da Bahia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Marvin Yuri Quirino Brito; Matheus Soares; Matheus Marcondes. <b>AS ESTRATÉGIAS DE MARKETING DA NFL</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Matheus dos Santos Castro. <b>Caracterização edáfica e climática de bosques de mangue e sua influência sobre a pesca do caranguejo-uçá (Ucides cordatus)</b>. (Engenharia de Pesca) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>NATHALIA BERTOZZO; VICTOR RODRIGUES; VINICIUS MAGALHAES. <b>ATENDIMENTO OMNICHANNEL E MOTIVAÇÃO DA FORÇA DE VENDAS</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PEDRO HENRIQUE MATOS GRANJEIRO. <b>UM EXAME DAS POTENCIALIDADES DOS JOGOS COOPERATIVOS COMO FERRAMENTA DE ENSINO DE EDUCAÇÃO PARA A SAÚDE EM EPIDEMIOLOGIA</b>. (Medicina) - Universidade Federal do Cariri, Universidade Federal do Cariri. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Reginaldo Weissenberg Batista. <b>Uso e cobertura da terra e análise da paisagem em Cananéia (Litoral Sul de São Paulo)</b>. (Engenharia de Pesca) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Samira Borba. <b>Física na Prática: Construção e análise do experimento de movimento retilíneo uniformemente variado em turmas do ensino médio</b>. (Engenharia de Controle e Automação) - Instituto Federal Sul-Rio-Grandense, Fundação de Amparo à Pesquisa do Estado do Rio Grande do Sul. 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2393092066131485">Caroline Inês Lisevski</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Tatiane de Oliveira Amancio. <b>Monitoria - Expressão Gráfica</b>. (Engenharia Civil) - Pontifícia Universidade Católica de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>Tauan Rodrigues Queiroz. <b>Desenvolvimento de um E-commerce: WEBSITE + Istagram</b>. (Computação) - Instituto Federal da Bahia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Tiago de Sousa Rodrigues Reis. <b>Monitoria - Expressão Gráfica</b>. (Engenharia Civil) - Pontifícia Universidade Católica de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Yasmin Stefany. <b>Plano de negócios - Sorvete alcoolico</b>. Orientação de outra natureza - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

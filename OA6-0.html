@@ -1,0 +1,219 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Orientações de outra natureza'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2021,
+2],
+[2022,
+20],
+[2023,
+7],
+[2024,
+3]]}]});
+        });
+        </script>
+        
+                <h3>Orientações de outra natureza</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 32<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Fernanda Sena. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Louise Arruda. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Mariana Wingter. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Arthur L. R., Henrique F. C., João P. M. Pedro L. A. P. <b>Detecção de Ataques DDoS Através de Aprendizado de Máquina</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Geovanna de Sousa Nascimento. <b>Orientação de Estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>JONATHAN WILLIAN PEREIRA DA SILVA. <b>Estágio Supervisionado (TELEFONICA BRASIL S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>JULIO HENRIQUE CARVALHO DE SOUZA. <b>Estágio Supervisionado (XCELIS CONSULTORIA DE GESTÃO EMPRESARIAL LTDA.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Mayara Amaral dos Santos. <b>Orientação de estágio</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4767983155491007">Priscila Hanako Ishy de Magalhães</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>NICOLAS MOREIRA GARCIA. Estágio Supervisionado (BANCO J. <b>SAFRA S.A)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>TIAGO GRAVINA SENECHEN. <b>Estágio Supervisionado (ELETROPAULO METROPOLITANA ELETRICIDADE DE SAO PAULO S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALANA EDUARDA ROSA DOS REIS SILVA. <b>Estágio Supervisionado (SCHNEIDER ELECTRIC BRASIL LTDA)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANA MARIA DE ALMEIDA CARRARA. <b>Estágio Supervisionado (BANCO PAN S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bruna Michele Fernandes. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAMILA DOS SANTOS ALMEIDA. <b>Estágio Supervisionado (TORO INVESTIMENTOS S/A)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Eder Everson Soares. <b>Orientação de Estágio Curricular Supervisionado</b>. Orientação de outra natureza. IFSP - Câmpus São Paulo Pirituba, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FELIPE PUCCI XAVIER. <b>Estágio Supervisionado (SIEMENS HEALTHCARE DIAGNÓSTICOS LTDA.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Fernanda Santos Sena. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>GABRIEL EDUARDO GARCIA DA SILVA. <b>Estágio Supervisionado (GEOFIX ENGENHARIA E FUNDAÇÕES LTDA.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>GABRIELLE GONCALVES DIAS. <b>Estágio Supervisionado (CONSORCIO CONDOMINIO TAMBORE)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Isabela Jobstraibizer Rita. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Julia de Sena Marques. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LARISSA SILVA DOS SANTOS. <b>Estágio Supervisionado (BAYER S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>LARISSA SILVA DOS SANTOS. <b>Estágio Supervisionado (BAYER S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>LARISSA SILVA DOS SANTOS. <b>Estágio Supervisionado (BAYER S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Maria Amanda Costa. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MARIA EDUARDA DOS SANTOS MACHADO. <b>Estágio Supervisionado (Livelo S.A.)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Rafael Tenório da Silva. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>RAPHAEL AQUINO GONÇALVES DE SOUZA. <b>Estágio Supervisionado (SIEMENS LTDA)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Shayenne Cristine Alves de Souza. <b>Estágio Supervisionado (Thomson Reuters Brasil Conteúdo e Tecnologia Ltda)</b>. Orientação de outra natureza. Instituto Federal de São Paulo, . In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4385892643182795">Patrícia Cristiane Santana da Silva</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Valdeir Alves da Silva. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Letícia Prado de Andrade. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Vinícius dos Santos Oliveira Almeida. <b>Estágio Curricular Supervisionado</b>. Orientação de outra natureza. Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. In&iacute;cio: 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></i></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

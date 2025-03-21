@@ -1,0 +1,235 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Demais tipos de produção bibliográfica'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+3],
+[2017,
+3],
+[2018,
+7],
+[2019,
+5],
+[2020,
+5],
+[2021,
+1],
+[2022,
+7],
+[2023,
+1],
+[2024,
+3]]}]});
+        });
+        </script>
+        
+                <h3>Demais tipos de produção bibliográfica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 35<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CUNHA, M. R. ; DO AMARAL, BRUNO SÉRGIO ; TAKARADA, JÉSSICA E. ; VALDERRAMA, GABRIEL V. ; BATISTA, ANDREA N. L. ; BATISTA JUNIOR, J. M. ; CASS, Q. B. ; COUNAGO, R. L. M. ; MASSIRER, K. B.. <b>Front Cover: (S)-ML-SA1 Activates Autophagy via TRPML1-TFEB Pathway (ChemBioChem 22/2024). ChemBioChem</b>. 2024. S)-ML-SA1 Activates Autophagy via TRPML1-TFEB Pathway (ChemBioChem 22/2024). ChemBioChem, 2024 (Journal Cover</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>LARA, C. R. ; SANTOS, R. S. ; CASTRO, M. S.. <b>Caminhos da Infância: vivências e trajetórias com crianças pequenas. Jundiaí, 2024. (Prefácio</b>. 2024. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>A circulação do ensino mútuo entre a Europa e as Américas na época das Independências (1810-1830). Revista Eletrônica da ANPHLAC, v. 25, n. 38 (2024)</b>. 2024. 1810-1830). Revista Eletrônica da ANPHLAC, v. 25, n. 38 (2024) 2024 (Resena</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MAIA, J. O.; WINDLE, J. A. ; SOUZA, A. L. S. ; SILVA, D. N. ; MUNIZ, K. ; CASTRO, S. R. L. ; ZAIDAN, J. M.. <b>Por um paradigma transperiférico: uma agenda para pesquisas socialmente engajadas. London: King's College London</b>. 2023. Working paper</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AQUINO, P. <b>Plano de Desenvolvimento Institucional - PDI - UNITINS - 2023-2027. Palmas, Tocantins: Unitins</b>. 2022. Plano de Desenvolvimento Institucional - PDI</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AQUINO, P. <b>The Effect of Vegetation Fires on the Chemical and Biological Properties of the Soil?</b>. 2022. Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AQUINO, P. <b>?Economic Analysis of Foliar Fertilization in the Soybean Crop Cultivated in Palmas, Tocantins, Brazil?</b>. 2022. Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ARAUJO, L. A. M. M. ; BASANTE, J. G. ; SILVA, M. T.. <b>Ranking Analysis of Production Engineering Courses Against Industry 4.0</b>. 2022. Educação</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BULGARELLI, A. P. <b>A tensão entre conceitos e fatos na história a partir da abordagem de Koselleck. São Paulo: CEDEC</b>. 2022. Artigo</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FREITAG, Bárbara B. <b>Trabalhadores Brasileiros 60+: envelhecimento, aposentadoria e desafios profissionais. São Paulo: Universidade de São Paulo</b>. 2022. Tese de Doutorado</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PRADO, Maria Ligia Coelho ; SANTOS JUNIOR, V. D.. <b>Revista Eletrônica da ANPHLAC</b>. 2022. Organização do Dossiê "América Latina no século XIX: cultura, política e sociedade"</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LACOMBE, F. J. M. ; FREITAS-DIAS, C. A.. <b>Recursos humanos: princípios e tendências. São Paulo: Saraiva Educação</b>. 2021. Revisão técnica</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>MARINS, L. C. ; PARDO, F. S.. <b>(Shadow of) The Raven: an intermedial adaptation from literature to music</b>. 2020. Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Módolo, L. P.; PIMENTEL, T.. <b>O Manifesto Nooscópio: Inteligência Artificial como Instrumento de Extrativismo do Conhecimento</b>. 2020. Tradução/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>OLIVEIRA, P. C. <b>O ESTUDO DO C.C.S.: ESTRUTURANDO SENTIDO ENTRE A LÍNGUA PORTUGUESA E A LÍNUA BRASILEIRA DE SINAIS. MATO GROSSO DO SUL: REVISTA RELLIS</b>. 2020. Artigo Cientifico</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>PRADO, Maria Ligia Coelho ; SANTOS JUNIOR, V. D.. <b>Robinson Crusoé</b>. 2020. Artigo na Plataforma Digital "Transatlantic Cultures"</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane; FIORAVANTE, A. S. A.. <b>FELICIDIRA - Festival Literário da Cidade de Jandira</b>. 2020. Trabalho de Conclusão de Curso</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BARRETO, Krícia Helena; FIGUEIRA, Diego Aparecido Alves. <b>Oficinas de Empoderamento</b>. 2019. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILACO, F. L.. <b>Apresentação do dossiê ?Literaturas em Língua Inglesa hoje: debates sobre forma e história?. v. 3, n. 23 (2019). Campo Grande, 2019. (Prefácio</b>. 2019. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>PARDO, F. S. <b>Decoloniality and language teaching: perspectives and challenges for the construction of embodied knowledge in the current political scene</b>. 2019. Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>SANTOS, M. J. R. <b>BASES HISTÓRICAS DA EDUCAÇÃO DE JOVENS E ADULTOS NO BRASIL: NA PERSPECTIVA DE UM DIALOGO CONTEMPORÂNEO.. ITAPIPOCA: IFCE</b>. 2019. Anais</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SILVA, A. A. C.; OLIVEIRA, Adilson. <b>De haicais a muito mais: Mal do século. São Paulo: Giostri Editora Ltda</b>. 2019. antologia poética</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Neill de Summerhill: um filósofo da educação pela responsabilidade individual. Itapetininga: Edições Hipótese</b>. 2018. Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Profundo. Itapetininga: Edições Hipótese</b>. 2018. Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Big Kids (crianças crescidas): seu significado, desenvolvimento e importância em Summerhill. Itapetininga: Edições Hipótese</b>. 2018. crianças crescidas): seu significado, desenvolvimento e importância em Summerhill. Itapetininga: Edições Hipótese, 2018. (Tradução/Artigo</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Teoria, política e história: um debate com E. P. Thompson. Campinas: Editora da Unicamp</b>. 2018. Tradução/Livro</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Mendes, J. <b>M. Recomendações para professores e alunos sobre os formatos híbrido e a distância no ensino superior</b>. 2018. Boletim</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>ANOS 90 (ONLINE) (PORTO ALEGRE), v. 25, p. 369-375 2018 (Resenha de JUNQUEIRA, Mary Anne. Velas ao mar: U.S. Exploring</b>. 2018. ONLINE) (PORTO ALEGRE), v. 25, p. 369-375 2018 (Resenha de JUNQUEIRA, Mary Anne. Velas ao mar: U.S. Exploring Expedition (1838-1842).</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>NEABI indica nº 03 2018 (Sugestões de biografas de personalidades negras e indígenas e</b>. 2018. Sugestões de biografas de personalidades negras e indígenas e atividades (Guia)</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>LUCAS, P. O. ; RODRIGUES, R. F. L. ; MARTINS, T. H. B.. <b>Temas e Rumos nas Pesquisas em Linguística (Aplicada) - Questões empíricas, éticas e práticas - Volume 2. Campinas, 2017. (Prefácio</b>. 2017. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MUNHOZ, I. P. <b>Processos de Fabricação. Londrina: Editora e Distribuidora Educacional S.A.</b>. 2017. Revisão Técnica</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Picosque, Tatiana. <b>(Orelha de livro). Curitiba, 2017. (Prefácio</b>. 2017. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>A questão étnico-racial e o ensino de Geografia: o caso do Sudão do Sul. São Paulo: SEE/SP</b>. 2016. Publicação</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A Literatura Juvenil no Brasil e na Galícia. Prêmios literários. Estudos Comparados</b>. 2016. Tese de doutorado</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>MARTINS, T. H. B. <b>Questões para vestibular ESEF. Jundiaí: Escola Superior de Educação Física - ESEF</b>. 2016. Questões para vestibular</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

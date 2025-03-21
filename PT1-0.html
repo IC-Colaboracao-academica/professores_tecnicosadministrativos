@@ -1,0 +1,191 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Softwares sem registro de patente'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+1],
+[2017,
+1],
+[2019,
+1],
+[2020,
+1],
+[2022,
+3],
+[2023,
+7],
+[2024,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Softwares sem registro de patente</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 15<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, J. F. S.; CORTESE, T. T. P. ; Sotto, D. ; Nery, M. ; Kniess, C. T. ; Falcetta, F. A. M. ; Argentin, P. M.. <b>Portal RUA - Resiliência Urbana em Ação. 2024; Tema: Divulgação de boas práticas para construção da resiliência urbana</b>. 2024.</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALBANO JUNIOR, L. R. ; BASILE, F. R. M.. <b>Evento Desafio GITESTech promove a integração entre ingressantes e veteranos do curso de TADS. 2023</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; ZADI, I. C. ; MONTANHER, R. C.. <b>Abertas inscrições para curso preparatório para OBI e competições de programação. 2023</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; ZADI, I. C. ; MONTANHER, R. C.. <b>Resultados da primeira fase da OBI. 2023</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BASILE, F. R. M. ; ALBANO JUNIOR, L. R.. <b>Estudantes do Curso Técnico de Redes completam maratona de cibereducação com sucesso com CyberOps Associate da CISCO. 2023</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FAVARETO, A. L. ; ALBANO JUNIOR, L. R.. <b>As inscrições para a Maratona Python - Cisco da América Latina estão abertas. 2023</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA, R. S. ; BASILE, F. R. M.. <b>Estudantes de Redes e Logística avançam de fase em participação de Olímpiada Brasileira de Tecnologia. 2023; Tema: Olimpíada Brasileira de Informática</b>. 2023.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ZADI, I. C. ; BASILE, F. R. M.. <b>AudioCast - A importância de MPCA4 na vida do estudante de TADS. 2023. (Programa de rádio ou</b>. 2023.</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALBANO JUNIOR, L. R. ; BASILE, F. R. M.. <b>Alunos do curso técnico de redes de computadores de Pirituba participam da 24ª Olimpíada Brasileira de Informática (OBI). 2022; Tema: Olimpíada Brasileira de Informática</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; BASILE, F. R. M.. <b>Estudantes e Professor do IFSP Pirituba são destaques na Maratona de cibereducação da CISCO. 2022; Tema: Maratona de cibereducação</b>. 2022.</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALBANO JUNIOR, L. R.; BASILE, F. R. M.. <b>Evento CyberGITES 2022 destaca ações de ensino em programação e cibersegurança no campus São Paulo Pirituba. 2022; Tema: Cybergites - resultados de ações de ensino e pesquisa</b>. 2022.</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BASILE, F. R. M. <b>Telegram - Quiz - CyberEDU - Aprendendo cybersecurity na escola. 2020; Tema: Criação de testes educacionais promovidos pelo Telegram Contests</b>. 2020.</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>BASILE, F. R. M. <b>Entrevistas - Profissões do futuro. 2019. (Programa de rádio ou</b>. 2019.</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALEXANDRE, C. <b>R. S.. LogMining</b>. 2017.</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CUSTÓDIO. G. A. ; FONSECA, V. M. ; ALMEIDA, J. F. S.. <b>CarteirAmiga - Um sistema de gestão financeira pessoal e compartilhada</b>. 2016.</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

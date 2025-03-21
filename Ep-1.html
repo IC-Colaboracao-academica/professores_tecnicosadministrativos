@@ -1,0 +1,419 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de participação em eventos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+141],
+[2017,
+123],
+[2018,
+135],
+[2019,
+144],
+[2020,
+115],
+[2021,
+141],
+[2022,
+169],
+[2023,
+106],
+[2024,
+53]]}]});
+        });
+        </script>
+        
+                <h3>Total de participação em eventos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 1127<br>
+                    
+                    <center>Página: <a href="Ep-0.html">1</a> &nbsp;<b>2</b> &nbsp;</center>
+                    <div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>15. &nbsp;</td> <td>7º Congresso de Inovação, Ciência e Tecnologia do IFSP (CONICT). Caracterização de glicerol bruto gerado a partir de óleo reciclado para geração de 1,3-propanodiol. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>7º Congresso de Inovação, Ciência e Tecnologia do IFSP (CONICT). Culturas mistas de bactérias anaeróbias geradoras de H2 aplicadas no consumo de glicerol bruto gerado em usinas de biodiesel a partir de óleos residuais domésticos. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>9 Campus Party Brasil. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>?Co-opting Mandela: a Workshop on Critical Discourse Analysis. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>A Pesquisa em Política e Administração da Educação. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Advocating for Multilingualism and Bi/Multilingual Education by Stephen May. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>CICLO DE DEBATES: ?OS DESAFIOS DO SUS NA CONTEMPORANEIDADE ? REFORMA SANITÁRIA E O SUS: RAZÕES E AFETOS?. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Clásicos de la Literatura de Transmisión Oral.Relatório "Clássicos da Literatura de Transmissão Oral no Brasil". 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Co-opting Mandela: a Workshop on Critical Discourse Analysis com Hillary Janks. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Coloquiando sobre a AHF/AHFC. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Cork Short Story Festival. 2016. (Feira).</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Culminânicia da Comissão Interna de Permanência e Êxito IFRJ. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Curso de difusão - Introdução ao Emílio de Jean-Jacques Rousseau. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Diferenças e Diversidades: Sobre corpos e deficiências. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Diretrizes Curriculares para os Cursos Técnicos e Tecnológicos do IFSP. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Diálogos e Proposições para uma Política Institucional de combate às Violências e de Promoção do Direitoà Diversidade Sexual e de Gênero. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Diálogos em Letras.Para além dos signos: a língua estrangeira em contexto. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Diálogos em Letras.Para além dos signos: a língua estrangeira em contexto. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Dublin Book Festival. 2016. (Feira).</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>EcoEncontros- Pós Graduação em Ecologia da Universidade de São Paulo.A abordagem geoespacial e sócio-ecológica para estudo e análise de sistemas pesqueiros e ambientais. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>EDUCAÇÃO INCLUSIVA - NAPNE. IFSP - Campus Guarulhos. Palestra: APLICATIVOS ANDROID: UMA PROPOSTA PARA O ENSINO DE ROTINAS DE ANTECIPAÇÃO À CRIANÇA AUTISTA. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Educação Inclusiva.Avanços e desafios. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Encontro de Formação para Professores/as de 5º Ano.Espaço e Forma: o ensino de localização e deslocamento.. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Encontro Técnico De Bibliotecários Sesi-Sp. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Encontro Técnico De Bibliotecários Sesi-Sp. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>First International Congress of Engines, Fuels and Combustion. Estudo comparativo de cálculos térmicos de um motor de combustão interna ciclo Otto com resultados de ensaios experimentais. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>FLISOL - Festival Latino Americano de Instação de Software Livre.Hackathon mobilização ZIKA ZER0!. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>Fórum Permanente de Ensino - A Formação Técnica e Tecnológica no IFSP. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>Fórum Estadual Permanente de Apoio à Formação Docente. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>Fórum: ?Formação de Recursos Humanos para o SUS: a necessidade e a formação de profissionais para a Atenção Primária à Saúde (APS)?. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>I Brazilian Humanoid Robots Workshop.Hardware and Software Features of the Humanoid Robots Developed by RoboFEI - Humanoid Team. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>I Congresso Brasileiro de Microbiologia Agropecuária, Agrícola e Ambiental - CBMAAA. Aplicação de Glicerol Bruto Pré-Tratado em Processos Biológicos de Geração de H2.. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>I Congresso Brasileiro de Microbiologia Agropecuária, Agrícola e Ambiental. Produção biológica de gás hidrogênio a partir de glicerol bruto e esgoto sanitário. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>I Congresso Internacional de Educação Especial e Inclusiva. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>I Encontro de Formação MOOC no IFSP. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>I Encontro do Projeto Nacional de Letramentos - Ciclo 2: Linguagem, Educação, Cultura e Tecnologia. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>I Semana de Educação Musical. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>I Seminário Omo Erê: olhares da infância e as relações étnico-raciais. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>IFSP para todos - Mesa Redonda:Educação Inclusiva, Avanços e desafios.Mesa Redonda:Educação Inclusiva, Avanços e desafios. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>II "Seminário de Educação: Caminhos para a Qualidade". 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>II "Seminário de Educação: Caminhos para a Qualidade".Formação Pedagógica. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>II Bienal Iberoamericana de Infancias y Juventudes.Periferia, lutas e memórias. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>II Colóquio de Pós-Graduandos em Estudos Irlandeses.Irish Identity x the National in Contemporary Literature and Criticism. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>II CONEPT - Congresso de Educação Profissional e Tecnológicca do IfSP. Mesa redonda. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>II Congresso de Educação Profissional e Tecnológica do IFSP. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>II Encontro de Professores de Línguas e Tecnologias. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>II Encontro de Professores de Línguas e Tecnologias.Projeto "Rio de Janeiro Literário: relatos de viagem em rede social. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>II Seminário do Mundo do Trabalho - IFSP. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>II Seminário do Mundo do Trabalho. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>II Seminário fantástico e imaginário: Reflexões contemporâneas. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>III Congresso de Extensão e da III Mostra de Arte e Cultura do IFSP. Apresentação de Pôsteres.. Pôsteres no III Congresso de Extensão e III Mostra de Arte e Cultura do IFSP. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>III Congresso de Extensão e da III Mostra de Arte e Cultura do IFSP.. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>III Congresso Nacional de Formação de Professores e XIII Congresso Estadual Paulista sobre Formação de Educadores. Formação Continuada de Professores: Uma Proposta de curso para o ensino de Estatística e Probabilidade com o uso das Tecnologias Digitais. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>III Mostra UFCA. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>INO annual symposium 2016: From a Quantum Perspective. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>IV CONGRESSO BRASILEIRO DE ENGENHARIA DE PRODUÇÃO. IMPLEMENTAÇÃO DA CONTABILIDADE DE CUSTOS: PESQUISA-AÇÃO APLICADA A UMA MICROEMPRESA DO SETOR TERCIÁRIO. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>IV Congresso de Avaliação em Educação. Desempenho escolar de estudantes com deficiência intelectual: considerações com base em produções acadêmicas e científicas. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>IX Encontro Maranhense de História da Educação: leitura, alfabetização e letramento na história da educação. Tendências na abordagem da leitura em livros didáticos no século XXI. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>Jornada Científica PRODER 2016.AS IMPLICAÇÕES DO ENSINO PERSONALIZADO POR MEIO DOS JOGOS COOPERATIVOS: CONSTRUINDO COLETIVAMENTO O CONHECIMENTO ACERCA DO DESENVOLVIMENTO SUSTENTÁVEL NA UNIVERSIDADE FEDERAL DO CARIRI ? JUAZEIRO DO NORTE. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>Jornada da APEESP 2016. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>Mestrado Profissional Formação de Gestores Educacionais: justiça, ética e valores em educação. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>Metodologias Ativas: Aprendizado Baseado em Equipes (TBL). 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>Mulheres na Ciência 2016: o Gênero na Pós-Graduação. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>Novo Marco Legal de Ciência, Tecnologia e Inovação. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>O Cinema de Quentin Tarantino. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>Oficina de Avaliação do Risco de Extinção dos Crustáceos Marinhos no Brasil - 2016.Avaliação do Risco de Extinção dos Crustáceos Marinhos no Brasil - 2016. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>Oficina de Libras. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>Oficina: Desenvolvendo o projeto integrador em cursos técnicos do IFSP. III Congresso de Extensão e III Mostra de Arte e Cultura do IFSP.. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>Olimpíada Brasileira de Robótica (OBR 2016). Juiz de arena na Etapa Regional de São Paulo. 2016. (Olimpíada).</td></tr>
+            
+            <tr valign="top"><td>84. &nbsp;</td> <td>Olimpíada Brasileira de Robótica (OBR 2016). Árbitro na Etapa Estadual de São Paulo. 2016. (Olimpíada).</td></tr>
+            
+            <tr valign="top"><td>85. &nbsp;</td> <td>Os Desafios da Interface entre a efetivação do Estatuto da Criança e do Adolescente e a Segurança Pública. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>86. &nbsp;</td> <td>Palestra: A FORMAÇÃO DO PROFESSOR DE MATEMÁTICA FAZENDO USO DA METODOLOGIA DE ENSINO-APRENDIZAGEM-AVALIAÇÃO ATRAVÉS DA RESOLUÇÃO DE PROBLEMAS. VII Semana da Matemática e da Educação Matemática.. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>87. &nbsp;</td> <td>Palestra: ESCOLA DEMOCRÁTICA. VII Semana da Matemática e da Educação Matemática. IFSP-Guarulhos.. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>88. &nbsp;</td> <td>Palestra: LÓGICA ARISTOTÉLICA, PENSAMENTO CRÍTICO E LÓGICAS NÃO CLÁSSICAS. VII Semana da Matemática e da Educação Matemática.. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>89. &nbsp;</td> <td>Palestra: OS DESAFIOS DA AVALIAÇÃO FORMATIVA. VII Semana da Matemática e da Educação Matemática:. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>90. &nbsp;</td> <td>Palestra: ÉTICA E EDUCAÇÃO: O EQUILÍBRIO NO PAR TRANSFORMAÇÃO/CONSERVAÇÃO. VII Semana da Matemática e da Educação Matemática.. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>91. &nbsp;</td> <td>Prevenção à Violência Doméstica contra Crianças e Adolescentes em Diferentes Contextos.Prevenção à Violência Doméstica contra Crianças e Adolescentes em Diferentes Contextos. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>92. &nbsp;</td> <td>Questão de Gênero na Educação Hoje: Conquistas e Desafios. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>93. &nbsp;</td> <td>Roadsec. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>94. &nbsp;</td> <td>RoboCup 2016. ROBOFEI-HT Humanoid League. 2016. (Olimpíada).</td></tr>
+            
+            <tr valign="top"><td>95. &nbsp;</td> <td>Saber Em Ação Na Rede Escolar Sesi-Sp De Ensino. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>96. &nbsp;</td> <td>Saberes para uma cidadania planetária.WHEN I WAS A CHILD I COULD/COULDN?T: A COMPLEXIDADE DO PROCESSO DE ENSINO-APRENDIZAGEM. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>97. &nbsp;</td> <td>SEDCITEC 2016 - Semana de Educação, Ciência e Tecnologia - São Paulo.Representações da Identidade Nacional: Cândido Neves x Cidade Negra em. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>98. &nbsp;</td> <td>Semana de Atualização em Ciências Agrárias.A abordagem sócio-ecológica para estudo e análise de sistemas pesqueiros sustentáveis. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>99. &nbsp;</td> <td>Semana Nacional de Ciência e Tecnologia.Novas Tecnologias Digitais e a sala de aula. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>100. &nbsp;</td> <td>Seminário - Suicídio da População Trans: Limites entre Vida e Morte. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>101. &nbsp;</td> <td>Seminário de Acesso ao Ensino Superior - SAES. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>102. &nbsp;</td> <td>Seminário de Introdução ao Programa de Pós-Graduação em desenvolvimento Regional Sustentável. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>103. &nbsp;</td> <td>Seminário do Programa SETEC-CAPES-NOVA ? ?Cooperação Brasil-EUA: a experiência da capacitação de professores de inglês da Rede Federal nos Estados Unidos?. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>104. &nbsp;</td> <td>SIELP - VI Simpósio Internacional de Ensino da Língua Portuguesa.A literatura virou xarope: das complexas relações entre a escola e a arte. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>105. &nbsp;</td> <td>Simpósio Diálogos entre as políticas públicas e o atendimento educacional especializado.Comunicação e práticas pedagógicas: implicações para escolarização. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>106. &nbsp;</td> <td>The 5th International Conference on Multicultural Discourses: Multi ? Inter or Trans ? Cultural Communication: Reflections. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>107. &nbsp;</td> <td>The 5th International Conference on Multicultural Discourses: Multi ? Inter or Trans ? Cultural Communication: Reflections. Sessão de comunicação 11 - sala 211. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>108. &nbsp;</td> <td>Treinamento FlexSim.Treinamento nível básico/intermediário com o software FlexSim. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>109. &nbsp;</td> <td>V Jornada de Estudos Irlandeses.A Irlanda e seu povo no trabalho folclórico de Lady Gregory?s e W.B. Yeats. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>110. &nbsp;</td> <td>V Jornada de Estudos Irlandeses.Debatedora na mesa Reflexos da identidade irlandesa no pensamento linguístico-literário e na concepção de economia. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>111. &nbsp;</td> <td>V Semana Nacional de Ciência e Tecnologia do IFSP - Câmpus Boituva.Encontro de Robótica. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>112. &nbsp;</td> <td>V SINGEP - Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade.Padronização de Informações e Viabilidade de Implantação do Ecotelhado Na Pontifícia Universidade Católica de São Paulo. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>113. &nbsp;</td> <td>V SINGEP - Simpósio Internacional de Gestão de Projetos, Inovação e Sustentabilidade.Relação entre o uso de proteção patentária e os níveis econômicos, educacional e tecnológico de um país: O estudo do caso norte-americano. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>114. &nbsp;</td> <td>VI CLAFPL ? Congresso Latino-Americano de Formação de Professores de Línguas. AUTOETNOGRAFIA COMO METODOLOGIA DE PESQUISA NO ENSINO DE INGLÊS: DIÁLOGOS (IM)PERTINENTES ENTRE O EU (OBSERVADOR) E O EU (OBSERVADO). 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>115. &nbsp;</td> <td>VI FÓRUM PAULISTA DE LICENCIATURAS EM MATEMÁTICA-UFSCAR.Diretrizes Curriculares Nacionais para a Formação de Professores: Implicações para a profissionalização da carreira docente e para a prática do professor de matemática. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>116. &nbsp;</td> <td>VII Congresso Brasileiro de Educação Especial. Desempenho escolar de estudantes com deficiência intelectual: considerações com base em produções acadêmicas e científicas. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>117. &nbsp;</td> <td>VII Semana da Matemática e da Educação Matemática - IFSP GUARULHOS.Comunicação Oral. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>118. &nbsp;</td> <td>VIII Encontro de Extensão da UFCA ? ENEX. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>119. &nbsp;</td> <td>VIII Semana de Iniciação Científica da Faculdade de Juazeiro do Norte. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>120. &nbsp;</td> <td>Workshop "Integração" IFSP. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>121. &nbsp;</td> <td>Workshop Acolhimento, Integração e Cooperação - IFSP. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>122. &nbsp;</td> <td>Workshop de Robótica - Universidade Federal de São Carlos. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>123. &nbsp;</td> <td>WorkShop Integração - Instituto Federal de São Paulo. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>124. &nbsp;</td> <td>Worshop Acolhimento, Integração e Cooperação. 2016. (Oficina).</td></tr>
+            
+            <tr valign="top"><td>125. &nbsp;</td> <td>XI Seminario Internacional de la Red ESTRADO.Sobre o trabalho do professor de física no ensino médio: da realidade na cidade de São Paulo. 2016. (Seminário).</td></tr>
+            
+            <tr valign="top"><td>126. &nbsp;</td> <td>XI Symposium of Irish Studies in South America.Interviewing Eilis Ni Dhuibhne. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>127. &nbsp;</td> <td>XII Encontro Internacional da ANPHLAC.John Smith em Argel: articulações entre a história dos Estados Unidos e os projetos coloniais franceses no norte da África nas Lettres sur l?Amérique du Nord, de Michel Chevalier (1833-1836). 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>128. &nbsp;</td> <td>XII Encontro Nacional de Educação Matemática. 2016. (Encontro).</td></tr>
+            
+            <tr valign="top"><td>129. &nbsp;</td> <td>XII Latin American Workshop and Symposium on Anaerobic Digestion.Biological hydrogen production from raw glycerol and wastewater. 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>130. &nbsp;</td> <td>XIX Conferência do GPIMEM.Uma auto-organização de uma aula de matemática em um ambiente blended learning. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>131. &nbsp;</td> <td>XIX Conferência GPIMEM: Pesquisa e Formação.A trigonometria nas marés: Uma proposta de trabalho com funções cosseno e seno utilizando as Tecnologias Digitais. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>132. &nbsp;</td> <td>XIX SEMEAD - Seminários em Administração. Análise sobre o termo talento em diferentes áreas do conhecimento. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>133. &nbsp;</td> <td>XV Encontro da ABRALIC. Ensino e Pesquisa em Letras em Contexto de Verticalizaçào. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>134. &nbsp;</td> <td>XV International Conference AEDEI Revolution\Evolution\Involution and the twenty-first century. Ireland and her People in Lady Gregory's Visions and Beliefs in the West of Ireland. 2016. (Congresso).</td></tr>
+            
+            <tr valign="top"><td>135. &nbsp;</td> <td>XXIII Jornada de Iniciação Científica da UNIFEI.A diversificação da matriz elétrica e as emissões de dióxido de carbono provenientes do setor elétrico. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>136. &nbsp;</td> <td>XXIII Jornada de Iniciação Científica da UNIFEI.Análise do impacto do aumento de eficiência de unidades a carvão nas emissões de dióxido de carbono (CO2) e dióxido de enxofre (SO2). 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>137. &nbsp;</td> <td>XXIII Jornada de Iniciação Científica da UNIFEI.Análise termo-fluido dinâmica de escoamentos sobre obstáculos móveis: Método da fronteira imersa. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>138. &nbsp;</td> <td>XXIII Jornada de Iniciação Científica da UNIFEI.Estudo sobre o controle de uma aeronave. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>139. &nbsp;</td> <td>XXIII Jornada de Iniciação Científica da UNIFEI.Uso de técnicas de problemas inversos no estudo de problemas de transferência de calor. 2016. (Outra).</td></tr>
+            
+            <tr valign="top"><td>140. &nbsp;</td> <td>XXIX Simpósio de Gestão da Inovação Tecnológica... 2016. (Simpósio).</td></tr>
+            
+            <tr valign="top"><td>141. &nbsp;</td> <td>XXVIII Congresso de Iniciação Científica - UNESP Registro. ---. 2016. (Congresso).</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

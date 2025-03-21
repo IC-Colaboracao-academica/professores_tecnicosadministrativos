@@ -1,0 +1,1309 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Apresentações de trabalho'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+94],
+[2017,
+83],
+[2018,
+92],
+[2019,
+74],
+[2020,
+48],
+[2021,
+61],
+[2022,
+59],
+[2023,
+33],
+[2024,
+26],
+[2025,
+1]]}]});
+        });
+        </script>
+        
+                <h3>Apresentações de trabalho</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 571<br>
+                    
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>PISSARDINI, P. E.; SANTOS, J. B. M. ; FERREIRA, M. L. ; VIEIRA, R. F. ; PISSARDINI, N. C. L. ; PAIVA, C. S. ; XAVIER, L. A. ; GODINHO FILHO, M. ; SANTOS NETO, A. S.. <b>New Capabilities-Enabled by Smart Industrial Products for Human-Centric Production Planning and Control: State-of-the-Art and Research Agenda</b>. 2025. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, J. F. S. <b>Análise de dados na prática! Um workshop para pessoas que não são das exatas</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G.. <b>Pesquisa & Desenvolvimento de produtos educacionais</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G. ; QUEIROZ, Z. F.. <b>O LUGAR DA FORMAÇÃO DE CIENTISTAS NO CURRÍCULO DA PÓS-GRADUAÇÃO NORDESTINA</b>. 2024. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>AQUINO, P. <b>Workshop - English for Negotiations</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>AQUINO, P. <b>Oficina: Fotografia de Rua pelo Mundo ? Teoria e Prática</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ARAUJO, R. V. ; DO AMARAL, BRUNO SÉRGIO ; SOUZA, L. R. ; MASSIRER, K. B.. <b>Expression of RNA binding proteins with KH domain followed by chemical fragment screening</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BAGÉ, I. B. <b>Racismo e Preconceito na Academia</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FRANCISCO, T. A. <b>Manufatura aditiva por meio de processo de deposição de metais MIG MAG para fabricação do tipo WAAM</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MAIA, J. O.; SILVA, D. N.. <b>The digitalization of grassroots activism: transperipheral cooperation, scaling and the enactment of hope in Rio de Janeiro</b>. 2024. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Mendes, J. <b>M. Boas vindas aos calouros</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Módolo, L. P. <b>Inteligência artificial prestadora de serviços de saúde: sinais do actante suposto saber</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Módolo, L. P. <b>SAÚDE DIGITAL: A IA COMO UMA NOVA AUTORIDADE CLÍNICO-SANITÁRIA?</b>. 2024. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Módolo, L. P.; CARVALHO, SÉRGIO RESENDE. <b>Aquém ou além da modulação? A dinâmica inconsciente na interação com os sistemas algorítmicos</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>OLIVEIRA, J. V. C. ; ROZARIO, T. S. ; FERREIRA, S. L. ; ARICO, E. M. ; DO AMARAL, B. S.. <b>Análise da biodegradação de polímeros em exposição de curto prazo ao solo</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>PARDO, F. S. <b>Por uma ciência outra: autoetnografia e reflexões em primeira pessoa</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PARDO, F. S. <b>Intermidialidade e as múltiplas formas de construção de sentidos</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PARDO, F. S. <b>A autoetnografia em pesquisas em Linguística Aplicada: reflexões do sujeito pesquisador/pesquisado</b>. 2024. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>PEREIRA, E. F. M. <b>Fractais: Matemática e Arte</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PISSARDINI, P. E.; GODINHO FILHO, M.. <b>Smart Industrial Products' Role in achieving Cross-functional Integration: Information Processing Theory Lens for an unified framework</b>. 2024. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>ROSSETI, W.; LIRA, D. N. S. S.. <b>Análise da Oferta de Alimentos Minimamente Processados e Ultraprocessados na Região da Vila Pirituba</b>. 2024. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>Duarte da Ponte Ribeiro e a primeira missão diplomática brasileira no México (1834-1835)</b>. 2024. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>SANTOS, J. G. <b>Dialogando com Crianças e Adolescentes sobre Prevenção e Proteção contra o Abuso Sexual</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>SANTOS, J. G.; COSTA, A. F.. <b>Educação em Direitos Humanos e Diversidades</b>. 2024. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>SILVA, D. N. ; MAIA, J. O.. <b>Como grupos periféricos se apropriam e ressignificam conhecimentos hegemônicos no dentrofora da escola? Educação antirracista e ação transperiférica</b>. 2024. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>TRINDADE, L. H. <b>Engenharia do Trabalho e a Sinergia entre Saberes: Humanizando Processos Através das Tecnologias Sociais</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>TRINDADE, L. H. <b>A Logística como Fator Competitivo na Indústria Brasileira</b>. 2024. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. <b>A virada material dos Jogos na Educação</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson. <b>A virada material dos jogos na educação</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G.. <b>ANÁLISE DAS DINÂMICAS DE PESQUISA DA UFCA EM SEUS 10 ANOS</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G. ; QUEIROZ, Z. F.. <b>A EDUCAÇÃO AMBIENTAL MEDIADA POR UM JOGO ANALÓGICO NO ENSINO SUPERIOR</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>AQUINO, P. <b>De James Joyce ao U2: a Cultura Irlandesa no Universo daLíngua Inglesa</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ARAUJO, R. V. ; DO AMARAL, B. S. ; SOUZA, L. R. ; MASSIRER, K. B.. <b>Fragment-based hit discovery and characterization of RNA binding proteins with KH domain</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ARAUJO, R. V. ; DO AMARAL, B. S. ; SOUZA, L. R. ; MASSIRER, K. B.. <b>Protein expression and fragment screening of rna binding family containing KH domain</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CASTRO, M. S. <b>Planejamento Pedagógico</b>. 2023. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CASTRO, MOACIR SILVA. <b>Oficina 'Adaptação Curricular'</b>. 2023. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DO AMARAL, B. S.; CUNHA, M. R. ; BATISTA, A. N. L. ; BATISTA JUNIOR, J. M. ; COUNAGO, R. L. M. ; CASS, Q. B. ; MASSIRER, K. B.. <b>Enantiomeric separation in multimilligram scale of a tetrahydro quinoline with enhanced activity towards TRPML1</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FREITAS, E. L. E. S. ; WORFEL, S. ; TOTOLI, M. F. M. ; ANDRESSA, M. ; SANTOS, J. G. ; OLIVEIRA, L. V. ; OLIVEIRA, E. T.. <b>PROJETO DE ENSINO DE LIBRAS COM PRODUÇÃO DE MATERIAL DIDÁTICO</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>LOPES, L. <b>Fusões e Aquisições no Setor Bancário: Estudo de Eventos na Década Marcada pela Crise no Sistema Financeiro Internacional (2001 A 2011)</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MAIA, J. O. <b>Introduction: Defining literacy</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MAIA, J. O. <b>Trans-formando olhares: Educação antirracista</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>MAIA, J. O. <b>Práticas de linguagem e decolonialidade: caminhos possíveis na Linguística Aplicada</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>MAIA, J. O. <b>Uma etnografia do encontro</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Oralidade, letramento e ensino de língua portuguesa</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MARTINS, T. H. B. <b>A pesquisa e a Internacionalização no IFSP</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MENDONCA, F. C. <b>Logística Reversa</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>OLIVEIRA, L. V. ; SANTOS, J. G. ; ABRANTES, T. A.. <b>PESQUISAS STRICTO SENSU SOBRE ESTUDANTES COM TEA NO ENSINO SUPERIOR</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>OLIVEIRA, L. V. ; SANTOS, J. G. ; ABRANTES, T. A.. <b>ESTUDANTES COM TRANSTORNO DO ESPECTRO AUTISTA NO ENSINO SUPERIOR: REFLEXÕES ACERCA DA EDUCAÇÃO ESPECIAL INCLUSIVA</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>PARDO, F. S. <b>Por uma pedagogia decolonial no ensino de línguas: caminhos e desafios</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>PARDO, F. S. <b>Ciberviolência e desordem informacional: contradiscurso e práticas de resistência</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PEREIRA, E. F. M.; VELOZO NETO, R. N.. <b>Fractais: Matemática e Arte</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PISSARDINI, P. E.; ARRUDA, N. D. S. ; FILHO, K. ; MARTINEZ, M. P. ; NASCIMENTO, L. M. D.. <b>Logística reversa e sustentabilidade: Uma survey que adapta e valida direcionadores teóricos para consumidores de produtos têxteis da região de São Paulo</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PISSARDINI, P. E.; CALLEFI, M. H. B. M. ; SILVA, E. R. ; ZHENG, C. ; GODINHO FILHO, M.. <b>Um estudo sobre as barreiras da adoção de Smart Industrial Products (SIP)</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PISSARDINI, P. E.; MORETTI, A. C. M.. <b>Hard Skills Required for Project Managers in the PostPandemic Period: COVID-19 Contributions in Changing Professional Profile</b>. 2023. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>Física e outras culturas: diálogos possíveis dentro e fora da sala de aula</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>Educação e Cultura: diálogos possíveis dentro e fora da sala de aula</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; GIROTTO, E. D.. <b>ANÁLISE DE DADOS E USO DE TECNOLOGIAS DIGITAIS COMO SUPORTE AO TRABALHO DOCENTE: CONSIDERAÇÕES A PARTIR DOS CURSOS DE EDUCAÇÃO BÁSICA DO CAMPUS PIRITUBA DO IFSP</b>. 2023. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Mass music and the meanings of the feminine: Brazilian country music and ?popular feminism?</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SOUZA, O. A.; CASAGRANDE, H. F.. <b>As fórmulas de Heron e Brahmagupta</b>. 2023. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>TOPAN, J. S. <b>Vampiros na literatura para o jovem adulto no século XXI ? uma análise de Twilight, de Stephenie Meyer</b>. 2023. Apresentação de Trabalho/Comunicação</td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, U. L. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE ; SILVA, F. I. A.. <b>Aprendizados docentes no contexto de prática docente e residência pedagógica</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson. <b>OS JOGOS COLABORATIVOS NA MEDIAÇÃO DE LEITURA</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Jogos e brincadeiras no contexto da construção de aprendizagens</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ARAUJO, R. V. ; SOUZA, L. R. ; DO AMARAL, B. S. ; MASSIRER, K. B.. <b>Fragment-based hit discovery and characterization of the RNA-related protein UHMK1 (U2AF Homology motif kinase 1)</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ARRUDA, B. ; AUGUSTO, G. ; BRILHA, G. ; CASTRO, Moacir Silva de. <b>Os impactos do movimento antivacina na Saúde Pública</b>. 2022. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BAGÉ, I. B.; Souza, Oertes A.. <b>Jogos, Olimpíadas e Protagonismo Estudantil em Matemática no IFSP - Pirituba</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>O ?Novo Normal?: possibilidades de ambientes híbridos para o ensino da Matemática</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BOAS, M. A. V ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>prendizados do PIBID e da RP na formação de uma futura professora</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BULGARELLI, A. P. <b>O socialismo liberal milliano e sua vinculação ao ideal de progresso</b>. 2022. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CARVALHO, I. L. ; MAGALHÃES,A. P. R.. <b>Observações do centro de mídias da educação de São Paulo e do desenvolvimento de uma tarefa com o GeoGebra no ensino remoto</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CASTRO, M. S.; SOUZA, E. F. A.. <b>A cultura enquanto forjadora de identidades pessoais e coletivas na Educação Infantil</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CASTRO, Moacir Silva de; CHINA, V.. <b>Permanência e Êxito de estudantes do IFSP ? uma análise do trancamento e cancelamento de matrículas no curso de Licenciatura em Letras Português e Inglês do Câmpus São Paulo Pirituba</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CHINELLATO, T. G. ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>O desenvolvimento do programa tendo como cenário a pandemia do COVID-19</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>DO AMARAL, BRUNO SÉRGIO; ARAUJO, R. V. ; SOUZA, L. R. ; SILVA, I. E. P. ; VASCONCELOS, S. ; BENGTSON, M. H. ; MASSIRER, K. B.. <b>Implementation of a Weak Affinity Chromatography coupled to Mass Spectrometer (WAC-MS) fragment screening platform for academia and industry</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>FREITAG, B.B.; FRANCA, A. C. L.. <b>Trabalhadores Brasileiros 60+: características, motivações e desafios profissionais</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>FREITAG, Bárbara B.; FRANCA, A. C. L.. <b>Mulheres Brasileiras 60+: desafios no trabalho e impactos da pandemia da COVID-19</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>GONCALVES, V. L. C. ; CASTRO, M. S.. <b>Permanência e êxito nos cursos do IFSP campus Pirituba - Uma análise do trancamento e cancelamento de matrículas</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>GOUVEA, J. B. ; SANTOS, J. G.. <b>Educação para as relações étnico-raciais e diversidade LGBTQIA+</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>ISHY, P. H. <b>PROJETO ARANDU: CONECTANDO SABERES ? UMA AÇÃO INSTITUCIONAL ENTRE O CÂMPUS PIRITUBA DO IFSP E A COMUNIDADE INDÍGENA GUARANI DO JARAGUÁ</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MAIA, J. O. <b>Fogos digitais: letramentos de sobrevivência e participação cidadã no Rio de Janeiro/RJ</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MAIA, J. O. <b>Digitalização e participação social em favelas no Rio de Janeiro</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MAIA, J. O. <b>Letramentos, sobrevivências e reexistências</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MAIA, J. O. <b>O RP-Letras da UFMG: colaboração e proatividade em contexto pandêmico</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>MAIA, J. O. <b>Contar e compartilhar histórias: desestabilizando e invertendo lógicas na formação de professores de língua portuguesa</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>MAIA, J. O. <b>Estudos de Letramentos e o Professor da Rede Básica</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>MAIA, J. O. <b>Sobre digitalidades e histórias</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>MAIA, J. O.; SCHERER, A. S.. <b>O professor de estágio frente ao Ensino Remoto Emergencial: letramentos, colaboração e agência (crítica)</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>MARTINS, T. H. B. <b>Avaliação de aprendizagem</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>MELO, G. T ; BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Uma Parceria Universidade-Escola na Produção de uma Tarefa Investigativa sobre Área e Perímetro com o GeoGebra</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Módolo, L. P.; DIAS, T. M. ; CARVALHO, S. R.. <b>A ?SAÚDE MÓVEL? E A AUTOMAÇÃO ALGORÍTMICA DO SABER-PODER DA MEDICINA</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Módolo, L. P.; OLIVEIRA, C. F. ; BANDINI, M. ; LUCCA, S. R. ; CINTRA, M.. <b>SOFRIMENTO MENTAL E MORTE ENTRE TRABALHADORES E TRABALHADORAS ? TRANSTORNOS MENTAIS E SUICÍDIOS RELACIONADOS AO TRABALHO</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>NASCIMENTO, L. M. ; DAMASCENO, D. A. ; MAMEDE, W. F. ; MIRANDA, C. R.. <b>Aquecimento Global: Ação humana ou natural? O que se sabe sobre suas verdadeiras causas?</b>. 2022. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>PARDO, F. S. <b>O DISCURSO DE ÓDIO, O RACISMO E OS LIMITES DA LIBERDADE DE EXPRESSÃO: VALE TUDO NO CIBERESPAÇO?</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>PARDO, F. S. <b>Discursos de ódio e liberdade de expressão em ambientes digitais: implicações sociais e legais</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>PARDO, F. S. <b>Perspectivas decoloniais no ensino de língua inglesa</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>PARDO, F. S. <b>Decolonialidade e Autoetnografia: um encontro possível?</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>PARDO, F. S.; MARINS, L. C.. <b>Música para ouvir, ver e sentir: intermidialidade e construção de sentidos</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>PEREIRA, D. R. M. ; MAIA, J. O.. <b>Desenvolvimento de projetos de ensino-aprendizagem no contexto do subprojeto Letras do Residência Pedagógica da UFMG</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Picosque, Tatiana. <b>Da política dos comuns em Silvia Federici: contra os cercamentos neoliberais</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Pissardini, Paulo E.; SILVA, B. P. ; VIEGAS, G. O.. <b>Eficiência da Logística de Entrega: Uma Perspectiva a partir do uso da Pesquisa Operacional</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>Pissardini, Paulo Eduardo; BUENO, M. A. O. ; ALVES, K. H. ; MONTE, L. G. M.. <b>RFID and Industry 4.0: The Technology's Role on Shop Floor Control Operationalisation</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>Da Assembleia Nacional Constituinte ao Sistema Nacional de Habitação de Interesse Social: uma análise do Subsistema da Habitação Popular</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>ANÁLISE DA POLÍTICA NACIONAL BRASILEIRA DE HABITAÇÃO POPULAR ATRAVÉS DO ADVOCACY COALITION FRAMEWORK</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>ROSA, A. M. <b>19ª Semana Nacional de Ciência e Tecnologia</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>ROSSETI, W.; LIRA, D. N. S. S. ; GONZAGA, J. M. ; SOUZA, L. R. S. ; SILVA, N. M. ; SANTOS, T. K. B.. <b>Mobilidade urbana e transporte coletivo na cidade de São Paulo: perspectivas da comunidade do Campus Pirituba do IFSP</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>Liberalismo e Reforma: circulação de ideias entre as Américas. Aula Inaugural do Ano Letivo do Programa de Pós-Graduação em Integração Contemporânea da América Latina (PPGICAL) da Universidade Federal da Integração Latino-americana (UNILA)</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>Dos Centenários ao Bicentenário: trajetórias da nação no Brasil. 9ª Conferencia Latinoamericana y Caribeña de Ciencias Sociales</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Tornar-se feminista no século XXI: feminismo na adolescência, redes sociais e mundialização</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>SANTOS, J. G. <b>Vivências e Experiências da Gestão Escolar na Educação Inclusiva</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>SANTOS, J. G.; OLIVEIRA, L. V.. <b>?DISQUE 100?: Instrumento Importante no Acolhimento de Denúncia da Violência Doméstica contra Crianças e Adolescentes com Deficiência</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>SANTOS, J. G.; OLIVEIRA, L. V.. <b>Denúncia da Violência Doméstica contra Crianças e Adolescentes com Deficiência por meio do 'Disque 100'</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>SANTOS, P. ; CASTRO, Moacir Silva de. <b>Formação docente, permanência e Êxito de estudantes do IFSP ? uma análise do trancamento e cancelamento de matrículas de estudantes beneficiários de programas de Ações Afirmativa do Câmpus São Paulo Pirituba</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>SILVA, A. A. C. <b>Reverberations of a predatory colonialism: Heart of Darkness and Adu</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>SILVA, A. A. C. <b>Educação linguística antirracista e branquitude</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>SILVA, Andréa Cotrim. <b>Estéticas e políticas das representações de identidades negras no cinema</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>SILVA, Andréa Cotrim. <b>A violência da imagem, o discurso da branquitude e a educação antirracista</b>. 2022. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>SILVA, G. S. ; CORREA, H. N. D. ; PINTO, J. V. V. R. ; PONTES, K. C. C. ; ALVES, R. L. G. ; FREITAS-DIAS, C. A.. <b>Análise de clima organizacional em uma empresa do ramo da construção</b>. 2022. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>SILVA, M. ; CASTRO, Moacir Silva de. <b>Ambiente educacional: um novo conceito de desenvolvimento socioambiental para um futuro sustentável</b>. 2022. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>SOUZA, L. R. ; DO AMARAL, BRUNO ; ARAUJO, R. V. ; KATIS, V. ; NEWMAN, J. ; GILEADI, O. ; MASSIRER, K. B.. <b>Structural characterization of BICC1 and fragment-based screening by WAC-MS</b>. 2022. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Almeida, Camila ; Missassi, Milena ; Maria, Soraia ; LOPES, Bianca ; BAGÉ, I. B.. <b>XLI ENCONTRO NACIONAL DE ENGENHARIA DE PRODUÇÃO ?Contribuições da Engenharia de Produção para a Gestão de Operações Energéticas Sustentáveis?</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, J. F. S.; CORTESE, T. T. P. ; YIGITCANLAR, T.. <b>Assessing community vulnerability with disaster risk mapping: the case of São Paulo, Brazil</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALMEIDA, M. L. G. <b>Ser uma pessoa com deficiência no IFSP</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Gamificação e aprendizagem baseada em jogos na brinquedoteca</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Pesquisa científica, formação e divulgação científica</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ANTUNES, Jeferson. <b>FORMAÇÃO PARA YOUTUBERS E PODCASTERS DOS JOGOS</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BARBOSA, R. <b>EVOLUÇÃO DAS POLÍTICAS PÚBLICAS NO BRASIL</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BARBOSA, R.; feitosa, wilian r. ; BUTCHER, RODOLFO ; BRANDÃO, LISANDRO. <b>ESPAÇO URBANO E SOCIEDADE</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BARBOSA, R.; FEITOSA, WILLIAN RAMALHO ; BUTCHER, RODOLFO. <b>LIÇÕES DE POLÍTICA COM ANTÔNIO CARLOS MAGALHÃES</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BARBOSA, R.; FEITOSA, WILLIAN RAMALHO ; BUTCHER, RODOLFO. <b>ELEIÇÃO PRESIDENCIAL DE 2022</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>BARBOSA, R.; GUSMÃO, SELMA. <b>A ARTE E O ARTISTA</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>BARBOSA, R.; KENCHIAN, ALEXANDRE. <b>ARQUITETURA, DESIGN E SOCIEDADE</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>BARBOSA, R.; LACERDA, MARCELO. <b>INSIGHTS PARA O MUNDO PÓS PANDEMIA</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>BARROS, A. P. R. M.; GARCIA, V. C. ; MELO, G. T. ; SALGADO, M. A. J. ; ANDRADE, C. R.. <b>O (re)inventar do Lesson Study Híbrido da formação inicial: uma experiência de planejar colaborativamente e os desdobramentos na escola</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>BASANTE, J. G.; TERRA, M.. <b>From the theoretical basis to the practical part in remote classes: experiences of teachers in Technical High School</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>BLANCO, B. <b>Segurança e Soberania Alimentar</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>BLANCO, B. <b>Adequação dos cardápios previsto na lei doPNAE considerando as particularidades de cada campus</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>CARVALHO, I. L. ; NASCIMENTO, A. E. ; BARROS, A. P. R. M. ; SILVA, A. L. R. ; CHINELLATO, T. G.. <b>Aprendizagens Docentes em uma Experiência com o GeoGebra: Interlocução Universade-Escola</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>CHINELLATO, T. G. ; BARROS, A. P. R. M. ; SILVA, K. C. P. ; SILVA, A. L. R. ; SAMPAIO, K. S.. <b>O (re)inventar do PIBID na licenciatura em matemática do IFSP Hortolândia na pandemia: práticas e reflexões</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>COSTA, Ana Márcia Lima. <b>A AVALIAÇÃO DE ESTUDANTES DO INSTITUTO FEDERAL DE SÃO PAULO SOBRE O CURSO PROFISSIONAL INTEGRADO AO ENSINO MÉDIO</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>COTRIM, Andréa. <b>Branquitude na mída: espaços de confronto</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Literatura na BNCC</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>FERREIRA, F. M. <b>A nova retórica</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>FERREIRA, F. M. <b>Analogia e Argumentação: um estudo do debate parlamentar sob o viés da Nova Retórica</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>GARCIA, V. C. ; MELO, G. T ; BARROS, A. P. R. M.. <b>Um olhar para uma experiência no programa de residência pedagógica no âmbito da disciplina de prática docente</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>GOLCALVES, M. ; TEIXEIRA, V. ; SANTOS, A. P.. <b>Ensino e Divulgação da Química-Desafios e histórias vividas por Elas</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>GUIMARAES, R. C. C. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>USO DO SMARTPHONE NA CONSTRUÇÃO DE DEFINIÇÕES DE QUADRADO</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>ISHY, P. H. <b>Moodle: possibilidades de organização</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>ISHY, P. H.; BAGE, I. B. ; RIVERA, E. A. S.. <b>Projeto de Extensão Arandu - Conectando Saberes</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>LEITE, M. C. S. <b>Linguagem fotográfica: possibilidades de uso e interpretação nas pesquisas</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>LEITE, M. C. S. <b>Imaginação sociológica: do problema social ao problema sociológico</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>LUZ, A. M. ; SAURIN, J. M. ; SILVA, A. L. R. ; BARROS, A. P. R. M. ; CHINELLATO, T. G.. <b>O processo de planejar atividades inclusivas: uma experiência no contexto universidade-escola</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>MAIA, J. O. <b>Letramentos e ensino de língua materna</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>MAIA, J. O. <b>Letramentos e Direitos Humanos</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>MARIOTO, R. R. <b>Clubes de interesse como projetos de ensino</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>MARIOTO, R. R. <b>AUTO-HETEROECOFORMAÇÃO DOCENTE: UM OLHAR COMPLEXO SOBRE A DOCÊNCIA EM LÍNGUA PORTUGUESA NA EDUCAÇÃO BÁSICA</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>MARIOTO, R. R. <b>Mesa-Redonda Transdisciplinaridade e Complexidade: mudanças, crises e realidade</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>MARIOTO, R. R. <b>Auto-heteroecoformação docente: o desenvolvimento de professores sob o foco da complexidade</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>MELO, A. M. <b>A experiência de coordenação do PIBID em tempos pandêmicos</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Morais T.M.R. ; FLEIRA, R. C.. <b>Reflexões sobre os ENEMI?S nas versões presencial e a distância: um olhar para a Roda de Conversa</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>Módolo, L. P.; CARVALHO, S. R.. <b>A gestão do cuidado em tempos de Covid-19: a saúde móvel e a biopolítica algorítmica</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Arte e trabalho: da realização de si à subsunção ao capital</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Sob o domínio do capital: a precariedade do trabalho artístico nas indústrias culturais</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>PARDO, F. S. <b>AUTOETNOGRAFIA E FORMAÇÃO DOCENTE: ESPELHOS, INOVAÇÕES, DESNUDANDO EMOÇÕES</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>PISSARDINI, P. E.; FRANCA, S. L. R. B.. <b>A Organização do Trabalho na Quarta Revolução Industrial: Perspectivas futuras a partir de uma abordagem Sociotécnica</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>Pissardini, Paulo E.; SACOMANO. <b>Production Planning and Control in Industry 4.0: Maintenance or Breakdown of the Principles and Fundamentals</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; SOUZA, R. A. G.. <b>O relógio de sol e o ensino de física: estudo, modelagem e a produção de material didático</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>I CONGRESSO DE CIÊNCIAS SOCIAIS DA UNESP/FCLAR</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>ROSA, A. M.; Rosa, Alexandre Machado. <b>Políticas públicas en torno a la actividad física comunitaria efectividad en tiempos de pandemia y otras situaciones excepcionales</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>ROSSETI, W.; BAUER, B. ; GEREMIAS, C. ; NASCIMENTO, D. ; SENA, D. ; MARIA, J.. <b>Projeto Pile-up Machine</b>. 2021. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>O bicentenário para além da nação: a independência do Brasil e a América Latina. Semana de História, Geografia e Ciências Sociais das Faculdades Metropolitanas Unidas (FMU)</b>. 2021. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>SANTOS, A. C. ; BARROS, A. P. R. M.. <b>A produção de uma tarefa com produção de vídeos pelos estudantes no contexto da pandemia</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Teen Feminism and Social Networks: Expansion of the Public Sphere and Feminization of Culture</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>SANTOS, I. M. C. ; BARROS, A. P. R. M.. <b>Apropriação das tecnologias digitais: reflexões sobre práticas de professores que se (re)inventaram na pandemia</b>. 2021. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>SATYRO, D ; MARIOTO, R. R.. <b>A formação do leitor literário à luz do Pensamento Complexo</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>SILVA, A. A. C. <b>'Big Brother Brasil: narrativas de quem (não) pode falar' da Mesa: ?Letramento crítico-visual: a Retórica e a Imagem</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>SILVA, E. P. <b>Diálogos sobre a escravidão no Brasil e nos Estados Unidos: Uma leitura de 'Pai contra mãe' de Machado de Assis e 'Django livre' de Quentin Tarantino</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>SILVA, E. P.; CAETANO, T. K. F.. <b>O Romantismo em Histórias em Quadrinhos: A Moreninha, Joaquim Manuel de Macedo</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>SILVA, E. P.; CAMARA, E. V.. <b>The Voyage Out: o itinerário do feminino em Virginia Woolf. Pré-lançamento do livro. IV Semana de Letras, IFSP Câmpus Cubatão</b>. 2021. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>VALAMEDE, L. ; OLIVEIRA, G. G. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Digital technologies adoption to face COVID-19 pandemic: an exploratory approach</b>. 2021. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>XAVIER, R. A. C.; SILVA, Y. X.. <b>ADOTE: Análise de perfil para a guarda responsável de animais</b>. 2021. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. <b>COMO O GAME DESIGN AFETA A MANEIRA QUE INTERAGIMOS COM O MUNDO no 1º NEXOSGAME: JOGOS ONLINE E ANALÓGICOS EM DIFERENTES CENÁRIOS</b>. 2020. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BARBOSA, R.; BLICHERRIENE, Ana Carla. <b>A GESTÃO PÚBLICA NA ATUALIDADE</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARBOSA, R.; CANCIAN, RENATO. <b>SOCIOLOGIA E SOCIEDADE</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BARBOSA, R.; CAVALCANTE NETO, A. B.. <b>SEGURANÇA PÚBLICA E O CIDADÃO</b>. 2020. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BARBOSA, R.; FERRARI, R.FERRARI, ROBERTO. <b>A ARTE DA POESIA</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BARBOSA, R.; FONTANA, C. F.. <b>A EDUCAÇÃO MODERNA E A SOCIEDADE</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BARBOSA, R.; HIDALGO, RODRIGO. <b>O REPORTER INVESTIGATIVO NA ATUALIDADE</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BARBOSA, R.; LOPES, LINCON. <b>A CHINA E O CONTEXTO INTERNACIONAL</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BARBOSA, R.; MANIÇOBA, ALEXANDRE. <b>A IMPORTÂNCIAS DAS PESQUISAS EM ELTROMAGNETISMO</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BARBOSA, R.; REIS, NÉLIO P. DOS. <b>Geopolítica: Europa Central e as Relações com o Brasil</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>BARBOSA, R.; TRINDADE, LUCIANO HENRIQUE. <b>A GESTÃO DE PESSOAS NA ATUALIDADE</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>BARROS, A. P. R. M.; FERRASSO, T. O.. <b>Desdobramentos de uma experiência de lesson study híbrido em um curso de formação inicial</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>BARROS, A. P. R. M.; LIMA, R. C. R. ; SILVA, K. C. P.. <b>Reflexões da constituição docente a partir de uma experiência de formação no GPEMATEC</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>BARROS, A. P. R. M.; SALGADO, M. A. J.. <b>Um olhar para a prática docente no ensino remoto a partir de uma experiência colaborativa</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Práticas Culturais de Ensinar com a Tecnologia: uma reflexão sobre o uso de vídeos</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE. <b>Concepção de ambiente híbrido e possibilidade de atuação docente</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>BERNARDO, T. F. S.; BALBINO, A. C. C. ; ANTUNES, J. A.. <b>Desafios no ensino a distância no primeiro ano do ensino fundamental: a alfabetização em tempos de pandemia em uma sociedade desigual</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>BLANCO, B. <b>Terapia Nutricional Enteral e Parenteral</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>BOAS, M. A. V ; BARROS, A. P. R. M. ; SILVA, K. C. P.. <b>Aprendizados da prática docente de uma estudante do pibid na escola</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>CALLEFI, M. H. B. M. ; SOARES, R. S. ; ROSA, N. C. ; Pissardini, Paulo Eduardo. <b>Implantação de um modelo de qualidade de software em uma empresa de Tecnologia da Informação (TI) na cidade de Maringá - PR</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>CIAMPI, H. ; CASTRO, Moacir Silva de. <b>A crise econômica do capital, a nova ordem econômica e o Programa Fundo do Milênio para a Primeira Infância</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>COSTA, Ana Márcia Lima. <b>Reflexões sobre possíveis impactos da pandemia na continuidade da escolarização de estudantes em cursos de Ensino Médio de escolas públicas técnicas de educação profissional</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Lis no peito e Todos contra D@nte: com a palavra os leitores juvenis</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>FERRUZZI, A. J.; ROTHENBERG, C. R. E. ; MARTINEZ, L.. <b>Análise do Comportamento de Aplicações Paralelas em Ambientes de Computação de Alto Desempenho Virtualizados</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>FLEIRA, R. C. <b>Aulas de matemática remotas e inclusivas: um pandemônio na vida do professor</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>FREITAS, B. S. B. ; MUNHOZ, I. P. ; MENDONCA, F. C.. <b>Indicators for assessing sustainability and productivity in companies with implementation of Industry 4.0 in Mercosur</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Gentili Santos, Geovana ; FERREIRA DA SILVA, V. R.. <b>A velha cambalhota, de Sylvia Orthot: um olhar sobre velhice</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Homem, Thiago P. D. <b>Inteligência Artificial na Rede Federal de Educação</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>HORTA, P. <b>Mulheres em Musa Praguejadora</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>LEITE, M. C. S. <b>Crianças na cidade de São Paulo: conhecendo por meio de imagens</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>LEITE, M. C. S. <b>?DO PROBLEMA SOCIAL AO PROBLEMA SOCIOLÓGICO</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>MAIA, J. O.; WINDLE, J. A.. <b>Transperiferias: para uma pesquisa de relevância social</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Panorama do ensino de inglês na RFEPCT: demandas e desafios</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>MARTINS, T. H. B. <b>Avaliação de Competências Linguísticas no Ensino Online de Línguas</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Mendes, J. <b>M. Gerenciamento das tecnologias de forma saudável</b>. 2020. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>MONTANHER, R. C. ; ZADI, I. C. ; Monteiro, A. M.. <b>Revisão Sistemática sobre o uso de jogos no ensino de língua estrangeira</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>PISSARDINI, P. E.; SACOMANO ; CALLEFI, M. H. B. M.. <b>Hierarquia Condicional entre elementos do pilar 'Capacitadores' na Arquitetura Funcional do Planejamento e Controle da Produção na Indústria 4.0</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane. <b>Roda de leitura com contos de autores de abordam a IA</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>Neoinstitucionalismo e a análise de políticas públicas: estabilidade e ruptura institucional</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>ROVERI, G. M. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Work, occupational stress and job satisfaction: a focus on Brazilian Millennials</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SILVA DE CASTRO; ANGELO, J. S. D. ; KALIL, F.. <b>Educação Infantil: Formação docente, material apostilado e relações étnico-raciais</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SILVA, Andréa Cotrim. <b>Deconstructing abyssal thinking in the visual</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SILVA, Andréa Cotrim; SILVA, S. B.. <b>Setback Statements, Resistance Responses: Collisions on Social Media in Brazil</b>. 2020. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>TEIXEIRA, F. O. <b>Inteligência artificial 360º: aplicações, oportunidades e carreira</b>. 2020. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>TOPAN, J. S. <b>A leitura literária na formação de currículos de literatura</b>. 2020. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>TOREZIN, Flávia Roberta. <b>Avaliar é preciso, diversificar também</b>. 2020. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>VERCESI DA COSTA, B. ; CALLEFI, M. H. B. M. ; MOTA, R. O. ; PISSARDINI, P. E.. <b>Gestão da Qualidade Agroalimentar: Um Estudo de Caso em uma empresa produtora de café em Matão - SP</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>ZADI, I. C.; MONTANHER, R. C. ; Monteiro, A. M.. <b>Uso de chatbots para o ensino de línguas estrangeiras: uma revisão da literatura</b>. 2020. Apresentação de Trabalho/Congresso</td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Desenvolvimento e design de jogos na educação</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; CUNHA, E. V.. <b>Gamificando metodologias ativas no ensino superior</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>AQUINO, P. <b>A Dublin dos Poetas e das Canções - Uma Viagem Literária e Musical</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BARRETO, Krícia Helena; BATISTA, E. ; FERRAZ NETO, J. ; BATISTA, E. P.. <b>Debate Cultural de Videoclips: feminismo e indústria cultural</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BARROS, A. P. R. M. <b>PRÁTICAS CULTURAIS DE PLANEJAR E AVALIAR: UM OLHAR A PARTIR DA COMPLEXIDADE DA SALA DE AULA</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BARROS, A. P. R. M. <b>Práticas culturais de planejar e avaliar: um olhar a partir da complexidade da sala de aula</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BLANCO, B.; CROMACK, L.. <b>IMPLANTAÇÃO DO PROGRAMA NACIONAL DE ALIMENTAÇÃO ESCOLAR (PNAE) NO INSTITUTO FEDERAL DE EDUCAÇÃO, CIÊNCIA E TECNOLOGIA DE SÃO PAULO (IFSP)</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BUSCATTO, T. ; SILVA, E. P.. <b>'Ensino de Língua Inglesa: Desafios e Perspectiva' - Organização: Pesquisa LINTEC e Centro de Línguas do IFSP Pirituba - CeLin</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CARNEIRO, A. S. <b>Sousândrade: um poeta avant la lettre?</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>A formação identitária na Educação Infantil para o desenvolvimento de uma educação antirracista</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Educação para as Relações Étnico-Raciais - concepções e práticas de professoras da Educação Infantil</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Relações Étinco-Raciais e Formação Docente na Educação Infantil</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Os Bebês e as Relações Étinco-Raciais</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Roda de Conversa</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Adaptações curriculares</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Educação Inclusiva e as Adaptações Curriculares</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>CASTRO, Moacir Silva de; CASTRO, M. S.. <b>Planejando a Educação para as Competências</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>CASTRO, Moacir Silva de; TAVARES, A.. <b>Conversando sobre relações étnico-raciais no dia da família na escola</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. <b>Jogos e brincadeiras na Educação Infanfil</b>. 2019. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>COTRIM, Andréa. <b>Aesthetics, politics, racsim and gender issues in the movies</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>CRUZ, A. C. F.; BERNARDO, T. F. S. ; BARBOSA, G. S.. <b>Painel de Narrativas Afros</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>FEITOSA, W. R. <b>How Social Media Can Contribute to Wellbeing Amongst Autists and Their Families ? A Study based on Virtual Communities Content</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>FEITOSA, W. R.; SAAB, A. B.. <b>Relative share, switching cost, and price policies ? An exploratory study about buying on B2B</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; Gentili Santos, Geovana ; OLIVEIRA, K.. <b>Literatura infantil e juvenil galega: espaço de formação cultural</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; PUGLIESE, R. M.. <b>Autonomia do trabalho docente no Instituto Federal de São Paulo: carreira, reflexões e dilemas atuais</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>FLEIRA, R. C. <b>Os Elementos de Mediação no Estudo de Equações Quadráticas por um Aluno Autista</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>FLEIRA, R. C. <b>A MEDIAÇÃO MATERIAL E SEMIÓTICA PARA A INCLUSÃO DE UM ALUNO AUTISTA NAS AULAS DE MATEMÁTICA</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>FLEIRA, R. C.; FERNANDES, S. H. A. A.. <b>OS ALUNOS COM TRANSTORNO DO ESPECTRO AUTISTA NA PERSPECTIVA DA MATEMÁTICA ESCOLAR INCLUSIVA: UMA ANÁLISE DE TRABALHOS ACADÊMICOS</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>FREIRE, G. ; OLIVEIRA, KARINA FERNANDES DE ; IGOR MUNHOZ ; AKKARI, A. C. S.. <b>A patent study of emerging pharmaceutical markets: the case of BRICS countries</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>GARCIA, F. T. ; BROZE, T. S. ; TEN CATEN, C. S.. <b>Um estudo sobre as incubadoras de empresas no estado do Rio Grande do Sul</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Gentili Santos, Geovana ; FERREIRA DA SILVA, V. R. ; OLIVEIRA, K. de. <b>O repositório 'Informes de literatura' no Centro de Investigación Ramón Piñeiro, como instrumento de sistematização da literatura galega</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>GUERRA, L. D. S. ; BARBOSA NETO, A. ; BLANCO, B.. <b>Políticas Nacionais de Saúde Bucal e Alimentação: atuação interprofissional</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>GUIMARAES, R. C. C. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>Uso do celular inteligente (smartphone) na elaboração de conjecturas e de provas em Geometria: avaliando possibilidades e limitações</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>Apontamentos sobre os rumos do Romance Histórico hoje: o debate entre Fredric Jameson e Perry Anderson</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; MARTINS, T. H. B.. <b>Reflexões sobre a adaptação de recursos didáticos do curso de inglês do Programa E-tec Idiomas sem Fronteiras a cursos semipresenciais</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>HORTA, P. <b>Hibridismo na escrita biográfica de Ana Miranda</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>LEITE, MARIA STELLO. <b>Crianças vistas - as fotografias de Vincenzo Pastore e os rastros de memórias apagadas</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>LEITE, MARIA STELLO. <b>Infância e cidade - o que uma fotografia pode contribuir para esta discussão?</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>LOPES, INGRID ANELISE. <b>2nd International Conference on Research in Education</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>LOPES, INGRID ANELISE. <b>Evidências de aprendizagem de estudantes com deficiência intelectual: um estudo em escola municipal paulistana</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>LOPES, L. <b>Inovação e propriedade intelectual</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. <b>Direitos humanos e culturais: entre letramentos e indisciplina</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>MELO, A. M. <b>Technology in the English Language Classroom: Are you ready?</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>MELO, A. M. <b>Complexidade, tecnologias e protagonismo na formação docente</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>MENDONCA, F. C.; FABRE, J. M. S.. <b>A Simulação como ferramenta didática para o curso de Engenharia de Produção</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>MONTANHER, R. C. <b>Uso de Celulares e Tablets para Terceira Idade</b>. 2019. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>MORA, R. A. ; MAIA, J. O.. <b>The city as literacy</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>Módolo, L. P. <b>O paciente engajado digitalmente e a biopolítica algorítmica,</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>NEVES, J. P. C. ; SANTOS, N. M. B. F. ; IGOR MUNHOZ ; AKKARI, A. C. S. ; Nunes, Danilo ; FERREIRA, M. A.. <b>Human aging and ageism: a study with Brazilian individuals over 40 years old</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>OLIVEIRA, K. ; Gentili Santos, Geovana ; FERREIRA DA SILVA, V. R.. <b>Memórias da guerra civil espanhola em narrativas juvenis galegas</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>PARDO, F. S. <b>O discurso do fracasso no ensino de inglês na escola pública: relatos, mitos e fatos</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>PARDO, F. S. <b>A FORMAÇÃO DO PROFESSOR DE INGLÊS PARA ATUAR NOS ANOS INICIAIS DA ESCOLA: DESAFIOS TEÓRICO-METODOLÓGICOS, POLÍTICOS E SOCIAIS</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>PEREIRA, E. F. M. <b>Zamgine: A sala dos enigmas</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>PEREIRA, E. F. M.; RIBEIRO, R. M. ; MOMETTI, A. L.. <b>Roda de conversa sobre a atuação dos estudantes na Residência Pedagógica</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>PEREIRA, K. B. ; COSTA, G. M. ; MACHADO, M. P. ; SILVA, M. H. L. ; SILVA, V. R. ; FREITAS, G. ; SANTOS, L. M.. <b>Quantificação de Lipideo e Proteína em Bagaço de Malte Oriundo de uma MIicrocervejaria</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>Picosque, Tatiana. <b>Da problemática da imaginação na Carta 17 de Espinosa a Pieter Balling</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>PISSARDINI, P. E.; SACOMANO. <b>Sistema de coordenação de ordens para a Indústria 4.0: Proposta de uma arquitetura para implantação</b>. 2019. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>Sociologia da Educação</b>. 2019. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>A POLÍTICA HABITACIONAL NO BRASIL (1988-2009) ATRAVÉS DA TEORIA DO EQUILÍBRIO PONTUADO: O PROJETO MORADIA</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>ROSSETI, W. <b>Geometric and estimated duration of the day: a comparative study with applications in chronobiology</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>Uma passagem para as Luzes: uma leitura sobre a formulação e a circulação transatlântica do conceito de ?América Latina? (c.1830-1860)</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>SANTOS, N. M. B. F. ; CHAGAS, R. M. ; AKKARI, A. C. S. ; MUNHOZ, I. P. ; FUKUNAGA, F. ; HIRANO, L. K. M.. <b>Compensation Program: A Quantitative Study of the Top Management Team's Level of Knowledge and Satisfaction</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>SANTOS, N. M. B. F. ; JUER, M. ; Munhoz, Igor Polezi ; AKKARI, A. C. S. ; MOTTA, R. G. ; MIYASHIRO, M. K.. <b>Mentoring Process: An Assessment of Career, Psychosocial Functions and Mentor Role Model</b>. 2019. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>SILVA, A. A. C. <b>|Educação crítica por meio do letramento visual nas aulas de Língua e Literaturas em Inglesa</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>SILVA, A. A. C. <b>Black English and black cinema: connections to Sociolinguistics</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>SILVA, A. A. C. <b>Representation, (in)visibilities and representativeness: negotiating loci of enunciation</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>SILVA, A. A. C. <b>Investigando a genealogia e a sistematização dos preconceitos por meio da análise audiovisual: por uma Educação Linguística Crítica</b>. 2019. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>SILVA, E. P. <b>'A trajetória da pesquisa e a produção de conhecimento no IFSP câmpus São Paulo Pirituba'</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>SILVA, E. P. <b>'A literatura de Antonio Candido: alimento humanizador e de educação'</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>SILVA, E. P.; BUSCATO, T.. <b>'Ações de Pesquisa Científica, Extensão e Centro de Línguas do IFSP Pirituba: ?Ações globais e de sustentabilidade?</b>. 2019. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>SILVA, H. C. <b>Noções Básicas de Direito Tributário</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>SILVA, H. C. <b>Noções Básicas de Direito do Trabalho</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>TEIXEIRA, F. <b>O.. Café com GITES</b>. 2019. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>TOREZIN, Flávia Roberta. <b>Avaliar é preciso, diversificar também</b>. 2019. Apresentação de Trabalho/Outra</td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, M. L. G. <b>Tenho um aluno Surdo. E agora?</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, R. N. R. <b>MERCADO DE TRABALHO EM CINEMA E AUDIOVISUAL: A FLEXIBILIDADE DA ATIVIDADE ARTÍSTICA COMO PRECARIZAÇÃO DAS FORMAS DE TRABALHO</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANCIOTO, A. S. R.; Zadi, Igor Calebe ; Bonacin, Rodrigo ; Guimarães, Marcelo de Paiva. <b>Análise de aspectos motivacionais de um simulador para o ensino do algoritmo de escalonamento de disco</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson. <b>ANÁLISE NARRATIVA DA PESQUISA EDUCACIONAL NO BRASIL: O QUANTITATIVO, O QUALITATIVO E MÉTODOS MISTOS</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson. <b>GAMIFICAÇÃO, SERIOUS GAMES E METODOLOGIAS ATIVAS: PROPONDO INTERAÇÕES DIDÁTICAS PARA O PROCESSO DE ENSINO-APRENDIZAGEM NO SÉCULO XXI</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BAGÉ, I. B. <b>2º Seminário obrigatório do Doutorado</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BAGÉ, I. B.; DIAS, F. A. S. ; BUSQUINI, J. A.. <b>Um olhar reflexivo para avaliação educacional</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BAGÉ, I. B.; MALTEMPI, M. V.. <b>Formação do Professor de Matemática, políticas públicas, tecnologias e educação financeira</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BAGÉ, I. B.; MALTEMPI, M. V.. <b>Políticas Públicas de Formação de Professores: O contexto do Curso de Ingressantes do Estado de São Paulo</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BARRETO, Krícia Helena; BONILHA, F. ; RAMOS, E. S.. <b>Cinedebate: Vermelho como o Céu</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>BASILE, F. R. M. <b>Desenvolvedor da Oficina Ferramentas de Busca - IFSP-PTB</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>BASILE, F. R. M. <b>Palestrante - Café com GITES - IFSP-PTB</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>BASILE, F. R. M. <b>Escrita de projetos de IC - IFSP-PTB</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>BASILE, F. R. M. <b>Elaboração e formatação de trabalhos acadêmicos - IFSP-PTB</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>BULGARELLI, A. P. <b>Possibilidades metodológicas para o ensino de filosofia</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Formação Docente na Educação Infantil na perspectiva das Relações Étnico-Raciais: Uma análise do Programa Mesa Educadora para a Primeira Infância (2008-2017)</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Relações Étnicorraciais e Formação Docente na Educação Infantil</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Relações Étnico-Raciais como eixo transversal no trabalho pedagógico da Educação Infantil</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Políticas Públicas e Educação Especial</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Relações Étnico-Raciais na Formação de Docentes da Educação Infantil</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Relações Étnico-Raciais na Formação de Docentes da Educação Infantil</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>EDUCAÇÃO PARA AS RELAÇÕES ÉTNICO-RACIAIS: Refletindo a partir de Referenciais para ressignificar a prática pedagógica</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. <b>Alfabetização e Letramento: contribuições para a prática docente</b>. 2018. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>DAMM, D. D. ; SILVA, F. N. A. ; CONTIN, A. ; ANDRADE, A. ; PINHEIRO, R. A. ; TRAVA-AIROLDI, V. J. ; BARQUETE, D. ; CORAT, E. J.. <b>Substrate Alloy Elements on Thermodiffused Vanadium Carbide Formation Applied as Intermediate Layer for CVD Diamond Growth</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A literatura para jovens no Brasil e na Galícia: considerações sobre a constituição do subsistema literário</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; MELO, N. M.. <b>Muito além do turismo: a produção literária da Academia de Letras de Campos do Jordão</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; OLIVEIRA, K.. <b>Literatura Infantil e Juvenil: histórias, análises e estudos comparados</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>FLEIRA, R. C.; FERNANDES, S. H. A. A.. <b>A EMERGÊNCIA DO RACIOCÍNIO ALGÉBRICO: MEDIANDO A RESOLUÇÃO DE EQUAÇÕES POLINOMIAIS DO 1ºGRAU PARA UM ALUNO AUTISTA</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>GARCIA, F. T. ; BROZE, T. S. ; CATEN, C. S. T. ; DANILEVICZ, A. M. F.. <b>As estratégias dos stakeholders sob a ótica da inovação no ecossistema do estado de SC</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Guimarães, Marcelo de Paiva ; ANCIOTO, A. S. R. ; FREITAS, L. F. S.. <b>Simulador para Ensino de Algoritmos de Escalonamento de discos magnéticos</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>'Little criminals of perception?: leituras do passado norte-americano pelas memórias de infância de dois narradores de E. L. Doctorow</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; MARTINS, T. H. B.. <b>O curso de Língua Inglesa do Programa E-tec Idiomas sem Fronteiras oferecido como Formação Inicial e Continuada no campus São Paulo-Pirituba do IFSP: percursos, adaptações e rumos possíveis</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILACO, F. L.. <b>Questões sobre o ensino de Literaturas em Língua Inglesa nas licenciaturas em Letras da UFMS e do IFSP (campus São Paulo-Pirituba): a experiência da construção das ementas</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>HORTA, P.; MORAES, L. B. P.. <b>'O importante para o trabalhador é saber do seu valor': escritas de si como instrumento de reapropriação do sentido ontologico do trabalho e ressignificação da subjetividade</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>LEITE, M. C. S. <b>Pelas lentes de Vincenzo Pastore- infâncias na cidade de São Paulo no início do século XX</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>LEITE, M. C. S.; NEIMAN, Lilith ; BARBOSA, Margarida. <b>CRIANÇAS NO ESPAÇO URBANO - O QUE ALGUMAS FOTOGRAFIAS NOS PERMITEM CONHECER SOBRE A CIDADE DE SÃO PAULO</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>LIZARDO, E.O.; SILVA , G. C. M.. <b>HISTÓRIA DO BRASIL: COMO CONTÁ-LA?</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>MAIA, J. O. <b>Fogos digitais: letramentos de sobrevivência no Complexo do Alemão/RJ</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. <b>Fogos digitais: letramentos de sobrevivência no Complexo do Alemão</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. <b>Letramentos de Sobrevivência</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. <b>Direitos humanos e a formação do professor de língua: experiências e potencialidades</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA; ROSA, A. A. C. ; PAULINO, D.. <b>Letramentos e protagonismo: possibilidades multissemióticas e plurilíngues na busca por participação cidadã</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>MARIOTO, R. R. <b>Ensino de coesão textual: uma proposta de curso a distância sob a perspectiva do Design Educacional Complexo (DEC)</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Educação linguística e diversidade cultural</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Investigando modos de promoção e desenvolvimento do letramento acadêmico/escolar</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>MARTINS NETO, I. A. <b>A música que (não) se ouve na escola: aproximações entre letramento escolar e interesses dos educandos</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>MELO, A. M. <b>Pela estrada do pensamento complexo na rota das tecnologias digitais: o aluno e o professor, o piloto e o navegador</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>MELO, A. M. ; MAIA, J. O.. <b>Ensinando/Vivenciando a condição humana: pensando a formação de professores à luz da complexidade</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>MELO, A. M.; BIUM, S. P. S. ; BRAUER, K. N.. <b>Design Educacional Complexo (DEC): experiencias reveladas em pesquisas</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>MONTANHER, R. C. <b>Versionamento de Código com GIT</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>MONTANHER, R. C. <b>Introdução ao Desenvolvimento de Games Com Godot 3</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>MONTANHER, R. C. <b>Apresentação Clube Desenvolvimento de Jogos Digitais</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>MONTANHER, R. C. <b>Uso de Celulares e Tablets para Terceira Idade</b>. 2018. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>Módolo, L. P. <b>Para além do Antropocentrismo Biopolítico, para além de Antonio Negri!</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>Módolo, L. P. <b>A relação entre ciência e ideologia em tempos de hegemonia financeira</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>NORMANHA, Ricardo. <b>A materialidade da Cultura e as artes como espaço de criação de valor</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>NORMANHA, Ricardo. <b>?Mercado de trabalho em Cinema e Audiovisual: a flexibilização como perspectiva de precarização</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>OLIVEIRA, C. A. S. ; MARIOTO, R. R.. <b>O Proeja no IFSP e uma perspectiva para o câmpus São Paulo Pirituba</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>PARDO, F. S. <b>Diante do espelho: a autoetnografia como metodologia de pesquisa no ensino de línguas no contexto da escola pública</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>PARDO, F. S. <b>?O que você vai ser quando crescer??: a abordagem dos Letramentos no ensino de inglês no Ensino Fundamental-I público</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>PARDO, F. S. <b>Mesa Redonda 'Educação, Linguagens e Práticas Pedagógicas' - Ciência e produção de conhecimento no Sul Global: por uma educação decolonial para a redução das desigualdades</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>PEDROSA, N. A. <b>TERERÉ:uma leitura de muitas vozes</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>PEREIRA, E. F. M. <b>Zamgine: Os enigmas usando a lógica matemática</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>PINHEIRO, R. A.; SILVA, AMANDA ARAUJO ; TRAVA-AIROLDI, V. J. ; CORAT, E. J.. <b>POLYETHYLENE/CARBON NANOTUBES NANOCOMPOSITE FOR WATER VAPOR EXTRACTION FROM HUMID AIR</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>PISSARDINI, P. E.; SACOMANO. <b>Indústria 4.0 como Paradigma Estratégico de Gestão de Manufatura e seu alinhamento com o Planejamento e Controle de Produção</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>PISSARDINI, P. E.; SACOMANO. <b>O Planejamento e Controle da Produção na Indústria 4.0 e seu alinhamento com os Paradigmas Estratégicos de Gestão da Manufatura</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; SOUZA, D. A.. <b>DA TRANSFERÊNCIA DE RECURSOS PÚBLICOS PARA O SETOR PRIVADO: A CONTRARREFORMA DO ENSINO MÉDIO NO BRASIL</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>Da implementação do Novo Ensino Médio: um olhar sobre as últimas reformas e o contexto atual</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; CHAGAS, G. S.. <b>A CAIXA DE CORES: EXPERIMENTAÇÃO EM FÍSICA COM MATERIAIS DE BAIXO CUSTO</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>REIS, N. F. <b>Painéis sobre Liderança</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>REIS, N. F.; GALVEZ, A.. <b>Análise bibliométrica: um estudo aplicado a inovação social</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>REIS, N. F.; RODRIGUES, E. F. A. ; SAMPAIO, F. S. ; PATROCINIO, F. B. O. ; SANTOS, S. R. ; ANDRADE, A. G.. <b>Logística urbana: um estudo sobre o deslocamento dos estudantes universitários do IFSP Pirituba</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>RIVERA, E. A. S.; SILVA, E. A.. <b>As linguagens do imaginário: espelhos e silêncios</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>ROMAGNOLI, A. J.; FREDERICO, P. R. P. ; TROVO, M. C.. <b>A formulação de políticas públicas de lazer pela Estância Turística de Avaré - SP</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>ROSSETI, W. <b>Estimativa da duração efetiva do dia e a sua importância para a cronobiologia</b>. 2018. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>Da viagem à intervenção: Michel Chevalier e o México (1835-1867)</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>SANTOS, E. M. D.; NASCIMENTO, M. A. R.. <b>Technical and economic analysis of a cogeneration plant for a brazilian scenario</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>SANTOS, L. C. M. <b>Iniciação à Pesquisa: do projeto à publicação</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>SILVA, A. A. C. <b>Langston Hughes and other poets: from the Harlem Renaissance to the Black Arts Movement</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>SILVA, A. A. C. <b>O sensível (não) partilhado: A violência poética e política da (ir) representação do negro em Hollywood</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>SILVA, A. A. C. <b>Da representação à reflexão: o cinema e a sala de aula na discussão sobre desigualdades sociais</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>SILVA, A. A. C. <b>Discourse studies about Race and Gender</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>SILVA, A. A. C. <b>A escrita, criativa e a produção literária dos alunos de Letras da Universidade Paulista</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>84. &nbsp;</td> <td>SILVA, A. A. C. <b>language and Culture: Decreasing social injustices through the study of sterotypes in the movies</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>85. &nbsp;</td> <td>SILVA, AMANDA ARAUJO ; PINHEIRO, R. A. ; TRAVA-AIROLDI, V. J. ; CORAT, E. J.. <b>CARBON NANOTUBES UNZIPPED ON GRAPHITE AND THEIR CAPACITIVE PERFORMANCE IN SALT/BRACKISH WATER FOR CDI SYSTEMS</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>86. &nbsp;</td> <td>SILVA, AMANDA ARAUJO ; PINHEIRO, ROMARIO A. ; TRAVA-AIROLDI, V. J. ; CORAT, E. J.. <b>APPLICATION OF CARBON NANOTUBES GROWN ON GRAPHITE FOR CAPACITIVE DEIONIZATION</b>. 2018. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>87. &nbsp;</td> <td>SILVA, E. A. ; MAIA, J. O.. <b>Um quarto para nós todas: (re)existências de autoras negras na paisagem literária brasileira</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>88. &nbsp;</td> <td>SILVA, H. C. <b>Noções de Direito Penal</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>89. &nbsp;</td> <td>SILVA, H. C. <b>Noções de Direito Ambiental</b>. 2018. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>90. &nbsp;</td> <td>SILVA, Vagner L. <b>da. Instrução normativa do IFSP para formação continuada de professores do ensino básico</b>. 2018. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>91. &nbsp;</td> <td>TOREZIN, Flávia Roberta. <b>O Conceito de Interesse na Formação de Professores do Ensino Secundário Brasileiros nas décadas de 1950-1960</b>. 2018. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>92. &nbsp;</td> <td>TRINDADE, L. H. <b>Responsabilidade Social e Sustentabilidade</b>. 2018. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AKKARI, A. C. S. ; POLEZI MUNHOZ, IGOR ; SANTOS, N. M. B. F.. <b>USA, Europe and Pharmerging Countries: a Panorama of Pharmaceutical Innovation</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALBANO JUNIOR, L. R. <b>Oficina: Manutenção de Software e Gerência de Configuração</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALMEIDA, M. L. G. <b>Educação Inclusiva: Avanços e desafios</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ALMEIDA, M. L. G. <b>Protagonismo: voz e vez da comunidade surda</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>AMARAL, B. S.; SIMOES, B. R. L. ; SOUZA, D. H. F. ; CASS, Q. B.. <b>Phosphoenolpyruvate carboxykinase immobilized on to magnetic beads for prospecting ligands</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Os bastidores da Política</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Metodologias ativas na Educação</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Extensão Universitária e Jogos Cooperativos</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ANTUNES, Jeferson. <b>AS IMPLICAÇÕES DA GAMIFICAÇÃO E DOS JOGOS COOPERATIVOS NAS EXPERIÊNCIAS DE ENSINO-APRENDIZAGEM EM DIVERSOS NÍVEIS</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ANTUNES, Jeferson. <b>DESIGN THINKINGS PARA RESOLUÇÃO E GESTÃO DE PROBLEMAS INSTITUCIONAIS</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ANTUNES, Jeferson; SILVA, A. C. B. A. ; SILVA, A. F. ; QUEIROZ, Z. F.. <b>UTILIZANDO O DIAGNÓSTICO PARTICIPATIVO NA PESQUISA EDUCACIONAL: MÉTODOS, FERRAMENTAS E PROCESSOS</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ANTUNES, Jeferson; SILVA, F. M. S. ; VIEIRA, I. S. S. ; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>EXPERIÊNCIAS PEDAGÓGICAS E METODOLOGIAS COOPERATIVAS NO ÂMBITO DA EDUCAÇÂO INTEGRAL EM JUAZEIRO DO NORTE - CEARÁ.,</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ANTUNES, Jeferson; VIEIRA, I. S. S. ; SANTOS, A. G. A. ; QUEIROZ, Z. F.. <b>VIVÊNCIAS LÚDICAS COMO PRÁTICA EDUCATIVA SOBRE DIREITOS HUMANOS: APLICAÇÃO DO JOGO DIÁRIO DE AMANHÃ COM ESTUDANTES DE DIREITO NO CEARÁ</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Audrey A Bertolini ; BLANCO, B. ; Larissa V. Tonacio ; PESSOA, L. S.. <b>Perfil alimentar dos alunos integrados do Instituto Federal de Barretos</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>BAGÉ, I. B. <b>Formação a Distância de Professores: Um olhar para o curso de Ingressantes do Estado de São Paulo</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>BAGÉ, I. B.; LIMA, M. A. G.. <b>O Fenômeno das Marés: Uma possibilidade para o Ensino das Funções Seno e Cosseno Utilizando</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>BASILE, F. R. M. <b>Desenvolvedor da Oficina de Tecnologias educacionais - IFSP-PTB</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>BERNARDO, T. F. S.; OGASHAWARA, OSMAR. ; PAZELLI, T. F. P. A. T.. <b>Robótica na escola: Aplicação de kit didático em Práticas Pedagógicas</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>CALHEIROS, J. C. <b>O CÁLCULO COM ENFOQUE GEOMÉTRICO: O ENSINO DO CÁLCULO ATRAVÉS DA ABORDAGEM HISTÓRICA</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Relações Étnico-Raciais e Formação Docente na Educação Infantil</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Educação Infantil e Formação Docente para as Relações Étnico-Raciais</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>CASTRO, M. S.; CASTRO, Moacir Silva de. <b>Relações Étnico-Raciais e Formação Docente na Educação Infatil</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>CASTRO, Moacir Silva de; CASTRO, M. S.. <b>Debatendo questões sobre a diversidade sexual, de gênero e étnico-racial na escola</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>CORREIA, Adriana Paes de Jesus. <b>Introdução à Educação Inclusiva</b>. 2017. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>CRUZ, A. C. F.; MARQUES, A. C. T. L.. <b>Analise da oficina 'Profissões de homens e Mulheres' realizada com o grupo de crianças</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A distopia juvenil e a protagonização da voz feminina</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A representação cultural na literatura juvenil no Brasil e na Galícia: diferenças e semelhanças</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; Gentili Santos, Geovana. <b>Questões de gênero na Literatura Infantil e Juvenil</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>GOMES, E. F. ; LIZARDO, E.O. ; MODANAZ, C.. <b>Banca da Ciência: Uma proposta de popularização da ciência aos Jovens através de oficinas</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>GOMES, E. F. ; MODANEZ, C. ; LIZARDO, E.O.. <b>Sob o Olhar das Lentes: Uma Proposta de Divulgação Científica na Escola a partir do Projeto Banca da Ciência</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; FERREIRA, A. E. S. C. S.. <b>Programa SETEC ? CAPES/NOVA: Relações entre o Ensino de Línguas e Vivências no Exterior</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>HOMEM, Thiago Pedro Donadon; PERICO, DANILO HERNANI ; SANTOS, PAULO EDUARDO ; COSTA, A. H. R. ; BIANCHI, REINALDO AUGUSTO DA COSTA. <b>Improving Reinforcement Learning results with Qualitative Spatial Representation</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>HOMEM, Thiago Pedro Donadon; PERICO, DANILO HERNANI ; SANTOS, PAULO EDUARDO ; COSTA, A. H. R. ; BIANCHI, REINALDO AUGUSTO DA COSTA ; DE MANTARAS, RAMON LOPEZ. <b>A hybrid approach to learn, retrieve and reuse qualitative cases</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>HORTA, P. <b>Palestrante do I Congresso de Profissões do IFSP - Sertãozinho</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>HORTA, P. <b>Reformismo e Dualidade: a formação da educação básic brasileira</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>HORTA, P. <b>Que românticos somos nós?</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>LEITE, M. C. S. <b>Entre lugares- crianças indígenas na cidade de São Paulo</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>LOPES, I. A.; PRIETO, R. G.. <b>Acesso, permanência e aprendizagem escolar por alunos com deficiência intelectual</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>LOURENCAO, BRUNA C. ; PINHEIRO, R. A. ; SILVA, TIAGO A. ; CORAT, E. J. ; FATIBELLO-FILHO, ORLANDO. <b>Eletrodo de diamante dopado com boro poroso como sensor eletroquímico para aplicações em análise por injeção em fluxo</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>MAIA, J. O. <b>Papo Reto Digital: mídias móveis e letramentos de sobrevivência no Complexo do Alemão/RJ</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>MAIA, J. O. <b>Fogos digitais: letramentos de sobrevivência no Complexo do Alemão/Rj</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>MAIA, J. O. <b>A internet salvou a gente mais que UPP: letramentos de sobrevivência e a luta por direitos humanos e culturais</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>MAIA, J. O. <b>Fogos Digitais: letramentos de sobrevivência no Complexo do Alemão/RJ</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. <b>Fogos Digitais: letramentos de sobrevivência no Complexo do Alemão/RJ</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA. <b>Pensando os estudos dos letramentos à luz da indisciplina</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>MARTINS NETO, IRANDO ALVES. <b>Ensino crítico de língua portuguesa e transformação social</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>MARTINS NETO, IRANDO ALVES. <b>Inglês com temas polêmicos: um olhar sobre - e para - grupos minoritários</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>MELO, A. M.; BIUM, S. P. S.. <b>We sing, we rock! The complex educacional design and the building of relevant knowledge</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>MELO, A. M.; BIUM, S. P. S. ; BURIAN, E. A. ; BRAUER, K. N. ; RAGNEV, K. D.. <b>Minicurso: Design Educacional Complexo</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>MENDES, L. C. ; ROSA, T. F. ; DO AMARAL, B. S. ; SOUZA, D. H. F. ; SEVERINO, R. P. ; LIMA, R. S. ; DE CASTRO, M. R. C. ; BERNARDES, A. ; PEREZ, C. N. ; DE SOUSA, L. R. F.. <b>Triagem enzimática de chalconas em busca de novos inibidores de arginase de L. amazonensis (ARG)</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>Módolo, L. P. <b>OS USOS DA BIOPOLÍTICA: Foucault com Negri e sem Negri_</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>Módolo, L. P. <b>A BIOPOLÍTICA SOB O REGIME DE ACUMULAÇÃO FLEXÍVEL</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>Módolo, L. P. <b>A biopolítica de Antonio Negri: um caso de bios sem zoé</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>Módolo, L. P.; PINTO JR, L. A. B.. <b>A NOVA ESPOLIAÇÃO: BIG DATA E O CONTROLE DOS DADOS</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>P. <b>E. S. Tavares. Out-of-equilibrium strongly repulsive interacting Fermi gas</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>PARDO, F. S. <b>Letramento crítico e práticas situadas: questões de gênero, sexualidade e diversidade em aulas de inglês no Ensino Fundamental I público</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>PARDO, F. S. <b>Meeting the challenges of education for democracy in Brazil: approaching Literacies studies in the teaching of English for young learners in public schools</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>PEDROSA, N. A. <b>A PARTIR DE PERO VAZ PARA ONDE CAMINHA A LEITURA NO BRASIL</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>PINHEIRO, R. A.; SILVA, AMANDA ARAUJO ; CONTIN, ANDRÉ ; TRAVA-AIROLDI, V. J. ; CORAT, E. J.. <b>Analyses of structure and electrochemical behavior of Vertically Aligned Carbon Nanotubes Modified by CO2 laser irradiation</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>PINHEIRO, R. A.; SILVA, AMANDA ARAUJO ; TRAVA-AIROLDI, V. J. ; CORAT, E. J.. <b>Water Vapor Extraction from Humid Air by Super-Hydrophilic VACNTs Growth on Stainless Steel Screen</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>PINHEIRO, R. A.; SILVA, AMANDA ARAUJO ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, E. J.. <b>Diamond microchannels fabricated by diamond deposition on superhydrofilic and superhydrophobic VACNTs</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>POLEZI MUNHOZ, IGOR; AKKARI, A. C. S. ; SANTOS, N. M. B. F. ; BORELLI, E.. <b>SUSTAINABILITY IN THE ENERGY SECTOR: SCIENTIFIC AND TECHNOLOGICAL MAPPING OF MAGNESIUM BATTERIES</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>POLEZI MUNHOZ, IGOR; AMANCIO, T. O. ; AKKARI, A. C. S. ; SANTOS, N. M. B. F. ; BONELLI, V. V.. <b>GREEN ROOF: IMPLANTATION STUDY AT THE PONTIFICAL CATHOLIC UNIVERSITY OF SÃO PAULO</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; GIROTTO, Eduardo Donizeti. <b>O NOVO CICLO DE REFORMAS EDUCACIONAIS NO BRASIL E SUAS IMPLICAÇÕES SOBRE O TRABALHO DOCENTE</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>REIS, N. F. <b>Reforma da Previdência: desafio de todos</b>. 2017. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>Em busca de sentidos: O esvaziamento do Ensino Médio na rede estadual paulista</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>ROSA, T. F. ; MENDES, L. C. ; DO AMARAL, B. S. ; SOUZA, D. H. F. ; SEVERINO, R. P. ; DE SOUSA, L. R. F.. <b>Estudo de cinética enzimática da arginase de Leishmania amazonensis</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>'A França a vapor: materialidade e representações nas viagens transatlânticas para as Américas no século XIX'. XXIX Simpósio Nacional de História da ANPUH. Brasília: UnB</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>?Introdução à questão de Gênero?</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>SILVA, A. A. C. <b>Gênero e Raça Encenados: Letramento Visual e uma Análise Crítica da Cinematografia Estadunidense</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>SILVA, A. A. C. <b>Desconstruindo os paradigmas da representação de grupos étnico-raciais no cinema</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>SILVA, A. A. C. <b>Hollywood Negra: Hegemonia e Rupturas</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>SILVA, A. A. C. <b>A escravidão e os Direitos Civis encenados: os Estados Unidos pela lente de Tarantino e Tate Taylor</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>SILVA, A. A. C. <b>Violências, violações e políticas na representação cinematográfica</b>. 2017. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>SILVA, A. A. C. <b>Representation and Representativeness</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>SILVA, A. A. C.; MIZAN, S. ; FERRAZ, Daniel ; Simone C. Gonzales. <b>Letramentos Visuais em tempos de binarismos midiáticos: articulações com a Educação Linguística!</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>SILVA, E. A. <b>As manifestações do silêncio no imaginário contemporaneo</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>SILVA, J. B. ; SILVA, A. F. ; NASCIMENTO, D. C. ; ANTUNES, Jeferson. <b>Mulheres e a Encosta do Seminário: relação entre moradoras do bairro e o pertencimento pós-obra</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>TEIXEIRA, H. ; SANTOS, N. M. B. F. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Lean Manufacturing and Lean Accounting Cost: An analysis of performance in Open Capital Companies on Bovespa</b>. 2017. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>TERUZZI, A. E.; OLIVEIRA, ALEXANDRE MANIÇOBA DE. <b>AS IDEIAS FUNDAMENTAIS DO CÁLCULO INTEGRAL NO ENSINO MÉDIO: UM DIÁLOGO ENTRE HISTÓRIA DA MATEMÁTICA E TECNOLOGIA</b>. 2017. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>TOPAN, J. S. <b>'Um útil e deleitoso passatempo': literatura para jovens no século XIX</b>. 2017. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>VIEIRA, I. S. S. ; SILVA, F. M. S. ; ANTUNES, Jeferson ; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Publicidade e direitos do consumidor Romeiro na cidade de Juazeiro do Norte</b>. 2017. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>VILARONGA, C. A. R. ; HELD, C. L. F. ; LEMES, F.G.. <b>Estratégias de Estudo</b>. 2017. Curso de curta duração ministrado/Outra</td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, M. L. G. <b>Mesa redonda 'Educação Inclusiva: avanços e desafios'</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Jogos cooperativos e sua relação com a educação</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Metodologias ativas e jogos cooperativos no contexto da Educação Superior</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Justiça, ética e política no monomito de Joseph Campbell</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Paradigma e crise: Desenvolvimento sustentável, justiça social e ética na contemporaneidade</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Interdisciplinaridade e metodologias ativas</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ANTUNES, Jeferson. <b>AS IMPLICAÇÕES DO ENSINO PERSONALIZADO POR MEIO DOS JOGOS COOPERATIVOS: CONSTRUINDO COLETIVAMENTO O CONHECIMENTO ACERCA DO DESENVOLVIMENTO SUSTENTÁVEL NA UNIVERSIDADE FEDERAL DO CARIRI ? JUAZEIRO DO NORTE</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ANTUNES, Jeferson; CRUZ, P. H. M. G. ; LIMA, J. N. ; SANTOS, I. B. R. ; SILVA, A. F.. <b>UM EXAME DAS POTENCIALIDADES DOS JOGOS COOPERATIVOS COMO FERRAMENTA DE ENSINO DE EDUCAÇÃO PARA A SAÚDE EM EPIDEMIOLOGIA</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>ANTUNES, Jeferson; LIMA, J. N. ; CRUZ, P. H. M. G. ; SILVA, A. F. ; SILVA, A. C. B. A.. <b>Atividades não-competitivas, mediadas por jogos, durante a ocupação do Colégio Presidente Geisel - Juazeiro do Norte</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>ANTUNES, Jeferson; LIMA, J. N. ; CRUZ, P. H. M. G. ; SILVA, A. F. ; SILVA, A. C. B. A.. <b>Os conceitos de epidemiologia, pandemia e endemia mediados pelos jogos cooperativos na educação para saúde</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ANTUNES, Jeferson; MAIA, A. G. ; LIMA, J. N. ; CAVALCANTE NETO, F. A. ; SILVA, I. B. ; SILVA, A. F.. <b>A UTILIZAÇÃO DE JOGOS COMO MÉTODO DE SENSIBILIZAÇÃO A ATIVIDADES NÃO-COMPETITIVAS DURANTE A OCUPAÇÃO DO COLÉGIO PRESIDENTE GEISEL EM JUAZEIRO DO NORTE</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ANTUNES, Jeferson; SILVA, F. M. S. ; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>TEORIAS DA GLOBALIZAÇÃO: COMO O FUTEBOL PROFISSIONAL SE TRANSFORMOU EM UM PRODUTO MIDIÁTICO?</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>ANTUNES, Jeferson; SILVA, I. B.. <b>Soluções em Políticas Públicas através da Tecnologia da Informação: Quais as experiências de Cidades Inteligentes pelo mundo?</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>AQUINO, P. <b>The Origins of The Irish Short Story</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>AQUINO, P. <b>Fairy Tale Tradition and The Short Story</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>AQUINO, P. <b>O folclore e a mitologia celta irlandesa e as relações com o Brasil</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>AQUINO, P. <b>Identidades Irlandeses na Espiral da História</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>BAGÉ, I. B. <b>A formação continuada de professores a distância: Um olhar sobre o curso de ingressantes oferecido aos docentes de Matemática do Estado de São Paulo</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>BAGÉ, I. B.; LIMA, M. A. G.. <b>A Trigonometria nas Marés: Uma proposta de trabalho com funções cosseno e seno utilizando as Tecnologias Digitais</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>BAGÉ, I. B.; MALTEMPI, M. V.. <b>Formação Continuada de Professores: Uma proposta de curso para o ensino de Estatística e Probabilidade com o uso das Tecnologias Digitais</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>BAGÉ, I. B.; MALTEMPI, M. V.. <b>Formação Continuada de Professores: Uma Proposta de curso para o ensino de Estatística e Probabilidade com o uso das Tecnologias Digitais</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>BARBOSA, R.; FONTANA, C. F.. <b>Considerations on the Quality of Life at Work of Drivers of Bus Rapid Transit (BRT)</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>BARBOSA, R.; FONTANA, C. F. ; sakurai, akio ; BARBOSA, V. L. A. C.. <b>Aspects of Urban Transport in the Environment: The Case 'Bus Rapid Transport' (BRT) in São José Dos Campos Municipality</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>BARBOSA, R.; sakurai, akio. <b>Risk Analysis in Urban Transport Systems: Evaluation of the Occurrence of Criminal Possibilities in Rapid Transit Bus of São José Dos Cam</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>BARROS, A. P. R. M. <b>Facebook usage as a learning platform in mathematics classes based on blended learning models</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>BARROS, A. P. R. M. <b>Uma abordagem blended learning num sistema complexo: auto-organização de uma sala de aula</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>BARROS, A. P. R. M. <b>Understanding a high school blended learning environment from the perspective of complex systems</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>BARROS, A. P. R. M.; MALTEMPI, M. V.. <b>Uma auto-organização de uma aula de matemática em um ambiente blended learning</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>BENATI, D. M.; ITO, K. ; KOHAMA, K. ; YAMAMOTO, H. ; ZOQUI, E. J.. <b>In Situ Observation of Semisolid Fe-2.5C-1.5Si Gray Cast Iron</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>BLANCO, B.; SOUZA, M. C. ; SANTOS, P. A. ; COSTA, R. S. S.. <b>Grupo de Atendimento as Gestantes e projeto de implementação e acompanhamento da Rede Cegonha ? Importância da Reunião Técnica e relato de experiência da equipe técnica da UBS Novo Horizonte no Município de Carapicuíba</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>CAMILO, R. C. <b>Conversando sobre Educação Física na Escola</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>CARNEIRO, A. S. <b>Entre o indianismo e o condoreirismo: a poesia engajada de Sousândrade</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>CARNEIRO, L. P. M. ; TAVARES, A. M. ; ROMAGNOLI, A. J. ; FREDERICO, P. R. P. ; MAZO, P. H. S. ; NICOLOSI, R. M.. <b>Pesquisa de demanda com visitantes do 26º Congresso Brasileiro da ABQM em Avaré</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>CASTRO, M. S.; DUARTE, D. ; CASTRO, Moacir Silva de. <b>Formação Pedagógica</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>CASTRO, Moacir Silva de; DUARTE, D.. <b>Formação Pedagógica</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>CASTRO, Moacir Silva de; DUARTE, D.. <b>Formação Pedagógica</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>COTRIM, Andréa. <b>Poéticas e Políticas da Violência no Cinema: Questões Raciais e de Gênero</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Relatório 'Clássicos da Literatura de Transmissão Oral no Brasil'</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Jovens em conflitos - uma análise comparativa entre a narrativa juvenil brasileira e galega</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Para além dos signos: a língua estrangeira em contexto</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>A Literatura para jovens - uma produção em destaque</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>FERREIRA, F. M. <b>O papel discursivo das analogias na negociação da verdade: a imagem do Partido dos Trabalhadores nas colunas de Luiz Felipe Pondé</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>FERREIRA, F. M. <b>A (re)criação dos estereótipos de grupos minortários em revistas de nicho</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>FERREIRA, F. M. <b>Analogia e argumentação: a negociação de sentido em corpora da mídia escrita</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>FERREIRA, F. M. <b>Analogia e argumentação nos debates sobre a criminalização da homofobia</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>FREITAG, B. B.; Fischer, A. L.. <b>Análise sobre o termo Talento em diferentes áreas do conhecimento</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>HOMEM, THIAGO P.D.; PERICO, DANILO H. ; Santos, Paulo E. ; Bianchi, Reinaldo A. C. ; de Mantaras, Ramon L.. <b>Qualitative Case-Based Reasoning for Humanoid Robot Soccer: A New Retrieval and Reuse Algorithm</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>HORTA, P. <b>Lei de Diretrizes e Bases da Educação Nacional - o ensino técnico</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>HORTA, P. <b>Projeto 'Rio de Janeiro Literário: relatos de viagem em rede social</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>LEITE, M. C. S. <b>Infancias reveladas en la periferia de la metrópoli : una experiencia con la fotografía estenopeica</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>LEITE, M. C. S. <b>Fotografia artesanal: uma experiência com crianças na Educação Infantil</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>LOPES, I. A.; et al.. <b>Comunicação e práticas pedagógicas: implicações para escolarização</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>MAIA, J. O. <b>Digital Papo Reto: mobile media and literacies of survival in Rio de Janeiro</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>MAIA, J. O. <b>Digital Straight Talk: mobile media and survival literacies in a favela in Rio de Janeiro</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>MAIA, J. O. <b>Papo Reto Digital: letramentos de sobrevivência no Complexo do Alemão/RJ</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Tendências na abordagem da leitura em livros didáticos no século XXI</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>MARTINS NETO, IRANDO ALVES. <b>Perspectivas dos estudos de letramento no estado de São Paulo</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>MELO, A. M. <b>When I was a child I could/couldn't: a complexidade no processo de ensino-aprendizagem</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>MELO, A. M.; BIUM, S. P. S. ; BURIAN, E. A.. <b>(Re)construir e reconhecer-se: revelações motivadas pela linguagem</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>MENEZES, E. S. H. ; SOMBRIO, C.I.L. ; SANTOS, B. C. ; BAPTISTA, DANIEL L.. <b>Plasma-treated ZnO Nanowires for Sensing Applications</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>OLIVEIRA, A.P.F. <b>O DICCIONARIO DE LA LENGUA ESPAÑOLA (DRAE): OS MOVIMENTOS DE SENTIDO NOS ENUNCIADOS DEFINIDORES DE ?NACIONALISMO'</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>PARDO, F. S. <b>EPISTEMOLOGIAS DIGITAIS E A CONSTRUÇÃO DE NARRATIVAS MULTIMODAIS NO ENSINO E APRENDIZAGEM DE LÍNGUA INGLESA NO ENSINO MÉDIO</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>PARDO, F. S. <b>AUTOETNOGRAFIA COMO METODOLOGIA DE PESQUISA NO ENSINO DE INGLÊS: DIÁLOGOS (IM)PERTINENTES ENTRE O EU (OBSERVADOR) E O EU (OBSERVADO)</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>PEDROSA, N. A. <b>Modelando um caminho para a leitura: contribuições de uma análise instrumental</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>PUGLIESE, R. M. <b>Sobre o trabalho do professor de física no ensino médio: da realidade na cidade de São Paulo</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>A Revista Crônicas do Ensino Básico e o trabalho docente: sonhos, mudanças e realidade</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>PUGLIESE, RENATO MARCON; MACHADO, V. F. ; GIROTTO, Eduardo Donizeti ; LIMA, C. F.. <b>Reforma do Ensino Médio: contradições e possibilidades</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>REIS, N. F. <b>Orientação Pessoal e Profissional</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>RODRIGUES, C. V. ; SANTANA, K. O. ; NESPECA, M. G. ; De OLIVEIRA, J. E. ; MAINTINGUER, S. I.. <b>APLICAÇÃO DE GLlCEROL BRUTO PRÉ-TRATADO EM PROCESSOS BIOLÓGICOS DE GERAÇÃO DE H2,</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>RODRIGUES, M. C. C. <b>A Teoria da Indústria Cultural</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>RUSSO, A. C. R. ; CAMILO, R. C.. <b>A percepção dos docentes de educação física da secretária da educação do estado de São Paulo no município de Bauru em relação à formação do ensino de golfe na escola</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; CASTELBLANCO, M. N. ; MAINTINGUER, S. I.. <b>Culturas mistas de bactérias anaeróbias geradoras de H2 aplicadas no consumo de glicerol bruto gerado em usinas de biodiesel a partir de óleos residuais domésticos</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; NESPECA, M. G. ; De OLIVEIRA, J. E. ; PIRES, L. O. ; MAINTINGUER, S. I.. <b>Produção biológica de gás hidrogênio a partir de glicerol bruto e esgoto sanitário</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; NESPECA, M. G. ; De OLIVEIRA, J. E. ; PIRES, L. O. ; MAINTINGUER, S. I.. <b>Biological hydrogen production from raw glycerol and wastewater</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; PIRES, L. O. ; MAINTINGUER, S. I.. <b>Caracterização de glicerol bruto gerado a partir de óleo reciclado para geração de 1,3- propanodiol</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>John Smith em Argel: articulações entre a história dos Estados Unidos e os projetos coloniais franceses no norte da África nas Lettres sur l?Amérique du Nord, de Michel Chevalier (1833-1836). XII Encontro Internacional da ANPHLAC</b>. 2016. Apresentação de Trabalho/Simpósio</td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Agricultura Familiar e a produção de alimentos: uma relação pouco conhecida</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>SANTOS, E. M. D.; SOTO, F. P.. <b>Estudo comparativo de cálculos térmicos de um motor de combustão interna ciclo Otto com resultados de ensaios experimentais</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>SANTOS, L. C. M. <b>A abordagem sócio-ecológica para estudo e análise de sistemas pesqueiros sustentáveis</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>SANTOS, L. C. M. <b>A abordagem geoespacial e sócio-ecológica para análise de sistemas pesqueiros e ambientais</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>SANTOS, M. J. R. <b>AVALIAÇÃO DIAGNÓSTICA DE CÂMPUS</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>SANTOS, M. J. R. <b>Diálogo e Tecnologia na modalidade de Educação de jovens e adultos: Informática, Derivada, Colaborativa,</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>SILVA, A. A. C. <b>A (s) Violência (s) da Representação Fílmica</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>84. &nbsp;</td> <td>SILVA, A. A. C. <b>Sessão de Comunicação 32</b>. 2016. Apresentação de Trabalho/Outra</td></tr>
+            
+            <tr valign="top"><td>85. &nbsp;</td> <td>SILVA, E. A. <b>As manifestações do silêncio no imaginario contemporaneo</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            
+            <tr valign="top"><td>86. &nbsp;</td> <td>SILVA, Vagner L. <b>da. Direitos humanos, movimentos sociais e políticas afirmativas</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>87. &nbsp;</td> <td>SILVA, Vagner L. <b>da. Crise política e mundo do trabalho</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>88. &nbsp;</td> <td>SILVA, Vagner L. da; CALIOPE, P. B.. <b>Discussão das minutas do Regimento Geral e das Ações Afirmativas para a pós-graduação</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>89. &nbsp;</td> <td>SILVA, Vagner L. da; CALIOPE, P. B.. <b>Pós-graduação: perspectivas para mestrados multicâmpus no IFSP</b>. 2016. Apresentação de Trabalho/Seminário</td></tr>
+            
+            <tr valign="top"><td>90. &nbsp;</td> <td>SOMBRIO, C. I. L. <b>Nanoestruturas Semicondutoras: Síntese, Caracterização e Aplicações em Produção de H2 e Sensores de Gás</b>. 2016. Apresentação de Trabalho/Congresso</td></tr>
+            
+            <tr valign="top"><td>91. &nbsp;</td> <td>SOUZA, D. A. <b>Urbanização e Luta de Classes na Geografia Histórica do Capitalismo. As contribuições de David Harvey</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>92. &nbsp;</td> <td>SOUZA, D. A. <b>A dívida pública e a geopolítica da fome</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>93. &nbsp;</td> <td>SOUZA, D. A. <b>Geopolítica da fome: ontem e hoje</b>. 2016. Apresentação de Trabalho/Conferência ou palestra</td></tr>
+            
+            <tr valign="top"><td>94. &nbsp;</td> <td>TOPAN, J. S. <b>E a literatura virou xarope ou das complexas relações entre arte, escola e mercado</b>. 2016. Apresentação de Trabalho/Comunicação</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

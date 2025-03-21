@@ -1,0 +1,447 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Capítulos de livros publicados'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+18],
+[2017,
+12],
+[2018,
+15],
+[2019,
+21],
+[2020,
+8],
+[2021,
+27],
+[2022,
+13],
+[2023,
+15],
+[2024,
+9],
+[2025,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Capítulos de livros publicados</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 140<br>
+                    
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Módolo, L. P. <b>Essay on the Cybernetic Integration of Health Technologies: A Contribution from mHealth</b>. Em: Luiz Vianna Sobrinho; Leandro Modolo; Maíra Araújo de Santana; Giselle Machado M. Moreno; Fabiano Tonaco Borges; Wellington Pinheiro dos Santos. (Org.). Artificial Intelligence and Bioethics: Perspectives. 1ed.boca Raton. : CRC Press - Taylor & Francis Group. 2025.p. 110-134. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>SANTOS, W. P. ; SANTANA, M. A. ; BORGES, F. T. ; Módolo, L. P. ; MORENO, G. M. M.. <b>Nations of the Global South: Pioneering the Future of Health with Artificial Intelligence and Digital and Health Sovereignty</b>. Em: Luiz Vianna Sobrinho; Leandro Modolo; Maíra Araújo de Santana; Giselle Machado M. Moreno; Fabiano Tonaco Borges; Wellington Pinheiro dos Santos. (Org.). Artificial Intelligence and Bioethics: Perspectives. 1ed.boca Raton. : CRC Press - Taylor & Francis Group. 2025.p. 48-65. </td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, A. C. G. ; Módolo, L. P.. <b>Conviva Diferente nas fronteiras entre a pandemia e as desigualdades de gênero</b>. Em: Luís Felipe Aires Magalhães; Rosana Baeninger; Lucia Maria Machado Bógus. (Org.). Migração e refúgio: temas emergentes no Brasil.. 1ed.Campinas. : Núcleo de Estudos de População ?Elza Berquó? ? Nepo/Unicamp. 2024.p. 387-397. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; PORTO, B. S.. <b>Desafios político-institucionais na formação de designers de jogos do Brasil</b>. Em: Ivan Mussa; Thiago Falcão. (Org.). Powerplay: entretenimento, jogo e política na comunicação. 1ed.João Pessoa. : Editora do CCTA. 2024.v. 1, p. 1-251. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G. ; QUEIROZ, Z. F.. <b>A EDUCAÇÃO AMBIENTAL MEDIADA POR UM JOGO ANALÓGICO NO ENSINO SUPERIOR</b>. Em: Paulo Roberto Ramos; Maria Neuza da Silva Oliveira; Rodrigo Leandro Ramos Barboza da Silva. (Org.). A EDUCAÇÃO AMBIENTAL MEDIADA POR UM JOGO ANALÓGICO NO ENSINO SUPERIOR. 1ed.Juazeiro da Bahia. : UICLAP. 2024.v. 1, p. 224-246. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO, M. S.; SOUZA, E. F. A.. <b>A Formação Docente na interface com as questões da Educação Básica</b>. Em: Célia Lara e Raquel Santos. (Org.). Caminhos da Infância: vivências e trajetórias com crianças pequenas. 1ed.Jundiaí. : Paco Editorial. 2024.v. 01, p. 89-105. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>DOS REIS, NELIO FERNANDO. <b>A inteligência artificial na perspectiva dos estudantes do ensino médio</b>. Em: Aline de Oliveira; Bruna Ramos Marinho. (Org.). Docência em ação: contribuições cientifico-pedagógicas dos IFs. 1ed.Curitiba. : Letraria. 2024.v. 1, p. 65-80. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; VASCONCELOS, M. L. M. C.. <b>Literatura no Ensino Médio: apontamentos para uma educação literária para comunicação</b>. Em: Maria Lucia M. Carvalho Vasconcelos. (Org.). A formação de professores e a busca por práticas exitosas de ensino de Língua Portuguesa. 1ed.São Paulo. : Liberars. 2024.v. 1, p. 105-116. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PARDO, F. S. <b>A autoetnografia em pesquisas em Linguística Aplicada: reflexões do sujeito pesquisador/pesquisado</b>. Em: Josimayre Novelli, Alex Alves Egido. (Org.). Tipologias de pesquisas em Linguística Aplicada: algumas possibilidades. 1ed.Campinas. : Pontes. 2024.p. 101-123. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>PARDO, F. S. <b>Intermidialidade em/na pauta: a literatura (ainda) cabe no papel?</b>. Em: Fernando da Silva Pardo; Liliam Cristina Marins. (Org.). Literatura, tradução, adaptação e intermidialidade: experimentações teórico-analíticas. 1ed.São Paulo. : EDIFSP. 2024.v. 1, p. 13-22. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>TRINDADE, L. H. ; FEITOSA, W. R.. <b>UMA ANÁLISE DO USO DE TECNOLOGIAS DIGITAIS NA EDUCAÇÃO BRASILEIRA</b>. Em: Cleber Bianchessi. (Org.). Tecnologias digitais na educação: dos limites às possibilidades. 1ed.Curitiba. : Editora Bagai. 2024.v. 5, p. 59-68. </td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson; PORTO, B. S.. <b>A VIRADA MATERIAL DOS JOGOS NA EDUCAÇÃO</b>. Em: Marcos Teodorico Pinheiro de Almeida, Luana Caetano de Medeiros Lima, Charlline Vládia Silva de Melo. (Org.). LÚDICO: UM ATO DE BRINCAR E DE VIDA. 1ed.Fortaleza. : Instituto Nexos. 2023.v. 1, p. 193-217. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ARCAS, L. ; SILVA, E. A.. <b>Do Silêncio nasce a árvore</b>. Em: Laura Arcas. (Org.). escuta. 1ed.São Paulo. : Patuá. 2023.v. 1, p. 19-25. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARROS, Ana Paula Rodrigues Magalhães. <b>(RE)INVENTAMO-NOS NO ENSINO REMOTO EMERGENCIAL. E AGORA, O QUE É IMPORTANTE REFLETIR SOBRE AMBIENTE HÍBRIDO?</b>. Em: Ana Paula Rodrigues Magalhães de Barros; Dario Fiorentini; Alex Henrique Alves Honorato. (Org.). Aventuras e desafios em tempo de pandemia: (re)inventar a prática docente. 1ed.Cachoeirinha. : Editora Fi. 2023.p. 91-131. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BASANTE, J. G.; ROBLE, G. L. E. ; OLIVEIRA, M. C. ; RIMONATO, I.P.O.S.. <b>ESG Construindo Diferenças Corporativas, através de Estratégias Direcionadas para os Pilares Transparência e Accontability</b>. Em: Angelo Palmisano; Alessandro Marco Rosini; Ronaldo Raemy Rangel.. (Org.). ESG VISÃO PRÁTICA M,ULTIDISCIPLINAR. 1ed.Embu das - SP. : Aelxa Cultural. 2023.v. 1, p. 1-252. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BASANTE, J. G.; SILVA, M. T.. <b>Transformação digital e Educação 4.0: as plataformas de ensino</b>. Em: Marcia Terra da Silva; Rodrigo Franco Gonçalves; Silvia Helena Bonilla; José Benedito Sacomano.. (Org.). Transformação digital e Educação 4.0: as plataformas de ensino.. 1ed.SAO PAULO. : Edgard Blücher Ltda. 2023.v. 1, p. 219-235. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>COSTA, Ana Márcia Lima; PESSOA, MONIQUE RUFINO SILVA. <b>O QUE DIZEM OS JOVENS DO ENSINO MÉDIO INTEGRADO SOBRE A SUA FORMAÇÃO PROFISSIONAL ¿ RECORTE DE PRODUÇÕES ACADÊMICAS DE 2010 A 2020</b>. Em: Paula Almeida de Castro e Flávia Coelho Ribeiro. (Org.). Educação Profissional e Tecnológica. 8ed.Campina Grande. : Editora Realize. 2023.v. 8, p. 483-504. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CUNHA, M. Z. ; SOUSA., S. P. G. ; BASEIO, M. A. F. ; OLIVEIRA NETO, E. L. ; RIVERA, E. A. S. ; SILVA, E. A.. <b>Intimidade dos silêncios em crônicas de António Lobo Antunes</b>. Em: Maria Zilda da Cunha; Sérgio Paulo Guimarães de Sousa; Maria Auxiliadora Fontana Baseio; Euclides Lins de Oliveira Neto.. (Org.). Autoria e Imaginário Os mundos e a lógica ficcional de António Lobo Antunes. 1ed.São Paulo. : Teoria das Fadas. 2023.p. 81-90. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>DA COSTA, LAIS SANTIAGO ; MUNHOZ, I. P. ; PEREIRA, L. ; AKKARI, A. C. S.. <b>Supporting digital transformation in Micro and Small Enterprise (MSE): An operational framework</b>. Em: Ram, Mangey; Xing, Liudong. (Org.). Reliability Modeling in Industry 4.0. 1ed.Amsterdam. : Elsevier. 2023.v. 1, p. 123-141. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DIAS, C. A. F. <b>Avaliação de resultados em educação corporativa - resgate e tendências</b>. Em: Marisa Eboli. (Org.). Educação corporativa no cenário pós-pandemia. 1ed.Rio de Janeiro. : Qualitymark Editora. 2023.p. 265-276. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARTINS, T. H. B. <b>A internacionalização como formadora de experiências profissionais de inovação exitosas</b>. Em: CONIF. (Org.). Vozes da Internacionalização. 1ed.Blumenau/SC. : Editora IFC. 2023.v. 1, p. 175-177. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>NORMANHA, Ricardo. <b>O sonho de Tiago</b>. Em: Julian F. Guimarâes. (Org.). Pílulas de um Novo Mundo. 1ed.São Paulo. : Editora Fora do Ar. 2023.v. 1, p. 177-181. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>OLIVEIRA, CATHANA FREITAS DE ; Módolo, L. P. ; CINTRA, M.. <b>Posfácio</b>. Em: Maricia Bandini: Sergio de Lucca; Agnus Lauriano. (Org.). Desse jeito não mais! Trabalho doente e sofrimento mental. 1ed.São Paulo. : Hucitec. 2023.v. 1, p. 259-269. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>OLIVEIRA, L. V. ; OLIVEIRA, E. T. ; SANTOS, J. G.. <b>Análise de Artigos que Discutem a Temática Dificuldades de Aprendizagem Presentes na Revista Educação Especial (UFSM)</b>. Em: Jader Luís da Silveira. (Org.). Educação sem Barreiras: Tecnologias e Inclusão. 1eded.Formiga MG. : Uniesmero. 2023.v. 1, p. 129-149. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>PROENCA, N. ; MUNHOZ, I. P. ; AKKARI, A. C. S. ; PEREIRA, L.. <b>Data Security Strategies in Digital Health Services: A Bibliometric Analysis</b>. Em: Pereira, L., Krus, P., Klofsten, M.. (Org.). IDEAS 2022. Design Science and Innovation.. 1ed.Cham. : Springer. 2023.p. 34-43. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>TRINDADE, L. H. <b>A Sustentabilidade como Fio Condutor de Projetos Integradores na Educação Superior</b>. Em: Angelo Malmisano; Alessandro Marco Rossini; Ronaldo Raemy Rangel. (Org.). ESG - Uma Visão Multidisciplinar. 1ed.São Paulo. : Alexa Cultural. 2023.p. 227-246. </td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALCANTARA, D. M. <b>A cidade fora da cidade: a problemática inserção urbana do Residencial Vista Bela, em Londrina (PR)</b>. Em: Maria José Martinelli Silva Calixto; Doralice Sátyro Maia; Juçara Spinelli. (Org.). Desigualdades socioespaciais, dinâmica imobiliária e o Programa Minha Casa Minha Vida em cidades médias brasileiras. 1ed.Rio de Janeiro. : Consequência. 2022.p. 283-307. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Analisando o sentido dos jogos entre a educação ambiental e o ensino superior</b>. Em: Marcos Teodorico Pinheiro de Almeida; Luana Caetano de Medeiros Lima. (Org.). Next level: o brincar e o lúdico. 1ed.Fortaleza. : Instituto Nexos. 2022.v. 1, p. 1-165. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; FERRASSO, T. O.. <b>Desdobramentos de uma experiência de Lesson Desdobramentos de uma experiência de Lesson Study Híbrido em um curso de formação inicial. Study Híbrido em um curso de formação inicia</b>. Em: Regina da Silva Pina Neves; Dario Fiorentini. (Org.). Seminário Internacional de Lesson Study no Ensino de Matemática (SILSEM). 1ed.Vitória. : Edifes Parceria. 2022.p. 204-211. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CASTRO, M. S.; SANTOS, R. S.. <b>A construção do Self de Bebês e crianças bem pequenas nas creches da rede pública de ensino: caminhos e possibilidades</b>. Em: Celia Regina de Lara; Moacir Silva de Castro; Gabriela de Campos Vaz Domingues. (Org.). Educação na contemporaneidade - teorias e práticas pedagógicas. 1ed.Jundiaí. : Paco Editorial. 2022.p. 239-252. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>COSTA, Ana Márcia Lima; JESUS, M. D.. <b>A LITERATURA DE CAROLINA MARIA DE JESUS COMO DENÚNCIA AO RACISMO NUMA PERSPECTIVA DECOLONIAL NOS ESPAÇO ESCOLARES</b>. Em: Mary Garcia Castro; Raffaella Fernandez. (Org.). Saberes decoloniais: literatura e outros gêneros do conheci- mento na América Latina. 1ed.Rio de Janeiro. : Ape'Ku. 2022.p. 9-320. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>COSTA, Ana Márcia Lima; JESUS, M. D.. <b>POR UMA TRANSGRESSÃO PRETA E FEMININA: Carolina Maria de Jesus e suas possibilidades antirracistas nos espaços escolares</b>. Em: Fabio A G Oliveira; Fernanda Insfran. (Org.). Aprendendo a transgredir: diálogos a partir de bell hooks e Paulo Freire. 1ed.Rio de Janeiro. : Ape'Ku. 2022.p. 11-436. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>FERREIRA, F. M. <b>Armas de fogo, carros e liquidificadores: um estudo da argumentação por analogia sobre a facilitação da posse de armas de fogo no Brasil</b>. Em: Isabel Cristina Michelan de Azevedo; Rubens Damasceno-Morais. (Org.). Introdução à análise da argumentação. 1ed.São Paulo. : Pontes. 2022.v. 1, p. 73-99. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>LEITE, M. C. S. <b>DIÁLOGO 11 ? CRIANÇAS NA CIDADE AJARDINADA E A REBELIÃO DOS CORPOS: IMAGENS E IMAGINAÇÕES EM DIÁLOGO</b>. Em: Marcia Aparecida Gobbi; Cleriston Izidro dos Anjos; Eunice Castro Seixas; Catarina Tomás. (Org.). O direito das crianças à cidade: perspectivas desde o Brasil e Portugal. 1ed.São Paulo. : FEUSP. 2022.v. 1, p. 355-361. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MAIA, J. O. <b>Letramentos de sobrevivência</b>. Em: Cristiane Landulfo; Doris Matos. (Org.). Suleando conceitos em linguagens: decolonialidades e epistemologias outras. 1ed.Campinas. : Pontes. 2022.v. 1, p. 215-222. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>RIBEIRO, J. M. O. ; BATISTA, M. C. S. ; ALVES, R. C. B. ; COSTA, T. C. ; CASTRO, M. S.. <b>A physics teaching proposal for quilombolas communities in the ribeira valley</b>. Em: Danielle do Rocio Brostulin; Mauro Pinho Marco; Antonio Schueda. (Org.). Essential Studies Focused on Development Area. 1ed.São José dos Pinhais. : Seven Publicações Ltda. 2022.v. 1, p. 738-747. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>TORNAR-SE FEMINISTA NO SÉCULO XXI: FEMINISMO NA ADOLESCÊNCIA, REDES SOCIAIS E MUNDIALIZAÇÃO</b>. Em: FLACSO Uruguay. (Org.). V Congreso Latinoamericano y Caribeño de Ciencias Sociales ?Democracia, Justicia e Igualdad- RESÚMENES Y PONENCIAS. 01ed.Montevideo. : FLACSO Uruguay. 2022.v. 05, p. 136-157. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>SANTOS, L.C.M.; KRIZEK, JOÃO PEDRO OCANHA ; BITENCOURT, MARISA DANTAS ; PINHEIRO, M. A.A.. <b>Mapeamento, quantificação e caracterização das áreas extrativas do caranguejo-uçá (Ucides cordatus) no sistema estuarino-lagunar de Cananéia (Litoral Sul de São Paulo, Brasil) utilizando geotecnologias</b>. Em: José Henrique Porto Silveira.. (Org.). Meio Ambiente, Sustentabilidade e Tecnologia. 13ed.Belo Horizonte. : Editora Poisson. 2022.v. 13, p. 203-211. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>VALAMEDE, L. ; OLIVEIRA, G. G. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Digital Technologies Adoption to Face COVID-19 Pandemic: An Exploratory Approach</b>. Em: Iano, Y.; Saotome, O.; Kemper Vásquez, G.L.; Cotrim Pezzuto, C.; Arthur, R.; Gomes de Oliveira, G.. (Org.). Smart Innovation, Systems and Technologies. 1ed.Cham. : Springer. 2022.v. 295, p. 188-195. </td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson; PORTO, B. S.. <b>O básico da ciência dos jogos</b>. Em: Marcos Teodorico Pinheiro de Almeida. (Org.). Brincar e Jogar: Dimensões teóricas e práticas. 1ed.Fortaleza. : Instituto Nexos. 2021.v. 1, p. 161-173. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>AR, K. C. S. S. C. J. M. O. ; RIVERA, E. A. ; SILVA, E. A.. <b>O devorador de almas</b>. Em: Kátia Cilene Silva Santos Conceição; Jean Marcel Oliveira. (Org.). Literatura em pandemia. Epos-Cronos e Estações Brasil. 1ed.São Carlos. : Pedro & João Editores. 2021.p. 281-285. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Armani, Camila Garmes ; de Oliveira, Karina Fernandes ; Munhoz, Igor Polezi ; Akkari, Alessandra Cristina Santos. <b>Proposal and application of a framework to measure the degree of maturity in Quality 4.0: A multiple case study. Advances in Mathematics for Industry 4.0. 1ed</b>. Em: . : Elsevier. 2021.v. 1, p. 131-163. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; LOSANO, A. L.. <b>DA SALA DE AULA PARA UM PASSEIO NA ESCOLA: INTRODUZINDO O ESTUDO DE FUNÇÃO POR MEIO DE UMA TAREFA EXPLORATÓRIO-INVESTIGATIVA</b>. Em: Ana Leticia Losano; Thaís de Oliveira Ferrasso; Cristina Meyer. (Org.). Narrativas de aulas de matemática no ensino médio: aprendizagens docentes no contexto de Lesson Study Híbrido. 1ed. 2021.v. 18, p. 78-93. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BASILE, F. R. M. ; PILAN, H. C. ; CAMILO, R. C. ; MONTANHER, R. C. ; ZADI, I. C.. <b>Integração de Componentes Curriculares em Curso Técnico de Redes de Computadores na Educação remota emergencial</b>. Em: Eufrida Pereira da Silva; Juliana de Souza Topan; Teresa Helena Buscato Martins. (Org.). Educação, literatura e linguagem em diálogo. 1ed.São Paulo. : Gênio Criador. 2021.p. 134-147. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>CAMARA, E. ; SILVA, E. P.. <b>The Voyage Out: o itinerário do feminino em Virginia Woolf. The Voyage Out: o itinerário do feminino em Virginia Woolf. 1ed.São Paulo</b>. Em: . 2021.v. 1, p. 41-52. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>de Freitas, Barbara Socorro Barbosa ; Munhoz, Igor Polezi ; Mendonça, Fernando Cesar. <b>Indicators for Assessing Sustainability and Productivity in Companies with Implementation of Industry 4.0 in MERCOSUR. Smart Innovation, Systems and Technologies. 1ed.Cham</b>. Em: . : Springer International Publishing. 2021.v. 233, p. 33-40. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>dos Santos, Neusa Maria Bastos Fernandes ; Chagas, Rafael Maia ; Akkari, Alessandra Cristina Santos ; Munhoz, Igor Polezi ; Fukunaga, Fernando ; Hirano, Ligia Kaori Matsumoto. <b>Compensation Program: A Quantitative Study of the Top Management Team¿s Level of Knowledge and Satisfaction. Smart Innovation, Systems and Technologies. 1ed</b>. Em: . : Springer International Publishing. 2021.v. 202, p. 527-535. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>dos Santos, Neusa Maria Bastos Fernandes ; Juer, Mariana ; Munhoz, Igor Polezi ; Akkari, Alessandra Cristina Santos ; Motta, Rodrigo Guimarães ; Miyashiro, Marianna Konyosi. <b>Mentoring Process: An Assessment of Career, Psychosocial Functions and Mentor Role Model. Smart Innovation, Systems and Technologies. 1ed</b>. Em: . : Springer International Publishing. 2021.v. 202, p. 515-525. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FEITOSA, W. R. <b>How Social Media Contribute to Autists? Wellbeing: A Netnographic Analysis of Virtual Communities Content</b>. Em: José Duarte Santos; Inês Pereira. (Org.). Management and Marketing for Improved Competitiveness and Performance in the Healthcare Sector. 1ed. : IGI Global. 2021.v. 1, p. 221-240. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Literatura sem fronteiras: encontro, formação e integração</b>. Em: Marta Neira Rodríguez e Armando Requeixo. (Org.). Verbas amigas. Estudos en homenaxe a Blanca Roig Rechou. 1ed.Santiago de Compostela. : Xunta de Galicia. 2021.v. 1, p. 317-331. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>FREITAS-DIAS, C. A. <b>Avaliação de resultados em recursos humanos</b>. Em: Francisco José Masset Lacombe. (Org.). Recursos humanos: princípios e tendências. 3ed.São Paulo. : Saraiva Educação. 2021.p. 443-457. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>GOBBI, M. A. ; BOSS, Beatriz Bitu ; PITO, J. D. ; NEIMAN, Lilith ; LEITE, M. C. S. ; VICENTE, P.. <b>"A rua é noiz": por uma formação de professores da e na cidade</b>. Em: Cleriston Izidro dos Anjos; Ana Lucia Goulart de Faria; Lisete Regina Gomes Arelaro. (Org.). Por uma educação emancipatória: lutas e resistências em defesa das infâncias. 1ed.Maceió: EDUFAL. : Imprensa Oficial Graciliano Ramos. 2021.v. 1, p. 111-127. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; FERREIRA, A. E. S. C. S.. <b>O ciberespaço e a ?prisão do corpo?: materialidade e resistência à virtualização em Neuromancer</b>. Em: Ana Carolina Vilela-Ardenghi; Luciana Salazar Salgado. (Org.). Língua, Linhagens, Interfaces. 1ed.Belo Horizonte. : Tradição Planalto. 2021.v. 1, p. 11-25. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILACO, F. L.. <b>Trust the tale: a leitura cerrada como instrumento de educação literária</b>. Em: Eufrida Pereira da Silva; Juliana de Souza Topan; Teresa Helena Buscato Martins. (Org.). Educação, Literatura e Linguagem em diálogo. 1ed.São Paulo. : Gênio Criador. 2021.p. 53-72. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>ISHY, P. H. <b>Um panorama sobre a relação entre linguagem e cultura</b>. Em: Eufrida Pereira da Silva; Juliana de Souza Topan; Teresa Helena Buscato Martins. (Org.). Educação, Literatura e Linguagem em Diálogo. 1ed.São Paulo. : Gênio Criador. 2021.p. 27-40. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LIMA, L. C. M. ; ALMEIDA, M. T. P. ; GADELHA, D. A. S. ; ANTUNES, Jeferson. <b>Educação física através do RPG: Promovendo a interdisciplinaridade em linguagens e suas tecnologias</b>. Em: Marcos Teodorico Pinheiro de Almeida. (Org.). Brincar e Jogar: Dimensões teóricas e práticas. 1ed.Fortaleza. : Instituto Nexos. 2021.v. 1, p. 44-70. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MACIEL, ALDA MARIA COIMBRA AGUILAR ; MARTINS NETO, I. A. ; LEAL, M. A. ; MORAES, N. N. S. ; FONSECA, R. B.. <b>Wikihow Project</b>. Em: MACIEL, A. M. C. A.; MARTINS NETO, I. A. ; SQUINCA, J. P. ; LEAL, M. A. ; MARQUES, O. M.. (Org.). Takeaway experiences: projetos de língua inglesa para a educação profissional e tecnológica. 1ed.Porto Alegre. : Pragmatha. 2021.v. 1, p. 81-94. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MARIOTO, R. R. ; MELO-FERRAZ, A. M. ; MELO, A. M.. <b>Ensinar Línguas: Entretecer palavras</b>. Em: Maximina Maria Freire. (Org.). Paulo Freire e Edgar Morin: emancipação e complexidade. 75ed.São José do Rio Preto. : HN Editora. 2021.v. 131, p. 59-75. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MARTINS, T. H. B.; SILVA, G. A. ; GIACOMESSI, P. C. ; LEITE, R. C. C. B. ; VIEIRA, L. P. J.. <b>Implementation plan of new teaching practices to the Federal Institutes of Vocational, Scientific, and Technological Education /</b>. Em: Alda Maria Coimbra de Aguilar; Irando Alves Martins Neto; Juliana Paula Squinca. (Org.). Takeaway experiences:Projetos de Língua Inglesa para a Educação Profissional Tecnológica. 1ed.Rio de Janeiro. : Pragmatha. 2021.p. 113-124. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MARTINS, T. H. B.; SILVA, S. B.. <b>O mercado editorial e a influência midiática sobre o público infantojuvenil: desafios para a formação de leitores críticos e humanizados</b>. Em: Teresa Helena Buscato Martins; Eufrida Pereira da Silva, Juliana de Souza Topan. (Org.). EDUCAÇÃO, LITERATURA E LINGUAGEM EM DIÁLOGO. 1ed.São Paulo. : Gênio Criador. 2021.v. 1, p. 1-148. </td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MENDONCA, F. C.; MUNHOZ, I. P. ; FREITAS, B. S. B.. <b>Indicators for Assessing Sustainability and Productivity in Companies with Implementation of Industry 4.0 in MERCOSUR. Brazilian Technology Symposium. 2ed</b>. Em: . 2021.p. 33-40. </td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>OLIVEIRA, P. C. <b>A importância da estruturação de sentido na transposição entre a língua portuguesa e a língua brasileira de sinais</b>. Em: Leliane Rocha, Thiago Julio, Keiti Munari, Claudio André.. (Org.). Educação Inclusiva em Destaque. 1ed.São Paulo. : Riac. 2021.v. 1, p. 47-77. </td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PRADO, Maria Ligia Coelho ; SANTOS JUNIOR, V. D.. <b>Educação, Estado e Igreja na Colômbia do século XIX</b>. Em: Maria Ligia Prado. (Org.). Utopias Latino-americanas. 1ed.São Paulo. : Contexto. 2021.v. 1, p. 109-126. </td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Roveri, Gabriela Manzatto ; Munhoz, Igor Polezi ; Akkari, Alessandra Cristina Santos. <b>Work, Occupational Stress and Job Satisfaction: A Focus on Brazilian Millennials. Smart Innovation, Systems and Technologies. 1ed.Cham</b>. Em: . : Springer International Publishing. 2021.v. 233, p. 25-32. </td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>SOUZA, E. F. A. ; CASTRO, M. S.. <b>La cultura como forjadora de identidades personales y colectivas en la Educación Infantil</b>. Em: Cristiano Rogério de Alcântara; Ligia de Carvalho Abões Vercelli. (Org.). Quehaceres de maestros y de gestores de la escuela de la infancia. 45ed.Barcelona. : Ediciones Octaedro. 2021.v. 45, p. 123-138. </td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>VIVIANI, Fabrícia Carla ; LEITE, M. C. S.. <b>Infâncias cerceadas: episódios de racismo cotidiano na morte de meninas na pandemia</b>. Em: Marcia Gobbi e Maria Tereza Goudard Tavares. (Org.). Pensar Infâncias na Cidade em Tempos de Pandemia. 1ed.Rio de Janeiro. : NAU Editora. 2021.v. 1, p. 121-142. </td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. <b>Ciência dos jogos e a educação: o que entendemos por jogos?</b>. Em: Marcos Teodorico Teodorico Pinheiro de Almeida; Beatriz Picolo Gimenes; Sirlândia Reis de Oliveira Texeira; Maria Celia Rabello Malta Campos. (Org.). CULTURA LÚDICA HÍBRIDA: Práticas Inovadoras. 1ed.Fortaleza. : Instituto Nexos. 2020.v. 1, p. 43-64. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; LEDIO, M. F. ; Arrais, Estêvão Lima ; ABU-EL-HAJ, J.. <b>ANÁLISE DAS DINÂMICAS DE FORMULACÃO EMERGENTE DO CONHECIMENTO NA RELAÇÃO ENTRE POLÍTICAS PÚBLICAS E COVID-19</b>. Em: Francisco Horacio da Silva Frota; Maria Andréa Luz da Silva; Maria Helena de Paula Frota. (Org.). O IMPACTO DO COVID-19 NAS POLÍTICAS PÚBLICAS. 1ed.Fortaleza. : Edmeta. 2020.v. 1, p. 1-530. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Cardoso, Marcus Tadeu Quarentei ; Andrade, Alequexandre Galvez de ; Reis, Nélio Fernando dos. <b>TURISMO RELIGIOSO: DESAFIOS E OPORTUNIDADES NA CIDADE DE ITAPETININGA, ESTADO DE SÃO PAULO ¿ BRASIL</b>. Em: Clayton Robson Moreira da Silva. (Org.). Aplicação Prática da Administração na Economia Global 3. 3ed.Curitiba- PR. : Atena Editora. 2020.v. 3, p. 276-286. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CECCANTINI, J. L. ; FERREIRA DA SILVA, V. R.. <b>O jogo secreto dos alquimistas, de João Anzanello Carrascoza : aventura e formação no tabuleiro</b>. Em: Marta Neira Rodriguez; Blanca-Ana Rechou; Isabel Soto López (Orgs.). (Org.). Camiño e peregrinacións na LIX (Compostela no horizonte). 1ed.Vigo (Espanha). : Edicións Xerais de Galicia. 2020.v. 1, p. 261-272. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FERREIRA, F. M. <b>Analogia e dissenso no debate parlamentar: o caso das comparações entre grupos estigmatizados</b>. Em: Paulo Roberto Gonçalves - Segundo; Célia Regina Araes; Claudia Castanheira; Gabriel Isola - Lanzoni; Natalia Penitente; Winola Weiss. (Org.). Discurso e poder: teoria e análise. 1ed.São Paulo. : Faculdade de Filosofia, Letras e Ciências Humanas/Universidade de São Paulo. 2020.v. 1, p. 84-99. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Organização coletiva dos trabalhadores do espetáculo e do audiovisual</b>. Em: COUTINHO, Amanda. (Org.). Profissão Artista. 1ªed.Foz do Iguaçu. : CLAEC E-books. 2020.p. 76-89. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>PILAN, Hania Cecília; ZADI, Igor Calebe ; MONTANHER, R. C.. <b>A aplicação de ferramentas tecnológicas para o ensino emergencial a distancia em tempos de pandemia</b>. Em: Cleusa Kazue Sakamoto; Sérgio José Andreucci Junior. (Org.). Crise, criatividade e comunicação : estudos em meio à pandemia de Covid-19. 1ed.São Paulo. : O GENIO CRIADOR. 2020.v. 1, p. 145-161. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Pissardini, Paulo Eduardo; Sacomano, José Benedito. <b>Production Planning and Control in Industry 4.0: Maintenance or Breakdown of the Principles and Fundamentals</b>. Em: Thomé A.M.T.; Barbastefano R.G.; Scavarda L.F.; dos Reis J.C.G.; Amorim M.P.C.. (Org.). Springer Proceedings in Mathematics & Statistics. 1ed. : Springer International Publishing. 2020.v. 337, p. 627-635. </td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AKKARI, A. C. S. ; MUNHOZ, I. P. ; SANTOS, N. M. B. F.. <b>USA, Europe and Pharmerging Countries: A Panorama of Pharmaceutical Innovation</b>. Em: Mula, J., Barbastefano, R., Díaz-Madroñero, M., Poler, R.. (Org.). Lecture Notes in Management and Industrial Engineering. 1ed.Berlin. : Springer International Publishing. 2019.v. 1, p. 303-311. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrade, Alequexandre Galvez de ; Reis, Nélio Fernando dos ; Abe, Jair Minoro. <b>A RELAÇÃO ENTRE A LOGÍSTICA REVERSA E O TRIPLE BOTTOM LINE EM COOPERATIVAS DE RECICLAGEM</b>. Em: I.Holzmann, Henrique Ajuz. II. Biscaia, Vinicius Bubna.. (Org.). Ciência e Engenharia de Materiais e o Desenvolvimento Socioambiental. 1ed.Ponta Grossa. : Atena Editora. 2019.v. 1, p. 155-164. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; ALMEIDA, M. T. P.. <b>Ciclo criativo de desenvolvimento de jogos cooperativos: um método para criação de jogos educativos</b>. Em: Marcos Teodorico Pinheiro de Almeida; Maria Celia Rabello Malta Campos; Sirlândia Reis de Oliveira Teixeira; Beatriz Picolo Gimenes; Leila Lira Peters. (Org.). Brincar: Diálogo, reflexões e discussões sobre o Lúdico. 1ed.Varzea Paulista. : Fontoura. 2019.v. 1, p. 37-67. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>de Oliveira, Karina Fernandes ; da Silva Freire, Gabriel Guerra ; Munhoz, Igor Polezi ; Akkari, Alessandra Cristina Santos. <b>Pharmaceutical and Biopharmaceutical Patents: The Opportunity of Pharmerging Countries. Springer Proceedings in Mathematics & Statistics. 1ed</b>. Em: . : Springer International Publishing. 2019.p. 139-146. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>dos Santos, Neusa Maria Bastos Fernandes ; Nunes, Danilo ; Freitas, Fernanda Cardoso Romão ; Munhoz, Igor Polezi ; Caldana, Adriana. <b>Human Capital Measurement: A Bibliometric Survey. Smart Innovation, Systems and Technologies. 1ed</b>. Em: . : Springer International Publishing. 2019.p. 451-459. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERREIRA DA SILVA, V. R.; Gentili Santos, Geovana. <b>A Velhota Cambalhota, de Sylvia Orthof: o trem e o tempo. Representações da velhice-infância</b>. Em: Rodrígues Neira, Marta; Rechou Roig, Blanca; Soto López, Isabel. (Org.). Imaxes Nenez-Vellez na LIX. 1ed.Vigo (Espanha). : Edicións Xerais de Galicia. 2019.v. 1, p. 461-470. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GOBBI, M. A. ; LEITE, M. C. S. ; PITO, J. D.. <b>Sociologia Urbana e os bebês: conversas (im)pertinentes, ou a silenciosa insurgência das crianças pequenas</b>. Em: Gabriela Tebet (org). (Org.). Estudos de bebês e diálogos com a sociologia. 1ed.São Carlos/SP. : Pedro & João Editores. 2019.v. 1, p. 493-517. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Lelis, José Wilson Franca ; dos Santos, Neusa Maria Bastos Fernandes ; Akkari, Alessandra Cristina Santos ; Munhoz, Igor Polezi. <b>Occupational Stress and Job Satisfaction Among Brazilian Managers: The Case of Commercial Area. Springer Proceedings in Mathematics & Statistics. 1ed</b>. Em: . : Springer International Publishing. 2019.p. 223-230. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>LOPES, INGRID ANELISE. Trajetória escolar de estudantes com deficiência intelectual em escola municipal paulistana. In: Elio Carlos Ricardo; et al. <b>(Org.). Pesquisa em educação: diversidade e desafios. 22ªed.São Paulo</b>. Em: . : FEUSP. 2019.p. 482-493. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MAIA, J. O. <b>Fogos Digitais: letramentos de sobrevivência e participação cidadã no Rio de Janeiro/RJ</b>. Em: Paula Tatianne Carréra Szundy; Rogério Tílio; Glenda Cristina Valim de Melo. (Org.). Inovações e desafios epistemológicos em Linguística Aplicada: perspectivas sul-americanas. 1ed.Campinas. : Pontes Editores. 2019.p. 115-142. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MAIA, J. O. <b>'A internet salvou a gente mais que a UPP': tecnologias digitais conectadas em meio a uma cultura de sobrevivência</b>. Em: Adriana Carvalho Lopes; Adriana Facina; Daniel do Nascimento Silva. (Org.). Nó em Pingo D'água - Sobrevivência, cultura e linguagem. 1ed.Rio de Janeiro; Florianópolis. : Mórula Editorial; Editora Insular. 2019.v. 1, p. 58-76. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MARIOTO, R. R. <b>Sobre o arquivo morto</b>. Em: Renato Marcon Pugliese. (Org.). Crônicas do Ensino Básico. 1ed.Curitiba. : MouraSA. 2019.p. 117-118. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>MENDONCA, F. C.; ROTTA, I. S.. <b>Filosofia Lean em serviços: uma revisão bibliográfica</b>. Em: Darly Fernando Andrade. (Org.). Filosofia Lean em serviços: uma revisão bibliográfica. 1ed.Belo Horizonte. : Editora Poisson. 2019.v. 37, p. 137-146. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>MORAES, LBP ; HORTA, P.. <b>"O importante para o trabalhador é saber do seu valor": escritas de si como instrumentos de ressignificação da subjetividade do eu-trabalhador"</b>. Em: BODART, Cristiano das Neves; SAMPAIO-SILVA, Roniel.. (Org.). O ensino de sociologia no Brasil - v. 2. 1ed.Maceió. : Editora Café com Sociologia. 2019.v. 2, p. 179-193. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>NORMANHA, Ricardo. RELAÇÕES DE GÊNERO NO CINEMA DA GLOBO FILMES. <b>In: Alessandra de Castro Barros Marassi; Wesley Moreira Pinheiro. (Org.). DIÁLOGOS ENTRE A COMUNICAÇÃO, FILOSOFIA E TECNOLOGIA: Reflexões sobre tecnologia, religião e sociedade nas práticas comunicacionais contemporâneas. 1ed.São Paulo</b>. Em: . : Paulus. 2019.p. 109-120. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>PILAN, Hania Cecília; Daniel Carreira Filho ; Juliana Topan. <b>Educação física no Ensino Médio: a corporeidade adolescente como desafio docente</b>. Em: Daniel Carreira Filho. (Org.). Educação física no Ensino Médio. 1ed.Curitiba. : EDITORA CRV. 2019.v. 1, p. 75-90. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>PILAN, Hania Cecília; STORI, Norberto ; Romero de Albuquerque maranão. <b>Arte e Humanização: Algumas reflexões</b>. Em: Norberto Story. (Org.). Diálogos Interdisciplinares. 1ed.São Paulo. : O GENIO CRIADO. 2019.v. 1, p. 213-229. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Pissardini, Paulo Eduardo; Sacomano, José Benedito. <b>O PLANEJAMENTO E CONTROLE DA PRODUÇÃO NA INDÚSTRIA 4.0 E SEU ALINHAMENTO COM OS PARADIGMAS ESTRATÉGICOS DE GESTÃO DA MANUFATURA</b>. Em: Marcos William Kaspchak Machado. (Org.). Engenharia de Produção: What's Your Plan? 2. 1ed.Ponta Grossa. : Atena Editora. 2019.v. 2, p. 443-456. </td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>QUEIROZ, Z. F. ; ANTUNES, Jeferson. <b>O lugar dos estudos acerca de gênero e etnia/raça nos Congressos Brasileiros de História da Educação</b>. Em: Cláudia Engler Cury; Carlos Eduardo Vieira; Regina Helena da Silva Simões. (Org.). História da Educação: Global, nacional e regional. 1ed.Vitória. : EDUFES. 2019.v. 1, p. 1-332. </td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>SILVA, A. A. C.; OLIVEIRA, Adilson. <b>Campo Astral; Mal do século</b>. Em: Adilson de Oliveira. (Org.). de haicais a muito mais. 1ed.São Paulo. : Giostri Editora Ltda.. 2019.v. 1, p. 9-104. </td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>SOUZA, E. F. A. ; CASTRO, Moacir Silva de. <b>A cultura enquanto forjadora de identidades pessoais e coletivas na educação infantil</b>. Em: Ligia de Carvalho Abões Vercelli e Cristiano Rogério Alcântara. (Org.). Fazeres de professores e de gestores da escola da infância. 1ed.Jundiaí. : Paco Editorial. 2019.v. 01, p. 129-146. </td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMANCIO, T. O. ; MUNHOZ, I. P. ; AKKARI, A. C. S. ; SANTOS, N. M. B. F.. <b>Estratégias para a aplicação dos conceitos de sustentabilidade em universidades: o caso do telhado verde na PUC-SP</b>. Em: Editora Poisson. (Org.). Tópicos em Administração: Volume 15. 1ed.Belo Horizonte. : Editora Poisson. 2018.v. 15, p. 62-68. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BASILE, F. R. M. ; MARIOTO, R. R. ; MARTINS, T. H. B.. <b>Inclusão digital para a terceira idade na comunidade de Pirituba-SP</b>. Em: Emerson Freire; Juliana Augusta Verona; Sueli Soares dos Santos Batista. (Org.). Educação Profissional e Tecnológica - Extensão e Cultura. 1ed.Jundiaí. : Paco. 2018.p. 145-164. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CAMILO, R. C.; BETTI, M.. <b>Educação Física, mídias e pesquisa-ação: contribuições para o desenvolvimento profissional de um professor-pesquisador</b>. Em: Maria Amélia Santoro Franco; Selma Garrido Pimenta. (Org.). Pesquisa em Educação. 1ed.São Paulo/SP. : Loyola. 2018.v. 1, p. 143-175. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CRUZ, P. H. M. G. ; SILVA, A. F. ; SILVA, A. C. B. A. ; SANTOS, I. B. R. ; ANTUNES, Jeferson. <b>JOGOS E EDUCAÇÃO PARA A SAÚDE: EXPERIMENTAÇÃO DE JOGOS COOPERATIVOS NO CAMPO DA SAÚDE</b>. Em: Jeferson Antunes. (Org.). Práticas Inovadoras em Educação. 1ed.Juazeiro do Norte. : Universidade federal do Cariri. 2018.v. 1, p. 409-418. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>FERREIRA, F. M. <b>Analogia e argumentação nos debates sobre a criminalização da homofobia</b>. Em: Paulo Roberto Gonçalves-Segundo; Adriana Moreira Pedro; Agildo Santos da Silva de Oliveira; Alexandre Marques Silva; Douglas Rabelo de Sousa; Letícia Fernandes de Britto-Costa; Sergio Mikio Kobayashi.. (Org.). Discurso e identidade: múltiplos enfoques. 1ed.São Paulo. : Faculdade de Filosofia, Letras e Ciências Humanas da Universidade de São Paulo. 2018.v. 1, p. 127-149. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Ferreira, Simeão Lopes; Valenzuela-Díaz, Francisco Rolando ; da Silva-Valenzuela, Maria das Graças. <b>Study of the Incorporation of Smectite in Powder Coating. The Minerals, Metals & Materials Series. 1ed</b>. Em: . : Springer International Publishing. 2018.p. 683-691. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>LOPES, INGRID ANELISE; PRIETO, Rosângela G.. <b>Para além do ingresso e permanência na classe comum: evidências de aprendizagem de alunos com deficiência intelectual</b>. Em: Rosângela Gavioli Prieto; Kate Mamhy Oliveira Kumada; Mary Grace Pereira Andrioli; Fábio Bezerra de Brito. (Org.). Políticas de educação especial. 1ed.Curitiba. : CRV. 2018.p. 49-62. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Martha Marandino ; Ermelinda Moutinho Pataca ; Luna Bocchi ; LEITE, MARIA STELLO. <b>A atuação do Museu da Educação e do Brinquedo (MEB) na formação inicial de professores</b>. Em: Lilian Amaral; Joselaine Mendes Tojo. (Org.). Rede de Redes - diálogos e perspectivas das redes de educadores de museus no Brasil. 1ed.São Paulo. : Sistema Estadual de Museus de São Paulo SISEM. 2018.p. 285-293. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>MARTINS, T. H. B. <b>Exame de Proficiência para Professores de Inglês ? validação e implicações ? formação docente</b>. Em: R. P. Lopes, M. V. Pires, L. Castanheira, E. M. Silva, G. Santos, C. Mesquita, & P. Vaz. (Org.). III Encontro Internacional de Formação na Docência (INCTE). 1ed.Bragança - Portugal. : Instituto Politécnico de Bragança. 2018.v. 1, p. 952-959. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>MARTINS, T. H. B.; BASILE, F. R. M. ; MARIOTO, R. R.. <b>Inclusão digital para terceira idade na comunidade de Pirituba - SP - experiência de implementação de curso livre de extensão</b>. Em: Emerson Freire; Juliana Augusta Verona; Sueli Soares dos Santos Batista (orgs.). (Org.). Educação profissional e tecnológica - Extensão e Cultura. 1ed.Jundiaí. : Paco Editorial. 2018.v. 1, p. 145-176. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MENDONCA, F. C.; ROTTA, I. S.. <b>Estoques de pallets: uma análise visando a redução de custos em uma empresa de papel e celulose. Gestão da Produção em foco. 1ed.Belo Horizonte</b>. Em: . : Poisson. 2018.v. 18, p. 159-169. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>MENDONCA, F. C.; ROTTA, I. S.. <b>Metodologia de seleção de fornecedores em uma microempresa do ramo comercial utilizando o Metodo AHP. Tópicos em Administração. 1ed.Belo Horizonte</b>. Em: . : Poisson. 2018.v. 7, p. 143-152. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PILAN, Hania Cecília; MARIANA FREITAS ALONSO. <b>AUTORIDADE NA RELAÇÃO PROFESSOR ALUNO E AS RUPTURAS CONTEMPORÂNEAS SOB O OLHAR DE HANNAH ARENDT</b>. Em: REGINA CÉLIA FARIA AMARO GIORA; CLUSA K. SAKAMOTO. (Org.). RUPTURAS OLHARES CRIATIVOS E NOVOS TECIDOS CONCEITUAIS. 1ed.S PAULO. : GENIO CRIADOR EDITORA. 2018.v. 1, p. 307-322. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SANTOS, N. M. B. F. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Estratégias de carreira e identificação de valores em discentes do curso de engenharia</b>. Em: Editora Poisson. (Org.). Tópicos em Administração ? Volume 15. 1ed.Belo Horizonte. : Editora Poisson. 2018.v. 15, p. 98-114. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SILVA, A. C. B. A. ; SILVA, A. F. ; SOUZA, M. E. N. ; MARINHO, F. V. N. ; ANTUNES, Jeferson. <b>SENSIBILIZAÇÃO ATRAVÉS DE ATIVIDADES NÃO COMPETITIVAS: RELATO DE EXPERIÊNCIA NA OCUPAÇÃO DO COLÉGIO PRESIDENTE GEISEL, EM JUAZEIRO DO NORTE</b>. Em: Jeferson Antunes. (Org.). Práticas Inovadoras em Educação. 1ed.Juazeiro do Norte. : Universidade Federal do Cariri. 2018.v. 1, p. 419-424. </td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>CAMILO, R. C.; Betti, Mauro. <b>Pulando corda, ensinando e aprendendo: mídias e linguagem audiovisual de prática pedagógica de um</b>. Em: Denise Ivana de Paula Albuquerque. (Org.). Uma escola para todos: reflexões e práticas a partir da Educação Física.. 1ed.Jundiaí. : PACO. 2017.v. 1, p. 41-76. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>CASTRO, Moacir Silva de. <b>Educação Infantil: relações étnico-raciais e formação docente</b>. Em: Ligia de Carvalho Abões Vercelli; Cristiano Rogério Alcântara. (Org.). Práticas Pedagógicas e a formação continuada na escola da infãncia. 1ed.Jundiaí. : Paco Editorial. 2017.v. 03, p. 75-92. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>FEITOSA, W. R.; BOTELHO, D.. <b>Mechanisms for incentivizing and encouraging online social interactions - an experiment analysing the role of recommendations and rewards on advertisement sharing behaviour</b>. Em: Bikramjit Rishi; Subir Bandyopadhyay. (Org.). Contemporary Issues in Social Media Marketing - An International Perspective. 1ed. : Routledge. 2017.p. 334. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>O Diário de Anne Frank. Conflitos femininos: do eu a outras</b>. Em: Eulalia Costas Agrelo. (Org.). Guerras Mundiais na Literatura Infantil e Xuvenil Galega. Roles femininos. 1ed.Santiago de Compostela. : Servizo de Publicacións e Intercambio Científico Universidade de Santiago de Compostela. 2017.p. 150-166. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>HORTA, P.; PIUNTI, J. C. P. ; SOUZA, A. X.. <b>Integração curricular organizada por ?céclulas? em ?trilhas formativas?: uma experiência de criação colaborativa</b>. Em: Adilson César Araújo; Cláudio Nei Nascimento da Silva. (Org.). Ensino Médio Integrado no Brasil: fundamentos, práticas e desafios. 1ed.Brasília. : Editora IFB. 2017.p. 44-53. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>MARTINS, T. H. B. <b>Subsídios para elaboração de um exame de proficiência para professores de inglês: foco na consciência de linguagem e aspectos centrais da fala do professor em aulas de língua estrangeira</b>. Em: Douglas Altamiro Consolo; Sandra Regina Butros Gattolin; Vera Lúcia Teixiera da Silva. (Org.). Perspectivas em Avaliação no Ensino e na Aprendizagem de Línguas: pesquisas e encaminhamentos na formação e na prática docente. 1ed.Campinas. : Pontes Editora. 2017.v. 1, p. 104. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>MARTINS, T. H. B.; Alvarenga. Magali B. ; Schuster, C.E. ; Madeira, Fábio ; Ramos,S.T.M.. <b>Exame de nivelamento para alunos ingressantes no ensino superior tecnológico: uma experiência na preparação de um piloto</b>. Em: Douglas Altamiro Consolo; Sandra Regina Buttros Gattolin; Vera Lúcia Teixeira da Silva. (Org.). Perspectivas em Avaliação no Ensino e na Aprendizagem de Línguas: pesquisas e encaminhamentos na formação e na prática docente. 1ed.Campinas. : Pontes. 2017.v. 1, p. 158. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>MARTINS, T. H. B.; SILVA, V. L. T. ; SILVA, W. E.. <b>Desafios para se aplicar um exame de proficiência em meio eletrônico</b>. Em: Douglas Altamiro Consolo; Sandra Regina Buttros Gattolin; Vera Lúcia Teixeira da Silva. (Org.). Perspectivas em Avaliação no Ensino e na Aprendizagem de Línguas: pesquisas e encaminhamentos na formação e na prática docente. 1ed.Campinas. : Pontes. 2017.v. 1, p. 147. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>PILAN, Hania Cecília; ANTONIO XAVIER DE QUEIROZ. <b>VELHICE ATEMPORAL: O SAUDOSISMO QUE ENVELHECE A EDUCAÇÃO</b>. Em: REGINA CÉLIA FARIA AMARO GIORA. (Org.). CRIATIVIDADE E LONGEVIDADE UM OLHAR DA EDUCAÇÃO ARTE E CULTURA. 1ed.S PAULO. : GENIO CRIADOR EDITORA. 2017.v. 1, p. 117-124. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>POLEZI MUNHOZ, IGOR; AKKARI, A. C. S. ; SANTOS, N. M. B. F. ; SANTOS, R. F. ; PAIVA, B. G.. <b>Análise dos Impactos de P&D do Setor Elétrico na Satisfação do Consumidor: Estudo Comparativo entre Brasil e Estados Unidos</b>. Em: Leopoldo Mendonça. (Org.). Gestão do Conhecimento e Inovação. 1ed.Belo Horizonte. : Poisson. 2017.v. 5, p. 130-140. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>TEIXEIRA, H. ; SANTOS, N. M. B. F. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Lean Manufacturing and Lean Accounting Cost: An Analysis of Performance in Open Capital Companies on Bovespa</b>. Em: Raul Poler; Josefa Mula; Manuel Diaz-Madronero; Raquel Sanchis. (Org.). The 3rd Internacional Joint Conference ICIEOM-ADINGOR-IISE-AIM-AEM (IJC2017) Proceedings: New Global Perspectives on Industrial Engineering and Management. 1ed.Alcoy. : Universitat Politecnica de Valencia. 2017.p. 141-144. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>VAGULA, Vania Kelen Belão ; BALSAN, S. F. S. ; MARTINS NETO, I. A.. <b>Visualizar, conectar, inferir e questionar: discussões sobre a ampliação da leitura no ensino superior</b>. Em: Renata Junqueira de Souza; Berta Lúcia Tagliari Feba. (Org.). Estratégias de leitura: reflexões sobre o ato de ler no ensino superior. 1ed.Tubarão. : Gráfica e Editora Copiart. 2017.v. 3, p. 47-73. </td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ARIOSI, C. M. F. ; BARBOSA, G. A. S. ; MARTINS NETO, I. A.. <b>Onde ler em voz alta - preparando o ambiente mediador</b>. Em: GIROTTO, C. G. G. S.; SOUZA, R. J. de.. (Org.). Literatura e educação infantil: para ler, contar e encantar. 1ed.Campinas. : Mercado de Letras. 2016.v. 1, p. 65-90. </td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H.. <b>DIAMANTE E GRAFITE - ESTRUTURA. TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS. 1ed.Saarbrücken, Germany</b>. Em: . : NEA - Novas Edições Acadêmicas. 2016.v. 1, p. 9-13. </td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H.. <b>TÉCNICAS DE CARACTERIZAÇÃO. TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS. 1ed.Saarbrücken, Germany</b>. Em: . : NEA - Novas Edições Acadêmicas. 2016.v. 1, p. 22-25. </td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H. ; ALMEIDA, E. C.. <b>FILMES DE DIAMANTE NANOCRISTALINO. TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS. 1ed.Saarbrücken, Germany</b>. Em: . : NEA - Novas Edições Acadêmicas. 2016.v. 1, p. 26-35. </td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H. ; ALMEIDA, E. C.. <b>TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS. FILMES DE NANOGRAFITE. 1ed.Saarbrücken, Germany</b>. Em: . : NEA - Novas Edições Acadêmicas. 2016.v. 1, p. 36-43. </td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H. ; GAVINIER, D. B.. <b>FILMES FINOS ? AMBIENTES DE CRESCIMENTOS E TRATAMENTO DE SUPERFÍCIE. TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS. 1ed.Saarbrücken, Germany</b>. Em: . : NEA - Novas Edições Acadêmicas. 2016.v. 1, p. 18-21. </td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BROZE, T. S.; YAMASHITA, G. H. ; TILEMANN, R.. <b>DIAMANTE E GRAFITE ? TÉCNICAS DE CRESCIMENTO E TRATAMENTO DE SUPERFÍCIE. TRATAMENTO SUPERFICIAL DE FILMES CARBONOSOS NANOPARTICULADOS. 1ed.Saarbrücken, Germany</b>. Em: . : NEA - Novas Edições Acadêmicas. 2016.v. 1, p. 14-16. </td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FERREIRA, F. M. <b>Estereótipo e argumentação: a influência do auditório em resvistas de nicho</b>. Em: Gonçalves - Segundo, Paulo Roberto ; Modolo, Artur Daniel Ramos; Ferreira, Filipe Mantovani; Marega, Larissa Minuesa Pontes; Munhoz, Renata Ferreira; Cavalcante Filho, Urbano. (Org.). Discurso e Linguística : diálogos possíveis. 1ed.São Paulo. : Paulistana. 2016.v. 1, p. 114-129. </td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Homem, Thiago P. D.; PERICO, DANILO H. ; Santos, Paulo E. ; Bianchi, Reinaldo A. C. ; de Mantaras, Ramon L.. <b>Qualitative Case-Based Reasoning for Humanoid Robot Soccer: A New Retrieval and Reuse Algorithm</b>. Em: Goel A.; Díaz-Agudo M.; Roth-Berghofer T.. (Org.). Lecture Notes in Computer Science. 1ed. : Springer International Publishing. 2016.v. 9969, p. 170-185. </td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>LIZARDO, E.O.; BONONE, L. M.. <b>Políticas de Juventude, Sistema Nacional de Participação Social e o papel da mídia no debate público nacional</b>. Em: Otávio Luiz Machado. (Org.). Juventudes e sociedades no Brasil: estudos transdisciplinares. 1ed.Frutal. : Editora Prospectiva. 2016.v. 2, p. 48-95. </td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>MARTINS, T. H. B.; BATISTA, S. S. S. ; BRANDAO, L. M. L. ; FREIRE, E. ; GARCIA, C. A. ; Schuster, C.E. ; MENARDO, M.. <b>Companhias Férreas Paulistas: um estudo terminológico para a composição de um glossário inglês/português</b>. Em: Lívia Maria Louzada Brandão, Carlos Eduardo Schuster, Sueli Soares dos Santos Batista. (Org.). Tecnologia e Cultura - Memória Ferroviária. 1ed.Jundiai. : Brasil. 2016.v. 1, p. 07-240. </td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>PINHEIRO, M. A.A. ; SANTANA, W. R. A. ; RODRIGUES, E. S. ; IVO, C. T. ; SANTOS, L. C. M. ; TORRES, R. A. ; BOOS, H.. <b>Estado de Conservação dos Caranguejos Gecarcinideos (Decapoda: Gecarcinidae) no Brasil</b>. Em: Pinheiro, M.A.A. & Boos, H. (Org.). (Org.). Livro Vermelho dos Crustáceos do Brasil: Avaliação 2010-2014. 1ed.Cruz das Almas. : Sociedade Brasileira de Carcinologia - SBC. 2016.p. 167-181. </td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>PINHEIRO, M. A.A. ; SANTOS, L. C. M. ; SOUZA, C. A. ; JOAO, M. C. A. ; IVO, C. T.. <b>Estado de Conservação do Caranguejo-uçá, Ucides cordatus (Linnaeus, 1763) (Decapoda: Ucididae) no Brasil</b>. Em: Pinheiro, M.A.A. & Boos, H. (Org.). (Org.). Livro Vermelho dos Crustáceos do Brasil: Avaliação 2010-2014. 1ed.Cruz das Almas. : Sociedade Brasileira de Carcinologia - SBC. 2016.p. 441-458. </td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>SILVA, A. A. C. <b>As representações sensíveis do ser fílmico, permeadas pela estética da violência e o letramento visual</b>. Em: LOUSADA, Eliane et al.. (Org.). DIÁLOGOS BRASILEIROS NO ESTUDO DE GÊNEROS TEXTUAIS/ DISCURSIVOS. 1ed.Araraquara. : Letraria. 2016.v. 1, p. 1087-1100. </td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>SILVA, Andréa Cotrim ; SILVA, A. A. C. ; FERRAZ, Daniel. <b>Língua e Cultura em Babel: problematizando o Outro</b>. Em: FERRAZ, Daniel;TOMAZI, Micheline. (Org.). Línguas, c(C)ultura(s) e Educação Linguística. 1ed.Curitiba. : Editora CRV. 2016.v. 1, p. 223-242. </td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>SILVA, ISAAC J. ; PERICO, DANILO H. ; Homem, Thiago P. D. ; Vilão, Claudio O. ; TONIDANDEL, FLAVIO ; Bianchi, Reinaldo A. C.. <b>Humanoid Robot Gait on Sloping Floors Using Reinforcement Learning</b>. Em: Santos Osório F.; Sales Gonçalves R.. (Org.). Communications in Computer and Information Science. 1ed. : Springer International Publishing. 2016.v. 619, p. 228-246. </td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>SOUZA, R. J. ; MARTINS NETO, I. A. ; GIROTTO, C. G. G. S.. <b>Caminhos para o ensino da leitura literária na educação infantil</b>. Em: GIROTTO, C. G. G. S.; SOUZA, R. J. de. (Org.). Literatura e educação infantil: ler, contar e encantar. 1ed.Campinas. : Mercado de Letras. 2016.p. 195-216. </td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>VERCELLI, L. C. A. ; CASTRO, Moacir Silva de ; STANGHERLIM, R.. <b>Formação de Professoras para as relações étnico-raciais na Educação Infantil: relato de uma pesquisa intervenção</b>. Em: STANGHERLIM Roberta; VERCELLI, Ligia de Carvalho Abões. (Org.). FORMAÇÃO DE PROFESSORES E PR´TICAS DOCENTES PARA CRIANÇAS DE 0 A 10 ANOS. 1ed.São Paulo. : Porto de Ideias. 2016.v. 1, p. 1-187. </td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

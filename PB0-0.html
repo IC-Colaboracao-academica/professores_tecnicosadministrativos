@@ -1,0 +1,945 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Artigos completos publicados em periódicos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+38],
+[2017,
+36],
+[2018,
+37],
+[2019,
+42],
+[2020,
+41],
+[2021,
+53],
+[2022,
+49],
+[2023,
+52],
+[2024,
+37],
+[2025,
+4]]}]});
+        });
+        </script>
+        
+                <h3>Artigos completos publicados em periódicos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 389<br>
+                    
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>DOS REIS, NELIO FERNANDO; DE JESUS, CECILIA SOUZA ; SANTANA, LEANDRO PINTO ; SILVÉRIO, PAULO OSNI ; MARTINS, GISLENE PEREIRA DE OLIVEIRA ; SOBRINHO, HILDA RAMOS ; PEDROSO, ANA PAULA TURESSO PINTO ; DE LIMA, ODIVAL ALBERTO. <b>PERCEPCIONES SOBRE DIVERSIDAD, EQUIDAD E INCLUSIÓN (DE</b>. <font color=#330066>ARACÊ - DIREITOS HUMANOS EM REVISTA</font>. v. 7, p. 3763-3780, issn: 2358-2472, 2025. <a href="http://dx.doi.org/10.56238/arev7n1-224" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>MARTINS NETO, IRANDO ALVES. <b>SOUTHERN VOICES: SUBVERSIVE LITERACIES OF MIGRANT WOMEN IN ADULT EDUCATION</b>. <font color=#330066>TRABALHOS EM LINGUÍSTICA APLICADA</font>. v. 64, p. 1-13, issn: 2175-764X, 2025. <a href="http://dx.doi.org/10.1590/01031813v64120258676753" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>OLIVEIRA, LUCILIA VERNASCHI DE ; SANTOS, JAIR GARCIA DOS ; ABRANTES, TEREZINHA DOS ANJOS. <b>ESTUDANTES COM TEA NO ENSINO SUPERIOR</b>. <font color=#330066>REVISTA FISIO&TERAPIA</font>. v. 29, p. 54-55, issn: 1678-0817, 2025. <a href="http://dx.doi.org/10.69849/revistaft/dt10202501071954" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>RODRIGUES DA SILVA, ALDO ; PIETROLUONGO, MÁRCIA ; RODRIGUES DA SILVA, ANA CLÁUDIA ; SANCHEZ, ELADIO FLORES ; DO AMARAL, BRUNO SÉRGIO ; ANHOLETI, MARIA CAROLINA ; LOBÃO, ADRIANA QUINTELLA ; VALVERDE, ALESSANDRA LEDA ; DE PAIVA, SELMA RIBEIRO ; FULY, ANDRÉ LOPES. <b>Assessment of the Effects of Harvesting Period of Clusia fluminensis</i> Planch. and Triana Fruits on Neutralization of the Toxic Activities of Bothrops jararacussu</i> Snake Venom</b>. <font color=#330066>Chemistry & Biodiversity</font>. v. x, p. e202402941, issn: 1612-1880, 2025. <a href="http://dx.doi.org/10.1002/cbdv.202402941" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, A. G. ; SILVA, L. C. A. ; IZEPPE, F. R. ; REIS, N. F. ; SANTOS, T. S. ; FERREIRA, E. S. ; CONCEIÇÃO TAVARES VARGAS DE SIQUEIRA, GISELE DA ; FLÁVIA RODRIGUES DA CUNHA FRANÇA, JAQUELINE ; MENEZES DE ALMEIDA, LUCIANA. <b>Artificial Intelligence from the Perspective of High School Students</b>. <font color=#330066>WORLD WIDE JOURNAL OF MULTIDISCIPLINARY RESEARCH AND DEVELOPMENT (ONLINE)</font>. v. 10, p. 104-110, issn: 2454-6615, 2024.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G. ; QUEIROZ, Z. F.. <b>Dinâmicas da pesquisa latino-americana em formação de professores e professoras</b>. <font color=#330066>Revista Interdisciplinar Encontro das Ciências - RIEC</font>. v. 7, p. 550-559, issn: 2595-0959, 2024. <a href="http://dx.doi.org/10.1000/riec.v7i2.419" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; TORRES, C. M. G. ; QUEIROZ, Z. F.. <b>Revisão integrativa das estratégias de ensino para formação de cientistas</b>. <font color=#330066>Revista Educação, Pesquisa e Inclusão</font>. v. 5, p. 1-16, issn: 2675-3294, 2024.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, JEFERSON; TORRES, CICERO MAGERBIO GOMES ; ALVES, FRANCIONE CHARAPA ; QUEIROZ, ZULEIDE FERNANDES DE. <b>Como escrever um relato de experiência de forma sistematizada? Contribuições metodológicas</b>. <font color=#330066>Práticas Educativas, Memórias e Oralidades - Rev. Pemo</font>. v. 6, p. e12517-31, issn: 2675-519X, 2024. <a href="http://dx.doi.org/10.47149/pemo.v6.e12517" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, JEFERSON; TORRES, CICERO MAGERBIO GOMES ; QUEIROZ, ZULEIDE FERNANDES DE. <b>REVISÃO INTEGRATIVA ACERCA DAS ATIVIDADES EDUCATIVAS PARA A FORMAÇÃO DE CIENTISTAS</b>. <font color=#330066>EDUCAÇÃO EM REVISTA (ONLINE)</font>. v. 40, p. 1-23, issn: 1982-6621, 2024. <a href="http://dx.doi.org/10.1590/0102-469847907" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>AUGUSTO ; Feitosa, W. R. ; KELCH, P. R. S. ; PINHEIRO, Y. B. S. ; TRINDADE, L. H.. <b>A Relevância da Cultura Organizacional na Prevenção da Corrupção e no Cultivo de Lideranças Éticas nas Operações Logísticas</b>. <font color=#330066>REVISTA INOVAÇÃO SOCIAL</font>. v. 6, p. 97-111, issn: 2674-8185, 2024. <a href="http://dx.doi.org/10.5281/zenodo.14094355" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BIZANTINO, L. L. ; CASTRO, M. S. ; FEITOSA, W. ; BARBOSA, R.. <b>Dualismo escolar no modelo tecnicista desenvolvido no Instituto Federal de São Paulo câmpus São Paulo Pirituba</b>. <font color=#330066>Revista Inovação Social</font>. v. 6, p. 70, issn: 2674-8185, 2024.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CASTRO, M. S.; SOUZA, E. F. A.. <b>Sobre a formação docente para a educação básica: algumas considerações</b>. <font color=#330066>Revista Cactácea</font>. v. 4, p. 62, issn: 2764-0647, 2024.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CUNHA, MICAEL R. ; DO AMARAL, BRUNO S. ; TAKARADA, JÉSSICA E. ; VALDERRAMA, GABRIEL V. ; BATISTA, ANDREA N. L. ; BATISTA, JOÃO M. ; CASS, QUEZIA B. ; COUÑAGO, RAFAEL M. ; MASSIRER, KATLIN B.. <b>(S</i>)-ML-SA1 Activates Autophagy via TRPML1-TFEB Pathway</b>. <font color=#330066>CHEMBIOCHEM</font>. v. 25, p. e202400506, issn: 1439-4227, 2024. <a href="http://dx.doi.org/10.1002/cbic.202400506" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DA SILVA, MOISÉS FIGUEIREDO ; MOLDERO, LEONARDO DE SOUZA ; TRINDADE, LUCIANO HENRIQUE ; BARBOSA, ANTÔNIO PIRES. <b>GESTÃO DE RISCOS URBANOS: A NECESSIDADE DE UMA DEFESA CIVIL PROFISSIONAL PARA CIDADES INTELIGENTES E RESILIENTES</b>. <font color=#330066>ARACÊ - DIREITOS HUMANOS EM REVISTA</font>. v. 6, p. 18585-18599, issn: 2358-2472, 2024. <a href="http://dx.doi.org/10.56238/arev6n4-442" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DA SILVA, MOISÉS FIGUEIREDO ; MOLDERO, LEONARDO DE SOUZA ; TRINDADE, LUCIANO HENRIQUE ; BARBOSA, ANTÔNIO PIRES. <b>CIDADES INTELIGENTES E PREVENÇÃO DE DESASTRES: TRANSFORMANDO DADOS EM ESTRATÉGIAS RESILIENTES</b>. <font color=#330066>ARACÊ - DIREITOS HUMANOS EM REVISTA</font>. v. 6, p. 18618-18631, issn: 2358-2472, 2024. <a href="http://dx.doi.org/10.56238/arev6n4-444" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DA SILVA, MOISÉS FIGUEIREDO ; MOLDERO, LEONARDO DE SOUZA ; TRINDADE, LUCIANO HENRIQUE ; BARBOSA, ANTÔNIO PIRES. <b>PERCURSO METODOLÓGICO PARA REVISÕES SISTEMÁTICAS EM CIÊNCIAS SOCIAIS APLICADAS: DESAFIOS, ESTRATÉGIAS E IMPACTOS</b>. <font color=#330066>ARACÊ - DIREITOS HUMANOS EM REVISTA</font>. v. 6, p. 18600-18617, issn: 2358-2472, 2024. <a href="http://dx.doi.org/10.56238/arev6n4-443" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; MAGALHAES, P. H. I.. <b>PARA ?SER COMO UM RIO?: notas sobre a literatura indígena como espaço de alteridade epistemológica</b>. <font color=#330066>REVISTA EVENTOS PEDAGÓGICOS</font>. v. 15, p. 686-699, issn: 2236-3165, 2024. <a href="http://dx.doi.org/10.30681/2236-3165" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; RIBEIRO, I. M.. <b>A incerteza como método: ?Negative capability? e a construção de ambiguidades imagéticas em ?La Belle Dame sans Merci?, de John Keats</b>. <font color=#330066>Letras & Letras (UFU)</font>. v. 40, p. 1-22, issn: 1981-5239, 2024. <a href="http://dx.doi.org/10.14393/LL63-v40-2024-09" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>KELCH, R. ; FEITOSA, W. R. ; TRINDADE, L. H.. <b>A   RELEVÂNCIA   DA   CULTURA   ORGANIZACIONAL   NA   PREVENÇÃO   DA  CORRUPÇÃO  E  NO  CULTIVO  DE  LIDERANÇAS  ÉTICAS  NAS  OPERAÇÕES  LOGÍSTICAS</b>. <font color=#330066>Revista Inovação Social</font>. v. 6, p. 97-111, issn: 2674-8185, 2024.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>LIMA, J. P. ; ALMEIDA, M. S. ; FEITOSA, W. R.. <b>GOVERNANÇA DIGITAL E A TRANSPARÊNCIA EM LICITAÇÕES E CONTRATOS: UM ESTUDO DE CASO NA CIDADE DE SÃO PAULO</b>. <font color=#330066>Revista Inovação Social</font>. v. 6, p. 7-53, issn: 2674-8185, 2024. <a href="http://dx.doi.org/10.5281/zenodo.14094355" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>MESSIAS SANTOS, JONATHAN ; PAZINATTO, FELIPE ALEXANDRE CARDOSO ; CUNHA, LUIZ EGIDIO COSTA. <b>DESAFIOS NA GESTÃO DA SEGURANÇA CIBERNÉTICA: O PAPEL ESTRATÉGICO DO GESTOR DE TECNOLOGIA NA ERA DA COMPUTAÇÃO EM NUVEMCHALLENGES IN CYBERSECURITY MANAGEMENT: THE STRATEGIC ROLE OF THE TECHNOLOGY MANAGER IN THE ERA OF CLOUD COMPUTINGDESAFIOS NA GESTÃO DA SEGURANÇA CIBERNÉTICA - O PAPEL ESTRATÉGICO DO GESTOR DE TECNOLOGIA NA ERA DA COMPUTAÇÃO EM NUVEMDESAFÍOS EN LA GESTIÓN DE CIBERSEGURIDAD: EL ROL</b>. <font color=#330066>RECIMA21 - Revista Científica Multidisciplinar - ISSN 2675-6218</font>. v. 5, p. e595665, issn: 2675-6218, 2024. <a href="http://dx.doi.org/10.47820/recima21.v5i9.5665" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>NAGANO, MARCELO S. ; JUNQUEIRA, VIVIANE S.V. ; ROSSI, Fernando L.. <b>An objective review and perspectives on the permutation flowshop scheduling with no-wait constraint and setup times</b>. <font color=#330066>Ifac Journal Of Systems And Control</font>. v. 29, p. 100279, issn: 2468-6018, 2024. <a href="http://dx.doi.org/10.1016/j.ifacsc.2024.100279" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>NAGANO, MARCELO SEIDO ; ROSSI, FERNANDO LUIS. <b>A two-stage iterated greedy algorithm and a multi-objective constructive heuristic for the mixed no-idle flowshop scheduling problem to minimize makespan subject to total completion time</b>. <font color=#330066>Journal Of Project Management</font>. v. 9, p. 45-60, issn: 2371-8366, 2024. <a href="http://dx.doi.org/10.5267/j.jpm.2023.9.001" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>OLIVEIRA, KARINA FERNANDES DE ; SANTOS, NEUSA MARIA BASTOS FERNANDES DOS ; Munhoz, Igor Polezi ; OLIVEIRA, GABRIEL GOMES DE ; Akkari, Alessandra Cristina Santos. <b>Pharmaceutical emerging markets: technological mapping and innovation networks</b>. <font color=#330066>REVISTA DE GESTÃO E SECRETARIADO</font>. v. 15, p. e3946, issn: 2178-9010, 2024. <a href="http://dx.doi.org/10.7769/gesec.v15i6.3946" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>OLIVEIRA, L. V. ; OLIVEIRA, E. T. ; SANTOS, J. G. ; FERRARI, M. P. S.. <b>OBJETIVOS DE DESENVOLVIMENTO SUSTENTÁVEL: A EDUCAÇÃO ESPECIAL E A IMPLEMENTAÇÃO DA META 4 DA AGENDA 2030 NO IFPR CAMPUS UMUARAMA</b>. <font color=#330066>REVISTA MUNDI ENGENHARIA, TECNOLOGIA E GESTÃO</font>. v. 9, p. 1, issn: 2525-4782, 2024.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Pissardini, Paulo E.; FILHO, K. ; ARRUDA, N. D. S. ; NASCIMENTO, L. M. D. ; MARTINEZ, M. P.. <b>Compreendendo a Sustentabilidade e o Comportamento do Consumidor na Indústria TêxtilUnderstanding Sustainability and Consumer Behavior in the Textile Insustry</b>. <font color=#330066>REVISTA DE ENSINO E PESQUISA EM ADMINISTRAÇÃO E ENGENHARIA</font>. v. 10, p. 36-47, issn: 2447-6129, 2024. <a href="http://dx.doi.org/10.51923/repae.v10i1.355" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Pissardini, Paulo E.; GODINHO FILHO, M. ; CALEFFI, M. ; GANGA, G. M. D. ; SILVA, E. R.. <b>Smart-enhanced organisational functions: A framework comprising capabilities, barriers, and evolutional path</b>. <font color=#330066>Expert Systems With Applications</font>. v. 255, p. 1/124530-19, issn: 1873-6793, 2024. <a href="http://dx.doi.org/10.1016/j.eswa.2024.124530" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>REIS, R. M. ; TRINDADE, L. H.. <b>Educação em Direitos Humanos nas Escolas: Uma análise crítica dos Projetos Políticos Pedagógicos em Pirituba</b>. <font color=#330066>Revista SCIAS. Direitos Humanos e Educação</font>. v. 7, p. 21-41, issn: 2596-1772, 2024.</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>ROMAGNOLI, A. J.; MARTELLI, C. G. G.. <b>Atores, interesses e ideias em disputa no Subsistema da Política Nacional de Habitação Social no Brasil</b>. <font color=#330066>TEORIA & PESQUISA (ON LINE)</font>. v. 33, p. 1-24, issn: 2236-0107, 2024.</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>SANTANA, THIAGO ; MATIAS, ROGÉRIO ; FERREIRA, REGIVALDO ; SILVA FILHO, ALOISIO M. DA ; GALVÃO, ROSA ; VARELA, MIGUEL ; DIAS, RUI ; ZEBENDE, GILNEY. <b>A Study of The Market of Fat Ox and Corn in Bahia/Brazil Via Weighted Networks By -_DCCA</b>. <font color=#330066>RGSA (ANPAD)</font>. v. 18, p. e07007, issn: 1981-982X, 2024. <a href="http://dx.doi.org/10.24857/rgsa.v18n7-130" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>A democracia na América: perspectivas francesas sobre o governo de Andrew Jackson nos Estados Unidos da década de 1830</b>. <font color=#330066>REVISTA BRASILEIRA DE HISTÓRIA (ONLINE)</font>. v. 44, p. 1-22, issn: 1806-9347, 2024. <a href="http://dx.doi.org/10.1590/2024v44n96-09" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>Duarte da Ponte Ribeiro e a Primeira Missão Diplomática Brasileira no México: Entre a Distância e a Experiência Comum (1834-1835)</b>. <font color=#330066>CONfines</font>. v. 39, p. 12-32, issn: 1870-3569, 2024.</td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>Musas, máscaras e mitos: as ambiguidades do liberalismo na historiografia sobre o século XIX na América Latina</b>. <font color=#330066>Revista de História (UNESP)</font>. v. 43, p. 1-23, issn: 0101-9074, 2024. <a href="http://dx.doi.org/10.1590/1980-4369e20230044" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>SANTOS, A. C. P. R. ; FEITOSA, W. R.. <b>AMPLIAÇÃO  DA  COMUNICAÇÃO  DA  DEFESA  CIVIL  COM  MORADORES  DA  CAPITAL DE SÃO PAULO</b>. <font color=#330066>Revista Inovação Social</font>. v. 6, p. 54-68, issn: 2674-8185, 2024. <a href="http://dx.doi.org/10.5281/zenodo.1409435" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS, E. V. N. ; VIEIRA, W. ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, E. F. M.. <b>Potencialidades envolvidas em uma atividade investigativa sobre Geometrias Plana e Espacial com o uso do GeoGebra 3D</b>. <font color=#330066>TANGRAM - Revista de Educação Matemática</font>. v. 7, p. 43, issn: 2595-0967, 2024.</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SILVA, M. F. ; MODERO, L. S. ; TRINDADE, L. H. ; BARBOSA, A. P.. <b>Letramento em Defesa Civil: Avaliação do Conhecimento Populacional e Atribuições da Defesa Civil no Litoral Norte Paulista</b>. <font color=#330066>ARACÊ ¿ DIREITOS HUMANOS EM REVISTA</font>. v. 6, p. 6456-6477, issn: 2358-2472, 2024. <a href="http://dx.doi.org/10.56238/arev6n3-130" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SILVA, M. F. ; MODERO, L. S. M. S. ; TRINDADE, L. H. ; BARBOSA, A. P.. <b>Resiliência Urbana e Direito à Cidade: A Defesa Civil como Fator Estrutural em Cidades Inteligentes</b>. <font color=#330066>ARACÊ ¿ DIREITOS HUMANOS EM REVISTA</font>. v. 6, p. 6478-6501, issn: 2358-2472, 2024. <a href="http://dx.doi.org/10.56238/arev6n3-131" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SILVA, M. F. ; MODERO, L. S. M. S. ; TRINDADE, L. H. ; BARBOSA, A. P.. <b>Silêncio Perigoso: Prefeitos ignoram Defesa Civil em Planos de Governo para 202</b>. <font color=#330066>ARACÊ ¿ DIREITOS HUMANOS EM REVISTA</font>. v. 6, p. 6436-6455, issn: 2358-2472, 2024. <a href="http://dx.doi.org/10.56238/arev6n3-129" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SILVA, MOISÉS FIGUEIREDO DA ; TRINDADE, LUCIANO HENRIQUE ; BARBOSA, ANTONIO PIRES. <b>O radioamadorismo como ferramenta inovadora na Educação STEM: uma revisão bibliográfica</b>. <font color=#330066>DIALOGIA (UNINOVE. IMPRESSO)</font>. v. 1, p. e27563, issn: 1677-1303, 2024. <a href="http://dx.doi.org/10.5585/49.2024.27563" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SILVÉRIO, PAULO OSNI ; PEDROSO, ANA PAULA TURESSO PINTO ; SANTANA, LEANDRO PINTO ; SOBRINHO, HILDA RAMOS ; LIMA, ODIVAL ALBERTO DE ; JESUS, CECILIA SOUZA DE ; Reis, Nélio Fernando dos ; SILVA, CIBELE SALES DA ; LUCAS, VINICIUS DE SOUZA. <b>La atención al estudiante público objetivo de la educación especial en la carrera de tecnología de nivel superior</b>. <font color=#330066>CONTRIBUCIONES A LAS CIENCIAS SOCIALES</font>. v. 17, p. e6392, issn: 1988-7833, 2024. <a href="http://dx.doi.org/10.55905/revconv.17n.4-166" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>ZANDONADI, S. G. S. ; FEITOSA, W. R. ; MOURA, M. L. M. ; SOTO, A.. <b>Revista Inovação Social | ISSN: 2674 - 8185  Volume  6 / Edição Especial  /  jan. - jun. ? 202 4 www.revistainovacaosocial.com.br 83 O PAPEL DAS REDES SOCIAIS NA MOBILIZAÇÃO PARA EMISSÃO DE  TÍTULOS  ELEITORAIS NA FAIXA ETÁRIA DE 16 A 18 ANOS NAS ELEIÇÕES DE 2022</b>. <font color=#330066>Revista Inovação Social</font>. v. 6, p. 83-96, issn: 2674-8185, 2024.</td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALCANTARA, D. M. <b>Reflexões acerca da segregação socioespacial e da violência em Londrina - PR</b>. <font color=#330066>Caminhos de Geografia</font>. v. 24, p. 172-184, issn: 1678-6343, 2023.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTONIO, M. P. ; FEITOSA, W. R.. <b>Desenvolvimento de um Sistema de Controle de Acesso e  Monitoramento IoT para o IFSP - Campus  Pirituba</b>. <font color=#330066>Revista de Inovação Social</font>. v. 5, p. 1-5, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.8185252" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTONIO, M. J. P. ; FEITOSA, W. R. ; BARBOSA, R. ; ROSSI, FERNANDO LUIS. <b>A implantação da gestão de facilities em um Centro de Distribuição: um estudo de caso</b>. <font color=#330066>Revista Acadêmica de Ensino de Ciências e Tecnologia do IFSP - Campus Cubatão</font>. v. 12, p. 1 - 17-17, issn: 2595-2277, 2023.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; ARRAIS, E. L. ; PORTO, B. S.. <b>Desenvolvimento temático: contribuições metodológicas da bibliometria e cientometria para as revisões de literatura</b>. <font color=#330066>LINHAS (FLORIANÓPOLIS. ONLINE)</font>. v. 24, p. 228-252, issn: 1984-7238, 2023. <a href="http://dx.doi.org/10.5965/1984723824562023014" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson; PORTO, B. S.. <b>Análise crítica de conteúdo, neurociência e a crítica ao interpretativismo</b>. <font color=#330066>REVISTA COCAR (ONLINE)</font>. v. 19, p. 1-16, issn: 2237-0315, 2023.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ASSENCIO, E M B ; CARAÇA, R S ; VILHENA, S G ; POMPEIA, P J. <b>Second-order teleparallel gauge theory</b>. <font color=#330066>CLASSICAL AND QUANTUM GRAVITY</font>. v. 40, p. 205015, issn: 0264-9381, 2023. <a href="http://dx.doi.org/10.1088/1361-6382/acf8a9" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BARBOSA, A. P. ; MOTTA, L. J. ; PEREIRA, D. M. ; PERPETUO, F. C. ; TRINDADE, L. H.. <b>Cocriação de valor na relação de consumo de serviços de medicina diagnóstica e seus efeitos na operação dos processos de um laboratório de grande porte</b>. <font color=#330066>CONTRIBUCIONES A LAS CIENCIAS SOCIALES</font>. v. 16, p. 2023, issn: 1988-7833, 2023. <a href="http://dx.doi.org/10.55905/revconv.16n.11-0161" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BASANTE, J. G.; ROBLE, G. L. E. ; S., I. R. P. O.. <b>ESG CONSTRUINDO DIFERENÇAS CORPORATIVAS, ATRAVES DE ESTRATÉGIAS DIRECIONADAS PARA OS PILARES TRANSPARÊNCIA E ACCONTABILITY</b>. <font color=#330066>REVISTA METROPOLITANA DE GOVERNANÇA CORPORATIVA</font>. v. 8, p. 77-79, issn: 2447-8024, 2023.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DE QUEIROZ, LUCAS NICOLAU ; DA FONSECA, ANNA CAROLINA CARVALHO ; WERMELINGER, GUILHERME FREIMANN ; DA SILVA, DIEGO POLO DUTRA ; PASCOAL, AISLAN CRISTINA RHEDER FAGUNDES ; SAWAYA, ALEXANDRA CHRISTINE HELENA FRANKLAND ; DE ALMEIDA, ELAN CARDOZO PAES ; DO AMARAL, BRUNO SERGIO ; DE LIMA MOREIRA, DAVYSON ; ROBBS, BRUNO KAUFMANN. <b>New substances of Equisetum hyemale L. extracts and their in vivo antitumoral effect against oral squamous cell carcinoma</b>. <font color=#330066>JOURNAL OF ETHNOPHARMACOLOGY</font>. v. 303, p. 116043, issn: 0378-8741, 2023. <a href="http://dx.doi.org/10.1016/j.jep.2022.116043" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DOS REIS, N.F; ANDRADE, A. G. ; SILVA, E. U. A.. <b>The cause of Brazilian inflation in the modern era is poverty</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 1-10, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7547121" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FERNANDES, MAÍRA SILVA CONDE ; FEITOSA, WILIAN RAMALHO. <b>O marketing na era digital: análise de dados no foco</b>. <font color=#330066>REVISTA DE GESTÃO E SECRETARIADO</font>. v. 14, p. 7367-7372, issn: 2178-9010, 2023. <a href="http://dx.doi.org/10.7769/gesec.v14i5.2126" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GODOY, ROBERTA FERNANDA ; Munhoz, Igor Polezi ; DE OLIVEIRA, GABRIEL GOMES ; ROSA, MARIA THEREZA DE MORAES GOMES ; DE GOUVÊA, MÍRIAM TVRZSKÁ ; Akkari, Alessandra Cristina Santos. <b>Operacionalização da metodologia Kaizen a fim de otimizar o desempenho organizacional: um enfoque na gestão de processos em uma indústria eletrônica</b>. <font color=#330066>REVISTA DE GESTÃO E SECRETARIADO</font>. v. 14, p. 1832-1854, issn: 2178-9010, 2023. <a href="http://dx.doi.org/10.7769/gesec.v14i2.1665" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>GUIMARÃES, R. C. C. ; VIEIRA, W. ; IMAFUKU, R. S. ; PEREIRA, E. F. M.. <b>USO DO CELULAR INTELIGENTE (SMARTPHONE) NA ELABORAÇÃO DE CONJECTURAS E PROVAS EM GEOMETRIA: AVALIANDO POSSIBILIDADES E LIMITAÇÕES</b>. <font color=#330066>Portal de Conferências da Semana do Conhecimento</font>. v. 3, p. 1-15, issn: 2965-0690, 2023.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>GUIMARÃES, R. C. C. ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>USO DO CELULAR INTELIGENTE (SMARTPHONE) NA ELABORAÇÃO DE CONJECTURAS E PROVAS EM GEOMETRIA: AVALIANDO POSSIBILIDADES E LIMITAÇÕES</b>. <font color=#330066>Portal de Conferências da Semana do Conhecimento</font>. v. 3, p. 1-15, issn: 2965-0690, 2023.</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>ITO, JULIA YUMI ; SILVEIRA, FRANCIANE FREITAS ; Munhoz, Igor Polezi ; Akkari, Alessandra Cristina Santos. <b>International publication trends in Lean Agile Management research: a bibliometric analysis</b>. <font color=#330066>PROCEDIA COMPUTER SCIENCE</font>. v. 219, p. 666-673, issn: 1877-0509, 2023. <a href="http://dx.doi.org/10.1016/j.procs.2023.01.337" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>JOSEPH, A. ; ANDRADE, A. G. ; REIS, N. F.. <b>MACRODIMENSÕES E INDICADORES CHAVES PARA A AVALIAÇÃO DE PERFORMANCE EM UNIVERSIDADE</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 1-20, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7800293" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LEITE, B. ; MARTINS NETO, I. A.. <b>Implicações de abordagens críticas de ensino de inglês na (trans)formação pessoal do professor</b>. <font color=#330066>VEREDAS - REVISTA DE ESTUDOS LINGUÍSTICOS</font>. v. 27, p. 1-18, issn: 1982-2243, 2023.</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>LOPES, L. ; MENDONCA, F. C. ; SANTOS, P. C. S.. <b>Fusões e Aquisições no Setor Bancário: Estudo de Eventos na Década Marcada pela Crise no Sistema Financeiro Internacional (2001 A 2011)</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 1-12, issn: 2674-8185, 2023.</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA; SILVA, DANIEL DO NASCIMENTO E. <b>Afrontando a necropolítica no Brasil: recursos linguísticos arrojados e artivismo como formas de sobreviver</b>. <font color=#330066>Revista Brasileira de Linguística Aplicada</font>. v. 23, p. 1-20, issn: 1984-6398, 2023. <a href="http://dx.doi.org/10.1590/1984-6398202343824" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MAIA, JUNOT DE OLIVEIRA; WINDLE, JOEL AUSTIN ; JORGE, MIRIAM LÚCIA DOS SANTOS. <b>Transperiferias: uma proposta para pesquisas socialmente engajadas</b>. <font color=#330066>Revista Brasileira de Linguística Aplicada</font>. v. 23, p. 1-5, issn: 1984-6398, 2023. <a href="http://dx.doi.org/10.1590/1984-6398202344084" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MARANGONI, FABÍOLA MACIEL SARUBBI ; CORRÊA, HAMILTON LUIZ ; DE FREITAS-DIAS, CAROLINA APARECIDA ; SARUBBI JÚNIOR, VICENTE. <b>Fatores de influência no desenvolvimento de competências dos estudantes de administração no Brasil: perspectivas segundo os coordenadores de curso</b>. <font color=#330066>REVISTA DE GESTÃO E SECRETARIADO</font>. v. 14, p. 18992-19017, issn: 2178-9010, 2023. <a href="http://dx.doi.org/10.7769/gesec.v14i10.3097" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Modolo, Leandro; CARVALHO, SERGIO ; DIAS, THAIS. <b>Digital health issues for the SUS: -mobile health- and the algorithmic automation of medical knowledge-power</b>. <font color=#330066>SAÚDE E SOCIEDADE (ONLINE)</font>. v. 32, p. 1-12, issn: 1984-0470, 2023. <a href="http://dx.doi.org/10.1590/s0104-12902023220245en" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MONTEIRO, J. R. S. ; CORTESE, T.T.P. ; ALMEIDA, J. F. S.. <b>Mudanças climáticas e planejamento urbano: revisão sistemática da literatura pelo método PRISMA</b>. <font color=#330066>ENGEMA - Encontro Nacional Sobre Gestão Empresarial e Meio Ambiente</font>. v. 25, p. 164, issn: 1679-7841, 2023.</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Módolo, L. P.; CARVALHO, S. R. ; DIAS, T. M.. <b>Questões da saúde digital para o SUS:  a ?saúde móvel? e a automação algorítmica do  saber-poder da medicina</b>. <font color=#330066>SAÚDE E SOCIEDADE (ONLINE)</font>. v. 32, p. 1-12, issn: 1984-0470, 2023. <a href="http://dx.doi.org/10.1590/S0104-12902023220245pt" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>NASCIMENTO, V. S. ; FREITAS, A. A. ; SILVA, M. C. ; SALES, T. B. ; ANTUNES, Jeferson ; MARUJO, H. M. A.. <b>REPENSANDO POLÍTICAS PÚBLICAS: DESEMPENHO DE PORTUGAL E BRASIL NO ÍNDICE GLOBAL DA PAZ</b>. <font color=#330066>REVISTA CIÊNCIA E SUSTENTABILIDADE</font>. v. 7, p. 65-81, issn: 2447-4606, 2023. <a href="http://dx.doi.org/10.56837/ces.v7i2.1047" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>OLIVEIRA, C. A. S.; Soo Man Gimenes Brito ; Ricardo Pires. <b>APLICAÇÃO DE UMA REDE NEURAL ARTIFICIAL YOLO PARA CONTROLE DE ESTOQUE POR IMAGENS EM UMA REVENDA DE AUTOPEÇAS</b>. <font color=#330066>REGRASP - Revista para Graduandos / IFSP-Câmpus São Paulo</font>. v. v. 8, p. 21-43, issn: 2526-1045, 2023.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>OLIVEIRA, L. V. ; OLIVEIRA, E. T. ; SANTOS, J. G.. <b>DIFICULDADES ESPECÍFICAS DE APRENDIZAGEM:  ANÁLISE DE ARTIGOS PUBLICADOS NA REVISTA EDUCAÇÃO ESPECIAL E REVISTA BRASILEIRA DE EDUCAÇÃO ESPECIAL DE 2012 E 2022</b>. <font color=#330066>REVISTA INTERNACIONAL DE FORMAÇÃO DE PROFESSORES (RIPF)</font>. v. v. 8, p. 1-29, issn: 2447-8288, 2023.</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PASCHOALOTTE, LEANDRO MÓDOLO; DIAS, THAIS MACHADO. <b>Medicina de dados, uma questão para a saúde coletiva?</b>. <font color=#330066>Ciência & Saúde Coletiva</font>. v. 28, p. 657-658, issn: 1678-4561, 2023. <a href="http://dx.doi.org/10.1590/1413-81232023282.03752022" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Pissardini, Paulo E.; ALVES, K. H.. <b>Smart industrial products’ role in industry 4.0: from a strategic paradigm of manufacturing management towards new holonic manufacturing system</b>. <font color=#330066>Revista Científica Multidisciplinar Núcleo do Conhecimento</font>. v. 11, p. 112-128, issn: 2448-0959, 2023. <a href="http://dx.doi.org/10.32749/nucleodoconhecimento.com.br/production-engineering/smart-industrial-products" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Pissardini, Paulo E.; MORETTI, A. C. M.. <b>Hard Skills Required for Project Management in the Post-Pandemic Era: COVID-19 Contributions in Changing Professional Profile</b>. <font color=#330066>REVISTA DE INOVAÇÃO TECNOLÓGICA</font>. v. 13, p. 16-28, issn: 2179-2895, 2023.</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>PROCÓPIO, J. V. J. ; FEITOSA, W. R. ; LOPES, L.. <b>GEOANALYTICS APLICADO AO CONCEITO DE CIDADES INTELIGENTES</b>. <font color=#330066>REVISTA DE INOVAÇÃO TECNOLÓGICA</font>. v. 13, p. 109-117, issn: 2179-2895, 2023.</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>QUEIROZ, A. R. ; VIEIRA, W. ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, E. F. M.. <b>Uma análise de resoluções elaboradas por ingressantes no Ensino Médio de uma questão sobre o Teorema de Pitágoras.</b>. <font color=#330066>Revista de Educação, Ciência e Tecnologia - RECeT</font>. v. 4, p. 143, issn: 2675-9098, 2023.</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>RIVALIDAD EN TEORÍA DE JUEGOS: GUERRA DE DESGASTE</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 10-19, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7764637" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>INCLUSÃO DE PESSOA COM TRANSTORNOS DO ESPECTRO AUTISTA (TEA) NO MERCADO DE TRABALHO: DESAFIOS E OPORTUNIDADES</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 10-19, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7996485" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>AUDISMO NO MERCADO DE TRABALHO</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 10-19, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7996405" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>Autism and Occupational Noise</b>. <font color=#330066>WORLD WIDE JOURNAL OF MULTIDISCIPLINARY RESEARCH AND DEVELOPMENT (ONLINE)</font>. v. 3, p. 64-73-73, issn: 2454-6615, 2023.</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>RODRIGUES, A. L. ; CASAGRANDE, H. F. ; GOMES, J. P. M. ; PASSOS, P. L. A. ; FERRUZZI, A. J. ; FERREIRA, R. S.. <b>Detecção de Ataques DDoS por Meio de Aprendizado de Máquina</b>. <font color=#330066>Qualif</font>. v. 13, p. 211-231, issn: 2595-2277, 2023.</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>RODRIGUES, Hadassa Viviane; FUSARO, M.. <b>Encaixotando minha biblioteca: uma elegia e dez digressões, de Alberto Manguel São Paulo: Companhia das Letras, 2021, 184 p</b>. <font color=#330066>DIALOGIA (UNINOVE. IMPRESSO)</font>. v. 43, p. e22496, issn: 1677-1303, 2023. <a href="http://dx.doi.org/10.5585/43.2023.22496" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>Protestantismo e indústria</b>. <font color=#330066>PONTA DE LANÇA (UFS)</font>. v. 17, p. 249-266, issn: 1982-193X, 2023. <a href="http://dx.doi.org/10.61895/pl.v17i33.19813" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>SANTOS, ANA CAROLINA VR. <b>Becoming a Feminist in the 21st Century: Teen Feminism and Globalization</b>. <font color=#330066>Youth and Globalization</font>. v. 5, p. 95-118, issn: 2589-5737, 2023. <a href="http://dx.doi.org/10.1163/25895745-bja10031" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SANTOS, J. G.; PEREIRA, M. T.. <b>PANORAMA DO PROGRAMA VIDA NO TRÂNSITO: UMA PESQUISA DO TIPO ESTADO DA ARTE</b>. <font color=#330066>REVISTA MUNDI MEIO AMBIENTE E AGRÁRIAS</font>. v. 8, p. 1-24, issn: 2525-4790, 2023.</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SANTOS, N. P.; DIONISIO, E. A.. <b>Infraestrutura dos serviços de assistência técnica e extensão rural no estado de São Paulo: o caso do Vale do Ribeira</b>. <font color=#330066>EXTENSÃO RURAL</font>. v. 30 (2023), p. 1-29, issn: 2318-1796, 2023.</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SECCO FAQUIN, BRUNO; TEIXEIRA, LUIS AUGUSTO ; COELHO CANDIDO, CRISTIANE REGINA ; BOARI COELHO, DANIEL ; BAYEUX DASCAL, JULIANA ; ALVES OKAZAKI, VICTOR HUGO. <b>Prediction of ball direction in soccer penalty through kinematic analysis of the kicker</b>. <font color=#330066>JOURNAL OF SPORTS SCIENCES</font>. v. 41, p. 668-676, issn: 0264-0414, 2023. <a href="http://dx.doi.org/10.1080/02640414.2023.2232679" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>SILVA, A. L. E. ; ANDRADE, A. G. ; REIS, N. F.. <b>INSERÇÃO DA CULTURA DE DESENVOLVIMENTO DE PATENTES NA GRADE CURRICULAR DOS CURSOS DE ENGENHARIA NO BRASIL</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 10-19, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7996444" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>SILVA, B. R. L. ; BARBOSA, G. B. F. ; RODRIGUES, P. P. ; FERREIRA, S. B. ; ROSSETI, W.. <b>COMO A LOGÍSTICA REVERSA PODE AMENIZAR O DESCARTE INDEVIDO DE RESÍDUOS DE MODA DA INDÚSTRIA TÊXTIL</b>. <font color=#330066>Qualif - Revista Acadêmica de Ensino de Ciências e Tecnologias</font>. v. 12, p. 215-225, issn: 2595-2277, 2023.</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>SILVA, M. F. ; TRINDADE, L. H. ; BARBOSA, A. P.. <b>A Importância do Uso de Indicadores do SUS para o Planejamento de Serviços de Saúde no Município de Ilha Bela / SP</b>. <font color=#330066>Revista de Direito da Administração Pública</font>. v. 1, p. 188-203, issn: 2595-5667, 2023.</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>SILVERIO, P. O. ; SANTANA, L. P. ; JESUS, C. S. ; LIMA, O. A. ; RAMOS SOBRINHO, H. ; ALMEIDA, P. S. ; PESSOA, A. P. T. P. ; REIS, N. F.. <b>O atendimento ao estudante público-alvo da educação especial em curso superior de tecnologia</b>. <font color=#330066>CADERNO PEDAGÓGICO (LAJEADO. ONLINE)</font>. v. 1, p. 1-10, issn: 1983-0882, 2023.</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>Souza, A. M. ; Garcia, S. L. N. ; Santos, A. C. R. ; Silva, M. N. ; LOPES, L.. <b>UMA DISCUSSÃO EMPREENDEDORA E SUSTENTÁVEL SOBRE O RIO PINHEIROS</b>. <font color=#330066>REVISTA DE INOVAÇÃO TECNOLÓGICA</font>. v. 13, p. 38-54, issn: 2179-2895, 2023.</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>SOUZA, MARÍLIA FRANCESCHINELLI DE ; BARROS, Ana Paula Rodrigues Magalhães de. <b>Teaching practices in a context of adapting to Emergency Remote Teaching: contributions from Cybereducation with digital videos</b>. <font color=#330066>REVISTA INTERNACIONAL DE PESQUISA EM EDUCAÇÃO MATEMÁTICA (RIPEM)</font>. v. 13, p. 1-20, issn: 2238-0345, 2023. <a href="http://dx.doi.org/10.37001/ripem.v13i3.3610" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>SOUZA, S. S. ; ANDRADE, A. G. ; REIS, N. F.. <b>INTELIGÊNCIA ARTIFICIAL: ESCOPO CONCEITUAL E APLICABILIDADE NAS ORGANIZAÇÕES</b>. <font color=#330066>Revista Inovação Social</font>. v. 5, p. 1-11, issn: 2674-8185, 2023. <a href="http://dx.doi.org/10.5281/zenodo.7989817" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>TRINDADE, L. H.; SILVA, M. F.. <b>Pioneiros: Modelo inovador de formação ética para jovens adultos escoteiros</b>. <font color=#330066>REVISTA DE INOVAÇÃO TECNOLÓGICA</font>. v. 13, p. 46, issn: 2179-2895, 2023.</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>VIVANCO, FRANKLIN J. ; FRITSCH, AMILSON R. ; GARCÍA-OROZCO, ARNOL D. ; MORENO-ARMIJOS, MICHELLE A. ; TELLES, GUSTAVO D. ; TAVARES, PEDRO E. S. ; BAGNATO, VANDERLEI S.. <b>Energy cascade in a far-from-equilibrium inhomogeneous trapped Bose gas obtained by power spectrum analysis</b>. <font color=#330066>European Physical Journal-Special Topics</font>. v. 232, p. 3467-3470, issn: 1951-6355, 2023. <a href="http://dx.doi.org/10.1140/epjs/s11734-023-00983-6" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AGUIAR, J. L. A. ; IMAFUKU, ROBERTO SEIDI ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>O Uso do GeoGebra Classroom na Elaboração de Conjecturas no Estudo de Funções Trigonométricas: uma Investigação com Licenciandos em Matemática</b>. <font color=#330066>PERSPECTIVAS DA EDUCAÇÃO MATEMÁTICA</font>. v. 15, p. 1, issn: 2359-2842, 2022.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANDRADE, A. G. ; ALMEIDA SILVA, LANA CRISTINA DE ; SOUZA, J. R. S. ; SOUZA, J. R. S. ; SIQUEIRA, M. A. ; LIMA, R. M. ; GOMES, P. S. ; REIS, N. F.. <b>QUEIJO COM GOIABADA: Do Individual para o coletivo na construção da ética em pesquisa</b>. <font color=#330066>Revista Inovação Social</font>. v. 4, p. 53-63, issn: 2674-8185, 2022. <a href="http://dx.doi.org/10.5281/zenodo.7646354" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANDRADE, A. G. ; SILVA, L. C. A. ; SANTOS, T. S. ; SOUZA, J. R. S. ; SOUZA, J. R. S. ; SIQUEIRA, M. A. ; LIMA, R. M. ; REIS, N. F.. <b>MACRODIMENSÕES DA ÉTICA EM PESQUISA: Passo a Passo da Plataforma Brasil</b>. <font color=#330066>Revista Inovação Social</font>. v. 4, p. 72-82, issn: 2674-8185, 2022. <a href="http://dx.doi.org/10.5281/zenodo.7646426" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, D. C. ; QUEIROZ, Z. F.. <b>Análise de desenvolvimento temático acerca da Educação Ambiental</b>. <font color=#330066>REVISTA ELETRÔNICA DO MESTRADO EM EDUCAÇÃO AMBIENTAL</font>. v. 39, p. 140-163, issn: 1517-1256, 2022. <a href="http://dx.doi.org/10.14295/remea.v39i3.14597" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson; PORTO, B. S.. <b>Perfil preliminar de designers de jogos do Brasil</b>. <font color=#330066>ANTARES: LETRAS E HUMANIDADES</font>. v. 14, p. 272-306, issn: 1984-4921, 2022. <a href="http://dx.doi.org/10.18226/19844921.v14.n32.11" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ANTUNES, Jeferson; PORTO, B. S. ; QUEIROZ, Z. F.. <b>Análise do desenvolvimento temático de estudos relacionando educação e covid-19</b>. <font color=#330066>EDUCAÇÃO E PESQUISA</font>. v. 48, p. 1-21, issn: 1678-4634, 2022. <a href="http://dx.doi.org/10.1590/s1678-4634202248253710por" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ANTUNES, Jeferson; RODRIGUES, E. S. J.. <b>Análise do desenvolvimento temático dos estudos sobre games na educação</b>. <font color=#330066>EDUCAÇÃO E PESQUISA</font>. v. 48, p. 1-22, issn: 1678-4634, 2022. <a href="http://dx.doi.org/10.1590/s1678-4634202248240020por" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BARBOSA, R.; FEITOSA, WILLIAN RAMALHO ; RODRIGUES, Eliana Amaral ; SAMPAIO, Fernanda. <b>POLÍTICAS EDUCACIONAIS NA PERSPECTIVA DA EDUCAÇÃO ESPECIAL: PROPOSTA DE UM PORTAL PARA GESTÃO DE ALTAS HABILIDADES E SUPERDOTAÇÃO</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 40-52, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BARBOSA, R.; MENDONÇA, F. ; DAMIÃO, Rhayanne Cavalcante ; SOUZA, Mariana Macedo de. <b>O CENÁRIO DAS FAVELAS NO MUNICÍPIO DE SÃO PAULO</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 28-39, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BARBOSA, R.; MENDONÇA, F. ; PATROCÍNIO, Flora Oyama ; SANTOS, Sara Rosa dos ; LIMA, Silene Jucelino de ; FEITOSA, WILLIAN RAMALHO. <b>OPERACIONALIZAÇÃO DO ATENDIMENTO NO PRONTO-SOCORRO: UM ESTUDO DE CASO EM UM HOSPITAL PÚBLICO-PRIVADO</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 53-64-64, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>ROSSI, F. L.; LIMA, I. T. S. E. ; BARBOSA, R. ; SOUZA, R.. <b>Economia Circular no Brasil: Estudo de caso em um Centro de Recondicionamento de Computadores</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 109-123, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>ROSSI, FERNANDO LUIS; LIMA, I. ; SILVEIRA, L. ; BARBOSA, R. ; SOUZA, R.. <b>ECONOMIA CIRCULAR: CONCEITOS E PERSPECTIVAS NA SOCIEDADE CONTEMPORÂNEA</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 79-94, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>BARBOSA, R.; ROSSI, F. ; LIMA, Igor ; SOUZA, Roseane. <b>ECONOMIA CIRCULAR E POLÍTICAS PÚBLICAS: LEGISLAÇÃO E DESAFIOS</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 95-108, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>BARBOSA, R.; SANTOS, Lenadro José dos ; MENDONÇA, F.. <b>MIGRANTES E REFUGIADOS: O CASO DO APLICATIVO MANUAL DO IMIGRANTE NA CIDADE DE SÃO PAULO</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 1-13, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>BARROS, ANA PAULA RODRIGUES MAGALHÃES DE; MALTEMPI, MARCUS VINICIUS. <b>Um Olhar para a (Re)Constituição de Práticas Culturais de Estudantes com a Internet em um Ambiente Híbrido</b>. <font color=#330066>Bolema (Rio Claro)</font>. v. 36, p. 602-624, issn: 0103-636X, 2022. <a href="http://dx.doi.org/10.1590/1980-4415v36n73a01" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>BARROS, C. B. ; OLIVEIRA, V. S. ; JOSEPH, A. ; ANDRADE, A. G. ; REIS, N. F.. <b>Gestão Hídrica: uma nova dimensão para a administração</b>. <font color=#330066>RESEARCH, SOCIETY AND DEVELOPMENT</font>. v. 11, p. 1-13, issn: 2525-3409, 2022. <a href="http://dx.doi.org/10.33448/rsd-v11i4.27677" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>BASANTE, J. G.; SILVA, M. T. ; ARAUJO, L. A. M. M.. <b>Competências dos Engenheiros na Indústria 4.0</b>. <font color=#330066>RESEARCH, SOCIETY AND DEVELOPMENT</font>. v. 1, p. e24211830695, issn: 2525-3409, 2022.</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>BISCAINO, LEONARDO ; VIEIRA, WILLIAM ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, Emanoel Fabiano Menezes. <b>interação de aspectos algorítmicos, intuitivos e formais na resolução de questões sobre áreas e perímetros</b>. <font color=#330066>Revista Brasileira de Educação em Ciências e Educação Matemática</font>. v. 6, p. 344-365, issn: 2594-9179, 2022. <a href="http://dx.doi.org/10.48075/rebecem.2.v.6.n.3.29086" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>CIZAURRE GUIRAU, MARCELO. <b>Distopia como curadoria de ausências e impasses da imaginação utópica em Station Eleven</b>. <font color=#330066>REVISTA X</font>. v. 17, p. 1197-1223, issn: 1980-0614, 2022. <a href="http://dx.doi.org/10.5380/rvx.v17i4.86950" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>CORTESE, TATIANA TUCUNDUVA PHILIPPI ; ALMEIDA, JAIRO FILHO SOUSA DE ; BATISTA, GISELI QUIRINO ; STOROPOLI, JOSÉ EDUARDO ; LIU, AARON ; YIGITCANLAR, TAN. <b>Understanding Sustainable Energy in the Context of Smart Cities: A PRISMA Review</b>. <font color=#330066>Energies</font>. v. 15, p. 2382, issn: 1996-1073, 2022. <a href="http://dx.doi.org/10.3390/en15072382" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>COSTA, L. B. ; VIEIRA, W. ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, E. F. M.. <b>O DESENVOLVIMENTO DOS TRÊS MUNDOS DA MATEMÁTICA NO ESTUDO DE FUNÇÕES TRIGONOMÉTRICAS COM O GEOGEBRA</b>. <font color=#330066>Ciência em Evidência</font>. v. 2, p. 91-104, issn: 2763-5457, 2022.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>DA COSTA, LAIS SANTIAGO ; Munhoz, Igor Polezi ; PEREIRA, LUCIANA ; SANTOS AKKARI, ALESSANDRA CRISTINA. <b>Assessing the digital maturity of micro and small enterprises: a focus on an emerging market</b>. <font color=#330066>PROCEDIA COMPUTER SCIENCE</font>. v. 200, p. 175-184, issn: 1877-0509, 2022. <a href="http://dx.doi.org/10.1016/j.procs.2022.01.216" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>FEITOSA, W. R. ; ROSSI, F. L. ; LIMA, I. T. S. E. ; FERRO, R. ; SILVEIRA, L. L. ; ROSSETI, W.. <b>PROJETO CATANDO HISTÓRIAS ? INTEGRANDO O CONHECIMENTO SOBRE LOGÍSTICA REVERSA COM A HISTÓRIA DA CIDADE DE SÃO PAULO</b>. <font color=#330066>REVISTA LICEU ON-LINE</font>. v. 12, p. 146-160, issn: 2179-5975, 2022.</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Maurício José Serpa Barros de Moura ; FEITOSA, W. R. ; BARBOSA, R. ; ROSSI, F. L.. <b>O INSTRUMENTO DO MICROCRÉDITO: LEALDADE DO CLIENTE E IMPACTOS SOCIAIS</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 14-27, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>FERRAZ, R. G. ; MARQUES, V. G. ; SOUZA, A. B. S. E. ; FERREIRA, R. S. ; FERRUZZI, A. J.. <b>Cyber Security Information: aplicação web para a democratização do acesso aos conteúdos relacionados à cibersegurança</b>. <font color=#330066>Qualif</font>. v. 10, p. 37-56, issn: 2595-2277, 2022.</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>GARCIA, DRIELLY DE PAULA ; Munhoz, Igor Polezi ; STOPIGLIA, FELIPE SILVEIRA ; Akkari, Alessandra Cristina Santos. <b>Assessment of safety culture maturity in a food industry: a comparison between manufacturing and administration sector</b>. <font color=#330066>Revista Científica Hermes</font>. v. 32, p. 182-201, issn: 2175-0556, 2022. <a href="http://dx.doi.org/10.21710/rch.v32i.654" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>GARCÍA-OROZCO, A. D. ; MADEIRA, L. ; MORENO-ARMIJOS, M. A. ; FRITSCH, A. R. ; Tavares, P. E. S. ; CASTILHO, P. C. M. ; CIDRIM, A. ; ROATI, G. ; BAGNATO, V. S.. <b>Universal dynamics of a turbulent superfluid Bose gas</b>. <font color=#330066>PHYSICAL REVIEW A</font>. v. 106, p. 023314, issn: 2469-9926, 2022. <a href="http://dx.doi.org/10.1103/physreva.106.023314" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>KRIZEK, JOÃO PEDRO OCANHA ; ALVES, SABRINA LEITE ; SANTOS, LUCIANA CAVALCANTI MAIA. <b>Estado da arte da utilização de geotecnologias no ensino de Ecologia</b>. <font color=#330066>Revista de Ensino de Biologia da SBEnBio</font>. v. 15, p. 290-313, issn: 2763-8898, 2022. <a href="http://dx.doi.org/10.46667/renbio.v15i1.674" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>KRIZEK, JOÃO PEDRO OCANHA ; SANTOS, LUCIANA CAVALCANTI MAIA. <b>Protocolo metodológico para obtenção dos valores de radiância, emissividade e temperatura de superfície de imagens Landsat 8 utilizando LEGAL</b>. <font color=#330066>REVISTA BRASILEIRA DE GEOGRAFIA FÍSICA</font>. v. 15, p. 3077-3092, issn: 1984-2295, 2022. <a href="http://dx.doi.org/10.26848/rbgf.v15.6.p3077-3092" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>LIRA, D. N. S. S. ; GONZAGA, J. M. ; SOUZA, L. R. S. ; SILVA, N. M. ; SANTOS, T. K. B. ; ROSSETI, W.. <b>Transporte público e mobilidade na cidade de São Paulo: perspectivas da comunidade do IFSP - Pirituba</b>. <font color=#330066>Qualif - Revista Acadêmica Ensino de Ciências e Tecnologias</font>. v. 11, p. 68-79, issn: 2595-2277, 2022.</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>MENDONÇA, F. ; BARBOSA, R. ; ROSSI, F. ; SILVA, Hamilton Carvalho da ; ROSSETI, W.. <b>RISCO ENERGÉTICO NAS CIDADES: AUMENTANDO A RESILIÊNCIA PELO CONTROLE DAS OPERAÇÕES</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 65-78, issn: 2177-3246, 2022.</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>MILAGRE, CINTIA DUARTE DE FREITAS ; DO AMARAL, BRUNO SERGIO ; BATISTA JUNIOR, JO'O MARCOS ; VILELA, ADRIANA FERREIRA LOPES ; CARDOSO, CARMEN L'CIA ; MILAGRE, HUMBERTO MARCIO SANTOS. <b>Levetiracetam analogs: chemoenzymatic synthesis, absolute configuration assignment  and evaluation of cholinesterase inhibitory activities</b>. <font color=#330066>Ecl¿tica Qu¿mica Journal</font>. v. 47, p. 17-35, issn: 1678-4618, 2022. <a href="http://dx.doi.org/10.26850/1678-4618eqj.v47.2.2022.p17-35" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>OLIVEIRA, Janaina ; ROMAGNOLI, A. J.. <b>INDICADORES DE ATENÇÃO GOVERNAMENTAL E AGENDA EDUCACIONAL: UMA ANÁLISE DOS RELATÓRIOS DAS CONFERÊNCIAS NACIONAIS DE EDUCAÇÃO (2010-2018)</b>. <font color=#330066>Desenvolvimento, Fronteiras e Cidadania</font>. v. 6, p. 48-66, issn: 2594-5815, 2022.</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>OLIVEIRA, L. M. ; ABRITTA, C. S. ; BARRETO, Krícia Helena. <b>O uso de dêixis por um afásico e a manutenção da intersubjetividade no contexto da telefonoaudiologia</b>. <font color=#330066>VEREDAS - REVISTA DE ESTUDOS LINGUÍSTICOS</font>. v. 26, p. 1-23, issn: 1982-2243, 2022. <a href="http://dx.doi.org/10.34019/1982-2243.2022.v26.38533" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>PARDO, F. S. <b>Discursos de ódio e liberdade de expressão em ambientes digitais: implicações sociais e legais</b>. <font color=#330066>REVISTA SOLETRAS</font>. v. 1, p. 178-196, issn: 2316-8838, 2022.</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Pissardini, Paulo E.; BUENO, M. A. O. ; ALVES, K. H. ; MONTE, L. G. M.. <b>RFID and Industry 4.0: The technology's Role on Shop Floor Control Operationalization</b>. <font color=#330066>RISUS. Journal on Innovation and Sustainability</font>. v. 13, p. 174-185, issn: 2179-3565, 2022. <a href="http://dx.doi.org/10.23925/2179-3565.2022v13i4p174-185" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>PRADO, Maria Ligia Coelho ; SANTOS JUNIOR, VALDIR DONIZETE DOS. <b>Apresentação</b>. <font color=#330066>REVISTA ELETRÔNICA DA ANPHLAC</font>. v. 22, p. 1-10, issn: 1679-1061, 2022. <a href="http://dx.doi.org/10.46752/anphlac.33.2022.4085" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>RIBEIRO, LEILSON DE OLIVEIRA ; FREITAS, BEATRIZ PEREIRA DE ; LORENTINO, CAROLLINE MARGOT ALBANEZ ; FROTA, HELOISA FREIRE ; SANTOS, ANDRÉ LUIS SOUZA DOS ; MOREIRA, DAVYSON DE LIMA ; DO AMARAL, BRUNO SÉRGIO ; JUNG, ELIANE PRZYTYK ; KUNIGAMI, CLAUDETE NORIE. <b>Umbu Fruit Peel as Source of Antioxidant, Antimicrobial and α-Amylase Inhibitor Compounds</b>. <font color=#330066>MOLECULES</font>. v. 27, p. 410, issn: 1420-3049, 2022. <a href="http://dx.doi.org/10.3390/molecules27020410" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Rosa, Alexandre Machado; NUNES, EVERARDO DUARTE. <b>Revisitando a controvérsia sobre raça, eugenia e Educação Física na obra de Fernando de Azevedo: uma nova visão sobre miscigenação e seu papel na construção de uma nação</b>. <font color=#330066>CADERNOS DE HISTÓRIA DA EDUCAÇÃO (ONLINE)</font>. v. 21, p. e122, issn: 1982-7806, 2022. <a href="http://dx.doi.org/10.14393/che-v21-2022-122" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>ROSSI, FERNANDO LUIS; NAGANO, MARCELO SEIDO. <b>Beam search-based heuristics for the mixed no-idle flowshop with total flowtime criterion</b>. <font color=#330066>OR SPECTRUM</font>. v. 1, p. 1, issn: 0171-6468, 2022. <a href="http://dx.doi.org/10.1007/s00291-022-00678-9" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>O Bicentenário para além da nação</b>. <font color=#330066>REVISTA BRASILEIRA DE EDUCAÇÃO BÁSICA</font>. v. 6, p. 1, issn: 2526-1126, 2022.</td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Feminismo teen e religiosidade: proximidades e afastamentos na conformação de uma ética feminista.</b>. <font color=#330066>Revista Caderno Espaço Feminino do Núcleo de Estudos de Gênero e Pesquisa sobre a Mulher</font>. v. 35, p. 461-481, issn: 1981-3082, 2022.</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Resenha MISKOLCI, R. Batalhas Morais. Política Identitária Na Esfera Pública Técnico-Midiatizada. Belo Horizonte: Autêntica Editora, 2021, 112p</b>. <font color=#330066>CSONLINE - REVISTA ELETRÔNICA DE CIÊNCIAS SOCIAIS</font>. v. 34, p. 250, issn: 1984-2140, 2022.</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>FEMINISTA, EU? RESENHA DO LIVRO DE HELOISA BUARQUE DE HOLLANDA</b>. <font color=#330066>REVISTA FEMINISMOS</font>. v. 10, p. 01-08, issn: 2317-2932, 2022.</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>SANTOS, E. V. N. ; VIEIRA, W. ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, E. F. M.. <b>UMA INVESTIGAÇÃO DO USO DO GEOGEBRA 3D NO ESTUDO DE PROPRIEDADES DE POLIEDROS</b>. <font color=#330066>Ciência em Evidência</font>. v. 2, p. 3-16, issn: 2763-5457, 2022.</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>SANTOS, L.C.M.; BOOS, H. ; SANO, E. E. ; FREITAS, D. ; PINHEIRO, M. A.A.. <b>Management and Conservation of the Land Crab Cardisoma guanhumi (Crustacea: Gecarcinidae) based on Environmental and Fishery Factors: A Case Study in Brazil</b>. <font color=#330066>WETLANDS ECOLOGY AND MANAGEMENT</font>. v. 30, p. 389-403, issn: 0923-4861, 2022. <a href="http://dx.doi.org/10.1007/11273-022-09868-2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>SILVA, D. N. ; MAIA, J. O.. <b>Digital rockets: Resisting necropolitics through defiant languaging and artivism</b>. <font color=#330066>Discourse Context & Media</font>. v. 49, p. 100630, issn: 2211-6958, 2022. <a href="http://dx.doi.org/10.1016/j.dcm.2022.100630" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>SILVA, EUFRIDA PEREIRA DA. <b>-Noite de almirante- de Machado de Assis: um povo de subúrbio</b>. <font color=#330066>VIA ATLÂNTICA (USP)</font>. v. 1, p. 230-252, issn: 1516-5159, 2022. <a href="http://dx.doi.org/10.11606/va.i41.189859" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>TRINDADE, LUCIANO HENRIQUE. <b>DIAGNÓSTICO DA LITERATURA SOBRE GESTÃO DE PESSOAS UTILIZADA EM CURSOS DE GRADUAÇÃO EM ADMINISTRAÇÃO</b>. <font color=#330066>CIÊNCIAS SOCIAIS EM PERSPECTIVA</font>. v. 21, p. 24-36, issn: 1981-4747, 2022. <a href="http://dx.doi.org/10.48075/revistacsp.v21i40.26115" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, A. G. ; FERREIRA, E. S. ; SILVA, L. C. A. ; SANTOS, T. S. ; REIS, N. F.. <b>Quality in Distance Education: a polysemic concept</b>. <font color=#330066>RESEARCH, SOCIETY AND DEVELOPMENT</font>. v. 10, p. 1-9, issn: 2525-3409, 2021. <a href="http://dx.doi.org/10.33448/rsd-v10i13.20910" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Andrade, Alequexandre Galvez de ; AMORIM, FERNANDO RODRIGUES DE ; Reis, Nélio Fernando dos. <b>Cenários Prospectivos para a Inovação Social</b>. <font color=#330066>RESEARCH, SOCIETY AND DEVELOPMENT</font>. v. 10, p. e35810515111-15, issn: 2525-3409, 2021. <a href="http://dx.doi.org/10.33448/rsd-v10i5.15111" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; RODRIGUES, E. S. J.. <b>Gamificando metodologias ativas no ensino superior: práticas de formação inicial em pesquisa científica</b>. <font color=#330066>CADERNOS DE PESQUISA: PENSAMENTO EDUCACIONAL (CURITIBA. ONLINE)</font>. v. 16, p. 89-113, issn: 2175-2613, 2021. <a href="http://dx.doi.org/10.35168/2175-2613.UTP.pens_ed.2021.Vol16.N43.pp89-113" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Arrais, Estêvão Lima ; FERREIRA, J. M. ; ANTUNES, Jeferson. <b>O PROTAGONISMO ESTUDANTIL NA EXTENSÃO UNIVERSITÁRIA: A EXPERIÊNCIA DO NÚCLEO DE ATUALIZAÇÃO PÚBLICA NA UNIVERSIDADE FEDERAL DO CARIRI</b>. <font color=#330066>REVISTA CONEXÃO UEPG</font>. v. 17, p. 1-12, issn: 2238-7315, 2021. <a href="http://dx.doi.org/10.5212/rev.conexao.v.17.16859.009" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BARBOSA, R.; FEITOSA, WILLIAN RAMALHO. <b>Generation Z and technologies on museums ? Its influence on perceptions about Quality, Arousal and E-WOM Intentions</b>. <font color=#330066>MARKETING & TOURISM REVIEW</font>. v. 5, p. 10-20, issn: 2525-8176, 2021.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BARRETO, Krícia Helena; ABRITTA, C. S. ; HOUSE, Juliane ; KÁDÁR, Daniel. <b>On the Theory of Ritual Frame Indicating Expressions: a conversation with Juliane House and Daniel Kádár, discussing Goffman?s ideas</b>. <font color=#330066>VEREDAS - REVISTA DE ESTUDOS LINGUÍSTICOS</font>. v. 25, p. 43-53, issn: 1982-2243, 2021. <a href="http://dx.doi.org/10.34019/1982-2243.2021.v25.34095" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BRUNO, R. D. <b>O processo de construção do PIBID 2018 no âmbito do curso de Licenciatura em Física do campus Registro do IFSP</b>. <font color=#330066>Revista Cactácea</font>. v. 1, p. 6-13, issn: 2764-0647, 2021.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CARVALHO, ALEXIA BEZERRA DE ; GUIMARÃES, RITA DE CÁSSIA DA COSTA ; VIEIRA, WILLIAM ; PEREIRA, Emanoel Fabiano Menezes ; IMAFUKU, ROBERTO SEIDI. <b>Sobre dificuldades de ingressantes no ensino médio na compreensão de números racionais</b>. <font color=#330066>FORSCIENCE</font>. v. 9, p. e00878, issn: 2318-6356, 2021. <a href="http://dx.doi.org/10.29069/forscience.2021v9n1.e878" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CARVALHO, SÉRGIO RESENDE ; PADILHA, ALEXANDRE ROCHA SANTOS ; OLIVEIRA, CATHANA FREITAS DE ; PASCHOALOTTE, LEANDRO MÓDOLO ; CUNHA, GUSTAVO TENÓRIO. <b>Sistemas públicos universais de saúde e a experiência cubana em face da pandemia de Covid-19</b>. <font color=#330066>Interface (Botucatu. Online)</font>. v. 25, p. 1-16, issn: 1807-5762, 2021. <a href="http://dx.doi.org/10.1590/interface.210145" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DA SILVA, ISAAC JESUS ; PERICO, D. H. ; HOMEM, Thiago Pedro Donadon ; DA COSTA BIANCHI, REINALDO AUGUSTO. <b>Deep Reinforcement Learning for a Humanoid Robot Soccer Player</b>. <font color=#330066>JOURNAL OF INTELLIGENT & ROBOTIC SYSTEMS</font>. v. 102, p. 69, issn: 0921-0296, 2021. <a href="http://dx.doi.org/10.1007/s10846-021-01333-1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DO AMARAL, BRUNO S.; DA SILVA, FERNANDA B. ; LEME, GABRIEL MAZZI ; SCHMITZ, LETÍCIA S.S. ; JIMENEZ, PAULA C. ; MARTINS, ROBERTO CARLOS CAMPOS ; CASS, QUEZIA B. ; VALVERDE, ALESSANDRA L.. <b>Integrated analytical workflow for chromatographic profiling and metabolite annotation of a cytotoxic Phorbas amaranthus extract</b>. <font color=#330066>JOURNAL OF CHROMATOGRAPHY B-ANALYTICAL TECHNOLOGIES IN THE BIOMEDICAL AND LIFE SCIENCES</font>. v. 1174, p. 122720, issn: 1570-0232, 2021. <a href="http://dx.doi.org/10.1016/j.jchromb.2021.122720" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DO AMARAL, BRUNO S.; DA SILVA, LARISSA R.G. ; VALVERDE, ALESSANDRA L. ; DE SOUSA, LORENA R.F. ; SEVERINO, RICHELE P. ; DE SOUZA, DULCE H.F. ; CASS, QUEZIA B.. <b>Phosphoenolpyruvate carboxykinase from T. cruzi magnetic beads affinity-based screening assays on crude plant extracts from Brazilian Cerrado</b>. <font color=#330066>JOURNAL OF PHARMACEUTICAL AND BIOMEDICAL ANALYSIS</font>. v. 193, p. 113710, issn: 0731-7085, 2021. <a href="http://dx.doi.org/10.1016/j.jpba.2020.113710" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>DUARTE, P. ; FEITOSA, W. R. ; SILVA, S. C. E. ; SEBASTIAO, R. A.. <b>Are business students more financially literate? Evidence of differences in financial literacy amongst Portuguese college students</b>. <font color=#330066>Young Consumers</font>. v. ahead, p. ahead of print-ahead of print, issn: 1747-3616, 2021. <a href="http://dx.doi.org/10.1108/YC-12-2020-1264" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FAGUNDES, THAYSSA S.F. ; MACEDO, ARTHUR L. ; RIGATO, DHIEGO B. ; AMARAL, BRUNO S. DO ; JIMENEZ, PAULA CHRISTINE ; COSTA-LOTUFO, LETÍCIA V. ; PEREIRA, RENATA F.A. ; AGUIAR-ALVES, FÁBIO ; SOARES, ANGÉLICA R. ; VASCONCELOS, THATYANA R.A. ; CASS, QUEZIA B. ; VALVERDE, ALESSANDRA L.. <b>The Brazilian octocoral Phyllogorgia dilatata as a source of cytotoxic compounds</b>. <font color=#330066>ANAIS DA ACADEMIA BRASILEIRA DE CIENCIAS</font>. v. 93, p. e20200686, issn: 0001-3765, 2021. <a href="http://dx.doi.org/10.1590/0001-3765202120200686" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>FEITOSA, W. R.; LOURENÇO, C. E. ; REZENDE, L. H. ; SUNAGO, N.. <b>A quasi-experimental approach to analyzing sexual appeal and gender in advertising ? evidences from Brazil</b>. <font color=#330066>Market-Trziste</font>. v. 33, p. 67-80, issn: 0353-4790, 2021. <a href="http://dx.doi.org/10.22598/mt/2021.33.spec-issue.67" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>FLEIRA, R. C.; FERNANDES, S. H. A. A.. <b>RELAÇÕES ENTRE CONCEPÇÕES E PRÁTICAS DE PROFESSORES DE MATEMÁTICA EM CLASSES INCLUSIVAS</b>. <font color=#330066>ARETÉ (MANAUS)</font>. v. 15, p. 127-140, issn: 1984-7505, 2021.</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>FLEIRA, ROBERTA CAETANO; FERNANDES, SOLANGE HASSAN AHMAD ALI. <b>As vozes daqueles envolvidos na inclusão de aprendizes autistas nas aulas de Matemática</b>. <font color=#330066>CIÊNCIA & EDUCAÇÃO (ONLINE)</font>. v. 27, p. 1-13, issn: 1980-850X, 2021. <a href="http://dx.doi.org/10.1590/1516-731320210070" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>GUGLIELMI, R. I. S. ; SANTOS, S. R. ; RODRIGUES, M. A. F. ; FREITAS, L. S. B. ; ROSSETI, W. ; FEITOSA, W. R.. <b>ACESSIBILIDADE E MOBILIDADE URBANA NAS PRINCIPAIS CIDADES INTELIGENTES BRASILEIRAS</b>. <font color=#330066>Qualif - Revista Acadêmica de Ensino de Ciências e Tecnologia do IFSP - Câmpus Cubatão</font>. v. 9, p. 33-49, issn: 2595-2277, 2021.</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>GUIMARAES, R. C. C. ; MENEZES, J. S. ; IMAFUKU, ROBERTO SEIDI ; VIEIRA, W. ; PEREIRA, E. F. M.. <b>Uma análise das dificuldades de ingressantes no Ensino Médio na resolução de questões sobre área e perímetro.</b>. <font color=#330066>RECeT - Revista de Educação, Ciência e Tecnologia</font>. v. 2, p. 04-24, issn: 2675-9098, 2021.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>GUIMARAES, R. C. C. ; VIEIRA, W. ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, E. F. M.. <b>Uso do  smartphone  na investigação sobre propriedades de  quadriláteros notáveis</b>. <font color=#330066>UNIÓN (SAN CRISTOBAL DE LA LAGUNA)</font>. v. 17, p. 1-20, issn: 1815-0640, 2021.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>HORTA, PATRICIA. <b>O gozo do proibido: mulheres em Musa Praguejadora</b>. <font color=#330066>Palimpsesto</font>. v. 20, p. 427-450, issn: 1809-3507, 2021. <a href="http://dx.doi.org/10.12957/palimpsesto.2021.57453" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>OLIVEIRA-TEIXEIRA, FABIO ; DONADON-HOMEM, THIAGO PEDRO ; PEREIRA-JUNIOR, ALEXANDRE. <b>Aplicación de inteligencia artificial para monitorear el uso de mascarillas de protección</b>. <font color=#330066>Revista colombiana de estudios militares y estratégicos</font>. v. 19, p. 205-222, issn: 1900-6586, 2021. <a href="http://dx.doi.org/10.21830/19006586.725" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>KRIZEK, J. P. O. ; MULLER, M. V. D. V. ; SANTOS, L. C. M.. <b>Uma compreensão sociobiológica do comportamento humano durante a pandemia de COVID-19</b>. <font color=#330066>REGRASP</font>. v. 6, p. 138-161, issn: 2526-1045, 2021.</td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>KRIZEK, J. P. O. ; SANTOS, L. C. M.. <b>Protocolo metodológico para obtenção dos valores de reflectância e de NDVI de imagens Landsat 8/OLI utilizando LEGAL</b>. <font color=#330066>REVISTA BRASILEIRA DE GEOGRAFIA FÍSICA</font>. v. 14, p. 869-880, issn: 1984-2295, 2021. <a href="http://dx.doi.org/10.26848/rbgf.v14.2.p869-880" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>KUMAGAI, B. H. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Ergonomia e qualidade de vida no trabalho: um estudo de caso no agronegócio brasileiro</b>. <font color=#330066>Revista Científica Hermes</font>. v. 30, p. 224-241, issn: 2175-0556, 2021. <a href="http://dx.doi.org/10.21710/rch.v30i0.608" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>LEITE, M. C. S. <b>ENTRE A RUA E A CALÇADA: A PRESENÇA DE CRIANÇAS NO PROCESSO DE URBANIZAÇÃO DA CIDADE DE SÃO PAULO</b>. <font color=#330066>HUMANIDADES & INOVAÇÃO</font>. v. 8, p. 47-59, issn: 2358-8322, 2021.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Pessoalidade e subjetividade do estudante-leitor na escolarização do texto literário</b>. <font color=#330066>RECeT</font>. v. 2, p. 106-125, issn: 2675-9098, 2021.</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>MARTINS NETO, I. A.; ALMEIDA, A. L. C.. <b>Zonas culturais híbridas em práticas de letramento escolar</b>. <font color=#330066>Signum: Estudos da Linguagem</font>. v. 24, p. 11-29, issn: 2237-4846, 2021. <a href="http://dx.doi.org/10.5433/2237-4876.2021v24n3p11" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>MARTINS, MARIA JANDIRA DE BENGOZI NAVA ; ARAÚJO, JÉSSICA DE ; Pissardini, Paulo Eduardo. <b>A Influência Do Cuidador No Tratamento A Partir Do Uso da Cannabis Sativa Em Idosos Portadores da Doença de Alzheimer</b>. <font color=#330066>Revista Científica Multidisciplinar Núcleo do Conhecimento</font>. v. 3, p. 194-219, issn: 2448-0959, 2021. <a href="http://dx.doi.org/10.32749/nucleodoconhecimento.com.br/saude/cannabis-sativa" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>MARTINS, R.L. ; DAMM, D.D. ; VOLU, R.M. ; PINHEIRO, R.A. ; ROSA, F.M. ; TRAVA-AIROLDI, V.J. ; DE VASCONCELOS, G. ; BARQUETE, D.M. ; CORAT, E.J.. <b>Laser cladding of vanadium carbide interlayer for CVD diamond growth on steel substrate</b>. <font color=#330066>SURFACE & COATINGS TECHNOLOGY</font>. v. 421, p. 127387, issn: 0257-8972, 2021. <a href="http://dx.doi.org/10.1016/j.surfcoat.2021.127387" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>MENEGHETTI, DOUGLAS DE RIZZO ; Homem, Thiago Pedro Donadon ; DE OLIVEIRA, JONAS HENRIQUE RENOLFI ; SILVA, ISAAC JESUS DA ; PERICO, DANILO HERNANI ; BIANCHI, REINALDO AUGUSTO DA COSTA. <b>Detecting Soccer Balls with Reduced Neural Networks</b>. <font color=#330066>JOURNAL OF INTELLIGENT & ROBOTIC SYSTEMS</font>. v. 101, p. 53, issn: 0921-0296, 2021. <a href="http://dx.doi.org/10.1007/s10846-021-01336-y" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>MURIANA, M. B. ; COSTA, S. L. V. ; MELO, A. M.. <b>Design educacional complexo: Percepções sobre sua contribuição para o ensino-aprendizagem de línguas</b>. <font color=#330066>THE ESPECIALIST</font>. v. 42, p. 1-16, issn: 2318-7115, 2021. <a href="http://dx.doi.org/10.23925/2318-7115.2021v42i1a6" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>NORMANHA, Ricardo. <b>As políticas de expansão do Ensino Superior no Brasil e a formação em cinema e audiovisual</b>. <font color=#330066>DIALOGIA</font>. v. 1, p. e19326, issn: 1983-9294, 2021. <a href="http://dx.doi.org/10.5585/dialogia.n38.19326" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>OLIVEIRA, CLAUDIA ; SANTANA, KAMILI OLIVEIRA ; BASILE, FELIPE RODRIGUES MARTINEZ ; Homem, Thiago Pedro Donadon. <b>PERCEPÇÕES DA APLICAÇÃO DO PROJETO -EMPODERAMENTO FEMININO ATRAVÉS DA GERAÇÃO DE RENDA PELAS VENDAS-</b>. <font color=#330066>REVISTA EXTENSÃO & CIDADANIA</font>. v. 9, p. 46/15-63, issn: 2319-0566, 2021. <a href="http://dx.doi.org/10.22481/recuesb.v9i15.8638" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>OLIVEIRA, M. T. M. ; FEITOSA, W. R. ; MENDONCA, F. ; ROSSETI, W. ; BARBOSA, R. ; ROSSI, FERNANDO LUIS. <b>Overbooking: Uma Gestão de Conflitos Operacionais de uma Companhia Aérea</b>. <font color=#330066>revista de inovação social</font>. v. 3, p. 1-17, issn: 2674-8185, 2021.</td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>PARDO, F. S.; MARINS, L. C.. <b>Literatura e(m) mídias: práticas pedagógicas (in)disciplinadas?</b>. <font color=#330066>Letras & Letras (UFU)</font>. v. 37, p. 56-74, issn: 1981-5239, 2021. <a href="http://dx.doi.org/10.14393/LL63-v37n1-2021-04" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>Dinheiro Traz Felicidade, Até um Limite</b>. <font color=#330066>Revista Inovação Social</font>. v. 3, p. 1-11, issn: 2674-8185, 2021. <a href="http://dx.doi.org/10.5281/zenodo.5548165" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>RIBEIRO, J. M. O. ; BATISTA, M. C. S. ; ALVES, R. ; CASTRO, Moacir Silva de ; COSTA, Tarcísio C.. <b>?UMA PROPOSTA DE ENSINO DE FÍSICA PARA COMUNIDADES QUILOMBOLAS DO VALE DO RIBEIRA??</b>. <font color=#330066>Brazil Journal of Developement</font>. v. 7, p. 51346-51359, issn: 2525-8761, 2021.</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>RIBEIRO, J. M. O. ; BATISTA, M. C. S. ; SILVA DE CASTRO ; COSTA, T. C. ; ALVES, R. C. B.. <b>Uma Proposta de Ensino de Física para Comunidades Quilombolas do Vale do Ribeira</b>. <font color=#330066>Brazilian Journal of Development</font>. v. 07, p. 51346-51359, issn: 2525-8761, 2021. <a href="http://dx.doi.org/10.34117/bjdv7n5-501" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>ROSSI, F. L.; LIMA, I. T. S. ; SILVEIRA, L. L. ; BARBOSA, R. ; SOUZA, R. F.. <b>ECONOMIA CIRCULAR E POLÍTICAS PÚBLICAS: LEGISLAÇÃO E DESAFIOS</b>. <font color=#330066>REVISTA DE GEOPOLITICA</font>. v. 13, p. 95, issn: 2177-3246, 2021.</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>ROSSI, F. L.; NAGANO, M. S.. <b>Heuristics and Iterated Greedy Algorithms for the Distributed Mixed No-idle Flowshop With Sequence-Dependent Setup Times</b>. <font color=#330066>COMPUTERS & INDUSTRIAL ENGINEERING</font>. v. 157, p. 107337, issn: 0360-8352, 2021. <a href="http://dx.doi.org/10.1016/j.cie.2021.107337" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>SANCHEZ, R. T. ; ROSSI, FERNANDO LUIS ; FEITOSA, W. R. ; ROSSETI, W. ; MENDONCA, F. ; BARBOSA, R.. <b>FERRAMENTAS DO MARKETING DIGITAL COMO ESTRATÉGIA DE CONSOLIDAÇÃO DE MARCA: UM ESTUDO SOBRE C6 BANK</b>. <font color=#330066>Revfista de Inovação Social</font>. v. 3, p. 20-30, issn: 2674-8185, 2021.</td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Feminismo teen e youtubers: feminismo na adolescência em tempos de redes sociais</b>. <font color=#330066>DESIDADES - REVISTA ELETRÔNICA DE DIVULGAÇÃO CIENTÍFICA DA INFÂNCIA E JUVENTUDE</font>. v. 01, p. 136-152, issn: 2318-9282, 2021.</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>SANTOS, ANA CAROLINA VILA RAMOS. <b>OFICINA SOBRE VIOLÊNCIA CONTRA A MULHER NO ÂMBITO DO PROJETO MULHERES IFSP: UM RELATO DE ESCUTA</b>. <font color=#330066>REVISTA EXTENSÃO & CIDADANIA</font>. v. 9, p. 154-165, issn: 2319-0566, 2021. <a href="http://dx.doi.org/10.22481/recuesb.v9i15.8634" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>SANTOS, L. J. ; FEITOSA, W. R.. <b>A ATIVIDADE DE ZELADORIA URBANA E A INCIDÊNCIA DE PROPAGANDA IRREGULAR EM POSTES DE ILUMINAÇÃO ? UM ESTUDO EXPLORATÓRIO</b>. <font color=#330066>SOUTH AMERICAN DEVELOPMENT SOCIETY JOURNAL</font>. v. 7, p. 221, issn: 2446-5763, 2021. <a href="http://dx.doi.org/10.24325/issn.2446-5763.v7i19p221-230" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>SILVA DE CASTRO; CASTRO, M. S.. <b>A questão étnico-racial e o ensino de Geografia: o caso do Sudão do Sul</b>. <font color=#330066>Latin American Journal of Development</font>. v. 03, p. 698-711, issn: 2674-9297, 2021. <a href="http://dx.doi.org/10.46814/lajdv3n2-017" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>SILVA, A. O. B. ; ARAUJO, E. S. ; LEITE, I. G. ; VIEIRA, K. S. ; SILVA, S. C. ; SANTOS, L. C. M. ; TEIXEIRA, F. O.. <b>A Modelagem Computacional no Processo de Aprendizagem de Doenças como o Câncer Pulmonar</b>. <font color=#330066>Qualif: Revista Acadêmica - Ensino de Ciências e Tecnologias</font>. v. 9, p. 1, issn: 2595-2277, 2021.</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>SILVA, L. R. ; ROSSI, FERNANDO LUIS ; FEITOSA, W. R. ; ROSSETI, W. ; MENDONCA, F. ; BARBOSA, R.. <b>ACESSIBILIDADE E LEGISLAÇÃO NO BRASIL ? UM ESTUDO NA CPTM</b>. <font color=#330066>Revista de Inovação Social</font>. v. 3, p. 30-40, issn: 2674-8185, 2021.</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>SOUSA, J. Z. ; ROSSI, FERNANDO LUIS ; FEITOSA, W. R. ; ROSSETI, W. ; MENDONCA, F. ; BARBOSA, R.. <b>GESTÃO DE DOCUMENTOS E A SUA IMPORTÂNCIA NO GERENCIAMENTO DE  PROJETOS</b>. <font color=#330066>Revista Inovação Social</font>. v. 3, p. 1-12, issn: 2674-8185, 2021.</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>SOUSA-FERREIRA, REGIVALDO ; CAMPANARI-XAVIER, ROGÉRIO APARECIDO ; RODRIGUES-ANCIOTO, ALEX SANDRO. <b>La realidad virtual como herramienta para la educaciÃ³n bÃ¡sica y profesional</b>. <font color=#330066>Revista Científica General José María Córdova</font>. v. 19, p. 223-241, issn: 1900-6586, 2021. <a href="http://dx.doi.org/10.21830/19006586.728" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>TEJO-MACHADO, NADJILA ; RODRIGUES-MARTINEZ-BASILE, FELIPE ; CEZAR-AMATE, FLAVIO ; RAMÍREZ-LÓPEZ, LEONARDO JUAN. <b>Protocolo de informática forense ante ciberincidentes en telemedicina para preservar información como primera respuesta</b>. <font color=#330066>Revista Científica General José María Córdova</font>. v. 19, p. 181-203, issn: 2500-7645, 2021. <a href="http://dx.doi.org/10.21830/19006586.726" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>TELLES, G D ; Tavares, P E S ; FRITSCH, A R ; CIDRIM, A ; BAGNATO, V S. <b>Dynamical evolution and decay of multi-charged quantum vortex in a Bose-Einstein condensate</b>. <font color=#330066>Laser Physics Letters</font>. v. 19, p. 015501, issn: 1612-202X, 2021. <a href="http://dx.doi.org/10.1088/1612-202x/ac3d24" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>ZADI, IGOR CALEBE ; MONTANHER, RENATO CRISTIANO ; MONTEIRO, ANA MARIA. <b>Juego digital para aprender inglés como segunda lengua utilizando el pensamiento complejo</b>. <font color=#330066>Revista Científica General José María Córdova</font>. v. 19, p. 243-262, issn: 2500-7645, 2021. <a href="http://dx.doi.org/10.21830/19006586.727" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANDRADE, A. G. ; REIS, N. F.. <b>RELAÇÃO ENTRE CRESCIMENTO E DESENVOLVIMENTO ECONÔMICO NA REGIÃO DE SOROCABA, ESTADO DE SÃO PAULO</b>. <font color=#330066>Revista Inovação Social</font>. v. 2, p. 40-48, issn: 2674-8185, 2020. <a href="http://dx.doi.org/10.5281/zenodo.4412029" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANDRADE, A. G. ; REIS, N. F. ; ABE, J. M.. <b>Proposições para a Criação de Parques Tecnológicos utilizando a lógica Et: um mapa para o agronegócio</b>. <font color=#330066>Brazilian Journal of Development</font>. v. 6, p. 7315-7329, issn: 2525-8761, 2020. <a href="http://dx.doi.org/10.34117/bjdv6n2-145" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Andrade, Alequexandre Galvez de ; Reis, Nélio Fernando dos. <b>Ferramentas de coaching aplicadas à gestão de pessoas: um estudo utilizando lógica e[pi]</b>. <font color=#330066>Brazilian Applied Science Review</font>. v. 4, p. 2369-2381, issn: 2595-3621, 2020. <a href="http://dx.doi.org/10.34115/basrv4n4-017" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Como os estudantes percebem a sustentabilidade na educação superior? Um estudo qualiquantitativo sobre a Universidade Federal do Cariri - CE</b>. <font color=#330066>REVISTA ELETRÔNICA DO MESTRADO EM EDUCAÇÃO AMBIENTAL</font>. v. 37, p. 138-161, issn: 1517-1256, 2020. <a href="http://dx.doi.org/10.14295/remea.v37i3.9798" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Ciência dos jogos aplicada a educação: um estudo do processo criativo de confecção do jogo analógico Umuechem.</b>. <font color=#330066>REVISTA FAEEBA</font>. v. 29, p. 377-402, issn: 0104-7043, 2020. <a href="http://dx.doi.org/10.21879/faeeba2358-0194.2020.v29.n59.p377-402" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BASILE, F. R. M.; LOPEZ, L. J. R.. <b>Estrategia formativa en defensa digital para adolescentes: experiencia en el Instituto Federal de São Paulo.</b>. <font color=#330066>Revista Cientifica General Jose María Córdova</font>. v. 18, p. 271-287, issn: 1900-6586, 2020. <a href="http://dx.doi.org/10.21830/19006586.579" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARNEIRO, ALESSANDRA DA SILVA. <b>Uma leitura do republicanismo na poesia Sousândrade / A Reading of Republicanism in Sousândrade?s Poetry</b>. <font color=#330066>O EIXO E A RODA: REVISTA DE LITERATURA BRASILEIRA</font>. v. 29, p. 229-248, issn: 2358-9787, 2020. <a href="http://dx.doi.org/10.17851/2358-9787.29.4.229-248" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>DA SILVA, SIMONE BATISTA ; SILVA, Andréa Cotrim. <b>DO -ROSA E AZUL- AO -ELAS NÃO SE DEPILAM-: NUANCES DO FEMININO NO ATUAL GOVERNO BRASILEIRO</b>. <font color=#330066>REVISTA X</font>. v. 15, p. 85-85, issn: 1980-0614, 2020. <a href="http://dx.doi.org/10.5380/rvx.v15i4.76181" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>DE SOUZA TOPAN, JULIANA. <b>-Anjos e demônios estão em guerra-: o fantástico e o religioso na literatura para jovens adultos</b>. <font color=#330066>TEOLITERÁRIA: REVISTA BRASILEIRA DE LITERATURAS E TEOLOGIAS</font>. v. 10, p. 256-274, issn: 2236-9937, 2020. <a href="http://dx.doi.org/10.23925/2236-9937.2020v22p256-274" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>DOS SANTOS JUNIOR, VALDIR DONIZETE. <b>A América Latina em disputa: História e historiografia de uma polêmica</b>. <font color=#330066>REVISTA ELETRÔNICA DA ANPHLAC</font>. v. 20, p. 369-408, issn: 1679-1061, 2020. <a href="http://dx.doi.org/10.46752/anphlac.29.2020.3916" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FEITOSA, W. R.; AMARANTE, M.. <b>O papel dos vendedores no varejo no contexto omnichannel ? Um estudo de caso em uma loja de sapatos</b>. <font color=#330066>REVISTA LICEU ON-LINE</font>. v. 10, p. 138-155, issn: 2179-5975, 2020.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>FEITOSA, W. R.; BARBOSA, R.. <b>Generation Z and technologies on museums ? Its influence on perceptions about Quality, Arousal and E-WOM Intentions</b>. <font color=#330066>MARKETING & TOURISM REVIEW</font>. v. 5, p. 1-31, issn: 2525-8176, 2020. <a href="http://dx.doi.org/10.29149/mtr.v5i2.5766" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>FERNANDES, C. M. ; FAGUNDES, T. S. F. ; SANTOS, N. E. ; DO AMARAL, BRUNO ; CASS, Q. B. ; VALVERDE, A. L. ; SILVA, J. C. M. ; ALVES, O. C. ; PONZIO, E. A.. <b>Marine Octocoral Phyllogorgia dilatata: Identification of Sesquiterpenes and Activity as a Natural and Renewable Corrosion Inhibitor</b>. <font color=#330066>analytical and  bioanalytical electrochemistry</font>. v. 12, p. 437-457, issn: 2008-4226, 2020.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FURLANI, IZADORA ; AMARAL, B. S. ; OLIVEIRA, REGINA ; CASS, Q. B.. <b>IMOBILIZAÇÃO ENZIMÁTICA: CONCEITO E EFEITOS NA PROTEÓLISE</b>. <font color=#330066>QUIMICA NOVA</font>. v. 43, p. 463-473, issn: 0100-4042, 2020. <a href="http://dx.doi.org/10.21577/0100-4042.20170525" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>GOES, A. B. B. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Impacto da Indústria 4.0 na geração de inovação em tecnologias médicas: uma abordagem patentária</b>. <font color=#330066>REVISTA TECNOLOGIA E SOCIEDADE (ONLINE)</font>. v. 16, p. 33-55, issn: 1984-3526, 2020. <a href="http://dx.doi.org/10.3895/rts.v16n45.11551" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; FERREIRA, A. E. S. C. S.. <b>Minority Report e o governo da distopia algorítmica</b>. <font color=#330066>PRAGMATIZES- REVISTA LATINO AMERICANA DE ESTUDOS EM CULTURA</font>. v. 10, p. 232-248, issn: 2237-1508, 2020.</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Homem, Thiago Pedro Donadon; SANTOS, PAULO EDUARDO ; REALI COSTA, ANNA HELENA ; DA COSTA BIANCHI, REINALDO AUGUSTO ; LOPEZ DE MANTARAS, RAMON. <b>Qualitative case-based reasoning and learning</b>. <font color=#330066>ARTIFICIAL INTELLIGENCE</font>. v. 283, p. 103258, issn: 0004-3702, 2020. <a href="http://dx.doi.org/10.1016/j.artint.2020.103258" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MARINS, L. C. ; PARDO, F. S.. <b>(Shadow of) The Raven: uma adaptação intermidiática da literatura para a música</b>. <font color=#330066>Revista Letras Raras</font>. v. 9, p. 72-91, issn: 2317-2347, 2020. <a href="http://dx.doi.org/10.35572/rlr.v9i3.1828" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MARIOTO, R. R. <b>Linguística Aplicada e Epistemologia da Complexidade: correlações possíveis</b>. <font color=#330066>CAMINHOS EM LINGUÍSTICA APLICADA</font>. v. 23, p. 1-14, issn: 2176-8625, 2020.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MARIOTO, R. R.; BASILE, F. R. M.. <b>ESCRITA PARA TERCEIRA IDADE COM O USO DE TECNOLOGIAS DIGITAIS: RELATO DE EXPERIÊNCIA</b>. <font color=#330066>REVISTA INTERNACIONAL DE FORMAÇÃO DE PROFESSORES (RIPF)</font>. v. 5, p. 1-19, issn: 2447-8288, 2020.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MARTINS NETO, I. A. <b>Ensino crítico de língua portuguesa no IFSP ─ Campus Presidente Epitácio</b>. <font color=#330066>LEIA ESCOLA</font>. v. 20, p. 132-150, issn: 2358-5870, 2020. <a href="http://dx.doi.org/10.35572/rle.v20i2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; MARTINS, T. H. B.. <b>A adaptação de um curso de inglês do formato EAD para o formato semipresencial: relato de uma experiência com o curso e-Tec Idiomas de língua inglesa</b>. <font color=#330066>LÍNGUATEC</font>. v. 5, p. 296-309, issn: 2525-3425, 2020.</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Globo Filmes: possibilidades e limites para a indústria cinematográfica nacional</b>. <font color=#330066>AURORA (PUCSP. ONLINE)</font>. v. 13, p. 27-45, issn: 1982-6672, 2020. <a href="http://dx.doi.org/10.23925/v13_n37_art2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>NORMANHA, Ricardo. <b>A CENTRALIDADE DO TRABALHO EM DEBATE: NOTAS PARA UM BALANÇO HISTÓRICO E APONTAMENTOS PARA O PRESENTE E FUTURO DA LUTA DE CLASSES</b>. <font color=#330066>PROJETO HISTÓRIA. REVISTA DO PROGRAMA DE ESTUDOS PÓS-GRADUADOS DE HISTÓRIA</font>. v. 68, p. 12-43, issn: 2176-2767, 2020. <a href="http://dx.doi.org/10.23925/2176-2767.2020v68p12-43" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>NORMANHA, Ricardo. <b>Sob o domínio do capital: a precariedade do trabalho artístico nas indústrias culturais</b>. <font color=#330066>REVISTA NOVOS RUMOS</font>. v. 57, p. 131-146, issn: 0102-5864, 2020. <a href="http://dx.doi.org/10.36311/0102-5864.2020.v57n1.12.p131" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PARDO, F. S. <b>OBSERVAÇÕES E ANÁLISES SOBRE O ENSINO DE INGLÊS NO ENSINO FUNDAMENTAL-I PÚBLICO: diálogos entre professor e alunos</b>. <font color=#330066>REVELLI- Revista de Educação, Língua e Literatura da UEG-Inhumas.</font>. v. 12, p. 1-15, issn: 1984-6576, 2020.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>Picosque, Tatiana.; SANTOS, Ana Carolina Vila Ramos ; PUGLIESE, R. M. ; PRADELLA, C. R.. <b>Observatório de políticas públicas: discussões sobre acesso e permanência na educação básica no Noroeste paulistano</b>. <font color=#330066>Revista de Estudos Interdisciplinares</font>. v. 02, p. 174-202, issn: 2674-8703, 2020.</td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PINHEIRO, ROMÁRIO ARAÚJO; ROSA, FILIPE MENEZES ; VOLÚ, RENÊ MARTINS ; DE VASCONCELOS, GETÚLIO ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Vertically aligned carbon nanotubes (VACNT) surfaces coated with polyethylene for enhanced dew harvesting</b>. <font color=#330066>DIAMOND AND RELATED MATERIALS</font>. v. 107, p. 107837-107837, issn: 0925-9635, 2020. <a href="http://dx.doi.org/10.1016/j.diamond.2020.107837" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>REIS, N. F.; NOVAIS, A. ; MORETI, A. ; OLIVEIRA, M. ; PEREIRA, K. ; VANUCCI, P.. <b>PESQUISA OPERACIONAL APLICADA AO E-MARKETPLACE</b>. <font color=#330066>Revista de Inovação Social</font>. v. 2, p. 77-83, issn: 2674-8185, 2020. <a href="http://dx.doi.org/10.5281/zenodo.4095615" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>REIS, N. F.; OLIVEIRA, C. C. ; ANDRADE, A. G.. <b>Covid-19 e o calendário escolar brasileiro: medo e frustração</b>. <font color=#330066>Revista de Inovação Social</font>. v. 2, p. 52-68, issn: 2674-8185, 2020. <a href="http://dx.doi.org/10.5281/zenodo.3859980" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>RODRIGUES BASILE, ANDREZZA DA COSTA ; RODRIGUES MARTINEZ BASILE, FELIPE ; RAMÍREZ LÓPEZ, LEONARDO JUAN. <b>La robótica creativa para el desarrollo de la cultura Maker inclusiva en la enseñanza fundamental: caso Escuela Municipal de Capistrano de Abreu, en São Paulo, Brasil</b>. <font color=#330066>Revista de Investigación en Educación Militar</font>. v. 1, p. 69-91, issn: 2745-0171, 2020. <a href="http://dx.doi.org/10.47961/27450171.7" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>ROSSI, FERNANDO LUIS; NAGANO, MARCELO SEIDO. <b>Heuristics and metaheuristics for the mixed no-idle flowshop with sequence-dependent setup times and total tardiness minimisation</b>. <font color=#330066>Swarm and Evolutionary Computation</font>. v. 55, p. 100689, issn: 2210-6502, 2020. <a href="http://dx.doi.org/10.1016/j.swevo.2020.100689" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SANTOS, T. ; REIS, N. F. ; ANDRADE, A. G.. <b>LA IMPORTANCIA DE PROYECTOS PARA LA LIBERTAD E IGUALDAD DE LAS MUJERES: UN ESTUDIO EXPLORATORIO DE PROYECTO MUJERES MAS QUE VENCEDORASDE LA IGLESIA CRISTIANA APOSTÓLICA RENACER EN CRISTO</b>. <font color=#330066>Revista del Centro de Investigaciones y Capacitaciones Interdisciplinares (CICI)</font>. v. 4, p. 67-82, issn: 2665-5837, 2020.</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SCAZZA, F. ; VALTOLINA, G. ; AMICO, A. ; Tavares, P. E. S. ; INGUSCIO, M. ; KETTERLE, W. ; ROATI, G. ; ZACCANTI, M.. <b>Exploring emergent heterogeneous phases in strongly repulsive Fermi gases</b>. <font color=#330066>PHYSICAL REVIEW A</font>. v. 101, p. 013603, issn: 2469-9926, 2020. <a href="http://dx.doi.org/10.1103/PhysRevA.101.013603" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SIDARTA-OLIVEIRA, DAVI ; JARA, CARLOS POBLETE ; FERRUZZI, ADRIANO J. ; SKAF, MUNIR S. ; VELANDER, WILLIAM H. ; ARAUJO, ELIANA P. ; VELLOSO, LICIO A.. <b>SARS-CoV-2 receptor is co-expressed with elements of the kinin-kallikrein, renin-angiotensin and coagulation systems in alveolar cells</b>. <font color=#330066>Scientific Reports</font>. v. 10, p. 19522, issn: 2045-2322, 2020. <a href="http://dx.doi.org/10.1038/s41598-020-76488-2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SILVA FREIRE, GABRIEL GUERRA DA ; OLIVEIRA, KARINA FERNANDES DE ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Biopharmaceutical innovation on pharmerging countries: a quantitative analysis and scenario prediction</b>. <font color=#330066>International Journal of Pharma Medicine and Biological Sciences</font>. v. 9, p. 158-163, issn: 2278-5221, 2020. <a href="http://dx.doi.org/10.18178/ijpmbs.9.4.158-163" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>SILVA, Ezequiel. ; SANTOS, LUCAS RODRIGUES ; ASSEMANY, Ladyjane Pereira Fontes ; POTIENS, MARIA DA PENHA ALBUQUERQUE. <b>Evaluation of the performance of radioprotection ionization chambers used in radiometric survey of radiology clinical systems.</b>. <font color=#330066>BRAZILIAN JOURNAL OF RADIATION SCIENCES</font>. v. 8, p. 1, issn: 2319-0612, 2020.</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>SILVA, S. C. E. ; DUARTE, P. ; FEITOSA, W. R. ; VASCONCELLOS, M.. <b>How to increase engagement on social media using the honeycomb model</b>. <font color=#330066>REGE REVISTA DE GESTAO</font>. v. 27, p. 153-167, issn: 2177-8736, 2020. <a href="http://dx.doi.org/10.1108/REGE-02-2019-0030" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>TRINDADE, L. H.; ALBUQUERQUE, L. G.. <b>RH conservador: um estudo sobre mudanças na gestão de pessoas em empresas estabelecidas no Brasil</b>. <font color=#330066>CAPITAL CIENTÍFICO</font>. v. 18, p. 100-117, issn: 2177-4153, 2020.</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>VARELLA RODRIGUES, CAROLINE ; OLIVEIRA SANTANA, KAMILI ; NESPECA, MAURÍLIO GUSTAVO ; VARELLA RODRIGUES, ALINE ; OLIVEIRA PIRES, LORENA ; MAINTINGUER, SANDRA IMACULADA. <b>Energy valorization of crude glycerol and sanitary sewage in hydrogen generation by biological processes</b>. <font color=#330066>INTERNATIONAL JOURNAL OF HYDROGEN ENERGY</font>. v. 45, p. 11943-11953, issn: 0360-3199, 2020. <a href="http://dx.doi.org/10.1016/j.ijhydene.2020.02.168" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>WINDLE, J. A. ; SOUZA, A. L. S. ; SILVA, D. N. ; ZAIDAN, J. M. ; MAIA, J. O. ; MUNIZ, K. ; LORENSO, S.. <b>Por um paradigma transperiférico: uma agenda para pesquisas socialmente engajadas</b>. <font color=#330066>TRABALHOS EM LINGUÍSTICA APLICADA</font>. v. 59, p. 1563-1576, issn: 2175-764X, 2020. <a href="http://dx.doi.org/10.1590/01031813749651220200706" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALMEIDA, A. ; MACEDO, M. ; CAVALCANTI, R. ; REIS, N. F. ; ANDRADE, A. G.. <b>The Importance of Public Manager in Municipal Policy to Promote the Accessibility: the case of the Federal Institute of  State of São Paulo, Campus Pirituba, Brazil</b>. <font color=#330066>International Journal of Latest Engineering and Management Research (IJLEMR)</font>. v. 4, p. 6-13, issn: 2455-4847, 2019.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, ANDRÉ LUDWIG MACHADO DE ; MIKI, LUCAS TOSHIO DE SOUZA ; RUBIN, LUIZ ANTÔNIO BAGGIOTTO ; MÜLLER, SAMUEL ARIEL ; LISEVSKI, CAROLINE INÊS ; NORONHA, TIAGO BAPTISTA. <b>SmartHearing Aid: Um simulador de aparelho auditivo para smartphone</b>. <font color=#330066>Revista Educar Mais</font>. v. 3, p. 77-83, issn: 2237-9185, 2019. <a href="http://dx.doi.org/10.15536/reducarmais.3.2019.77-83.1615" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALMEIDA, R. N. R. <b>A flexibilidade por trás das câmeras: transformações na cadeia produtiva do cinema e os impactos no mercado de trabalho</b>. <font color=#330066>SÉCULO XXI - REVISTA DE CIÊNCIAS SOCIAIS</font>. v. 8, p. 1085-1131, issn: 2236-6725, 2019. <a href="http://dx.doi.org/10.5902/2236672537539" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>AMANCIO, T. O. ; MUNHOZ, I. P. ; AKKARI, A. C. S. ; SANTOS, N. M. B. F.. <b>Sustainability at the Faculty of Exact Sciences and Technology of the PUC-SP: study of green roof application</b>. <font color=#330066>PROELIUM - Revista Científica da Academia Militar Portuguesa</font>. v. 1, p. 447-456, issn: 1645-8826, 2019.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ANDRADE, A. G. ; REIS, N. F. ; GERALDO, T. M.. <b>The Quality Management System in Small and Medium-sized Entities: a field study in the city of São Roque, São Paulo State, Brazil</b>. <font color=#330066>International Journal of Science and Business</font>. v. 3, p. 245-254, issn: 2521-3040, 2019. <a href="http://dx.doi.org/10.5281/zenodo.3086295" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, J. B. D. ; BERNARDINO, M. C. R. ; QUEIROZ, Z. F. ; SILVA, J. L. C.. <b>Jogos cooperativos e mediação da leitura: por que não na biblioteca pública?</b>. <font color=#330066>Perspectivas em Ciência da Informação (on line)</font>. v. 24, p. 3-24, issn: 1981-5344, 2019. <a href="http://dx.doi.org/10.1590/1981-5344/3056" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Metodologias ativas na educação: problemas, projetos e cooperação na realidade educativa</b>. <font color=#330066>INFORMÁTICA NA EDUCAÇÃO</font>. v. 22, p. 111-127, issn: 1982-1654, 2019. <a href="http://dx.doi.org/10.22456/1982-1654.88792" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>ANTUNES, Jeferson; QUEIROZ, Z. F. ; COSTA, I. M. M.. <b>EPISTEMOLOGIA E PESQUISA EDUCACIONAL</b>. <font color=#330066>REVISTA EDUCAÇÃO E LINGUAGEM</font>. v. 6, p. 98-109, issn: 2359-277X, 2019.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BARBOSA, B. C. ; MARTINS NETO, I. A.. <b>Heterogeneidade da escrita: ?erros? ortográficos propositais emredes sociais digitais e a construção do sentido</b>. <font color=#330066>REVISTA DE LETRAS NORTE@MENTOS</font>. v. 12, p. 158-176, issn: 1983-8018, 2019.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BASILE, F. R. M.; LOPEZ, L. J. R. ; AMATE, F. C.. <b>Método para realizar copias de seguridad de imágenes médicas basado en tareas automatizadas</b>. <font color=#330066>NUEVOS DESAFÍOS TECNOLÓGICOS</font>. v. 6, p. 1-8, issn: 0719-5303, 2019.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CASTRO, MOACIR SILVA. <b>Relações étnico-raciais e formação docente na educação infantil</b>. <font color=#330066>Cadernos de Pós-graduação</font>. v. 18, p. 94-107, issn: 2525-3514, 2019. <a href="http://dx.doi.org/10.5585/cpg.v18n2.10448" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DO AMARAL, BRUNO; CORREA, KATIA CELINA ; CORRÊA, ARLENE ; DE SOUZA, DULCE ; CASS, QUEZIA. <b>Direct Assay to Evaluate Phosphoenolpyruvate Carboxykinase Activity</b>. <font color=#330066>JOURNAL OF THE BRAZILIAN CHEMICAL SOCIETY</font>. v. 30, p. 2105-2113, issn: 0103-5053, 2019. <a href="http://dx.doi.org/10.21577/0103-5053.20190079" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Dos Santos, T. ; ANDRADE, A. G. ; REIS, N. F.. <b>Refugees in Brazil. Who are?</b>. <font color=#330066>International Journal of Science and Business</font>. v. 3, p. 271-279, issn: 2521-3040, 2019. <a href="http://dx.doi.org/10.5281/zenodo.3559086" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Dos Santos, T. ; REIS, N. F.. <b>Doação de órgãos: um estudo no IFSP</b>. <font color=#330066>Revista Inovação Social</font>. v. 1, p. 89-101, issn: 2674-8185, 2019. <a href="http://dx.doi.org/10.5281/zenodo.3574506" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>FEITOSA, W. R.; MORAES, D. T. ; PEDROSO, M. H. ; GIANOCARIO, G. F.. <b>EL USO DE LAS REDES SOCIALES PARA POSICIONAR UN DESTINO TURÍSTICO: EL CASO DE LA CIUDAD DE GUARAREMA Y SUS VISITANTES DEL DÍA</b>. <font color=#330066>REVISTA DE TURISMO - VISÃO E AÇÃO</font>. v. 21, p. 398-422, issn: 1415-6393, 2019.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>FLEIRA, ROBERTA CAETANO; FERNANDES, SOLANGE HASSAN AHMAD ALI. <b>Ensinando Seus Pares: a inclusão de um aluno autista nas aulas de Matemática</b>. <font color=#330066>Bolema (Rio Claro)</font>. v. 33, p. 811-831, issn: 0103-636X, 2019. <a href="http://dx.doi.org/10.1590/1980-4415v33n64a18" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>GALVEZ, A. ; REIS, N. F. ; Canese. E.E. <b>School Management: Proposition of a Management Model</b>. <font color=#330066>International Journal of Science and Business</font>. v. 3, p. 99-108, issn: 2520-4750, 2019. <a href="http://dx.doi.org/10.5281/zenodo.3375383" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>GUIMARAES, R. C. C. ; VIEIRA, W. ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, E. F. M.. <b>USO DO CELULAR INTELIGENTE (SMARTPHONE) NA ELABORAÇÃO DE CONJECTURAS E PROVAS EM GEOMETRIA: AVALIANDO POSSIBILIDADES E LIMITAÇÕES.</b>. <font color=#330066>Portal De Conferências Da Semana Do Conhecimento</font>. v. 3, p. 1, issn: 2965-0690, 2019.</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre. <b>'Little Criminals of perception?: história e memória nos narradores de World?s Fair e The Book of Daniel, de E. L. Doctorow</b>. <font color=#330066>REVELL ? REVISTA DE ESTUDOS LITERÁRIOS DA UEMS</font>. v. 3, p. 110-127, issn: 2179-4456, 2019.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILACO, F. L.. <b>Questões sobre o ensino de Literaturas em Língua Inglesa nas licenciaturas em Letras da UFMS e do IFSP (Campus São Paulo-Pirituba): a experiência da construção das ementas</b>. <font color=#330066>REVELL ? REVISTA DE ESTUDOS LITERÁRIOS DA UEMS</font>. v. 1, p. 302-317, issn: 2179-4456, 2019.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; VILALON, E. M. A. ; RUSSO, T. A. ; ALVES, E. F.. <b>Apontamentos sobre homossexualidade, negritude masculina e feminilidade em O Bom Crioulo (1895), de Adolfo Caminha</b>. <font color=#330066>REGRASP Revista para Graduandos / IFSP-Campus São Paulo</font>. v. 4, p. 59-83, issn: 2526-1045, 2019.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>ITO, G. ; FEITOSA, W. R.. <b>UM ESTUDO DE CASO SOBRE A QUALIDADE NA PRESTAÇÃO DE SERVIÇOS EM UMA EMPRESA DE AUTOMAÇÃO BANCARIA, AUTOMAÇÃO COMERCIAL E SERVIÇOS DE TI</b>. <font color=#330066>REPAE - Revista de Ensino e Pesquisa em Administração e Engenharia</font>. v. 5, p. 80-107, issn: 2447-6129, 2019.</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Módolo, L. P. <b>A relação entre ciência e ideologia em tempos de hegemonia financeira: as biotecnociências e o mercado das promessas</b>. <font color=#330066>CIÊNCIAS SOCIAIS UNISINOS</font>. v. 55, p. 223-233, issn: 1519-7050, 2019. <a href="http://dx.doi.org/10.4013/csu.2019.55.2.08" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>PARDO, F. S. <b>Decolonialidade e ensino de línguas: perspectivas e desafios para a construção do conhecimento corporificado no cenário político atual</b>. <font color=#330066>Revista Letras Raras</font>. v. 8, p. 200-221, issn: 2317-2347, 2019. <a href="http://dx.doi.org/10.35572/rlr.v8i3.1422" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>PARDO, F. S. <b>O ENSINO DE INGLÊS NOS ANOS INICIAIS DA ESCOLA PÚBLICA: POR QUÊ? PARA QUÊ? PARA QUEM?</b>. <font color=#330066>Percursos Linguísticos (UFES)</font>. v. 9, p. 12-29, issn: 2236-2592, 2019.</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PARDO, F. S. <b>A autoetnografia em pesquisas em Linguística Aplicada: reflexões do sujeito pesquisador/pesquisado.</b>. <font color=#330066>Revista Horizontes de Linguistica Aplicada</font>. v. 18, p. 15-40, issn: 2237-0951, 2019.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PEREIRA, Rogério Aparecido; PUGA, MARIA EDUARDA DOS SANTOS ; ATALLAH, ÁLVARO NAGIB ; MACEDO, ELIZEU COUTINHO ; MACEDO, CRISTIANE RUFINO. <b><scp>lilacs</scp> search strategy for systematic reviews of diagnostic test accuracy studies</b>. <font color=#330066>Health Information and Libraries Journal</font>. v. 36, p. 223-243, issn: 1471-1834, 2019. <a href="http://dx.doi.org/10.1111/hir.12263" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PINHEIRO, R.A.; DAMM, D.D. ; SILVA, A.A. ; VOLU, R.M. ; ALMEIDA, K.F. ; ROSA, F.M. ; TRAVA-AIROLDI, V.J. ; CORAT, E.J.. <b>Water Vapor Condensation from Atmospheric Air by Super-Hydrophobic VACNTs Growth on Stainless Steel Pipes</b>. <font color=#330066>MRS Advances</font>. v. 4, p. 1-8, issn: 2059-8521, 2019. <a href="http://dx.doi.org/10.1557/adv.2019.248" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>PISSARDINI, P. E.; SACOMANO. <b>A INDÚSTRIA 4.0 COMO PARADIGMA ESTRATÉGICO DA GESTÃO DE MANUFATURA (PEGEM) E SEU ALINHAMENTO COM O PLANEJAMENTO E CONTROLE DA PRODUÇÃO (PCP)</b>. <font color=#330066>IBEROAMERICAN JOURNAL OF PROJECT MANAGEMEN (ONLINE)</font>. v. 10, p. 01-01, issn: 2346-9161, 2019.</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G.. <b>Capital markets and stocks that pay dividends</b>. <font color=#330066>The International Journal of Business Management and Technology</font>. v. 3, p. 231-240, issn: 2581-3889, 2019.</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>REIS, N. F.; ANDRADE, A. G. ; CAVALCANTE, K. B.. <b>High Performance Companies: main factors</b>. <font color=#330066>International Journal of Latest Engineering and Management Research (IJLEMR)</font>. v. 4, p. 21-29, issn: 2455-4847, 2019.</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>REIS, N. F.; Oliveira, C.C. ; ABE, J.M. ; ANDRADE, A. G.. <b>Support System Decision with Logic Etal applied to Merger and Acquisition - M</b>. <font color=#330066>International Journal of Latest Engineering and Management Research (IJLEMR)</font>. v. 4, p. 45-50, issn: 2455-4847, 2019.</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>ROCHA, MATEUS FARAJ MARQUES ; OLIVEIRA, KARINA FERNANDES DE ; Munhoz, Igor Polezi ; Akkari, Alessandra Cristina Santos. <b>Industry 4.0: Technology Mapping and the importance of Cognitive Ergonomics</b>. <font color=#330066>International Journal of Advanced Engineering, Management and Science</font>. v. 5, p. 296-303, issn: 2454-1311, 2019. <a href="http://dx.doi.org/10.22161/ijaems.5.5.1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>ROSSI, F. L.; NAGANO, MARCELO SEIDO. <b>Heuristics for the mixed no-idle flowshop with sequence-dependent setup times</b>. <font color=#330066>JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY</font>. v. 40, p. 1-27, issn: 0160-5682, 2019. <a href="http://dx.doi.org/10.1080/01605682.2019.1671149" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>ROSSI, FERNANDO LUIS; NAGANO, MARCELO SEIDO. <b>Heuristics for the mixed no-idle flowshop with sequence-dependent setup times and total flowtime criterion</b>. <font color=#330066>EXPERT SYSTEMS WITH APPLICATIONS</font>. v. 1, p. 1, issn: 0957-4174, 2019. <a href="http://dx.doi.org/10.1016/j.eswa.2019.01.057" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Resenha: BISPO, R. Rainhas do Rebolado: carreiras artísticas e sensibilidades femininas no mundo televisivo.</b>. <font color=#330066>CSONLINE - REVISTA ELETRÔNICA DE CIÊNCIAS SOCIAIS</font>. v. 29, p. 402-409, issn: 1984-2140, 2019.</td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>SANTOS, N. P.; VARRICHIO, P. C.. <b>Política de inovação em semicondutores no Brasil: uma discussão sobre a experiência do Ceitec</b>. <font color=#330066>REVISTA TECNOLOGIA E SOCIEDADE (ONLINE)</font>. v. 15, p. 1-18, issn: 1984-3526, 2019.</td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>SANTOS, T. ; REIS, N. F. ; ANDRADE, A. G.. <b>La importancia de proyectos para la libertad de igualdad de las mujeres: un estudio exploratorio de proyecto Mujeres más que Vencedoras de la iglesia Cristiana Apostólica Renacer en Cristo</b>. <font color=#330066>Revista Conocimiento Global</font>. v. 4, p. 67-81, issn: 2665-5837, 2019.</td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>SILVA, A. A. C. <b>Letramento Crítico (Visual e Racial): Desconstruindo representações unívocas e suas violências</b>. <font color=#330066>REVISTA X</font>. v. 14, p. 168-180, issn: 1980-0614, 2019.</td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>SILVA, A. A. C.; Khalid Tailche ; Dell´Olio, F. <b>O pensamento fraco e a esquerda brasileira: entrevista com o filósofo italiano Gianni Vattimo</b>. <font color=#330066>PENSARES EM REVISTA</font>. v. 15, p. 189-193, issn: 2517-2215, 2019.</td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>TEIXEIRA, HIPÓLITO FRANCISCO ; SANTOS, NEUSA MARIA BASTOS FERNANDES DOS ; Akkari, Alessandra Cristina Santos ; Munhoz, Igor Polezi. <b>Lean Accounting: Economic-financial Performance of Companies with Lean Manufacturing</b>. <font color=#330066>INTERNATIONAL JOURNAL OF ADVANCED ENGINEERING RESEARCH AND SCIENCE</font>. v. 6, p. 444-451, issn: 2349-6495, 2019. <a href="http://dx.doi.org/10.22161/ijaers.6.5.59" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>VIEIRA, WILLIAM ; IMAFUKU, ROBERTO SEIDI ; PEREIRA, Emanoel Fabiano Menezes. <b>Uma análise da resolução de questões sobre o Teorema de Pitágoras</b>. <font color=#330066>FORSCIENCE</font>. v. 7, p. 1-17, issn: 2318-6356, 2019. <a href="http://dx.doi.org/10.29069/forscience.2019v7n2.e552" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AMICO, A. ; SCAZZA, F. ; VALTOLINA, G. ; TAVARES, P.'E.'S. ; KETTERLE, W. ; INGUSCIO, M. ; ROATI, G. ; ZACCANTI, M.. <b>Time-Resolved Observation of Competing Attractive and Repulsive Short-Range Correlations in Strongly Interacting Fermi Gases</b>. <font color=#330066>PHYSICAL REVIEW LETTERS</font>. v. 121, p. 253602, issn: 1079-7114, 2018. <a href="http://dx.doi.org/10.1103/PhysRevLett.121.253602" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Educação para sustentabilidade, interdisciplinaridade e as contribuições da mediação para a construção coletiva do conhecimento.<br>Education for sustainability, interdisciplinarity and mediation contributions for the collective construction of knowledge.<br>Educación para la sostenibilidad, interdisciplinaridad y la contribiución de la mediación para la construcción co</b>. <font color=#330066>REVISTA ELETRÔNICA DO MESTRADO EM EDUCAÇÃO AMBIENTAL</font>. v. 35, p. 260-278, issn: 1517-1256, 2018. <a href="http://dx.doi.org/10.14295/remea.v35i1.7310" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson; QUEIROZ, Z. F. ; SANTOS, I. B. R. ; LIMA, J. N.. <b>CICLO CRIATIVO DE JOGOS COLABORATIVOS: UM MÉTODO PARA CRIAÇÃO DE JOGOS EDUCATIVOS</b>. <font color=#330066>HOLOS (NATAL. ONLINE)</font>. v. 2, p. 424-437, issn: 1807-1600, 2018. <a href="http://dx.doi.org/10.15628/holos.2018.3298" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; SILVA, A. F. ; SILVA, A. C. B. A. ; QUEIROZ, Z. F.. <b>Diagnóstico rápido participativo como método de pesquisa em educação</b>. <font color=#330066>AVALIAÇÃO: REVISTA DA AVALIAÇÃO DA EDUCAÇÃO SUPERIOR</font>. v. 23, p. 590-610, issn: 1982-5765, 2018. <a href="http://dx.doi.org/10.1590/s1414-40772018000300002" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>AQUINO, P. <b>Gonzales Arias, Luz-Mar. National Identities and Imperfections In Contemporary Irish Literature: Unbecoming Irishness</b>. <font color=#330066>ABEI JOURNAL (SÃO PAULO)</font>. v. 20, p. 9-146, issn: 1518-0581, 2018.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>AQUINO, P. <b>Irish Mythological Women in Christine Dwyer Hyckey's Short Stories: Representation, Reinvention, and Social Perspectives  in the 21st Century</b>. <font color=#330066>Travessias Interativas</font>. v. 8, p. 520-532, issn: 2236-7403, 2018.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>ASSIS, A. L. E. ; MARTINS NETO, I. A. ; MACEDO, R. L.. <b>Letramento digital e literatura: saberes literários no mundo digital</b>. <font color=#330066>ENTRETEXTOS (UEL)</font>. v. 18, p. 137-161, issn: 1519-5392, 2018.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BAGÉ, I. B.; DIAS, F. A. S. ; BUSQUINI, J. A.. <b>Um olhar reflexivo para Avaliação Educacional</b>. <font color=#330066>Anais do V Seminário Internacional de Pesquisa e Estudos Qualitativos: Pesquisa Qualitativa na Educação e nas Ciências em Debate</font>. v. 1, p. 1-11, issn: 9862-3061, 2018.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BAGÉ, I. B.; MALTEMPI, M. V.. <b>Políticas Públicas de Formação de Professores: O contexto do curso de Ingressantes do Estado de São Paulo</b>. <font color=#330066>Anais do IV Congresso de Formação de Professores e XIV Congresso Estadual Paulista sobre Formação de Educadores</font>. v. 1, p. 1-11, issn: 2359-3822, 2018.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BARRETO, Krícia Helena; ABRITTA, C. S. ; SILVEIRA, Sonia Bittencourt. <b>Estratégias de proteção da face no cenário jurídico: um estudo de caso</b>. <font color=#330066>EID&A - Revista Eletrônica de Estudos Integrados em Discurso e Argumentação</font>. p. 33-50, issn: 2237-6984, 2018. <a href="http://dx.doi.org/10.17648/eidea-17-1942" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>BROZE, T. S.; TILEMANN, R. ; SILVA, L. C. S. ; CATEN, C. S. T. ; DANILEVICZ, A. M. F.. <b>Fatores que influenciam o desenvolvimento de empresas incubadas: uma pesquisa de perspectiva</b>. <font color=#330066>Locus Científico (ANPROTEC. Online)</font>. v. 8, p. 18-27, issn: 1981-6804, 2018.</td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>de Oliveira, Karina Fernandes ; SILVA FREIRE, GABRIEL GUERRA DA ; Munhoz, Igor Polezi ; SANTOS AKKARI, ALESSANDRA CRISTINA. <b>Patentes Farmacêuticas e Biofarmacêuticas: A Oportunidade Dos Países Farmaemergentes</b>. <font color=#330066>RISUS. Journal on Innovation and Sustainability</font>. v. 9, p. 135-148, issn: 2179-3565, 2018. <a href="http://dx.doi.org/10.24212/2179-3565.2018v9i3p135-148" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>DIAS, F. A. S. ; BAGÉ, I. B. ; BUSQUINI, J. A.. <b>O currículo do Estado de São Paulo e a Formação de Professores de Matemática: A Experiência do Programa M@tmídias</b>. <font color=#330066>Anais do CIET: EnPED: 2018 - Educação e Tecnologias: Docência e Mediação Pedagógica</font>. v. 2, p. 1-11, issn: 2316-8722, 2018.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FEITOSA, W. R.; GOZETTO, A.. <b>Advocacy and online Petitions: considerations from the RENCA case and green movements</b>. <font color=#330066>IJBMM - International Journal of Business Marketing and Management</font>. v. 3, p. 24, issn: 2456-4559, 2018.</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>FEITOSA, W. R.; LOURENÇO, C. E.. <b>Diferencias de Envolvimiento con Productos entre Cohortes: un Estudio Exploratorio</b>. <font color=#330066>Cuadernos del CIMBAGE</font>. v. 2, p. 39-54, issn: 1669-1830, 2018.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>FREITAG, B. B.; Fischer, A. L.. <b>Análise Sobre o Termo Talento em Diferentes Áreas do Conhecimento</b>. <font color=#330066>Future Studies Research Journal - Future</font>. v. 10, p. 03-26, issn: 2175-5825, 2018. <a href="http://dx.doi.org/10.24023/FutureJournal/2175-5825/2018.v10i1.284" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>FRITSCH, A R ; Tavares, P E S ; VIVANCO, F A J ; TELLES, G D ; BAGNATO, V S ; HENN, E A L. <b>Thermodynamic measurement of the sound velocity of a Bose gas across the transition to Bose-Einstein condensation</b>. <font color=#330066>JOURNAL OF STATISTICAL MECHANICS-THEORY AND EXPERIMENT</font>. v. 2018, p. 053108, issn: 1742-5468, 2018. <a href="http://dx.doi.org/10.1088/1742-5468/aabbcf" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>GARCIA, F. T. ; BROZE, T. S. ; CATEN, C. S. T. ; DANILEVICZ, A. M. F.. <b>As estratégias dos stakeholders sob a ótica da inovação no ecossistema do estado de Santa Catarina</b>. <font color=#330066>Locus Científico (ANPROTEC. Online)</font>. v. 8, p. 28-39, issn: 1981-6804, 2018.</td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>GOBBI, M. A. ; LEITE, M. C. S. ; FRANCA, P.. <b>Comuna da Terra D. Tomás Balduíno:  aproximações a partir de palavras e imagens criadas por crianças assentadas</b>. <font color=#330066>DESIDADES - REVISTA ELETRÔNICA DE DIVULGAÇÃO CIENTÍFICA DA INFÂNCIA E JUVENTUDE</font>. v. 21, p. 15-32, issn: 2318-9282, 2018.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>GUIRAU, Marcelo Cizaurre; FERREIRA, A. E. S. C. S.. <b>Vivências no exterior e formação de professores de Língua Estrangeira: relato de uma experiência</b>. <font color=#330066>REVISTA METALINGUAGENS</font>. v. 5, p. 48-56, issn: 2358-2790, 2018.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>LELIS, J. W. F. ; SANTOS, N. M. B. F. ; MUNHOZ, I. P. ; AKKARI, A. C. S.. <b>Estresse e Satisfação no Trabalho: um Estudo entre Gestores da Área Comercial</b>. <font color=#330066>Revista Científica Hermes</font>. v. 20, p. 110-132, issn: 2175-0556, 2018. <a href="http://dx.doi.org/10.21710/rch.v20i0.371" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>LUNA, I. T. ; PINHEIRO, P. N. C. ; TEIXEIRA, F. O.. <b>HIPERMÍDIAS PARA O ENSINO DE ENFERMAGEM EM AMBIENTE DIGITAL DE APRENDIZAGEM</b>. <font color=#330066>Brazilian Journal of Technology</font>. v. 1, p. 209-231, issn: 2595-5748, 2018.</td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>MAIA, J. O. <b>LETRAMENTOS DE SOBREVIVÊNCIA EM REDES DIGITAIS: CAMINHOS POSSÍVEIS NA LUTA POR DIREITOS HUMANOS</b>. <font color=#330066>TRABALHOS EM LINGUÍSTICA APLICADA</font>. v. 57, p. 954-974, issn: 2175-764X, 2018. <a href="http://dx.doi.org/10.1590/010318138651932366491" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>MOTOSHIMA, RENAN AKIO ; ROSA, TAINARA DA F. ; MENDES, LÉIA DA C. ; SILVA, ESTEFÂNIA VIANA DA ; VIANA, STHEFANY R.F. ; AMARAL, BRUNO SÉRGIO DO ; DE SOUZA, DULCE H.F. ; LIÃO, LUCIANO M. ; CORRADI DA SILVA, MARIA DE LOURDES ; DE SOUSA, LORENA R.F. ; CARBONERO, ELAINE R.. <b>Inhibition of Leishmania amazonensis arginase by fucogalactan isolated from Agrocybe aegerita mushroom</b>. <font color=#330066>CARBOHYDRATE POLYMERS</font>. v. 201, p. 532-538, issn: 0144-8617, 2018. <a href="http://dx.doi.org/10.1016/j.carbpol.2018.08.109" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>NAGANO, MARCELO SEIDO ; ROSSI, FERNANDO LUIS ; MARTARELLI, NÁDIA JUNQUEIRA. <b>High-performing heuristics to minimize flowtime in no-idle permutation flowshop</b>. <font color=#330066>ENGINEERING OPTIMIZATION</font>. v. 1, p. 1-14, issn: 0305-215X, 2018. <a href="http://dx.doi.org/10.1080/0305215x.2018.1444163" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>OLIVEIRA, F. B. ; MOREIRA, M. R. C. ; LIMA JUNIOR, J. F. ; NASCIMENTO, D. C. ; SILVA, F. M. S. ; ANTUNES, Jeferson. <b>ARTICULAÇÃO DAS POLTÍCAS PÚBLICAS DE SÁUDE MENTAL E ECONOMIA SOLIDÁRIA - INICIATIVAS DE GERAÇÃO DE TRABALHO E RENDA</b>. <font color=#330066>HOLOS (NATAL. ONLINE)</font>. v. 6, p. 130-140, issn: 1807-1600, 2018. <a href="http://dx.doi.org/10.15628/holos.2018.5233" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PERICO, DANILO H. ; Homem, Thiago P. D. ; ALMEIDA, AISLAN C. ; SILVA, ISAAC J. ; Vilão, Claudio O. ; FERREIRA, VINICIUS N. ; Bianchi, Reinaldo A. C.. <b>Humanoid Robot Framework for Research on Cognitive Robotics</b>. <font color=#330066>JOURNAL OF CONTROL, AUTOMATION AND ELECTRICAL SYSTEMS</font>. v. 29, p. 470-479, issn: 2195-3880, 2018. <a href="http://dx.doi.org/10.1007/s40313-018-0390-y" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PINHEIRO, ROMARIO ARAUJO; SILVA, AMANDA ARAUJO ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Water vapor condensation and collection by super-hydrophilic and super-hydrophobic VACNTs</b>. <font color=#330066>DIAMOND AND RELATED MATERIALS</font>. v. 87, p. 43-49, issn: 0925-9635, 2018. <a href="http://dx.doi.org/10.1016/j.diamond.2018.05.009" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>REIS, N. F.; RODRIGUES, E. F. A. ; SAMPAIO, F. S. ; PATROCINIO, F. B. O. ; SANTOS, S. R.. <b>Uso da Gamificação à luz da Educação 4.0</b>. <font color=#330066>III SEMINÁRIO INDÚSTRIA 4.0 - Desenvolvendo Novos Modelos de Negócios</font>. v. 3, p. 101-104, issn: 2526-5326, 2018.</td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>REIS, N. F.; ROSA, L. S.. <b>Indústria 4.0 e a competência na logística</b>. <font color=#330066>III SEMINÁRIO INDÚSTRIA 4.0 - Desenvolvendo Novos Modelos de Negócios</font>. v. 3, p. 105-109, issn: 2526-5326, 2018.</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>PARA ?ABRIR? GÊNERO: RAÇA, CORPOREIDADE E SEXUALIDADE COMO TENSÕES TEÓRICAS E POLÍTICAS PRODUTIVAS PARA O FEMINISMO</b>. <font color=#330066>CADERNO ESPAÇO FEMININO (UFU)</font>. v. 31, p. 07, issn: 1516-9286, 2018.</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SILVA, A. A. S. ; ROMAGNOLI, A. J. ; MATTANA, R.S.. <b>A APURAÇÃO DO CUSTO DE PRODUÇÃO DE ALFACE CRESPA NO SISTEMA AGROECOLÓGICO COMO FERRAMENTA DE GESTÃO FINANCEIRA PARA O PRODUTOR RURAL</b>. <font color=#330066>Revista Eletrônica de Educação e Ciência - REEC</font>. v. 8, p. 44-52, issn: 2237-3462, 2018.</td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SILVA, AMANDA ARAÚJO ; PINHEIRO, ROMÁRIO ARAÚJO ; RODRIGUES, ALINE CASTILHO ; BALDAN, MAURÍCIO RIBEIRO ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Graphene sheets produced by carbon nanotubes unzipping and their performance as supercapacitor</b>. <font color=#330066>APPLIED SURFACE SCIENCE</font>. v. 446, p. 201-208, issn: 0169-4332, 2018. <a href="http://dx.doi.org/10.1016/j.apsusc.2018.01.214" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SILVA, AMANDA ARAÚJO ; PINHEIRO, ROMÁRIO ARAÚJO ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Influence of catalyst particles on multi-walled carbon nanotubes morphology and structure</b>. <font color=#330066>FULLERENES NANOTUBES AND CARBON NANOSTRUCTURES</font>. v. 26, p. 315-323, issn: 1536-383X, 2018. <a href="http://dx.doi.org/10.1080/1536383X.2018.1431217" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SILVA, DIEGO PEREIRA DA ; AMATE, FLAVIO CEZAR ; Basile, Felipe Rodrigues Martinêz ; BIANCHI FILHO, CESÁRIO ; RODRIGUES, SILVIA CRISTINA MARTINI ; BISSACO, MARCIA APARECIDA SILVA. <b>AACVOX: mobile application for augmentative alternative communication to help people with speech disorder and motor impairment</b>. <font color=#330066>RESEARCH ON BIOMEDICAL ENGINEERING</font>. v. 34, p. 166-175, issn: 2446-4732, 2018. <a href="http://dx.doi.org/10.1590/2446-4740.06117" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SOUZA, M. R. ; PINHEIRO, M. A.A. ; SANTOS, L. C. M. ; FONTES, R.. <b>Density, abundance and extractive potential of the mangrove crab, Ucides cordatus (Linnaeus, 1763) (Brachyura, Ocypodidae): subsidies for fishery management</b>. <font color=#330066>ANAIS DA ACADEMIA BRASILEIRA DE CIÊNCIAS (ONLINE)</font>. v. 90, p. 1381-1395, issn: 1678-2690, 2018. <a href="http://dx.doi.org/10.1590/0001-3765201820170090" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>TERUZZI, A. E.; OLIVEIRA, ALEXANDRE MANIÇOBA DE. <b>As ideias fundamentais do cálculo integral no ensino médio: um diálogo entre história da matemática e tecnologia</b>. <font color=#330066>Exatas Online</font>. v. 9-Mar.2018, p. 8-14, issn: 2178-0471, 2018.</td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AGUIAR, R. B. ; SILVA, D. S. ; SIDRIM, M. L. ; TILEMANN, R. ; YAMASHITA, G. H. ; BROZE, T. S. ; MUSSER, C. F.. <b>Política Pública de Incentivo à Criação de Trabalho e Renda em Estância Climática</b>. <font color=#330066>ESPACIOS (CARACAS)</font>. v. 38, p. 26, issn: 0798-1015, 2017.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson; NASCIMENTO, V. S. ; QUEIROZ, Z. F.. <b>Narrativa crítica acerca do desenvolvimento sustentável: quais relações podemos estabelecer?</b>. <font color=#330066>REVISTA ELETRÔNICA DO MESTRADO EM EDUCAÇÃO AMBIENTAL</font>. v. 34, p. 57-75, issn: 1517-1256, 2017. <a href="http://dx.doi.org/10.14295/remea.v34i2.6930" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ARAUJO, G. D. ; TEIXEIRA, F. O. ; MANCINI, F. ; Guimarães, Marcelo de Paiva ; PISA, I. T.. <b>Sentiment Analysis of Twitter?s Health Messages in Brazilian Portuguese</b>. <font color=#330066>journal of health informatics</font>. v. 10, p. 17-24, issn: 2175-4411, 2017.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BAGÉ, I. B.; LIMA, M. A. G.. <b>O Fenômeno das Marés: Uma possibilidade para o ensino das função seno e cosseno utilizando as tecnologias digitais</b>. <font color=#330066>anais do XIII Encontro Paulista de Educação Matemática</font>. v. 13, p. 779-790, issn: 7713-2133, 2017.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BARROS, A. P. R. M.; SIMMT, E. ; MALTEMPI, M. V.. <b>Understanding a Brazilian High School Blended Learning Environment from the Perspective of Complex Systems</b>. <font color=#330066>Journal of Online Learning Research</font>. v. 3, p. 73-101, issn: 2374-1473, 2017.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BENATI, Davi Munhoz; ITO, KAZUHIRO ; KOHAMA, KAZUYUKI ; YAMAMOTO, HAJIME ; ZOQUI, EUGENIO JOS?. <b>Study on the Microstructure and Liquid Phase Formation in a Semisolid Gray Cast Iron</b>. <font color=#330066>METALLURGICAL AND MATERIALS TRANSACTIONS B-PROCESS METALLURGY AND MATERIALS PROCESSING SCIENCE</font>. v. 48, p. 2293-2303, issn: 1073-5615, 2017. <a href="http://dx.doi.org/10.1007/s11663-017-1018-5" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CARAÇA, REINALDO DA SILVA. <b>Efeitos relativísticos sobre observadores uniformemente acelerados</b>. <font color=#330066>Revista Brasileira de Ensino de Física (São Paulo)</font>. v. 39, p. e4301-1-e4301-9, issn: 1806-1117, 2017. <a href="http://dx.doi.org/10.1590/1806-9126-rbef-2017-0002" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>CARNEIRO, A. S. <b>SOUSÂNDRADE EM NOVA IORQUE: FIGURAÇÕES DA MULHER E DO MOVIMENTO FREE LOVE NO POEMA ?O GUESA?</b>. <font color=#330066>ContraPonto</font>. v. 7, p. 131-144, issn: 2237-9940, 2017.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>COLONA, S. F. ; FEITOSA, W. R.. <b>A case study about services quality evaluation in a logistics company</b>. <font color=#330066>Independent Journal of Management & Production</font>. v. 8, p. 1-18, issn: 2236-269X, 2017.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>FLEIRA, R. C.; FERNANDES, S. H. A. A.. <b>PRÁTICAS DE ENSINO PARA A INCLUSÃO DE UM ALUNO AUTISTA NAS AULAS DE MATEMÁTICA</b>. <font color=#330066>Revista Brasileira de Educação em Ciências e Educação Matemática - ReBECEM</font>. v. 1, p. 104-122, issn: 2594-9179, 2017.</td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>FREITAG, B. B.; Fischer, A. L.. <b>TALENTOS EM GESTÃO E GESTÃO DE TALENTOS: ANÁLISE DA LITERATURA ACADÊMICA E DE PRÁTICAS CORPORATIVAS</b>. <font color=#330066>READ. REVISTA ELETRÔNICA DE ADMINISTRAÇÃO (PORTO ALEGRE. ONLINE)</font>. v. 23, p. 158-187, issn: 1413-2311, 2017. <a href="http://dx.doi.org/10.1590/1413-2311.152.54930" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>GARCIA, A.R. ; LOPEZ, L. J. R. ; BASILE, F. R. M.. <b>Meta Heuristic for WDM Optical Networks Without Wavelength Conversion</b>. <font color=#330066>Journal of Telecommunication, Electronic and Computer Engineering</font>. v. 10, p. 127-131, issn: 2180-1843, 2017.</td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>GOMES, E. F. ; LIZARDO, E.O.. <b>Sob o Olhar das Lentes: Uma Proposta de Divulgação Científica na Escola a partir do Projeto Banca da Ciência.</b>. <font color=#330066>REVISTA INTERDISCIPLINAR DE TECNOLOGIAS E EDUCAÇÃO</font>. v. 3, p. 1, issn: 2447-5955, 2017.</td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>HOMEM, Thiago Pedro Donadon; PERICO, D. H. ; SANTOS, PAULO EDUARDO ; BIANCHI, REINALDO AUGUSTO DA COSTA ; DE MANTARAS, RAMON LOPEZ. <b>Retrieving and reusing qualitative cases: An application in humanoid-robot soccer</b>. <font color=#330066>AI COMMUNICATIONS</font>. v. 30, p. 251-265, issn: 0921-7126, 2017. <a href="http://dx.doi.org/10.3233/AIC-170735" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>LEITE, M. C. S. <b>Os desafios de uma disciplina escolar: práticas docentes no ensino de Sociologia</b>. <font color=#330066>Cadernos da Associação Brasileira de Ensino de Ciências Sociais</font>. v. 1, p. 52-68, issn: 2594-3707, 2017.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>LIMA, CAMILA DE ; BALBO, Antonio Roberto ; Homem, Thiago Pedro Donadon ; FLORENTINO SILVA, HELENICE DE OLIVEIRA. <b>A hybrid approach combining interior-point and branch-and-bound methods applied to the problem of sugar cane waste</b>. <font color=#330066>JOURNAL OF THE OPERATIONAL RESEARCH SOCIETY</font>. v. 68, p. 147-164, issn: 0160-5682, 2017. <a href="http://dx.doi.org/10.1057/s41274-016-0027-0" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LOURENCAO, BRUNA C. ; PINHEIRO, ROMARIO A. ; SILVA, TIAGO A. ; CORAT, EVALDO J. ; FATIBELLO-FILHO, ORLANDO. <b>Porous boron-doped diamond/CNT electrode as electrochemical sensor for flow-injection analysis applications</b>. <font color=#330066>DIAMOND AND RELATED MATERIALS</font>. v. 74, p. 182-190, issn: 0925-9635, 2017. <a href="http://dx.doi.org/10.1016/j.diamond.2017.03.006" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>LUGO, D.C. ; SILVA, P.C. ; RAMIREZ, M.A. ; PILLACA, E.J.D.M. ; RODRIGUES, C.L. ; FUKUMASU, N.K. ; CORAT, E.J. ; TABACNIKS, M.H. ; TRAVA-AIROLDI, V.J.. <b>Characterization and tribologic study in high vacuum of hydrogenated DLC films deposited using pulsed DC PECVD system for space applications</b>. <font color=#330066>SURFACE & COATINGS TECHNOLOGY</font>. v. 332, p. 135-141, issn: 0257-8972, 2017. <a href="http://dx.doi.org/10.1016/j.surfcoat.2017.07.084" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>MAIA, J. O.; BRAGA, D. B.. <b>Popularidade e visibilidade em redes sociais online: negociação de capitais sociais em meio digital para ampliação de audiência</b>. <font color=#330066>SIGNÓTICA</font>. v. 29, p. 354, issn: 2316-3690, 2017. <a href="http://dx.doi.org/10.5216/sig.v29i2.35577" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>MARQUES, A. C. T. L. ; CRUZ, A. C. F.. <b>Infância, gênero e ciência: análise de possibilidades e desafios da estratégia de oficinas pedagógicas na discussão sobre gênero e profissão</b>. <font color=#330066>REGRASP</font>. v. 3, p. 32-51, issn: 2526-1045, 2017.</td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>MARTINS NETO, IRANDO ALVES. <b>Sociolinguística, formação crítica e livro didático</b>. <font color=#330066>ArRedia</font>. v. 6, p. 1-15, issn: 2316-6169, 2017.</td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>MOREIRA, JOÃO VITOR SILVA ; MAY, PAUL WILLIAM ; CORAT, EVALDO JOSÉ ; PETERLEVITZ, ALFREDO CARLOS ; PINHEIRO, ROMÁRIO ARAÚJO ; ZANIN, HUDSON. <b>Diamond and Carbon Nanotube Composites for Supercapacitor Devices</b>. <font color=#330066>JOURNAL OF ELECTRONIC MATERIALS</font>. v. 46, p. 929-935, issn: 0361-5235, 2017. <a href="http://dx.doi.org/10.1007/s11664-016-5010-7" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>NAGANO, MARCELO SEIDO ; ROSSI, FERNANDO LUIS ; TOMAZELLA, CAIO PAZIANI. <b>A new efficient heuristic method for minimizing the total tardiness in a no-idle permutation flow shop</b>. <font color=#330066>PRODUCTION ENGINEERING</font>. v. 11, p. 523-529, issn: 0944-6524, 2017. <a href="http://dx.doi.org/10.1007/s11740-017-0747-2" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>NESPECA, MAURÍLIO GUSTAVO ; RODRIGUES, CAROLINE VARELLA ; SANTANA, KAMILI OLIVEIRA ; MAINTINGUER, SANDRA IMACULADA ; DE OLIVEIRA, JOSÉ EDUARDO. <b>Determination of alcohols and volatile organic acids in anaerobic bioreactors for H 2 production by near infrared spectroscopy</b>. <font color=#330066>INTERNATIONAL JOURNAL OF HYDROGEN ENERGY</font>. v. 42, p. 20480-20493, issn: 0360-3199, 2017. <a href="http://dx.doi.org/10.1016/j.ijhydene.2017.07.044" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Picosque, Tatiana. <b>Da morada áspera de Herberto Helder: residir e resistir contra Auschwitz</b>. <font color=#330066>Revista Sete Faces</font>. v. VIII, p. 211-233, issn: 2177-0794, 2017.</td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>PINHEIRO, R. A.; SILVA, AMANDA ARAUJO ; TRAVA-AIROLDI, V. J. ; CORAT, E. J.. <b>Water Vapor Extraction from Humid Air by Super-Hydrophilic VACNTs Growth on Stainless Steel Screen</b>. <font color=#330066>Functional Nanostructures Proceedings</font>. v. 1, p. 28-30, issn: 2515-5040, 2017.</td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>O trabalho do professor de Física no ensino médio: um retrato da realidade, da vontade e da necessidade nos âmbitos socioeconômico e metodológico</b>. <font color=#330066>Ciência e Educação (UNESP)</font>. v. 23, p. 963-978, issn: 1516-7313, 2017. <a href="http://dx.doi.org/10.1590/1516-731320170040006" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. A história da física e a física escolar: incoerências entre a ciência e o ensino. <b>A história da física e a física escolar: incoerências entre a ciência e o ensino.</b>. <font color=#330066>Khronos</font>. v. 1, p. 32-44, issn: 2447-2158, 2017. <a href="http://dx.doi.org/10.11606/khronos.v0i4.133607" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>RODRIGUEZ, ARTURO B ; RAMIREZ, LEONARDO J ; BASILE, FELIPE R. M. <b>Tecnologías y Educación: Su Percepción Social En Santiago de Chile</b>. <font color=#330066>FORMACIÓN UNIVERSITARIA</font>. v. 10, p. 67-76, issn: 0718-5006, 2017. <a href="http://dx.doi.org/10.4067/S0718-50062017000600008" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>SANTOS, E. M. D.; SOTO, F. P.. <b>Comparative study of thermal calculations of an Otto cycle internal combustion engine with results of experimental tests</b>. <font color=#330066>Acta Mechanìca et Mobilitatem</font>. v. 1, p. 76-88, issn: 2525-9350, 2017.</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS, LUCAS RODRIGUES; VIVOLO, VITOR ; NAVARRO, MARCUS VINÍCIUS TEIXEIRA ; XAVIER, MARCOS ; POTIENS, MARIA DA PENHA ALBUQUERQUE. <b>Filtration influence in a constant potential X-ray machine peak voltage measurements</b>. <font color=#330066>BRAZILIAN JOURNAL OF RADIATION SCIENCES</font>. v. 5, p. 261, issn: 2319-0612, 2017. <a href="http://dx.doi.org/10.15392/bjrs.v5i2.261" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SANTOS, LUCIANA CAVALCANTI MAIA; GASALLA, MARIA A. ; DAHDOUH-GUEBAS, FARID ; BITENCOURT, MARISA DANTAS. <b>Socio-ecological assessment for environmental planning in coastal fishery areas: A case study in Brazilian mangroves</b>. <font color=#330066>Ocean & Coastal Management</font>. v. 138, p. 60-69, issn: 0964-5691, 2017. <a href="http://dx.doi.org/10.1016/j.ocecoaman.2017.01.009" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SILVA, AMANDA ARAUJO ; PINHEIRO, R. A.. <b>Unzipping of Multi-walled Carbon Nanotubes by Hydrogen Plasma</b>. <font color=#330066>Functional Nanostructures Proceedings</font>. v. 1, p. 31-33, issn: 2515-5040, 2017.</td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SILVA, AMANDA ARAUJO ; PINHEIRO, ROMÁRIO ARAÚJO ; RAZZINO, CLÁUDIA DO AMARAL ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Thin-film nanocomposites of BDD/CNT deposited on carbon fiber</b>. <font color=#330066>DIAMOND AND RELATED MATERIALS</font>. v. 75, p. 116-122, issn: 0925-9635, 2017. <a href="http://dx.doi.org/10.1016/j.diamond.2017.02.017" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SILVA, AMANDA ARAÚJO ; PINHEIRO, ROMÁRIO ARAÚJO ; RAZZINO, CLÁUDIA DO AMARAL ; CONTIN, ANDRÉ ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Synthesis and Characterization of Carbon Fiber Based Porous CNTs-RGO/BDD for Application as Microelectrodes</b>. <font color=#330066>MRS Advances</font>. v. -, p. 1-6, issn: 2059-8521, 2017. <a href="http://dx.doi.org/10.1557/adv.2017.334" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>TAVARES, PEDRO E. S.; FRITSCH, AMILSON R. ; TELLES, GUSTAVO D. ; HUSSEIN, MAHIR S. ; IMPENS, FRANÇOIS ; KAISER, ROBIN ; BAGNATO, VANDERLEI S.. <b>Matter wave speckle observed in an out-of-equilibrium quantum fluid</b>. <font color=#330066>PROCEEDINGS OF THE NATIONAL ACADEMY OF SCIENCES OF THE UNITED STATES OF AMERICA</font>. v. 114, p. 201713693, issn: 0027-8424, 2017. <a href="http://dx.doi.org/10.1073/pnas.1713693114" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>AKKARI, A. C. S. ; MUNHOZ, I. P. ; TOMIOKA, J. ; SANTOS, N. M. B. F. ; SANTOS, R. F.. <b>Inovação tecnológica na indústria farmacêutica: diferenças entre a Europa, os EUA e os países farmaemergentes</b>. <font color=#330066>Gestão & Produção</font>. v. 23, p. 1-15, issn: 1806-9649, 2016. <a href="http://dx.doi.org/10.1590/0104-530x2150-15" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ALMEIDA, R. N. R. <b>Pensando o campo cinematográfico brasileiro a partir das contribuições de Pierre Bourdieu</b>. <font color=#330066>NORUS - NOVOS RUMOS SOCIOLÓGICOS</font>. v. 4, p. 214-227, issn: 2318-1966, 2016. <a href="http://dx.doi.org/10.15210/norus.v4i5.7948" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ALMEIDA, T. L. ; BROZE, T. S. ; YAMASHITA, G. H. ; TILEMANN, R. ; SOUZA, D.. <b>Aplicação do design macroergonômico em linha de montagem de desktops</b>. <font color=#330066>ESPACIOS (CARACAS)</font>. v. 37, p. 25, issn: 0798-1015, 2016.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANTUNES, Jeferson; LIMA, J. N. ; TEIXEIRA, W. C. ; SOUSA, L. B. ; CAVALCANTE, S. O.. <b>Considerações e resultados acerca da aplicação da Criativa: metodologia educativa fomentada por meio dos jogos cooperativos</b>. <font color=#330066>CADERNOS DE PESQUISA: PENSAMENTO EDUCACIONAL (CURITIBA. IMPRESSO)</font>. v. 11, p. 15-33, issn: 1980-9700, 2016.</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>AQUINO, P.; MUTRAN, M.. <b>Interviewing Eilis Ni Dhuibhne</b>. <font color=#330066>ABEI JOURNAL (SÃO PAULO)</font>. v. 18, p. 147-157, issn: 1518-0581, 2016.</td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>BAGÉ, I. B. <b>A Formação Continuada de Professores a Distância: Um olhar sobre o curso de ingressantes oferecido aos docentes de Matemática do Estado de São Paulo</b>. <font color=#330066>X ENEM: Educação Matemática, cultura e diversidade</font>. v. 1, p. 1-11, issn: 2178-034X, 2016.</td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>BAGÉ, I. B.; MALTEMPI, M. V.. <b>Formação Continuada de Professores: uma proposta de curso para o ensino de Estatística e Probabilidade com o uso de Tecnologias Digitais</b>. <font color=#330066>Anais do III Congresso Nacional de Formação de Professores e do XIII Congresso Estadual Paulista sobre Formação de Educadores por um revolução no campo de formação de professores</font>. v. 1, p. 3616-3625, issn: 2359-3822, 2016.</td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>BARBOSA, R.; da silva, mayara marques ; FONTANA, C. F. ; sakurai, akio. <b>Internet of Things (IoT) in Urban Mobility: The Case of Bus Rapid Transit (BRT) of São José Dos Campos City</b>. <font color=#330066>International Journal of Transportation Systems</font>. v. 1, p. 134, issn: 2534-8876, 2016.</td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>BASILE, F. R. M.; LOPEZ, L. J. R. ; SILVA, C. A. ; RIBEIRO, J. M. ; GARCIA, R. C. B. V.. <b>Estrategia Interdisciplinar en Investigación en Telesalud con el Uso de Videoconferencia</b>. <font color=#330066>Journal of Industrial Neo-Technologies</font>. v. 3, p. 38-45, issn: 0719-5303, 2016.</td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>BENATI, Davi Munhoz; ITO, KAZUHIRO ; KOHAMA, KAZUYUKI ; YAMAMOTO, HAJIME ; ZOQUI, EUGÊNIO JOSÉ. <b>In Situ</i> Observation of Semisolid Fe-2.5C-1.5Si Gray Cast Iron</b>. <font color=#330066>SSP - Solid State Phenomena</font>. v. 256, p. 63-68, issn: 1662-9779, 2016. <a href="http://dx.doi.org/10.4028/www.scientific.net/ssp.256.63" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>CAPOTE, G. ; RAMÍREZ, M.A. ; DA SILVA, P.C.S. ; LUGO, D.C. ; TRAVA-AIROLDI, V.J.. <b>Improvement of the properties and the adherence of DLC coatings deposited using a modified pulsed-DC PECVD technique and an additional cathode</b>. <font color=#330066>SURFACE & COATINGS TECHNOLOGY</font>. v. 308, p. 70-79, issn: 0257-8972, 2016. <a href="http://dx.doi.org/10.1016/j.surfcoat.2016.08.096" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>CORRÊA, E L ; SANTOS, L R DOS ; VIVOLO, V ; POTIENS, M P A. <b>Mammography calibration qualities establishment in a Mo- Mo clinical system</b>. <font color=#330066>Journal of Physics. Conference Series (Online)</font>. v. 733, p. 012086, issn: 1742-6596, 2016. <a href="http://dx.doi.org/10.1088/1742-6596/733/1/012086" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>DINIZ, BEATRIZ FERRAZ. <b>O DISCURSO SOBRE A VADIAGEM NA PRAÇA DA SÉ (SP)</b>. <font color=#330066>Psicologia & Sociedade (Online)</font>. v. 28, p. 341-349, issn: 1807-0310, 2016. <a href="http://dx.doi.org/10.1590/1807-03102016v28n2p341" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>FEITOSA, W. R.; MAXIMIANO, C. R. ; MELO, J. S. M.. <b>Um estudo de caso sobre a gestão de portfólio de projetos por meio de um escritório de projetos ? o caso da TECBAN</b>. <font color=#330066>Espacios (Caracas)</font>. v. 37, p. 16, issn: 0798-1015, 2016.</td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>KUROSAWA, P. N. ; FEITOSA, W. R. ; MOTA, E. P. ; MELO, J. S. M.. <b>A interação de clientes em uma ação promocional digital - o caso da campanha Monopoly do McDonalds</b>. <font color=#330066>FFBUSINESS</font>. v. 14, p. 33-43, issn: 1679-723X, 2016.</td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>LEITE, MARIA STELLO. <b>Amar sem Temer nas ruas de São Paulo - Mulheres lésbicas e bissexuais pelo direito de (r)existir</b>. <font color=#330066>PONTO URBE</font>. v. 18, p. 31-32, issn: 1981-3341, 2016.</td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>LIMA, E. M. M. ; SACOMANO, J. B. ; Oliveira, C.C. ; TAVARES, P. F. S. L. ; REIS, N. F. ; REIS, J. G. M. ; Abe, J. M.. <b>Information Systems in Supply Chain: A Study of the Furniture Cluster in the State of Parana, Brazil</b>. <font color=#330066>International Journal of Production Research (Print)</font>. v. 1, p. 1-1, issn: 0020-7543, 2016.</td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>MULICO, LESLIÊ VIEIRA ; MAIA, JUNOT DE OLIVEIRA. <b>DESCOLEÃ?Ã?ES E REMIXES NA APRENDIZAGEM DE LÃ?NGUA INGLESA: UM ESTUDO DE CASO EM UMA ESCOLA PÃ?BLICA</b>. <font color=#330066>TRABALHOS EM LINGUÍSTICA APLICADA</font>. v. 55, p. 319-353, issn: 2175-764X, 2016. <a href="http://dx.doi.org/10.1590/010318135014177391" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>PARDO, F. S. <b>Epistemologias digitais, cibercultura e a construção de relatos pessoais multimodais no ensino e aprendizagem de língua inglesa</b>. <font color=#330066>VEREDAS - REVISTA DE ESTUDOS LINGUÍSTICOS</font>. v. 20, p. 21-37, issn: 1982-2243, 2016.</td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>PINHEIRO, ROMÁRIO ARAÚJO; DE LIMA, CÍNTIA MACEDO ; CARDOSO, LAÍS DIAS RIBEIRO ; TRAVA-AIROLDI, VLADIMIR JESUS ; CORAT, EVALDO JOSÉ. <b>Methods to grow porous diamond film doped with boron and nitrogen by deposition on carbon nanotubes</b>. <font color=#330066>DIAMOND AND RELATED MATERIALS</font>. v. 65, p. 198-203, issn: 0925-9635, 2016. <a href="http://dx.doi.org/10.1016/j.diamond.2016.03.022" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>POLEZI MUNHOZ, IGOR; SANTOS AKKARI, ALESSANDRA CRISTINA ; BASTOS FERNANDES DOS SANTOS, NEUSA MARIA. <b>Análise dos impactos diretos e indiretos do Programa de P</b>. <font color=#330066>Revista Brasileira de Politicas Publicas</font>. v. 5, p. 124-144, issn: 2236-1677, 2016. <a href="http://dx.doi.org/10.5102/rbpp.v5i3.3321" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>REIS, N. F.; Oliveira, C.C. ; TAVARES, P. F. S. L. ; Abe, J. M.. <b>Logical decision-making method relating to innovation management</b>. <font color=#330066>IFIP Advances in Information and Communication Technology</font>. v. 1, p. 195-203, issn: 1868-4238, 2016. <a href="http://dx.doi.org/10.1007/978-3-319-51133-7" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>RODRIGUES MARTINEZ BASILE, FELIPE; CEZAR AMATE, FLÁVIO ; RAMIREZ LÓPEZ, LEONARDO JUAN. <b>Desarrollo colaborativo en Telemedicina y Telesalud para la Educación, la atención y la investigación: Estudio de caso Lab.Sh-Brasil - Tigum-Colombia</b>. <font color=#330066>Academia y Virtualidad</font>. v. 9, p. 123-141, issn: 2011-0731, 2016. <a href="http://dx.doi.org/10.18359/ravi.1708" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>RODRIGUES, C. V. ; SANTANA, K. O. ; NESPECA, M. G. ; De OLIVEIRA, J. E. ; MAINTINGUER, S. I.. <b>APLICAÇÃO DE GLICEROL BRUTO PRÉ-TRATADO EM PROCESSOS BIOLÓGICOS DE GERAÇÃO DE H2</b>. <font color=#330066>Ciência & Tecnologia: Fatec-JB (Online)</font>. v. 8, p. 1, issn: 2178-9436, 2016.</td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>RODRIGUES, CAROLINE VARELLA ; SANTANA, KAMILI OLIVEIRA ; NESPECA, MAURÍLIO GUSTAVO ; EDUARDO DE OLIVEIRA, JOSÉ ; MAINTINGUER, SANDRA IMACULADA. <b>Crude glycerol by transesterification process from used cooking oils: Characterization and potentialities on hydrogen bioproduction</b>. <font color=#330066>International Journal of Hydrogen Energy</font>. v. 41, p. 14641-14651, issn: 0360-3199, 2016. <a href="http://dx.doi.org/10.1016/j.ijhydene.2016.06.209" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>RODRIGUEZ, ARTURO B ; RAMÍREZ, LEONARDO J ; BASILE, FELIPE R. M. <b>Percepción Social de las Tecnologías Electromagnéticas</b>. <font color=#330066>Informacion Tecnologica</font>. v. 27, p. 227-236, issn: 0718-0764, 2016. <a href="http://dx.doi.org/10.4067/S0718-07642016000600023" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>ROSSI, FERNANDO LUIS; NAGANO, MARCELO SEIDO ; NETO, ROBERTO FERNANDES TAVARES. <b>Evaluation of high performance constructive heuristics for the flow shop with makespan minimization</b>. <font color=#330066>International Journal of Advanced Manufacturing Technology (Internet)</font>. v. 10, p. 1433-3015, issn: 1433-3015, 2016. <a href="http://dx.doi.org/10.1007/s00170-016-8484-9" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>ROSSI, FERNANDO LUIS; NAGANO, MARCELO SEIDO ; SAGAWA, JULIANA KEIKO. <b>An effective constructive heuristic for permutation flow shop scheduling problem with total flow time criterion</b>. <font color=#330066>International Journal of Advanced Manufacturing Technology (Internet)</font>. v. 1, p. 1-15, issn: 1433-3015, 2016. <a href="http://dx.doi.org/10.1007/s00170-016-9347-0" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>SAMPAIO, MARIA J. ; OLIVEIRA, JOÃO W.L. ; SOMBRIO, CAROLINE I.L. ; BAPTISTA, DANIEL L. ; TEIXEIRA, SÉRGIO R. ; CARABINEIRO, SÓNIA A.C. ; SILVA, CLÁUDIA G. ; FARIA, JOAQUIM L.. <b>Photocatalytic performance of Au/ZnO nanocatalysts for hydrogen production from ethanol</b>. <font color=#330066>Applied Catalysis. A, General (Print)</font>. v. 518, p. 198-205, issn: 0926-860X, 2016. <a href="http://dx.doi.org/10.1016/j.apcata.2015.10.013" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>SANTANA, K. O.; RODRIGUES, C. V. ; NESPECA, M. G. ; De OLIVEIRA, J. E. ; PIRES, L. O. ; MAINTINGUER, S. I.. <b>PRODUÇÃO BIOLÓGICA DE GÁS HIDROGÊNIO A PARTIR DE GLICEROL BRUTO E ESGOTO SANITÁRIO</b>. <font color=#330066>Ciência & Tecnologia: Fatec-JB (Online)</font>. v. 8, p. 1, issn: 2178-9436, 2016.</td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>SANTOS JUNIOR, V. D. <b>'A latinidade e as Luzes: a França, o Oriente e o lugar das Américas nas Lettres sur l?Amérique du Nord, de Michel Chevalier (1836)'</b>. <font color=#330066>Dimensões: Revista de História da UFES</font>. v. 36, p. 335-357, issn: 2179-8869, 2016.</td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>SANTOS, L. C. M.; PINHEIRO, M. A.A. ; DAHDOUH-GUEBAS, F. ; BITENCOURT, MARISA DANTAS. <b>Population status and fishery potential of the mangrove crab, Ucides cordatus (Linnaeus, 1763) in North-eastern Brazil</b>. <font color=#330066>Journal of the Marine Biological Association of the United Kingdom (Print)</font>. v. 1, p. 1-11, issn: 0025-3154, 2016. <a href="http://dx.doi.org/10.1017/S0025315416001259" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>SANTOS, L. C. M.; ROLLO, M. M. ; COSTA, T. M. ; PINHEIRO, M. A.A. ; DAHDOUH-GUEBAS, F. ; BITENCOURT, M. D.. <b>Spatial Analysis of a Coastal Area for Conservation and Fishery of Mangrove Edible Crab (Ucides cordatus)</b>. <font color=#330066>Journal of Coastal Research</font>. v. 75, p. 685-689, issn: 0749-0208, 2016. <a href="http://dx.doi.org/10.2112/SI75-137.1" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>SILVA, Everaldo Paulo da. <b>CÁLCULO EM MATEMÁTICA: UM ASSUNTO PARA O ENSINO EM GERAL OU ESPECÍFICO PARA O ENSINO TÉCNICO</b>. <font color=#330066>História da Educação</font>. v. 20, p. 65-80, issn: 2236-3459, 2016. <a href="http://dx.doi.org/10.1590/2236-3459/54093" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>SILVA, PATRÍCIA CRISTIANE SANTANA DA; RAMOS, MARCO ANTONIO RAMIREZ ; CORAT, EVALDO JOSÉ ; TRAVA-AIROLDI, VLADIMIR JESUS. <b>DLC Films Grown On Steel Using An Innovator Active Screen System For PECVD Technique</b>. <font color=#330066>MATERIALS RESEARCH</font>. v. 19, p. 882-888, issn: 1980-5373, 2016. <a href="http://dx.doi.org/10.1590/1980-5373-mr-2015-0456" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>SOUZA, D. ; BROZE, T. S. ; TILEMANN, R. ; YAMASHITA, G. H. ; SIDRIM, M. L. ; AGUIAR, R. B. ; AMARAL, T. M.. <b>Aplicação de modelo multicritério para priorização de alternativas em um hospital de Petrolina - PE</b>. <font color=#330066>ESPACIOS (CARACAS)</font>. v. 37, p. 24, issn: 0798-1015, 2016. <a href="http://www.scopus.com/scopus/inward/citedby.url?partnerID=bb5nvXTn&rel=R6.0.0&doi=null&md5=f8a2d9f8af7e0fb17f9968fbbee28b49" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>TSATSOS, MARIOS C. ; TAVARES, PEDRO E.S. ; CIDRIM, ANDRÉ ; FRITSCH, AMILSON R. ; CARACANHAS, MÔNICA A. ; DOS SANTOS, F. EDNILSON A. ; BARENGHI, CARLO F. ; BAGNATO, VANDERLEI S.. <b>Quantum turbulence in trapped atomic Bose-Einstein condensates</b>. <font color=#330066>Physics Reports</font>. v. 622, p. 1-52, issn: 0370-1573, 2016. <a href="http://dx.doi.org/10.1016/j.physrep.2016.02.003" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>ZOQUI, EUGÊNIO JOSÉ ; BENATI, Davi Munhoz ; PRONI, CECILIA TEREZA WEISHAUPT ; Torres, Luis Vanderlei. <b>Thermodynamic evaluation of the thixoformability of Al-Si alloys</b>. <font color=#330066>Calphad (New York)</font>. v. 52, p. 98-109, issn: 0364-5916, 2016. <a href="http://dx.doi.org/10.1016/j.calphad.2015.12.006" target="_blank" style="PADDING-RIGHT:4px;"><img border=0 src="doi.png"></a></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

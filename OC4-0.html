@@ -1,0 +1,511 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Trabalho de conclusão de curso de graduação'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+14],
+[2017,
+18],
+[2018,
+6],
+[2019,
+13],
+[2020,
+10],
+[2021,
+33],
+[2022,
+17],
+[2023,
+44],
+[2024,
+15],
+[2025,
+2]]}]});
+        });
+        </script>
+        
+                <h3>Trabalho de conclusão de curso de graduação</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 172<br>
+                    
+                    
+                    <div id="dv-year-2025"><h3 class="year">2025</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Caio Morais Yamazaki. <b>Gestão da Qualidade</b>. (Graduação em Engenharia Mecânica) - Instituto Federal de São Paulo, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0205084568545664">Davi Munhoz Benati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Maurício dos Santos Silva Lima. <b>Barreiras à Adoção de NRs na Construção Civil: Uma Revisão Sistemática de Literatura</b>. (Graduação em Engenharia de Produção) - Universidade do Estado do Amapá, . 2025.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></td></tr>
+            </table></div><div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Ana Ester do Nascimento. <b>APRENDIZADOS DOCENTES DE EGRESSOS DO PIBID DO IFSP- CAMPUS HORTOLÂNDIA</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>André N. dos Santos; Gabriel Z. de Araujo; Tiago G. Senechen. <b>A SINERGIA ENTRE KPIS E INTELIGÊNCIA ARTIFICIAL NA GESTÃO EMPRESARIAL: o efeito da inteligência artificial nos indicadores de desempenho</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Antonio Marcos da Luz. <b>O ENSINO DE FRAÇÃO A PARTIR DE UM MÉTODO EGÍPCIO: POSSIBILIDADES EM UM CENÁRIO PARA INVESTIGAÇÃO</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Beatriz Correa de Santana; Joselanny Oliveira da Silva. <b>Políticas públicas educacionais para mulheres: uma análise sobre os seus desdobramentos e o seu estado da arte no Brasil</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Campus São Paulo Pirituba, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Felipe Whitaker dos santos. <b>APRENDIZADOS DOCENTES DE EGRESSOS DO PIBID DO IFSP- CAMPUS HORTOLÂNDIA</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Fernanda Célia Bella. <b>COMPROMETIMENTO ORGANIZACIONAL: uma análise em uma indústria de alimentos</b>. (Graduação em Administração) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318720994328334">Carolina Aparecida de Freitas Dias</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriel Rodrigues da Silva. <b>Inovação orientada por dados: centralizando e aprimorando o gerenciamento de projetos de inovação aberta por meio de engenharia de dados</b>. (Graduação em Engenharia Mecânica) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0205084568545664">Davi Munhoz Benati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Gilmara da Silva Chaves. <b>Considerações sobre a interação entre pacientes surdos e colaboradores ouvintes no atendimento público em saúde: uma revisão integrativa</b>. (Graduação em Enfermagem) - Universidade Federal de Minas Gerais, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Ivani Lucimar De Carvalho. <b>CARTAS ESCRITAS EM AULA DE MATEMÁTICA: AVALIAÇÃO INFORMAL E FORMATIVA Autores</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Jaqueline Cristina Tolotto. <b>Avaliação de resultados em educação corporativa: um estudo com organizações que atuam no Brasi</b>. (Graduação em Administração) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318720994328334">Carolina Aparecida de Freitas Dias</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Joana Necy Guillen. <b>APRENDIZADOS DOCENTES DE EGRESSOS DO PIBID DO IFSP- CAMPUS HORTOLÂNDIA</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Marcella Ferreira dos Santos; Milena Missassi Fantim. <b>Impactos do layout na eficiência operacional: Um estudo de caso em uma indústria têxtil de pequeno porte</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Mariana Foregato Da Silva. <b>O ENSINO DE FRAÇÃO A PARTIR DE UM MÉTODO EGÍPCIO: POSSIBILIDADES EM UM CENÁRIO PARA INVESTIGAÇÃO</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Patricia Farias de Souza. <b>Políticas públicas afirmativas: perspectivas de uma estudante com deficiência do Campus São Paulo Pirituba no IFSP</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7123768100809570">Irando Alves Martins Neto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Uilson Lima de Almeida. <b>UM OLHAR PARA A REALIDADE DA PESSOA COM DEFICIÊNCIA SOB O PARADIGMA INCLUSIVO</b>. (Graduação em Licenciatura em Matemática) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2024.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adriana Dias da Silva. <b>CARACTERIZAÇÃO QUIMICA E ANÁLISE DE METABÓLITOS SECUNDÁRIOS DO PSEUDOFRUTO E PARTES AÉREAS DA Anacardium occidentale L.</b>. (Graduação em Química de Produtos Naturais) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Adriano de Almeida Pereira. <b>ESCALAFACIL</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Alessandra Moreira Lopes. <b>A ansiedade e suas complexidades no ambiente escolar</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Amanda Cristina Vieira Pontes. <b>o A importância do importância do ambiente escolar e dos professores na promoção de ações de educação alimentar e nutricional ? uma revisão da literatura</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Ana L. Incao, Helania J. da Silva, Maria Paula de O. Mamede. <b>Doaconecta: Aplicativo Móvel Para Doações de Itens em Bom Estado</b>. (Graduação em Tenologia em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0150761926799891">Igor Calebe Zadi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Beatriz Perez. <b>Veículos Movidos a Célula Combustível Uma Revisão Bibliográfica e Perspectivas no Contexto Brasileiro</b>. (Graduação em Engenharia Mecânica) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0205084568545664">Davi Munhoz Benati</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Bruna Machado Braga. <b>FUSÕES E AQUISIÇÕES: CASO ITAÚ UNIBANCO</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Bárbara Freitas. <b>Produtividade e Sustentabilidade na Era da Digitização: Abordagem multi-método e compreensão dos mecanismos configuracionais que moldam a tomada de decisão no contexto da automação industrial</b>. (Graduação em Engenharia de Produção) - Instituto Federal de Educação Ciência e Tecnologia de São Paulo, Coordenação de Aperfeiçoamento de Pessoal de Nível Superior. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Célia Laiane Candido e Claudemir Pereira. <b>O Gestor escolar e sua importância no processo de ensino-aprendizagem</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Daiana Regina dos Santos. <b>A formação docente e os desafios da educação inclusiva na educação infanl</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>DANILO TORRES ROSA RAMALHO. <b>IMPACTOS E ADAPTAÇÕES NA LOGÍSTICA DOS E-COMMERCES DIANTE À PANDEMIA DE COVID-19</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>DIOGO DUARTE SALGUEIRO. <b>MOVEOUT</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Edilene Querobino de Freitas. <b>Jogos e Brincadeiras: concepções sobre as melhores práticas lúdicas na Educação</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>EMILY RIBEIRO BERNARDO. <b>MODELAGEM DE NEGÓCIOS DE CANVAS PARA IMPLANTAÇÃO NA LOJA ON-LINE HEAVEN STORE ERB</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>GABRIELLE GONÇALVES DIAS. <b>IMPACTOS E ADAPTAÇÕES NA LOGÍSTICA DOS E-COMMERCES DIANTE À PANDEMIA DE COVID-19</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Guilherme Farias Galletti. <b>ESCALAFACIL</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>GUSTAVO AZZI FURMANKIEWICZ. <b>APLICAÇÃO DOS CONCEITOS DE ENGENHARIA DE PRODUÇÃO, EM PROCESSOS DE AUTOMAÇÃO DE SERVIÇOS EMPRESARIAIS, ATRAVÉS DO PROGRAMA POWER AUTOMATE.</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>HENRIQUE WATZECH MILANI. <b>MOVEOUT</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>IGOR DUARTE MAGNANI. <b>IMPACTOS E ADAPTAÇÕES NA LOGÍSTICA DOS E-COMMERCES DIANTE À PANDEMIA DE COVID-19</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>Isabela Jobstraibizer Rita. ?I have no mouth through which I can speak. <b>I can't make myself understood?I have no listeners?: a releitura dos mitos gregos como estratégia literário-política em ?The Penelopiad?, de Margaret Atwood</b>. (Graduação em Licenciatura em Letras - Português/Inglês) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>ISABELLA TEIXEIRA RIBEIRO DE OLIVEIRA. <b>RESÍDUOS AGROINDUSTRIAIS COMO FONTE DE CELULOSE</b>. (Graduação em Química de Produtos Naturais) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Izabella Arruda Hercules. <b>COSMÉTICOS VEGANOS SOB A ÓPTICA DOS PRODUTOS NATURAIS</b>. (Graduação em Química de Produtos Naturais) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>JEAN MEIRA GUIMARÃES BASTOS. <b>O USO TERAPÊUTICO DE FLAVONOIDES NO TRATAMENTO DA COVID-19</b>. (Graduação em Química de Produtos Naturais) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Jennifer Vasconcelos de Carvalho, Pedro Henrique F. da Silva. <b>CONNECT BUS: Uma proposta de aplicativo para gestão de transporte público</b>. (Graduação em Tecnologia em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo - campus Boitiuva, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Josiane Benedita Alves da Silva. <b>Brincadeiras na Educação Infantil: uma forma significativa de construir os conhecimentos</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>João Pedro dos Santos Oliveira. <b>Monitoramento Remoto de Biodigestores com Microcontroladores: Uma Abordagem Utilizando Aplicação Web em Tempo Real</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>JOÃO VICTOR OLIVEIRA ARRUDA. <b>MOVEOUT</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Juliane Soares Mendes Gonçalves. <b>O Uso das metodologias ativas na matemática no Ensino Fundamental I</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>Julio C. A. Nascimento, Victor L. C. Evangelista. <b>Sistema de Otimização de Processos Burocráticos em Centrais de Assistência Médica</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>KELLEN MARTINS DO CARMO. <b>O Parque Estadual do Jaraguá: Viabilidade do Aproveitamento Turístico Local</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Lucas Henrique da Costa Silva. Pedagogia: reflexões visão e desafios. <b>trajetória e atuação</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Luccas Lopes Silva. <b>ESCALAFACIL</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>Maiara Sanches Cunha da Silva. <b>AVALIAÇÃO DA ATIVIDADE ANTIMICROBIANA E DO PERFIL ANTIOXIDANTE DE PANCs</b>. (Graduação em Química de Produtos Naturais) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>34. &nbsp;</td> <td>Marcus Vinicius Pereira Soares. <b>Implementação de Sistema de Auditoria de Pagamento de Pessoal da Base de Administração e Apoio do Ibirapuera</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>35. &nbsp;</td> <td>Milena da Silva Gomes. <b>O papel do coordenador pedagógico na formação pedagógica coletiva: Relato de experiência</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>36. &nbsp;</td> <td>Miriam Gonçalves Oliveira Ferreira. <b>O processo de inclusão escolar: a relevância do ensino de libras na educação infantil</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>37. &nbsp;</td> <td>Paula Caroline Gomes Alves. <b>Guerra às drogas, racismo e necropolítica: a criminalização da cannabis como ferramenta de manutenção do racismo pelo Estado brasileiro</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Campus São Paulo Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>38. &nbsp;</td> <td>Ricardo Felix de Lima. <b>Educação matemáca de jovens e adultos: dificuldades de aprendizado dos alunos EJA no ensino matemáco do Ensino Médio</b>. (Graduação em Pedagogia EPT) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>39. &nbsp;</td> <td>Thais da Silva Sousa. <b>APLICAÇÃO DAS PARCERIAS PÚBLICO PRIVADAS NO SISTEMA METROVIÁRIO DE SÃO PAULO</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de Ciência e Tecnologia de São Paulo - Pirituba, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>40. &nbsp;</td> <td>Thiago Sousa do Rozario. <b>Plásticos biodegradáveis: uma análise comparativa do comportamento de diferentes polímeros em exposição de curto prazo ao solo</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2729577875052578">Bruno Sérgio do Amaral</a>.</font></td></tr>
+            
+            <tr valign="top"><td>41. &nbsp;</td> <td>Vinicius Acquaviva Zanoli. <b>Liderança servidora: uma análise fílmica sobre a vida de Cristo Jesus</b>. (Graduação em Administração) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4318720994328334">Carolina Aparecida de Freitas Dias</a>.</font></td></tr>
+            
+            <tr valign="top"><td>42. &nbsp;</td> <td>Vinicius M. Vieira, Débora L. M. Almeida, Eduardo M. Silva. <b>Aprendizado de Máquina Aplicado à Análise Preditiva de Mensagens Falsas em Redes Sociais Relacionados a Vacina de Covid-19</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5813261133047060">Adriano Jose Ferruzzi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>43. &nbsp;</td> <td>Wellington Zanelatto. <b>Monitoramento Remoto de Biodigestores com Microcontroladores: Uma Abordagem Utilizando Aplicação Web em Tempo Real</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>Érica Della Mônica Vicente. <b>FUSÕES E AQUISIÇÕES: CASO ITAÚ UNIBANCO</b>. (Graduação em Engenharia de Produção) - Instituto Federal de São Paulo, . 2023.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Beatriz Evangelista da Silva. <b>Semáforos Inteligentes - Um plano para a melhoria do trafego e sustentabilidade na região de Pirituba em São Paulo</b>. (Graduação em Gestão Pública) - Instituto Federal de Educação Ciência e Tecnologia de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4570604108944635">Paulo Eduardo Pissardini</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruna Moura de Arruda. <b>Movimento antivacinal e seus impactos para a saúde pública</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Câmpus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Camila Cardoso de Brito e Wesley Nicolau Cardoso. <b>Prospecções de Novos Negócios e o Marketing Industrial com foco na distribuição de amostras: um estudo de caso da empresa Basf SA.</b>. (Graduação em Tecnologia em Comércio Exterior) - FATEC Zona Leste, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6557595946011722">Tarcísio Oliveira Vasconcelos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Camilo Cristiano Bezerra e Luis Pascoal da Silva Ferreira. <b>A importância da internacionalização para o Gestor Público</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Claudia Regina da Fonseca Lopes. <b>Como a burocracia impacta na habilitação dos pretendentes à adoção de crianças e adolescentes no Brasil</b>. (Graduação em Licenciatura em Letras Português/Inglês) - IFSP - Câmpus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Debora Elizabeth Bentancor. <b>Como a burocracia impacta na habilitação dos pretendentes à adoção de crianças e adolescentes no Brasil</b>. (Graduação em Licenciatura em Letras Português/Inglês) - IFSP - Câmpus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Gabriel Elter Lopes de Melo Freitas. <b>A Gestão Pública da infraestrutura de transporte do modal aéreo civil brasileiro</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Gabriela Naime Alexandrino. <b>Ética no setor público</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Giovanna Pinheiro Augusto. <b>Movimento antivacinal e seus impactos para a saúde pública</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Câmpus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Gustavo Lima Brilha. <b>Movimento antivacinal e seus impactos para a saúde pública</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Câmpus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Júlia Sayuri Moribe Nascimento/ Silvana F. Lermen Gonçalves. <b>Das políticas públicas de combate à fome no município de São Paulo</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Campus São Paulo Pirituba, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4492087996976873">Tatiana Aparecida Picosque</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Leonardo Rodrigues, Luis Antonio Nascimento, Thiago Ferreira. <b>AMAAI: aplicativo mobile de assistência às atividades do idoso</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Maria Eduarda Leal Ferreira, Nathalia Fonseca Bim. <b>Volun: Aplicativo de apoio à realização do trabalho voluntário</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0150761926799891">Igor Calebe Zadi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Rodrigo dos Santos Magalhães. <b>PROPRIEDADES TERAPÊUTICAS RELACIONADAS A DERIVADOS DA PLANTA MEDICINAL Ginkgo biloba L.: UMA COMPILAÇÃO</b>. (Graduação em Química) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Rodrigo Italo Sauerwein Guglielmi. <b>O papel de sandboxs regulatórios no desenvolvimento de cidades inteligentes brasileiras</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Rosana Machado dos Reis. <b>Educação em Direitos Humanos: uma análise em escolas da rede municipal paulistana</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Vinícius da Costa Garcia. <b>Análise de demonstrações matemáNcas presentes em um livro didático do 9º ano do ensino fundamental</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2022.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Alexandre Pereira Junior. <b>Inteligência Artificial para monitoramento do uso de máscaras de proteção</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Allan Clayton dos Santos. <b>Potencialidades de uma tarefa com produção de vídeo planejada no contexto do ensino remoto emergencial</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Ana Carolina B V Marckiolo. <b>Avaliação da atividade antioxidante in vitro de espécies vegetais utilizadas na cultura afro-brasileira: uma revisão</b>. (Graduação em Química) - Instituto Federal de Educação, Ciência e Tecnologia do Rio de Janeiro. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5323510575674245">Ana Paula Santos da Conceição</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>ANA PAULA BALANCIERI. <b>Educação Infantil, cantar para crescer</b>. (Graduação em Pedagogia) - Universidade Virtual do Estado de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>BEATRIZ SILVA PAIXÃO e KATHELEEN CRISTINE GREGORATO. <b>INTELIGÊNCIA ARTIFICIAL PARA A FARMACOVIGILÂNCIA EM POSTAGENS NO TWITTER RELACIONADAS A ANTIDEPRESSIVOS</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Bárbara Heliodora Ribeiro Cesar Dantas. <b>?Ela queria dar o furo? A institucionalização da tecnoviolência de gênero contra comunicadoras</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>CABRAL, Márcia Olibeira. <b>A Gestão dos Parques Municipais de São Paulo e o Entrave no Processo de Concessão à Iniciativa Privada</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0085760610917679">Ricardo Normanha Ribeiro de Almeida</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Claudia Regina da Fonseca Lopes. <b>Como a burocracia impacta na habilitação dos pretendentes à adoção de crianças e adolescentes no Brasil</b>. (Graduação em Tecnologia em Gestão Pública) - IFSP - Câmpus São Paulo Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>CLAUDIA YUMI AKAMINE. <b>CARACTERIZAÇÃO DA PAISAGEM DO PARQUE ECOLÓGICO DO TIETÊ USANDO GEOTECNOLOGIAS: UMA ANÁLISE ESPAÇO-TEMPORAL</b>. (Graduação em Ciências Biológicas) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Daniel F.S., Lucas S.A. e Rafael S.C. <b>Ensina.me: busca e agendamento de aulas particulares</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo Câmpus São Paulo Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5904768897181890">Rogério Aparecido Campanari Xavier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Debora da silva Lima Galhardo. <b>: Educação em tempos de pandemia: os impactos causados na rotina de gestores e professores</b>. (Graduação em Pedagogia) - Universidade Virtual do Estado de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Debora Elizabeth Bentancor. <b>Como a burocracia na avaliação psicossocial atrasa a habilitação dos pretendentes à adoção de crianças e adolescentes no Brasil</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Edmara dos Santos Monteiro. <b>: Inclusão e adaptação escolar nas escolas municipais de Dracena - SP</b>. (Graduação em Pedagogia) - Universidade Virtual do Estado de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Gabriel Martins dos Santos. <b>Plataforma Virtual para apoio ao Diário de Atividades do exame de MAPA</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Gabriela de Fatima Barboza da Mota e Larissa Ellen G Marques. <b>B with Me</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Giovana Alves Ceccato e Roberta Barbosa Pereira Simões. <b>Contratação por pregão em serviços públicos</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>Guilherme B. Quittó, Jonathan D dos Santos e Leandro A Jesus. <b>Mapeamento de estabelecimentos de saúde e comerciais durante a pandemia</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Iago Araújo, Victor Moreira dos Santos e Vinicius Augusto. <b>Identificação de manifestações de Clientes de instituições bancárias em redes sociais utilizando inteligência artificial</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>19. &nbsp;</td> <td>Igor Silva e Lima, Luciana Silveira , Roseane Souza. <b>Economia Circular: Conceitos e Perspectivas na Gestão Pública</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9174738474958622">Fernando Luis Rossi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>20. &nbsp;</td> <td>isabela Marques Correa dos Santos. <b>Indícios de Apropriação das Tecnologias Digitais: reflexões sobre práNcas de professores que se (re)inventaram na pandemia</b>. (Graduação em Licenciatura em Matemática) - IFSP - Câmpus Hortolândia, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4191252261770638">Ana Paula Rodrigues Magalhães de Barros</a>.</font></td></tr>
+            
+            <tr valign="top"><td>21. &nbsp;</td> <td>JOÃO PEDRO OCANHA KRIZEK. <b>EFEITOS DE ALTERAÇÕES PAISAGÍSTICAS EM MUDANÇAS CLIMÁTICAS URBANAS: UM ESTUDO DE CASO NA CIDADE DE SÃO PAULO</b>. (Graduação em Ciências Biológicas) - Instituto Federal de São Paulo, Conselho Nacional de Desenvolvimento Científico e Tecnológico. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>22. &nbsp;</td> <td>Larissa de Paula Freitas. <b>Uma proposta de Material Didático: Utilizando a plataforma Arduino para explicar conceitos básicos de calor e temperatura no Ensino Fundamental</b>. (Graduação em Física) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2393092066131485">Caroline Inês Lisevski</a>.</font></td></tr>
+            
+            <tr valign="top"><td>23. &nbsp;</td> <td>Leonardo Lopes Lotaif e Matheus Vinicius de Souz. <b>Análise sobre os quadros de COVID-19 classificados como Síndrome Respiratória Aguda Grave no Brasil</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>24. &nbsp;</td> <td>Lourival M. do Rosario Jr; Bruno A. Paulino da Siva. <b>Aplicativo móvel para compras no atacado</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - IFSP - Campus São Paulo Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6109272293288485">Thiago Pedro Donadon Homem</a>.</font></td></tr>
+            
+            <tr valign="top"><td>25. &nbsp;</td> <td>Luana Rosa. <b>Acessibilidade em transportes públicos - O caso da CPTM</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>26. &nbsp;</td> <td>Rayara dos Santos Oliveira, Luis Henrique de Oliveira Malafa. <b>DOOK: Aplicativo de doação de livros</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0150761926799891">Igor Calebe Zadi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>27. &nbsp;</td> <td>s Gustavo Moreira Peleje; Jader Thomé;Júlio C.MRossignoll. <b>Hunterest: Uma proposta de Software para auxílio na busca por refeições em ambientes externos.</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8291123108448027">Regivaldo Sousa Ferreira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>28. &nbsp;</td> <td>Suzamarra Libarino Lemos. <b>Políticas Públicas Educacionais e Gestão Escolar na Perspectiva da Resolução de Conflitos nas Escolas Públicas de São Paulo</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>29. &nbsp;</td> <td>TALITA MARIA DOS SANTOS OLIVEIRA. <b>AUDIODESCRIÇÃO: uma ferramenta para inclusão de estudantes com deficiência visual</b>. (Graduação em Matemática) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>30. &nbsp;</td> <td>Vitória Araruna. <b>O modelo da tripla hélice na gestão municipal - O caso de Barueri</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>31. &nbsp;</td> <td>Wilson Satoshi Ueno Funaki. <b>Relação entre a Condutividade Elétrica e o pH: uma abordagem interdisciplinar</b>. (Graduação em Física) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2393092066131485">Caroline Inês Lisevski</a>.</font></td></tr>
+            
+            <tr valign="top"><td>32. &nbsp;</td> <td>Yasmin Xavier da Silva. <b>ADOTE: Análise de perfil para guarda responsável de animais</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo Câmpus São Paulo Pirituba, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/5904768897181890">Rogério Aparecido Campanari Xavier</a>.</font></td></tr>
+            
+            <tr valign="top"><td>33. &nbsp;</td> <td>ZEMANTAUSKAS, Denise. <b>Transferência de renda no Brasil: um olhar sobre o Bolsa família, auxílio emergencial e Renda Cidadã</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2021.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0085760610917679">Ricardo Normanha Ribeiro de Almeida</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Beatriz G. Costa, Bruno B. Bonatti e Rodrigo H. I. da Silva. <b>Mercado acionário e sua influência nos usuários do Twitter durante o período de pandemia de 2020</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - IFSP - Campus São Paulo Pirituba, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6109272293288485">Thiago Pedro Donadon Homem</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Camila Lima; Lucas Silva, Vitória Leal, Karoline Fonseca,. O estudo da modalidade e sua inserção na prática docente. <b>Em foco: os emojis</b>. (Graduação em Letras - Português e Inglês) - Universidade Paulista, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Camila V. L. Baldi, Debora M. Machado e Guilherme S. Moraes. <b>Detecção de aglomerações utilizando o reconhecimento de objetos</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - IFSP - Campus São Paulo Pirituba, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6109272293288485">Thiago Pedro Donadon Homem</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Larissa Oliveira, Rafael Neves, Matheus Nakano. <b>Ferramenta de e-learning para implementação de LGPD</b>. (Graduação em Tecnólogo em Análise e desenvolvimento de sistemas) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Leandro José dos Santos. <b>Policiamento Comunitário: Um estudo das contribuições do programa Vizinhança Solidária na gestão da Segurança Pública</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Marcus Brito, Bia Mansur, Carmen Pereira. <b>Identidades fragmentadas em A distância entre nós, de Thrity Umrigar</b>. (Graduação em Letras - Português e Inglês) - Universidade Paulista, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Maria Emília Gonçalves Miranda de Barros. <b>Patrimônio da União: o Problema da Gestão dos Imóveis da União em especial os Terrenos de Marinha</b>. (Graduação em Tecnologia em Gestão Pública) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3721834622772994">Silene Jucelino de Lima</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Nadjila Tejo, Lais Sousa, Tainá Alecrim. <b>Proposta de solução mobile para coleta de dados digitais de atenção básica por agentes comunitários de saúde: Caso UBS-Pirituba</b>. (Graduação em Tecnólogo em Análise e desenvolvimento de sistemas) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Natã Nunes Alves Pereira. <b>Solução computacional para negociação automatizada no mercado de ativos da B3</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7290375482443455">Alex Sandro Rodrigues Ancioto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Tatitana Santos. <b>Refugiados no Brasil: quem são?</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2020.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Adryan de Souza Barbosa. <b>ANÁLISE DO CENÁRIO DA CONSULTORIA RURAL EM CULTURAS DE ZEA MAYS DE PEQUENOS PRODUTORES LOCALIZADOS AO LONGO DA MICRORREGIÃO DE JACAREZINHO ? PR</b>. (Graduação em Agronegócio) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Angélica Maria Pereira. <b>MOTIVAÇÃO E SATISFAÇÃO DOS COLABORADORES DE UMA EMPRESA DO SETOR DE AGRONEGÓCIO EM AVARÉ-SP</b>. (Graduação em Agronegócio) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>CAYO DIEBE. <b>FITVIEW: APLICATIVO DETECTOR PARA CONTAR FLUXOS DE PESSOAS NOS CORREDORES DO IFSP CÂMPUS BOITUVA</b>. (Graduação em Tecnologia em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo - campus Boitiuva, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Debora Freitas; Julia Felipe; Juliana Ferreira;Luis Marques. <b>A literatura nas aulas de Língua Inglesa: ressignificação da obra "O retrato de Dorian Gray"</b>. (Graduação em Letras - Português e Inglês) - Universidade Paulista, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>ELIANA AMARAL RODRIGUES, FERNANDA SAMPAIO. <b>POLÍTICAS EDUCACIONAIS NA PERSPECTIVA DA EDUCAÇÃO ESPECIAL: PROPOSTA DE UM PORTAL PARA GESTÃO DE ALTAS HABILIDADES E SUPERDOTAÇÃO</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Felipe Fernandes Secundino. <b>A trissecção do ângulo</b>. (Graduação em Matemática) - Universidade do Estado do Rio de Janeiro, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2476849790799335">Marco Antonio Mucha Orco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Flora Oyama do Patrocínio, Sara Rosa dos Santos. <b>OPERACIONALIZAÇÃO DO ATENDIMENTO NO PRONTO-SOCORRO: UM ESTUDO DE CASO EM UM HOSPITAL PÚBLICO-PRIVADO</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>FLORA OYAMA PATROCÍNIO, SARA ROSA SANTOS. <b>PROPOSTA DE UM PROTÓTIPO DE CHATBOT PARA MELHORIA DO FLUXO DE ATENDIMENTO NO MINISTÉRIO DA AGRICULTURA</b>. (Graduação em Gestão Pública) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Gustavo Antoniaci Araujo Santos. <b>OS IMPACTOS DO MARKETING VERDE NO COMPORTAMENTO DE COMPRA DO CONSUMIDOR DE SUCO DE UVA INTEGRAL DA CIDADE DE MANDURI - SP</b>. (Graduação em Agronegócio) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Isabella Gomes; Camila B da SIlva, Ana Heloísa D. Santos. <b>As múltiplas violências contra a mulher na obra: A distância entre nós, de Thrity Umrigar: a subalternidade e o silenciamento do sujeito feminino</b>. (Graduação em Letras - Português e Inglês) - Universidade Paulista, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Marcos Vinicius Holanda Martins. <b>Gestão de estoques de gêneros alimentícios em uma organização militar</b>. (Graduação em Logística) - Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul. 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6020485492953878">Thiago Silva Broze</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Mayara Pereira Mendes Laranjeiro. <b>Tecnologia assistiva para estudante com deficiência visual: favorecendo a autonomia no ensino superior em um Instituto Federal (coorientador)</b>. (Graduação em Matemática) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Rebeca Carneiro Americano. <b>Reflexões sobre vivências em um cursinho popular do IFSP</b>. (Graduação em Matemática) - Instituto Federal de São Paulo, . 2019.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Breno Souza Santos. <b>Guerra Fria e poder: A Matemática e os mísseis balísticos</b>. (Graduação em Matemática) - Universidade Estadual de Santa Cruz, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6580031323799138">Everaldo Paulo da Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Graziella Morra Barbosa Silva. <b>Aquisição de Língua Inglesa no contexto extraclasse: o uso da tecnologia em ambientes informais</b>. (Graduação em Letras - Português e Inglês) - Universidade do Estado do Rio de Janeiro, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8227138220523755">Krícia Helena Barreto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>João Augusto Quintel Diniz. <b>MYDRINK</b>. (Graduação em Tecnologia em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo - campus Boitiuva, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Rafael Borges Elias. <b>Uma parábola a partir de quatro retas tangentes</b>. (Graduação em Matemática) - Universidade do Estado do Rio de Janeiro, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2476849790799335">Marco Antonio Mucha Orco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Renan do Nascimento Gonçalves. <b>Beam Calculator</b>. (Graduação em Tecnologia em Controle de Obras) - Faculdade de Tecnologia do Tatuapé - Victor Civita, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0194287453328754">Renato Pereira Cruz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Wilson Ferreira da Silva. <b>PLICATIVO-PROTÓTIPO PARA BUSCA DE ROTAS E OTIMIZAÇÃO DE VISITAS ÀS RESIDÊNCIAS PARA O PROJETO SACO VERDE, JUNTO A COOPERATIVA DE COLETORES DA CIDADE DE BOITUVA</b>. (Graduação em Tecnologia em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo - campus Boitiuva, . 2018.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ALAN LUTFI; MARIA ESPERIDIAO; PEDRO SILVA. <b>ESTUDO PARA MELHORIA DA GESTAO DE ESTOQUE EM UMA INDUSTRIA DE HIGIENE PESSOAL</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aleir da Silva Oliveira. <b>A importância do novo aeroporto de São Roque para logística regional</b>. (Graduação em Bacharelado em Administração) - IFSP - Campus São Roque, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Amanda Salvador Porto. <b>O fórum de discussão como ferramenta de reflexão da prática docente</b>. (Graduação em Letras) - Universidade do Estado do Rio de Janeiro, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/8227138220523755">Krícia Helena Barreto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>CAIO SILVA; FERNANDO TRINDADE; LUCAS MANTOVANI. <b>ANALISE O SETOR DE PRIVATE EQUITY EM ECONOMIAS EMERGENTES: UM COMPARATIVO ENTRE O MERCADO BRASILEIRO E DEMAIS MEMBROS DOS BRICS</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Edvilson da Silva Oliveira Neto. <b>Percepção de sucesso e fracasso de pequena empresa familiar em Paraty-RJ</b>. (Graduação em Bacharelado em Administração) - IFSP - Campus São Roque, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>FERNANDO HINO; LARISSA OLIVEIRA; RENATO LIND. <b>SANITARIO PET</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>GUILHERME SANTOS; LIVIA SENA. <b>CRIAÇÃO DE NOVO MODELO DE NEGOCIO PARA A INDUSTRIA 4.0 NO SETOR GRAFICO BRASILEIRO</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>HELOISA GUEDES; NATHALIA BRANCO; PAULA SOUZA. <b>O DESPERDICIO DE PRODUTOS A VENCER EM UMA REDE VAREJISTA DE ALIMENTOS</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Josyelle da Silva Moura. <b>PERFIL DO CONSUMIDOR DE LATICÍNIOS E FATORES INFLUENTES NA DECISÃO DE COMPRA DE PRODUTOS LÁCTEOS NA CIDADE DE AVARÉ - SP</b>. (Graduação em Tecnólogo em Agronegócio) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>KAROLINE BORGES. <b>A IMPORTANCIA DE UMA EMPRESA DE TURISMO EMPRESARIAL</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Laura Catel Lopes dos Santos. <b>Marketing digital e meios de pagamento: estudo de caso Empresa Scielo</b>. (Graduação em Bacharelado em Administração) - IFSP - Campus São Roque, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Nathalia de Avelar Moreira da Silva. <b>A importância do treinamento como ferramenta de gestão de pessoas no agronegócio: um estudo em propriedade agropecuária em Avaré - SP</b>. (Graduação em Tecnólogo em Agronegócio) - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo. 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Nathalya Bastos da Costa. <b>Circunferência dos nove pontos</b>. (Graduação em Matemática) - Universidade do Estado do Rio de Janeiro, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/2476849790799335">Marco Antonio Mucha Orco</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>Nayara Alexandra de Goes Machado. <b>Lógica de processos de inovação: estudo de caso em São Roque e região</b>. (Graduação em Bacharelado em Administração) - IFSP - Campus São Roque, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>15. &nbsp;</td> <td>Osvaldinei Aparecido de Oliveira. <b>SECURITYOCR - LOCALIZAÇÃO DE VEÍCULOS PROPORCIONADA POR PROCESSAMENTO DE IMAGENS</b>. (Graduação em Tecnologia em Análise e Desenvolvimento de Sistemas) - Instituto Federal de São Paulo - campus Boitiuva, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3050082633467692">Felipe Alexandre Cardoso Pazinatto</a>.</font></td></tr>
+            
+            <tr valign="top"><td>16. &nbsp;</td> <td>Sabrina Leite Alves. <b>ESTADO DA ARTE DA UTILIZAÇÃO DE GEOTECNOLOGIAS NO ENSINO DE CIÊNCIAS: UMA ANÁLISE QUALIQUANTITATIVA</b>. (Graduação em Abi - Ciências Sociais) - Universidade Estadual Paulista Júlio de Mesquita Filho, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/6121323026815026">Luciana Cavalcanti Maia Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>17. &nbsp;</td> <td>STEFANE FRADE; GUSTAVO QUEIROZ; SABRINA SABINO; VANESSA MAI. <b>GESTAO DE ESTOQUE M UMA EMPRESA DO SETOR VAREJISTA DA INDUSTRIA TEXTIL</b>. (Graduação em Engenharia de Produção) - Pontifícia Universidade Católica de São Paulo, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>18. &nbsp;</td> <td>Verônica Ribeiro do Nascimento. <b>A PARTICIPAÇÃO DA MULHER NA DISPUTA DE CARGOS PÚBLICOS EFETIVOS NO MUNICÍPIO DE BARBALHA - CE</b>. (Graduação em Administração Pública) - Universidade Federal do Cariri, . 2017.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bruna Silva; Paulo Pontes; Vitor Amaral; Felipe Possmoser. <b>ACADEMIA AUTOSSUSTENTÁVEL</b>. (Graduação em Engenharia de Produção Mecânica) - Universidade Paulista, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Bruno Trevisani Brianti. <b>O transporte como direito social</b>. (Graduação em Direito) - Universidade Municipal de São Caetano do Sul, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9637385188417163">Danilo Amorim de Souza</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Carlos Oliveira, Douglas Silva, Murilo Grossi, Vinicius M. <b>TRASHINK MACHINE: DESTILADOR DE TINTAS À BASE DE SOLVENTES</b>. (Graduação em Engenharia de Produção Mecânica) - Universidade Paulista, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Danilo Delphino Jr, Marcos Passos, Marla Martins, Silvio R. <b>REAPROVEITAMENTO DE MATÉRIA PRIMA PARA PRODUÇÃO DE CAPACETES DE PROTEÇÃO INDIVIDUAL</b>. (Graduação em Engenharia de Produção Mecânica) - Universidade Paulista, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>JOCASTA MARIA DO NASCIMENTO DA COSTA. <b>DESTINAÇÃO DA RECEITA EFETIVA DA ARRECADAÇÃO COM MULTAS DE TRÂNSITO</b>. (Graduação em Ciências Contábeis) - FACULDADE TREVISAN, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3190403221290930">José Geraldo Basante</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Julio Cesar Oliveira de Souza; Raquel Mitie Takara. <b>Construção e Validação de um Controlador Fuzzy de Variáveis Climáticas de uma Casa de Vegetação</b>. (Graduação em Engenharia de Controle e Automação) - Instituto Federal de São Paulo, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/1645025560656843">Francisco Manoel Filho</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Júlio C. Silva; Lyonel A. G. Gonçalves. <b>KIT MECANICO DE TRAÇÃO POR ALAVANCA ADAPTÁVEL À CADEIRA DE RODAS MANUAL</b>. (Graduação em Engenharia de Produção Mecânica) - Universidade Paulista, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Lemos,A;Hioka,M;Souza,T;Sousa,W;Silva,W. <b>Sistema para controle de estoque de academias: ACADEMIA ERU?S</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Leonardo Antonio Bueno Barbosa. <b>Metodologia de Seleção de Fornecedores em uma microempresa do ramo comercial utilizando o Método AHP</b>. (Graduação em Engenharia de Produção) - Centro Universitário Herminio Ometto de Araras, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9192838264879703">Fernando Cesar Mendonca</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Marco Aurélio Bernardes, Rafael Paulucci Pinheiro. <b>Estudo de viabilidade de implantação de e-commerce na empresa Maktubs</b>. (Graduação em Gestão da Tecnologia da Informação) - Centro Estadual de Educação Tecnológica Paula Souza, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/0150761926799891">Igor Calebe Zadi</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Miranda,DS;Silva,FA;Silva,JV;Smuczk,R;Feitosa,R. <b>Sistema de geolocalização e gerenciamento para empresa de moto-frete: Moto frete facility</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Oliveira,AP;Morao,DL;Serqueira,EA;Nogueira,FJ;Pereira,MIC. <b>Sistema de geolocalização e gerenciamento para empresa de moto-frete: Moto frete facility</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Rufino,BO;Scarmeloto,NI;Horauti,RY;Yamamoto,TY;Lima,WR. <b>Sistema de Gerenciamento para Empresa do ramo de confeitaria: Graci Bolos</b>. (Graduação em Análise e Desenvolvimento de Sistemas) - Faculdade Impacta de Tecnologia, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/9543740522912391">Fabio Oliveira Teixeira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>14. &nbsp;</td> <td>VITOR SATO. <b>OS CONTROLES INTERNOS E AS TOMADAS DE DECISÃO EMPRESARIAL: IMPACTOS RELEVANTES NAS DEMONSTRAÇÕES FINANCEIRAS DO ESTUDO DE CASO DA EMPRESA MAGAZINE LUIZA</b>. (Graduação em Ciências Contábeis) - FACULDADE TREVISAN, . 2016.<br><i><font size=-1>Orientador: <a href="http://lattes.cnpq.br/3190403221290930">José Geraldo Basante</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

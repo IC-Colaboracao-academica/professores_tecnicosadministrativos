@@ -1,0 +1,315 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de produção técnica'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+111],
+[2017,
+135],
+[2018,
+218],
+[2019,
+169],
+[2020,
+132],
+[2021,
+132],
+[2022,
+87],
+[2023,
+48],
+[2024,
+32],
+[2025,
+5]]}]});
+        });
+        </script>
+        
+                <h3>Total de produção técnica</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 1074<br>
+                    
+                    <center>Página: <a href="PT-0.html">1</a> &nbsp;<b>2</b> &nbsp;</center>
+                    <div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>43. &nbsp;</td> <td>FEITOSA, W. R. <b>CLAV parecer artigo 5833</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>44. &nbsp;</td> <td>FEITOSA, W. R. <b>CLAV parecer artigo 5843</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>45. &nbsp;</td> <td>FEITOSA, W. R. <b>CLAV parecer artigo 5857</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>46. &nbsp;</td> <td>FEITOSA, W. R. <b>CLAV parecer artigo 5899</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>47. &nbsp;</td> <td>FEITOSA, W. R. <b>CLAV parecer artigo 5911</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>48. &nbsp;</td> <td>FEITOSA, W. R. <b>CLAV parecer artigo 5927</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>49. &nbsp;</td> <td>FEITOSA, W. R. <b>Revista Economia & Gestão parecer para artigo #8928 - rodada 2</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>50. &nbsp;</td> <td>FEITOSA, W. R. <b>IFSP - 2º IFLOG - parecer para o artigo #20</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>51. &nbsp;</td> <td>FEITOSA, W. R. <b>IFSP 2º IFLOG - parecer para o artigo #111</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>52. &nbsp;</td> <td>FEITOSA, W. R. <b>IFSP 2º IFLOG parecer artigo # 162</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>53. &nbsp;</td> <td>FEITOSA, W. R. <b>IFSP PIBIFSP - Parecer em dois projetos de Iniciação Científica</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>54. &nbsp;</td> <td>FEITOSA, W. R. <b>RAM - Parecer RAM-2016-0074</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>55. &nbsp;</td> <td>FEITOSA, W. R. <b>BALAS - Parecer - artigo 1214767</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>56. &nbsp;</td> <td>FEITOSA, W. R. <b>Enanpad - parecer artigo #MKT1833</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>57. &nbsp;</td> <td>FEITOSA, W. R.; sergio muritiba ; SILVA, F. N. M.. <b>Papo de Gente Grande - Seja aprovado nas melhores universidades (Rádio IFSP). 2016. (Programa de rádio ou TV/Mesa</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>58. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Língua, Linguagem e Literatura Infantil</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>59. &nbsp;</td> <td>FERREIRA DA SILVA, V. R. <b>Interstícios: literatura juvenil, formação do leitor, arte e indústria cultural</b>. 2016. Trabalho editorial</td></tr>
+            
+            <tr valign="top"><td>60. &nbsp;</td> <td>FREITAG, B. B. <b>Avaliação de artigos acadêmicos submetidos ao XIX SEMEAD</b>. 2016. Parecer</td></tr>
+            
+            <tr valign="top"><td>61. &nbsp;</td> <td>FREITAG, B. B. <b>Avaliação de trabalhos de conclusão de curso (TCC) do Departamento de Administração da FEA-USP indicados ao Prêmio Ruy Leme de Excelência Acadêmica 2015/2016</b>. 2016. Parecer</td></tr>
+            
+            <tr valign="top"><td>62. &nbsp;</td> <td>FREITAS-DIAS, C. A. <b>Avaliador de trabalhos do XIX SemeAd</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>63. &nbsp;</td> <td>Homem, Thiago Pedro Donadon. <b>Robótica</b>. 2016. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>64. &nbsp;</td> <td>ISHY, P. H. <b>Inglês ? Nível Básico 1</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>65. &nbsp;</td> <td>ISHY, P. H. <b>Inglês e-Tec Idiomas sem Fronteiras ? Módulo 1 - semipresencial</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>66. &nbsp;</td> <td>LOPES, I. A. <b>Relatório de desenvolvimento individual de crianças pequenas</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>67. &nbsp;</td> <td>LOPES, INGRID ANELISE. <b>Comunicação e práticas pedagógicas: implicações para escolarização - trajetórias escolar de crianças com deficiência</b>. 2016. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>68. &nbsp;</td> <td>LOPES, L. <b>Curso de Aperfeiçoamento Profissional - turma 10. 2016</b>. 2016. </td></tr>
+            
+            <tr valign="top"><td>69. &nbsp;</td> <td>LOPES, L. <b>Pós-Graduação - MBA Gestão Empresarial - turma 55</b>. 2016. Curso de curta duração ministrado/Especialização</td></tr>
+            
+            <tr valign="top"><td>70. &nbsp;</td> <td>LOPES, L. <b>Pós-Graduação - MBA Gestão Empresarial - turma 56</b>. 2016. Curso de curta duração ministrado/Especialização</td></tr>
+            
+            <tr valign="top"><td>71. &nbsp;</td> <td>LOPES, L. <b>Pós-Graduação - MBA Gestão Empresarial - turma 63</b>. 2016. Curso de curta duração ministrado/Especialização</td></tr>
+            
+            <tr valign="top"><td>72. &nbsp;</td> <td>LOPES, L. <b>Análise de Viabilidade Econômico-Financeira de Investimentos - turma 9</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>73. &nbsp;</td> <td>MAIA, J. O.; LIMA, T. S.. <b>Mídias sociais: silenciamentos e resistências</b>. 2016. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>74. &nbsp;</td> <td>MARIOTO, R. R. <b>Oficina de argumentação e redação</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>75. &nbsp;</td> <td>MARTINS, T. H. B. <b>1 parecer científicos para o IFSP, relativo a projeto de iniciação científica</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>76. &nbsp;</td> <td>MARTINS, T. H. B. <b>Novas Tecnologias Digitais e a sala de aula. 2016. (Programa de rádio ou TV/Mesa</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>77. &nbsp;</td> <td>MELO, A. M. <b>Língua Inglesa e tecnologias: ligando e religando saberes</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>78. &nbsp;</td> <td>MELO, A. M. <b>E-tec Idiomas sem fronteiras - Inglês</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>79. &nbsp;</td> <td>MUNHOZ, I. P. <b>Introdução à Modelagem no SolidWorks</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>80. &nbsp;</td> <td>Módolo, L. P. <b>A VOZ NEODARWINISTA SOBRE OS HUMANOS: OS NOVOS SIGNIFICADOS HISTÒRICO-SOCIAIS DA ONTOLOGIA BIOCIENTÍFICA</b>. 2016. Relatório de pesquisa</td></tr>
+            
+            <tr valign="top"><td>81. &nbsp;</td> <td>PARDO, F. S. <b>Parecer dado a artigo submetido para a Revista Veredas - UFJF: vol. 20, nº1. 2016</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>82. &nbsp;</td> <td>PEDROSA, N. A. <b>POESIA ILUSTRADA</b>. 2016. Desenvolvimento de material didático ou instrucional - Ensino aprendizagem</td></tr>
+            
+            <tr valign="top"><td>83. &nbsp;</td> <td>PEREIRA, E. F. M.; GREJO, C. B.. <b>Parecerista no Fishbowl do Projeto Integrador 'Supply Chain para o comércio: Sistemas e Estratégias' do curso de Engenharia da Univesp</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>84. &nbsp;</td> <td>PUGLIESE, RENATO MARCON. <b>Fundamentos para o Ensino de Astronomia</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>85. &nbsp;</td> <td>RAGGI, R. V. ; MUNHOZ, I. P.. <b>Biomimetismo e Inovação na Engenharia</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>86. &nbsp;</td> <td>REIS, N. F. <b>Avaliador de Artigo 16791-52670-1-RV para Revista Cenário - UnB</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>87. &nbsp;</td> <td>REIS, N. F. <b>Avaliador de Artigo (14) ILS sixth edition co-organized by KEDGE Business School and the University of Bordeaux</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>88. &nbsp;</td> <td>REIS, N. F. <b>Avaliador de Artigo (82) ILS sixth edition co-organized by KEDGE Business School and the University of Bordeaux</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>89. &nbsp;</td> <td>REIS, N. F.; TREZ, A. P.. <b>Empreendedorismo Juvenil no Ensino Médio</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>90. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>Mini curso: Liderança no Agronegócio</b>. 2016. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>91. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>Empreendedorismo e Plano de Negócio</b>. 2016. Desenvolvimento de material didático ou instrucional - Material didático - Apostila</td></tr>
+            
+            <tr valign="top"><td>92. &nbsp;</td> <td>ROMAGNOLI, A. J. <b>Análise de Custos e Investimentos</b>. 2016. Desenvolvimento de material didático ou instrucional - Material didático - Apostila</td></tr>
+            
+            <tr valign="top"><td>93. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Programa Institucional de Bolsas de Iniciação Científica e Tecnológica do Instituto Federal de Educação, Ciência e Tecnologia de São Paulo</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>94. &nbsp;</td> <td>SANTOS, A. C. V. R. <b>Ciência e Senso Comum: A SOCIOLOGIA E A DESNATURALIZAÇÃO DO OLHAR SOBRE A REALIDADE SOCIAL</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>95. &nbsp;</td> <td>SANTOS, L. C. M. <b>Roteiros de aulas práticas de Geoprocessamento e Sensoriamento Remoto I: SPRING</b>. 2016. Desenvolvimento de material didático ou instrucional - Tutorialparaaulaprática</td></tr>
+            
+            <tr valign="top"><td>96. &nbsp;</td> <td>SANTOS, L. C. M. <b>Roteiros de aulas práticas de Geoprocessamento e Sensoriamento Remoto II</b>. 2016. Desenvolvimento de material didático ou instrucional - Tutorialparaaulaprática</td></tr>
+            
+            <tr valign="top"><td>97. &nbsp;</td> <td>SANTOS, L. C. M. <b>Roteiros de aulas práticas de Processamento de Dados: Word, Excel e Kompozer</b>. 2016. Desenvolvimento de material didático ou instrucional - Tutorialparaaulaprática</td></tr>
+            
+            <tr valign="top"><td>98. &nbsp;</td> <td>SELINGARDI, A. M. ; PEREIRA, E. F. M.. <b>Matemática para alunos de escolas públicas para o Exame do ENEM</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>99. &nbsp;</td> <td>SILVA, A. F. ; ANTUNES, Jeferson ; LIMA, J. N. ; CRUZ, P. H. M. G. ; CAVALCANTE NETO, F. A. ; CARDOSO, R. P. ; SILVA, A. C. B. A.. <b>JOGOS CRIATIVOS: O lúdico no fomento a criatividade</b>. 2016. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>100. &nbsp;</td> <td>SILVA, H. C. <b>Processo Administrativo Disciplinar 23306.002269/2016-67</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>101. &nbsp;</td> <td>SILVA, H. C. <b>Noções Básicas de Direito do Trabalho</b>. 2016. Curso de curta duração ministrado/Extensão</td></tr>
+            
+            <tr valign="top"><td>102. &nbsp;</td> <td>SILVA, Vagner L. <b>da. Avaliação de trabalhos para o 1º Congresso de Pós-Graduação do IFSP</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>103. &nbsp;</td> <td>SILVA, Vagner L. <b>da. Avaliação de trabalhos para o 7º Congresso de Iniciação Científica e Tecnológica do IFSP</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>104. &nbsp;</td> <td>SILVA, Vagner L. <b>da. Elaboração e apresentação de parecer para o Comitê de Ética em Pesquisa do IFSP</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>105. &nbsp;</td> <td>TRINDADE, L. H. <b>Projeto Pedagógico do Curso Técnico em Logística Integrado ao Ensino Médio do IFSP Campus Jundiaí</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>106. &nbsp;</td> <td>TRINDADE, L. H. <b>Projeto Pedagógico do Curso de Logística Integrado ao Ensino Médio (IFSP-JND)</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>107. &nbsp;</td> <td>TRINDADE, L. H. <b>Projeto Pedagógico do Curso de Logística Integrado ao Ensino Médio (IFSP-PTB)</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>108. &nbsp;</td> <td>TRINDADE, L. H. <b>Projeto Pedagógico do Curso Técnico em Administração (IFSP-PTB)</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>109. &nbsp;</td> <td>TRINDADE, L. H. ; OLIVEIRA, C. A. S. ; SOUZA, D. A. ; ROSSI, F. L. ; MOZOL, I. M. ; PILAN, H. C. ; SANTOS, J. G. ; SILVA, P. C. S. ; MARIOTO, R. R. ; MARTINS, T. H. B.. <b>Projeto Pedagógico do Curso Técnico em Logística Integrado ao Ensino Médio</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>110. &nbsp;</td> <td>TRINDADE, L. H. ; ROSSI, F. L. ; BASILE, F. R. M. ; BARBOSA, R. ; PILAN, H. C. ; SANTOS, J. G.. <b>Projeto Pedagógico do Curso Técnico em Administração, Subsequente ou Concomitante ao Ensino Médio</b>. 2016.</td></tr>
+            
+            <tr valign="top"><td>111. &nbsp;</td> <td>XAVIER, R. A. C. ; ANCIOTO, A. S. R. ; FAVARETO, A. L. ; BARROS, A. P. R. M. ; SOUZA, D. A. ; PAZINATTO, F. A. C. ; PILAN, H. C. ; SANTOS, J. G. ; MARIOTO, R. R. ; MARTINS, T. H. B.. <b>Projeto Pedagógico do Curso Técnico em Redes de Computadores Integrado ao Ensino Médio</b>. 2016.</td></tr>
+            </table></div><div id="dv-year-*itens sem ano"><h3 class="year">*itens sem ano</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>ANTUNES, Jeferson. Caminhos da pesquisa em Jogos: Serious games. <b>2018. (Programa de rádio ou TV/Outra)</b>. 0.</td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>ANTUNES, Jeferson. GESTÃO EFICIENTE DE EVENTOS ACADÊMICOS: Como utilizar ferramentas simples para automatizar inscrições, emissão de certificados e a gestão de redes sociais. <b>2016</b>. 0. Curso de curta duração ministrado/Outra</td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>ANTUNES, Jeferson. PLÁGIO | Plágio é crime? Evitando plágio e seus tipos. <b>2020. (Programa de rádio ou TV/Outra)</b>. 0.</td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>BERNARDO, Júlio Samuel Sávio. Moderador de sala em apresentação de trabalho científico na Etapa Presencial do Simpósio Internacional de Educação a Distância e Encontro de Pesquisadores em Educação a Distância (SIED:EnPED 2012), da Universidade Federal de São Carlos (UFSCar). <b>2012</b>. 0. Moderador de Simpósio</td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>SANTOS, LUCIANA CAVALCANTI MAIA. Roteiros de aulas práticas de Bioestatística, desenvolvidos para o curso de Ciências Biológicas bacharelado, da UNESP São Vicente. <b>2015</b>. 0. Desenvolvimento de material didático ou instrucional - Tutorialparaaulaprática</td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

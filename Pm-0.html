@@ -1,0 +1,297 @@
+
+                <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf8"><meta name="Generator" content="scriptLattes"><title>definitivo1</title><link rel="stylesheet" href="css/scriptLattes.css" type="text/css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"><link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"><link rel="stylesheet" type="text/css" href="css/dataTables.colVis.min.css"><script type="text/javascript" charset="utf8" src="js/jquery.min.js"></script><script type="text/javascript" charset="utf8" src="js/jquery.dataTables.min.js"></script><script type="text/javascript" charset="utf8" src="js/dataTables.colVis.min.js"></script><script src="http://professor.ufabc.edu.br/~jesus.mena/sorttable.js"></script></head><body><div id="header2"> <button onClick="history.go(-1)">Voltar</button><h2>definitivo1</h2></div>
+                
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <!--
+        <script type="text/javascript" src="./highcharts.js"></script>
+        <script type="text/javascript" src="./exporting.js"></script>
+        <script type="text/javascript" src="./drilldown.js"></script>
+        -->
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+        <script type="text/javascript">
+        // Load the fonts
+        Highcharts.createElement('link', {
+           href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700',
+           rel: 'stylesheet',
+           type: 'text/css'
+        }, null, document.getElementsByTagName('head')[0]);
+
+        Highcharts.theme = {
+   colors: ["#1F77B4", "#118D95", "#8085e9", "#8d4654", "#7798BF", "#aaeeee", "#ff0066", "#eeaaee", "#2b908f", "#90ee7e", "#55BF3B", "#DF5353", "#7798BF", "#aaeeee"],
+   chart: {
+      backgroundColor: null,
+      style: {
+         fontFamily: "'Source Sans Pro', 'sans-serif'"
+      }
+   },
+   title: {
+      style: {
+         color: 'black',
+         fontSize: '16px',
+         fontWeight: 'bold'
+      }
+   },
+   subtitle: {
+      style: {
+         color: 'black'
+      }
+   },
+   tooltip: {
+      borderWidth: 0
+   },
+   legend: {
+      itemStyle: {
+         fontWeight: 'bold',
+         fontSize: '13px'
+      }
+   },
+   xAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   yAxis: {
+      labels: {
+         style: {
+            color: '#6e6e70'
+         }
+      }
+   },
+   plotOptions: {
+      series: {
+         shadow: true
+      },
+      candlestick: {
+         lineColor: '#404048'
+      },
+      map: {
+         shadow: false
+      }
+   },
+
+   // Highstock specific
+   navigator: {
+      xAxis: {
+         gridLineColor: '#D0D0D8'
+      }
+   },
+   rangeSelector: {
+      buttonTheme: {
+         fill: 'white',
+         stroke: '#C0C0C8',
+         'stroke-width': 1,
+         states: {
+            select: {
+               fill: '#D0D0D8'
+            }
+         }
+      }
+   },
+   scrollbar: {
+      trackBorderColor: '#C0C0C8'
+   },
+
+   // General
+   background2: '#E0E0E8'
+};
+
+        Highcharts.setOptions(Highcharts.theme);
+        $(function () {
+            $('#container').highcharts({chart: {type: 'column', 
+height: 300}, 
+title: {text: 'Total de prêmios e títulos'}, 
+subtitle: {text: ''}, 
+xAxis: {title: {text: ''}, 
+type: 'category'}, 
+yAxis: {min: 0, 
+title: {text: 'Quantidade', 
+align: 'middle'}, 
+labels: {overflow: 'justify'}, 
+stackLabels: {enabled: true, 
+format: '{stack}'}}, 
+tooltip: {enabled: true, 
+valueSuffix: '', 
+shared: false, 
+headerFormat: '<span style="font-size: 10px">{point.key}{point.stack}{series.stack}</span><br/>', 
+pointFormat: '<span style="color:{series.color}">\u25CF</span> {series.name}: <b>{point.y}</b><br/>'}, 
+plotOptions: {bar: {dataLabels: {enabled: false}}, 
+column: {stacking: null}, 
+series: {shadow: 'true'}}, 
+legend: {enabled: false, 
+layout: 'vertical', 
+align: 'right', 
+verticalAlign: 'middle', 
+borderWidth: 1, 
+backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor || '#FFFFFF'), 
+shadow: true}, 
+credits: {enabled: false}, 
+series: [{name: 'Total', 
+data: [[2016,
+11],
+[2017,
+9],
+[2018,
+7],
+[2019,
+11],
+[2020,
+2],
+[2021,
+4],
+[2022,
+5],
+[2023,
+13],
+[2024,
+4]]}]});
+        });
+        </script>
+        
+                <h3>Total de prêmios e títulos</h3> <br>
+                    <div id="container" style="min-width: 310px; max-width: 1920px; height: 300; margin: 0"></div>
+                    Número total de itens: 66<br>
+                    
+                    
+                    <div id="dv-year-2024"><h3 class="year">2024</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Mérito Acadêmico Docente, Conselho Regional de Administração de São Paulo - CRA-SP.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8080425160395803">Bárbara Beatriz Freitag</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Paraninfa da Turma do Curso Técnico em Administração, Instituto Federal de São Paulo - Campus Jundiaí.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Paraninfa do Curso Técnico em Comércio, Instituto Federal de São Paulo - Campus Jundiaí.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6116588045452081">Teresa Helena Buscato Martins</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Paraninfo do curso de Licenciatura em Letras, Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP) ? Campus São Paulo-Pirituba ? Formatura do Primeiro Semestre, Instituto Federal de São Paulo - Campus Pirituba.. 2024.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            </table></div><div id="dv-year-2023"><h3 class="year">2023</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Bora Compartilhar - Set 2023 - 2º lugar - Desenvolvimento de App em Novos Negócios em TIC, IFCE - Edital Novos Negócios em TIC.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Medalha dos Veteranos das Forças de Segurança Pública do Brasil, Assembleia Legislativa dos Estado de São Paulo - ALESP.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Melhor artigo na categoria pós-graduação e indicação para fast track, Instituto Federal de Ciência e Tecnologia de São Paulo.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>MENÇÃO HONROSA durante o IV CONPESQ - Congresso dePesquisa, Pós-Graduação e Inovação da Universidade Federal do Cariri ? UFCA, Universidade Federal do Cariri ? UFCA.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Moção de aplausos e reconhecimento, Camara Municipal do Rio de Janeiro - RJ.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Moção de aplausos e reconhecimento, Câmara Municipal de Campo Limpo Paulista - SP.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Moção de aplausos e reconhecimento, Câmara Municipal de Várzea Paulista - SP.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Paraninfo da terceira turma de formandos do Curso de Tecnólogo em Análise e Desenvolvimento, IFSP - Campus São Paulo Pirituba.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Paraninfo do curso de Licenciatura em Letras - Formatura do Primeiro Semestre, Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP) ? Campus São Paulo-Pirituba.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Paraninfo do curso de Licenciatura em Letras ? Formatura do Segundo Semestre, Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP) ? Campus São Paulo-Pirituba.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Paraninfo dos formandos do Curso Técnico Integrado em Logística Turma A do câmpus Pirituba do IFSP.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2729577875052578">Bruno Sérgio do Amaral</a>.</font></td></tr>
+            
+            <tr valign="top"><td>12. &nbsp;</td> <td>Paraninfo dos formandos do Curso Técnico Integrado em Logística Turma B do câmpus Pirituba do IFSP.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2729577875052578">Bruno Sérgio do Amaral</a>.</font></td></tr>
+            
+            <tr valign="top"><td>13. &nbsp;</td> <td>Paraninfo dos formandos do Curso Técnico Integrado em Redes de Computadores do câmpus Pirituba do IFSP.. 2023.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2729577875052578">Bruno Sérgio do Amaral</a>.</font></td></tr>
+            </table></div><div id="dv-year-2022"><h3 class="year">2022</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>3º lugar na modalidade Comunicação Breve de Pesquisa durante o X do Congresso Brasileiro de Psicologia Organizacional e do Trabalho, Associação Brasileira de Psicologia Organizacional e do Trabalho (SBPOT).. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8080425160395803">Bárbara Beatriz Freitag</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Certificate in Advanced English- CAE, University of Cambridge.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0606119161753798">Andréa Antonieta Cotrim Silva</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Medalha MMDC, Sociedade de Veteranos de 1932 - MMDC.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Menção honrosa ao trabalho "ANÁLISE DE CLIMA ORGANIZACIONAL EM UMA EMPRESA DO RAMO DA CONSTRUÇÃO", Jornada de Produção Científica e Tecnológica CIPATEC, campus São Roque.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4318720994328334">Carolina Aparecida de Freitas Dias</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Segundo melhor instrutor do Brasil na Maratona de Cibereducação, CISCO do Brasil.. 2022.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            </table></div><div id="dv-year-2021"><h3 class="year">2021</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Medalha Barão de Jundiahy, Exército Brasileiro - 12º GAC.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Paraninfo da segunda turma de formandos do Curso de Tecnológo em análise e desenvolvimento de sistemas, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus São Paulo Pirituba.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Paraninfo do curso de Licenciatura em Letras, Instituto Federal de Educação, Ciência e Tecnologia São Paulo (IFSP) ? Campus São Paulo-Pirituba.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Patrono da primeira turma do curso de Tecnologia em Análise de Sistemas (TADS), IFSP - Campus São Paulo Pirituba.. 2021.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            </table></div><div id="dv-year-2020"><h3 class="year">2020</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Comendador, Academia Braileira de Artes e Ciências ABRASCI.. 2020.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4433249715762755">Robson Barbosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Lourdes Casanova Best Applied paper award nomination, BALAS.. 2020.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            </table></div><div id="dv-year-2019"><h3 class="year">2019</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>2 Artigos indicados a fast track de marketing, Semead.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Batismo Indígena, Ordem do Mérito Indígena Brasileiro/Confederação dos Tamoyos.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4433249715762755">Robson Barbosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Moção de Aplauso pela inauguração do Auditório Paulo Freire no IFSP Campus Registro, Câmara Municipal de Registro.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Paraninfa da Turma 2019-1 do curso Técnico em Administração, IFSP-Jacareí.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/8080425160395803">Bárbara Beatriz Freitag</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Paraninfo da turma de curso técnico em administração 2019, IFSP - Campus Pirituba.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413647002262825">Nelio Fernando dos Reis</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Paraninfo dos formandos do Curso Técnico Integrado em Logística do câmpus Pirituba do IFSP.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2729577875052578">Bruno Sérgio do Amaral</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Professor Nome de turma, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Professor Nome de turma, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Professor Paraninfo, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Prêmio Melhor Trabalho - EIXO Gestão, Economia, Turismo, Direito, Logística - CATEGORIA: PESQUISA ACADÉMICA com o projeto "Uso do celular inteligente (smartphone) na elaboração de conjecturas e provas, Prefeitura de Guarulhos - Semcitec.. 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Test of English as a Foreign Language (TOEFL) - iBT Score 91, Real Training Solutions (STN11603B) - Vienna, Austria... 2019.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3556770597527390">Alessandra da Silva Carneiro</a>.</font></td></tr>
+            </table></div><div id="dv-year-2018"><h3 class="year">2018</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Acadêmico, Academia Brasileira de Ciências e Artes ABRASCI.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4433249715762755">Robson Barbosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aprovado em segundo lugar no Concurso de Provas e Títulos para Professor Adjunto - Linguística Aplicada, Universidade Federal de Minas Gerais, Universidade Federal de Minas Gerais.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Aprovado em terceiro lugar no Concurso de Provas e Títulos para Professor Adjunto - Linguística Aplicada, Universidade de Brasília, Universidade de Brasília.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Artigo indicado a fast track, Semead.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7524892586291620">Wilian Ramalho Feitosa</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Melhor Trabalho de Iniciação Científica - Engenharia Civil, Pontifícia Universidade Católica de São Paulo - PUC/SP.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7182457238601431">Igor Polezi Munhoz</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Menção Honrosa na Feira de Ciências do Vale do Ribeira - FECIVALE, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Registro.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4464596962847309">Moacir Silva de Castro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Professor homenageado, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - IFSP.. 2018.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            </table></div><div id="dv-year-2017"><h3 class="year">2017</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aprovado em segundo lugar no Concurso de Provas e Títulos para Professor Adjunto - Linguística Aplicada, Universidade Federal de Uberlândia., Universidade Federal de Uberlândia.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/9606848154032239">Junot de Oliveira Maia</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Best Student Video Award for the video: Qualitative Case-Based Reasoning for Humanoid Robot Soccer, International Conference on Case-Based Reasoning - Video Competition (ICCBR-VC).. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6109272293288485">Thiago Pedro Donadon Homem</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Bolsa de Doutorado Sanduíche no Exterior - PDSE, CAPES.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3307819327114120">Fernando da Silva Pardo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Especialista em Planejamento, Implementação e Gestão da EaD, Universidade Federal Fluminense.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Medalha de Gratidão - Grau Ouro, UEB.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Melhor Pôster da área de Química Orgânica "Triagem enzimática de chalconas em busca de novos inibidores de arginase de L. amazonensis (ARG)", IX Semana da Química Prof. Dr. Fernando Petacci e IV Workrshop de Pós-Graduação.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/2729577875052578">Bruno Sérgio do Amaral</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Professor Paraninfo, IFSP.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3816397515831545">Alexandre José Romagnoli</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Tese de Doutorado premiada com publicação na Série Produção Acadêmica Premiada, FFLCH-USP, Ano de Indicação: 2014, FFLCH/USP.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/0605124404382681">Marcelo Cizaurre Guirau</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Time Campeão na categoria RoboCup Soccer Humanoid League no Latin American Robotics Competition (LARC) and Brazilian Robotics Competition (CBR), SBC, SBA, RoboCup, IEEE.. 2017.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6109272293288485">Thiago Pedro Donadon Homem</a>.</font></td></tr>
+            </table></div><div id="dv-year-2016"><h3 class="year">2016</h3> <table>
+            <tr valign="top"><td>1. &nbsp;</td> <td>Aprovada no concurso público para professor substituto de Língua Portuguesa e Literatura, Instituto Federal de São Paulo - IFSP, Campus Bragança Paulista.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3556770597527390">Alessandra da Silva Carneiro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>2. &nbsp;</td> <td>Aprovada no concurso público para professor substituto de Língua Portuguesa e Literatura, Instituto Federal de São Paulo - IFSP, Campus Pirituba... 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3556770597527390">Alessandra da Silva Carneiro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>3. &nbsp;</td> <td>Aprovada no concurso público para professor substituto de Língua Portuguesa e Literatura, Instituto Federal do Espírito Santo-IFES, Campus Colatina.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3556770597527390">Alessandra da Silva Carneiro</a>.</font></td></tr>
+            
+            <tr valign="top"><td>4. &nbsp;</td> <td>Bolsa de auxílio doutorado, CAPES.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/3307819327114120">Fernando da Silva Pardo</a>.</font></td></tr>
+            
+            <tr valign="top"><td>5. &nbsp;</td> <td>Habilitação no Programa OBMEP na Escola, Instituto Nacional de Matemática Pura e Aplicada - IMPA.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4601893345601275">Emanoel Fabiano Menezes Pereira</a>.</font></td></tr>
+            
+            <tr valign="top"><td>6. &nbsp;</td> <td>Homenagem em reconhecimento pelo desempenho didático, MBA Gestão Empresarial FIA.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/5823323305360005">Lincon Lopes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>7. &nbsp;</td> <td>Medalha Constitucionalista, Governo do Estado de São Paulo.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/5015809635259077">Luciano Henrique Trindade</a>.</font></td></tr>
+            
+            <tr valign="top"><td>8. &nbsp;</td> <td>Menção honrosa na II Semana Universitária da URCA, Universidade Regional do Cariri.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/1597168569510229">Jeferson Antunes</a>.</font></td></tr>
+            
+            <tr valign="top"><td>9. &nbsp;</td> <td>Moção de Agradecimento desempenho Conselheiro no Conselho de Ensino - CONEN, Pró-reitoria de Ensino - Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/4805417055470576">Jair Garcia dos Santos</a>.</font></td></tr>
+            
+            <tr valign="top"><td>10. &nbsp;</td> <td>Moção de Aplausos e Congratulações (Moção N°001/2016), Câmara Municipal da Estância de Ibirá.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/7145330603079471">Pedro Ernesto Schiavinatti Tavares</a>.</font></td></tr>
+            
+            <tr valign="top"><td>11. &nbsp;</td> <td>Posse e Exercício como Servidor Público Federal no Instituto Federal de Educação, Ciência e Tecnologia de São Paulo, Instituto Federal de Educação, Ciência e Tecnologia de São Paulo.. 2016.<br><i><font size=-1>Membro: <a href="http://lattes.cnpq.br/6413817150886826">Felipe Rodrigues Martinez Basile</a>.</font></td></tr>
+            </table></div>
+                    </table>
+                <br><p><br>(*) Relatório criado com produções desde 2016 até 2025
+<br>Data de processamento: 20/03/2025 19:59:42<br>         <div id="footer">         Relatório gerado por <a href="http://scriptlattes.sourceforge.net/">scriptLattes V9</a>.         Os resultados podem ser afetados por possíveis falhas decorrentes de inconsistências no preenchimento dos Currículos Lattes. E-mail de contato: <a href="mailto:admin@email.com">admin@email.com</a>         </div> </body></html>
+              

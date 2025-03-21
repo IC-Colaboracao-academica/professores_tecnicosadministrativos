@@ -1,0 +1,220 @@
+nodedef> name VARCHAR, idLattes VARCHAR, label VARCHAR, rotulo VARCHAR, lat DOUBLE, lon DOUBLE, collaborationRank DOUBLE, producaoBibliografica DOUBLE, artigoEmPeriodico DOUBLE, livro DOUBLE, capituloDeLivro DOUBLE, trabalhoEmCongresso DOUBLE, resumoExpandido DOUBLE, resumo DOUBLE, posDoutorado DOUBLE, dutorado DOUBLE, mestrado DOUBLE, ic DOUBLE, color VARCHAR
+0,6251713756525157,Claudia Almerinda de Souza Oliveira,Gestão,,,0.43680075,7,2,0,0,1,0,4,0,0,0,0,'102,0,51'
+1,1404004205953061,Eudes Müller D'Oliveira Santos,Gestão,,,0.15,3,1,0,0,2,0,0,0,0,0,0,'102,0,51'
+2,9192838264879703,Fernando Cesar Mendonca,Gestão,,,0.8944461,16,5,0,4,5,0,2,0,0,0,0,'102,0,51'
+3,9174738474958622,Fernando Luis Rossi,Gestão,,,1.4237967,21,21,0,0,0,0,0,0,0,0,0,'102,0,51'
+4,1645025560656843,Francisco Manoel Filho,Gestão,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'102,0,51'
+5,7182457238601431,Igor Polezi Munhoz,Gestão,,,0.15,45,15,3,16,1,7,3,0,0,0,2,'102,0,51'
+6,9331820124409974,Júlio Samuel Sávio Bernardo,Gestão,,,1.0714637,4,0,0,0,0,4,0,0,0,0,0,'102,0,51'
+7,4385892643182795,Patrícia Cristiane Santana da Silva,Gestão,,,1.1300957,4,3,0,0,1,0,0,0,0,0,0,'102,0,51'
+8,4570604108944635,Paulo Eduardo Pissardini,Gestão,,,0.15,24,7,0,2,15,0,0,0,0,0,1,'102,0,51'
+9,3428238105973322,Whisner Fraga Mamede,Mecânica,,,0.15,2,0,1,0,1,0,0,0,0,0,1,'255,255,255'
+10,2729577875052578,Bruno Sérgio do Amaral,Química,,,0.15,17,12,0,0,0,1,4,0,0,0,1,'255,255,255'
+11,6121323026815026,Luciana Cavalcanti Maia Santos,Biologia,,,1.5682895,46,9,1,3,21,4,8,0,0,2,14,'0,153,153'
+12,7145330603079471,Pedro Ernesto Schiavinatti Tavares,Física,,,0.15,21,8,0,0,0,0,13,0,0,0,5,'153,153,51'
+13,3962688740320989,Renato Marcon Pugliese,Física,,,1.8620216,12,3,5,0,4,0,0,0,0,0,3,'153,153,51'
+14,3271060755934569,Rogério Deitali Bruno,Física,,,0.59986037,2,1,0,0,0,0,1,0,0,0,1,'153,153,51'
+15,9403683997123301,Thiago Bufeli Bianchini,Química,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+16,8201116194978261,José Roberto Campanele,Gestão,,,0.15,3,0,0,0,3,0,0,0,0,0,0,'102,0,51'
+17,5823323305360005,Lincon Lopes,Gestão,,,0.4481332,4,3,0,0,0,1,0,0,0,0,1,'102,0,51'
+18,5015809635259077,Luciano Henrique Trindade,Gestão,,,0.29607737,19,14,2,2,1,0,0,0,0,0,1,'102,0,51'
+19,1338620947844672,Marcelo Bittencourt de Lacerda,Gestão,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'102,0,51'
+20,3721834622772994,Silene Jucelino de Lima,Gestão,,,0.29166025,2,1,0,0,1,0,0,0,0,0,0,'102,0,51'
+21,7524892586291620,Wilian Ramalho Feitosa,Gestão,,,1.8904129,62,29,0,3,10,8,12,0,0,0,12,'102,0,51'
+22,6580031323799138,Everaldo Paulo da Silva,Matemática,,,0.15,1,1,0,0,0,0,0,0,0,0,0,'255,255,255'
+23,0255523082900191,Idalise Bernardo Bagé,Matemática,,,0.15,12,6,1,0,4,0,1,0,0,0,0,'255,255,255'
+24,7321309101090576,José Cícero Calheiros,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+25,4459848448809287,Oertes Alves Souza,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,1,'255,255,255'
+26,2065221335687693,Ana Paula Fabro de Oliveira,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+27,3201089796517075,Eufrida Pereira da Silva,Letras,,,0.15,4,1,1,1,0,1,0,0,0,0,6,'255,255,255'
+28,0301842010739909,Maria Lucia Garcia de Almeida,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+29,3933160719185792,Ana Carolina Vila Ramos dos Santos,Sociologia,,,1.2371894,13,9,0,1,3,0,0,0,0,0,4,'255,255,255'
+30,1241031809486285,Jose Osorio de Oliveira Azevedo Neto,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+31,6109272293288485,Thiago Pedro Donadon Homem,Informática,,,1.1247615,19,8,0,2,5,2,2,0,0,0,2,'51,0,51'
+32,2393092066131485,Caroline Inês Lisevski,Física,,,0.15,3,2,0,0,1,0,0,0,0,0,3,'153,153,51'
+33,0205084568545664,Davi Munhoz Benati,Gestão,,,0.15,5,3,0,0,1,0,1,0,0,0,0,'102,0,51'
+34,7231193320430668,Rodolfo Butcher,Gestão,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'102,0,51'
+35,0085760610917679,Ricardo Normanha Ribeiro de Almeida,Sociologia,,,0.15,13,6,1,3,3,0,0,0,0,0,0,'255,255,255'
+36,0194287453328754,Renato Pereira Cruz,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+37,4744244673903083,Ricardo Forner,Química,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+38,1741814375809802,André Luiz Favareto,Informática,,,0.15,3,0,1,0,2,0,0,0,0,0,0,'51,0,51'
+39,9543740522912391,Fabio Oliveira Teixeira,Informática,,,0.46868238,10,4,0,0,1,5,0,0,0,0,0,'51,0,51'
+40,6413817150886826,Felipe Rodrigues Martinez Basile,Informática,,,2.3992383,17,12,0,1,2,2,0,0,0,0,1,'51,0,51'
+41,3307819327114120,Fernando da Silva Pardo,Letras,,,0.15,12,8,1,2,0,0,1,0,0,0,0,'255,255,255'
+42,0150761926799891,Igor Calebe Zadi,Informática,,,1.6472653,5,1,0,2,1,0,1,0,0,0,0,'51,0,51'
+43,0270118728577579,Renato Cristiano Montanher,Informática,,,1.5979055,7,1,0,2,4,0,0,0,0,0,0,'51,0,51'
+44,8291123108448027,Regivaldo Sousa Ferreira,Informática,,,1.4594593,8,2,0,0,0,6,0,0,0,0,0,'51,0,51'
+45,5904768897181890,Rogério Aparecido Campanari Xavier,Informática,,,0.5635135,1,1,0,0,0,0,0,0,0,0,0,'51,0,51'
+46,1399854218544805,Ariane Macedo Melo Ferraz,Letras,,,1.9230459,3,1,0,1,0,0,1,0,0,0,2,'255,255,255'
+47,1501890027526192,Filipe Mantovani Ferreira,Letras,,,0.15,7,0,2,4,0,1,0,0,0,0,2,'255,255,255'
+48,6721329327099220,Flávia Roberta Torezin,Pedagogia,,,0.15,2,0,0,0,1,0,1,0,0,0,2,'255,255,255'
+49,7123768100809570,Irando Alves Martins Neto,Letras,,,0.47691783,15,8,1,4,2,0,0,0,0,0,0,'255,255,255'
+50,8227138220523755,Krícia Helena Barreto,Letras,,,0.15,3,3,0,0,0,0,0,0,0,0,0,'255,255,255'
+51,9532067890984046,Luiz Henrique Siloto,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+52,0605124404382681,Marcelo Cizaurre Guirau,Letras,,,0.8012549,21,9,1,2,1,1,7,0,0,0,5,'255,255,255'
+53,4464596962847309,Moacir Silva de Castro,Pedagogia,,,0.15,15,6,2,7,0,0,0,0,0,0,1,'255,255,255'
+54,9355036294559603,Patricia Horta,Letras,,,0.15,4,1,0,2,1,0,0,0,0,0,0,'255,255,255'
+55,4767983155491007,Priscila Hanako Ishy de Magalhães,Letras,,,0.81745124,2,1,0,1,0,0,0,0,0,0,0,'255,255,255'
+56,9833755852287873,Rita Roberta Marioto,Letras,,,0.731837,5,2,0,3,0,0,0,0,0,0,1,'255,255,255'
+57,1023035189966463,Vanessa Regina Ferreira da Silva,Letras,,,1.0996311,23,0,1,5,3,0,14,0,0,0,3,'255,255,255'
+58,1247193026032936,Adriana Paes de Jesus Correia,Pedagogia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+59,3556770597527390,Alessandra da Silva Carneiro,Letras,,,0.15,2,2,0,0,0,0,0,0,0,0,0,'255,255,255'
+60,9163440814632690,Alexandre Dias Paza,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+61,0606119161753798,Andréa Antonieta Cotrim Silva,Letras,,,0.15,7,3,1,3,0,0,0,0,0,0,0,'255,255,255'
+62,4170905578828512,Elisangela Lizardo de Oliveira,Pedagogia,,,0.15,3,1,0,1,1,0,0,0,0,0,0,'255,255,255'
+63,3328777524800655,Juliana de Souza Topan,Letras,,,0.15,2,1,1,0,0,0,0,0,0,0,0,'255,255,255'
+64,9606848154032239,Junot de Oliveira Maia,Letras,,,0.47691783,10,7,0,3,0,0,0,0,0,1,3,'255,255,255'
+65,3002035461254197,Maria Cristina Stello Leite,Pedagogia,,,0.15,12,4,2,5,1,0,0,0,0,0,0,'255,255,255'
+66,9670600127969592,Maria Reinize Semblano Gonçalves,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+67,2106194935733205,Patricia de Aquino Prudente,Letras,,,0.15,3,3,0,0,0,0,0,0,0,0,0,'255,255,255'
+68,6116588045452081,Teresa Helena Buscato Martins,Letras,,,1.0723704,17,1,1,9,1,3,2,0,1,0,2,'255,255,255'
+69,5813261133047060,Adriano Jose Ferruzzi,Informática,,,0.97702706,9,3,0,0,1,3,2,0,0,0,1,'51,0,51'
+70,7891476269627310,Alan Marques da Silva,Educação Física,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,0'
+71,9284399084347419,Ana Paula Bulgarelli,Filosofia,,,0.15,0,0,0,0,0,0,0,0,0,0,1,'255,204,255'
+72,9637385188417163,Danilo Amorim de Souza,Geografia,,,0.46654367,0,0,0,0,0,0,0,0,0,0,0,'51,153,102'
+73,2191580229628759,Danilo Marcondes de Alcantara,Geografia,,,0.15,2,1,0,1,0,0,0,0,0,0,0,'51,153,102'
+74,4367176757685439,Ester Kolling Rodrigues,Artes,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,102,0'
+75,5682377023513576,Hamilton Carvalho da Silva,Direito,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,51,255'
+76,8445822654396019,Hania Cecília Pilan,Artes,,,0.4258395,5,0,0,5,0,0,0,0,0,0,0,'0,102,0'
+77,8895889574171912,Ivan Miletovic Mozol,Biologia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,153,153'
+78,9285380887754398,Maysa Ciarlariello Cunha Rodrigues,Sociologia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+79,1859327964970756,Nilton Pereira dos Santos,Gestão,,,0.15,2,2,0,0,0,0,0,0,0,0,0,'102,0,51'
+80,5270206173699887,Pamella Araujo Santos,Letras,,,0.15,1,0,1,0,0,0,0,0,0,0,0,'255,255,255'
+81,4433249715762755,Robson Barbosa,Gestão,,,1.6146255,16,15,0,0,1,0,0,0,0,0,0,'102,0,51'
+82,4492087996976873,Tatiana Aparecida Picosque,Filosofia,,,0.48354033,2,2,0,0,0,0,0,0,0,0,0,'255,204,255'
+83,3270989786290783,Vagner Luís da Silva,História,,,0.8510739,0,0,0,0,0,0,0,0,0,0,0,'153,255,204'
+84,2512569735401048,Valdir Donizete dos Santos Junior,História,,,0.15,10,8,1,1,0,0,0,0,0,0,0,'153,255,204'
+85,1263876459804827,William Rosseti,Gestão,,,1.140848,13,9,0,0,0,2,2,0,0,0,0,'102,0,51'
+86,0406047437081530,Alessandro Emilio Teruzzi,Matemática,,,0.15,1,1,0,0,0,0,0,0,0,0,0,'255,255,255'
+87,1271845937335077,Alexandre Machado Rosa,Educação Física,,,0.15,1,1,0,0,0,0,0,0,0,0,0,'51,0,0'
+88,4318720994328334,Carolina Aparecida de Freitas Dias,Gestão,,,0.15,14,1,0,2,7,4,0,0,0,0,6,'102,0,51'
+89,0929608133378872,Leandro Módolo Paschoalotte,Sociologia,,,0.15,18,5,1,4,0,4,4,0,0,0,1,'255,255,255'
+90,7312917718555061,Leonardo Seiji Souza Yamamoto,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+91,8754322948547165,Luiz Roberto Albano Junior,Informática,,,1.1696765,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+92,5240027797222386,Nilma Alves Pedrosa,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+93,2182649413958255,Socrates Gonçalves de Araujo,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+94,6557595946011722,Tarcísio Oliveira Vasconcelos,Gestão,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'102,0,51'
+95,5235107168419534,Tatiana Aparecida Francisco,Gestão,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'102,0,51'
+96,6020485492953878,Thiago Silva Broze,Gestão,,,0.15,23,5,1,6,10,0,1,0,0,0,0,'102,0,51'
+97,7290375482443455,Alex Sandro Rodrigues Ancioto,Informática,,,0.4300351,4,0,0,0,4,0,0,0,0,0,0,'51,0,51'
+98,4191252261770638,Ana Paula Rodrigues Magalhães de Barros,Matemática,,,0.15,33,3,1,3,11,0,15,0,0,0,4,'255,255,255'
+99,3816397515831545,Alexandre José Romagnoli,Gestão,,,0.15,8,3,0,0,2,0,3,0,0,0,0,'102,0,51'
+100,8080425160395803,Bárbara Beatriz Freitag,Gestão,,,0.15,5,2,0,0,2,1,0,0,0,0,0,'102,0,51'
+101,4601893345601275,Emanoel Fabiano Menezes Pereira,Matemática,,,0.15,31,13,0,0,4,9,5,0,0,0,0,'255,255,255'
+102,5703646466018750,Jairo Filho Sousa de Almeida Ferreira,Informática,,,0.15,3,2,0,0,0,1,0,0,0,0,2,'51,0,51'
+103,1597168569510229,Jeferson Antunes,História,,,0.15,49,24,2,12,10,1,0,0,0,0,0,'153,255,204'
+104,6848594231962298,Joyce Martins Mendes,Informática,,,0.15,1,0,1,0,0,0,0,0,0,0,0,'51,0,51'
+105,2476849790799335,Marco Antonio Mucha Orco,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+106,3052067471176140,Roberta Caetano Fleira,Matemática,,,0.15,7,4,1,0,2,0,0,0,0,0,0,'255,255,255'
+107,5616700916006584,Romario Araujo Pinheiro,Física,,,0.15,13,13,0,0,0,0,0,0,0,0,0,'153,153,51'
+108,2949908284222016,Reinaldo da Silva Caraça,Física,,,0.15,2,2,0,0,0,0,0,0,0,0,1,'153,153,51'
+109,6413647002262825,Nelio Fernando dos Reis,Gestão,,,0.15,46,37,6,3,0,0,0,0,0,0,0,'102,0,51'
+110,4491639385842897,Aldemir Versani de Souza Callou,Gestão,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'102,0,51'
+111,5323510575674245,Ana Paula Santos da Conceição,Química,,,0.15,0,0,0,0,0,0,0,0,0,0,1,'255,255,255'
+112,2243971574320993,Beethoven Adriano de Souza,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+113,7962654152098820,Bruno Secco Faquin,Educação Física,,,0.15,1,1,0,0,0,0,0,0,0,0,0,'51,0,0'
+114,4988291703607703,Cynthia Regina Fischer,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+115,3050082633467692,Felipe Alexandre Cardoso Pazinatto,Informática,,,0.15,4,1,0,0,0,3,0,0,0,0,0,'51,0,51'
+116,6049049242313036,Iderval Alves Barbosa,Matemática,,,0.15,1,0,1,0,0,0,0,0,0,0,0,'255,255,255'
+117,0890325913171544,Lucas Rodrigues dos Santos,Física,,,0.15,3,3,0,0,0,0,0,0,0,0,0,'153,153,51'
+118,8937165616076663,Rodrigo Cordeiro Camilo,Educação Física,,,0.15,2,0,0,2,0,0,0,0,0,0,0,'51,0,0'
+119,6598021052809870,Ana Claudia Folha da Cruz,Letras,,,1.0,2,1,0,0,1,0,0,0,0,0,0,'255,255,255'
+120,2650839442411593,Ana Lúcia Pereira da silva Souza,Pedagogia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+121,3439348854295180,Beatriz Ferraz Diniz,Psicologia,,,0.15,3,1,2,0,0,0,0,0,0,0,0,'255,255,255'
+122,5090636072821649,Bianca Blanco,Nutrição,,,0.15,5,0,1,0,0,0,4,0,0,0,0,'255,255,255'
+123,8955385091976012,Bruno Oliveira Ferreira,Gestão Pública,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,204,153'
+124,4728138281502146,Cláudio Roberto da Silva Alexandre,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+125,2345533594254862,Cristiane Rodrigues de Viveiros,Jornalismo,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+126,6413773602690796,Edineia Lazaro Souza Valerio,Nutrição,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+127,0334772716024000,Edna Alencar da Silva Rivera,Letras,,,0.15,7,0,4,3,0,0,0,0,0,0,0,'255,255,255'
+128,6102344422918031,Eliane Maria Crepaldi,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+129,6931015687910767,Elide Gomes Pereti Cremonesi,Engenharia de Alimentos,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'204,153,153'
+130,9083351896101774,Giovana Moreira da Costa,Engenharia de Alimentos,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'204,153,153'
+131,5718426657404454,Hadassa Viviane Rodrigues,Biblioteconomia,,,0.15,2,1,1,0,0,0,0,0,0,0,0,'153,0,0'
+132,3677088397900438,Ingrid Anelise Lopes,Pedagogia,,,0.15,8,0,0,2,3,0,3,0,0,0,0,'255,255,255'
+133,3190403221290930,José Geraldo Basante,Ciências Contábeis,,,0.15,4,2,0,2,0,0,0,0,0,0,0,'51,51,51'
+134,4142940986894992,Kamili Oliveira Santana,Biotecnologia,,,0.15,9,5,0,0,1,3,0,0,0,0,0,'255,51,204'
+135,7773613728790856,Lucas Barbosa Calixto,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+136,2510022497560276,Maria Jozeane Rodrigues Santos,Matemática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+137,8100140488776747,Matheus Augusto Matias Santos,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+138,0721543851906108,Matheus de Andrade,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+139,7795868198763646,Nuemis Francisco,Ciências Contábeis,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,51,51'
+140,8560935678654879,Patricia Cardoso de Oliveira,Comunicação Social,,,0.15,2,0,1,1,0,0,0,0,0,0,0,'255,255,0'
+141,8344676108693719,Roberto da Anunciação,Ciências Contábeis,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,51,51'
+142,9392241874305193,Rogério Aparecido Pereira,Biblioteconomia,,,0.15,1,1,0,0,0,0,0,0,0,0,0,'153,0,0'
+143,7929394078514183,Roque Almeida Fonseca Junior,Música,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+144,2069317496755275,Ruama Sales Carneiro,Engenharia Ambiental,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,153'
+145,9841151318429983,Stela Haler,Ciências Contábeis,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,51,51'
+146,0891068750141156,Tiago Alves Pinheiro da Silveira,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+147,2966257390587968,Tulio Francisco da Silva Bernardo,Informática,,,1.0,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+148,8187930002017444,Valeria Curac,Letras,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+149,4997174288137194,Vinicius da Rosa Araujo,História,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'153,255,204'
+150,5732294594859725,Wanderley França Fonseca,Pedagogia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+151,8860795461819208,Arthur Muramoto Hayashi,[Sem rotulo],,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+152,8992745047393026,Carla Laís Fileto de Held,Química,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+153,0434693084862584,Luis Augusto Dias Cesar,Administração,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,0,153'
+154,8227471587236327,Marcos Paulo Kretschmann,Administração,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,0,153'
+155,4480517288420524,Renata Chiquetti Machado,Pedagogia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+156,4413329386615614,Rylla Zanini Silva,Pedagogia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+157,4805417055470576,Jair Garcia dos Santos,Pedagogia,,,0.63029075,11,4,0,1,0,1,5,0,0,0,0,'255,255,255'
+158,0786084512835032,Ana Márcia Lima Costa,Pedagogia,,,0.15,4,0,0,3,1,0,0,0,0,0,0,'255,255,255'
+159,4224422950578662,Mirtes Ione Ujikawa,Psicologia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+160,4137300552951876,Renata Fernandez Targino,Psicologia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,255,255'
+161,9020403236298628,Simeão Lopes Ferreira,Engenharia de Materiais,,,0.15,1,0,0,1,0,0,0,0,0,0,0,'255,153,204'
+162,9116416315540378,Rosana Ramos Cotrim,Administração,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,0,153'
+163,6906671885842459,Bárbara Cavichioli,Biocombustíveis,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'255,51,0'
+164,4841386414792111,Fernanda Batista de Andrade,Biblioteconomia,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'153,0,0'
+165,5504670505493537,Gildete Mamede Sales,Administração,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,0,153'
+166,1579519584264552,Marcos Antonio Leati Pelaes,Informática,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'51,0,51'
+167,2226783302013014,Priscila Fernandes Lucci,Administração,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,0,153'
+168,6136680951129218,Rogério Luiz dos Santos,Gestão Pública,,,0.15,0,0,0,0,0,0,0,0,0,0,0,'0,204,153'
+edgedef> node1 VARCHAR, node2 VARCHAR, weight DOUBLE
+0,31,1.0
+0,40,1.0
+2,3,4.0
+2,17,1.0
+2,21,3.0
+2,81,4.0
+2,85,4.0
+3,21,5.0
+3,81,7.0
+3,85,6.0
+6,11,2.0
+6,14,1.0
+7,11,1.0
+7,157,1.0
+11,14,1.0
+13,29,1.0
+13,57,3.0
+13,72,1.0
+13,82,1.0
+17,21,1.0
+18,21,1.0
+20,21,1.0
+20,81,1.0
+21,81,6.0
+21,85,5.0
+29,82,1.0
+29,83,2.0
+31,39,1.0
+31,40,2.0
+31,43,1.0
+40,43,1.0
+40,56,1.0
+40,68,1.0
+40,91,4.0
+42,43,4.0
+42,76,1.0
+42,97,1.0
+43,76,1.0
+44,45,1.0
+44,69,2.0
+46,49,1.0
+46,55,1.0
+46,56,1.0
+46,64,1.0
+46,68,1.0
+52,55,1.0
+52,68,1.0
+81,85,5.0
+119,147,1.0
